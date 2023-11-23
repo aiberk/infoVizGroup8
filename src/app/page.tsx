@@ -1,15 +1,21 @@
 import React from "react";
 import Image from "next/image";
 
+import Vizheader from "@/app/components/organisms/vizHeader/vizheader";
+import VizColor from "@/app/components/organisms/vizColor/vizColor";
+import VizLegend from "@/app/components/organisms/vizLegend/vizLegend";
+import VizTimeline from "@/app/components/organisms/vizTimeLine/vizTimeline";
+import VisMain from "@/app/components/organisms/vizMain/visMain";
+
 export default function Home() {
   return (
     <main className="row-auto flex-grow flex flex-col items-center">
-      <div className="bg-white bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
-        <div className="header part">Header</div>
-        <div className="colorScale part">Color Scale</div>
-        <div className="legend part">Legend</div>
-        <div className="timeline part">Timeline</div>
-        <div className="mainViz part">Main Visualization</div>
+      <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
+        <Vizheader />
+        <VizLegend />
+        {/* <VizTimeline /> */}
+        <VisMain />
+        <VizColor />
       </div>
     </main>
   );
