@@ -21,3 +21,34 @@ body {
   overflow: hidden;
   /* padding-top: 95px; */
 }
+
+.vizParent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; /* Adjust columns */
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr; /* Adjust rows */
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 6; /* Half-height */
+}
+.colorScale {
+  grid-area: 2 / 1 / 6 / 2; /* Half-width */
+}
+.legend {
+  grid-area: 2 / 5 / 6 / 6; /* Half-width */
+}
+.timeline {
+  grid-area: 5 / 2 / 6 / 5; /* Half-height */
+}
+.mainViz {
+  grid-area: 2 / 2 / 6 / 5; /* Expanded */
+}
+
+.part {
+  border: rgba(255, 255, 255, 0.407) 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
