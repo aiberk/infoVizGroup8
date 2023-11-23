@@ -17,7 +17,7 @@ const selections = [
 ];
 
 const years = [
-  { id: 1, name: 19990 },
+  { id: 1, name: 1990 },
   { id: 2, name: 2000 },
   { id: 3, name: 2020 },
 ];
