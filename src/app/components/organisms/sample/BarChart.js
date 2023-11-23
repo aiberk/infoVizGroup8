@@ -6,46 +6,42 @@ const height = 200;
 const margin = { top: 20, right: 5, bottom: 20, left: 35 };
 
 class BarChart extends Component {
-  state = {
-    bars: [], // array of rects
-  };
+  constructor(props) {
+    super(props);
+    this.state = {
+      bars: [], // array of rects
+    };
+    this.xAxisRef = React.createRef();
+    this.yAxisRef = React.createRef();
+    this.brushRef = React.createRef();
 
-  xAxis = d3.axisBottom().tickFormat(d3.timeFormat("%b"));
-  yAxis = d3.axisLeft().tickFormat((d) => `${d}℉`);
+    this.xAxis = d3.axisBottom().tickFormat(d3.timeFormat("%b"));
+    this.yAxis = d3.axisLeft().tickFormat((d) => `${d}℉`);
+  }
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const { data, range } = nextProps;
     if (!data) return {};
-    // 1. map date to x-position
-    // get min and max of date
+
     const extent = d3.extent(data, (d) => d.date);
     const xScale = d3
       .scaleTime()
       .domain(extent)
       .range([margin.left, width - margin.right]);
 
-    // 2. map high temp to y-position
-    // get min/max of high temp
     const [min, max] = d3.extent(data, (d) => d.high);
     const yScale = d3
       .scaleLinear()
       .domain([Math.min(min, 0), max])
       .range([height - margin.bottom, margin.top]);
 
-    // 3. map avg temp to color
-    // get min/max of avg
     const colorExtent = d3.extent(data, (d) => d.avg).reverse();
     const colorScale = d3
       .scaleSequential()
       .domain(colorExtent)
       .interpolator(d3.interpolateRdYlBu);
 
-    // array of objects: x, y, height
     const bars = data.map((d) => {
-      // slice should be colored if there's no time range
-      // or if the slice is within the time range
-      // slice should be colored if there's no time range
-      // or if the slice is within the time range
       const isColored =
         !range.length || (range[0] <= d.date && d.date <= range[1]);
       return {
@@ -66,19 +62,18 @@ class BarChart extends Component {
         [margin.left, margin.top],
         [width - margin.right, height - margin.bottom],
       ])
-      .on("end", this.brushEnd); // Pass this.brushEnd directly without wrapping in another function
-    d3.select(this.refs.brush).call(this.brush);
+      .on("end", this.brushEnd);
+    d3.select(this.brushRef.current).call(this.brush);
   }
 
   componentDidUpdate() {
     this.xAxis.scale(this.state.xScale);
-    d3.select(this.refs.xAxis).call(this.xAxis);
+    d3.select(this.xAxisRef.current).call(this.xAxis);
     this.yAxis.scale(this.state.yScale);
-    d3.select(this.refs.yAxis).call(this.yAxis);
+    d3.select(this.yAxisRef.current).call(this.yAxis);
   }
 
   brushEnd = (event) => {
-    // Use the event argument directly instead of d3.event
     const selection = event.selection;
     if (!selection) {
       this.props.updateRange([]);
@@ -104,11 +99,11 @@ class BarChart extends Component {
         ))}
         <g>
           <g
-            ref="xAxis"
+            ref={this.xAxisRef}
             transform={`translate(0, ${height - margin.bottom})`}
           />
-          <g ref="yAxis" transform={`translate(${margin.left}, 0)`} />
-          <g ref="brush" />
+          <g ref={this.yAxisRef} transform={`translate(${margin.left}, 0)`} />
+          <g ref={this.brushRef} />
         </g>
       </svg>
     );
