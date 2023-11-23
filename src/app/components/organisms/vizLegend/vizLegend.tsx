@@ -9,7 +9,7 @@ const VizLegend = () => {
 
   return (
     <div className="legend">
-      <div className="bg-sky-950 p-4 rounded-sm h-1/2">
+      <div className="bg-cardColor p-4 rounded-sm h-1/2">
         <RadioGroup value={selectedPlan} onChange={setSelectedPlan}>
           <RadioGroup.Label>Legend:</RadioGroup.Label>
           {legend.map((plan) => (

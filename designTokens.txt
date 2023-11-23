@@ -1,0 +1,3 @@
+blue     16364F
+orange  EF321A
+CardColor 20252D

@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        cardColor: "#20252D",
+      },
       maxWidth: {
         "8xl": "1500px", // or any value you prefer
       },
