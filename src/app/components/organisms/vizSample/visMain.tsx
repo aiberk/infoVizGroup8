@@ -27,7 +27,30 @@ const VisMain = (props: Props) => {
   };
 
   const data = temps[city];
-  return <div className="mainViz part">Main Viz</div>;
+  return (
+    <div className="mainViz">
+      <h1>
+        2017 Temperatures for
+        <select name="city" onChange={updateCity}>
+          {[
+            { label: "San Francisco", value: "sf" },
+            { label: "New York", value: "ny" },
+            // {label: 'Amsterdam', value: 'am'},
+          ].map((option) => (
+            <option
+              key={option.value}
+              value={option.value}
+              className="text-black">
+              {option.label}
+            </option>
+          ))}
+        </select>
+      </h1>
+      <BarChart data={data} range={range} updateRange={updateRange} />
+      <RadialChart data={data} range={range} />
+      {/* <Chart data={data} range={range} updateRange={updateRange} /> */}
+    </div>
+  );
 };
 
 export default VisMain;
