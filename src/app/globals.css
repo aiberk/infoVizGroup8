@@ -3,9 +3,9 @@
 @tailwind utilities;
 
 :root {
-  /* --foreground-rgb: 0, 0, 0;
+  --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255; */
+  --background-end-rgb: 255, 255, 255;
 }
 
 body {
@@ -21,6 +21,30 @@ body {
   overflow: hidden;
   /* padding-top: 95px; */
 }
+
+/* .vizParent {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr; 
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.header {
+  grid-area: 1 / 1 / 2 / 6; 
+}
+.colorScale {
+  grid-area: 2 / 1 / 6 / 2; 
+}
+.legend {
+  grid-area: 2 / 5 / 6 / 6; 
+}
+.timeline {
+  grid-area: 5 / 2 / 6 / 5; 
+}
+.mainViz {
+  grid-area: 2 / 2 / 6 / 5; 
+} */
 
 .vizParent {
   display: grid;
@@ -43,7 +67,7 @@ body {
   grid-area: 5 / 2 / 6 / 5; /* Half-height */
 }
 .mainViz {
-  grid-area: 2 / 2 / 6 / 5; /* Expanded */
+  grid-area: 2 / 2 / 5 / 5; /* Adjusted to stop before the timeline */
 }
 
 .part {

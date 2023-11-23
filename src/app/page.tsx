@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -13,7 +14,7 @@ export default function Home() {
       <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
         <Vizheader />
         <VizLegend />
-        {/* <VizTimeline /> */}
+        <VizTimeline />
         <VisMain />
         <VizColor />
       </div>
