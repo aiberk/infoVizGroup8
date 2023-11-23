@@ -26,7 +26,7 @@ export default function DropDownSelector<T extends { id: number }>({
 
   return (
     <Combobox value={selected} onChange={setSelected}>
-      <div className="relative mt-1">
+      <div className="relative mt-1 w-1/8">
         <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-black text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-300 sm:text-sm">
           <Combobox.Input
             className="w-full bg-black border-none py-2 pl-3 text-2xl leading-5 text-blue-300 focus:ring-0"
