@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 type Props = {};
@@ -5,7 +6,7 @@ type Props = {};
 const Logo = (props: Props) => {
   const letters = ["A", "C", "J", "R"];
   return (
-    <div className="flex flex-row gap-2">
+    <Link href="/" className="flex flex-row gap-2">
       {letters.map((letter) => (
         <div
           key={letter}
@@ -13,7 +14,7 @@ const Logo = (props: Props) => {
           {letter}
         </div>
       ))}
-    </div>
+    </Link>
   );
 };
 
