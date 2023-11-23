@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255; */
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb)); */
+  background-image: url(/top-blur-circle.svg), url(/bottom-blur-circle.svg);
+  background-color: #191a1b;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 1500px 1500px;
+  background-position: left bottom, right top;
+  min-height: 100vh;
+  height: 100vh;
+  overflow: hidden;
+  /* padding-top: 95px; */
+}
