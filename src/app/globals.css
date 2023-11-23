@@ -99,3 +99,21 @@ body {
     cursor: pointer;
   }
 }
+
+.cardandmap {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
+}
+
+.cardanmapCard {
+  grid-area: 1 / 1 / 7 / 4;
+}
+.cardanmapMap {
+  grid-area: 1 / 4 / 4 / 6;
+}
+.cardanmapViz {
+  grid-area: 4 / 4 / 7 / 6;
+}
