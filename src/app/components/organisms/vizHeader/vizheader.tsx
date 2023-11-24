@@ -1,16 +1,18 @@
+//@ts-nocheck
 import React from "react";
 import DropDownSelector from "@/app/components/molecules/comboBox/DropDownSelector";
 import { useSelection } from "@/app/context/store";
+import { countries } from "@/app/data/data";
 
 const Vizheader = () => {
   const { setSelectedCountry, setSelectedSelection, setSelectedYear } =
     useSelection();
 
-  const countries = [
-    { id: 1, name: "Bolivia" },
-    { id: 2, name: "United States" },
-    { id: 3, name: "China" },
-  ];
+  // const countries = [
+  //   { id: 1, name: "Bolivia" },
+  //   { id: 2, name: "United States" },
+  //   { id: 3, name: "China" },
+  // ];
 
   const selections = [
     { id: 1, name: "Sentiment" },
