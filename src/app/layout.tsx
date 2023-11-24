@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className=" px-2 flex flex-col">
         <Nav />
         <SelectionProvider>{children}</SelectionProvider>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
