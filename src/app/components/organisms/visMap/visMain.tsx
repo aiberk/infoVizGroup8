@@ -5,13 +5,13 @@ import { useSelection } from "@/app/context/store";
 
 // Sample countries data
 const countriesData = {
-  Bolivia: { sentiment: 0.1, denial: 0.1, aggressive: 0.05 },
-  China: { sentiment: 0.1, denial: 0.9, aggressive: 0.1 },
+  Bolivia: { sentiment: 0.1, denial: 0.1, aggressive: 0.9 },
+  China: { sentiment: 0.1, denial: 0.9, aggressive: 0.05 },
   // ... other countries
 };
 
 const VisMap = () => {
-  const { selectedCountry, selectedSelection } = useSelection(); // Added selectedSelection
+  const { selectedCountry, selectedSelection } = useSelection();
   const mapContainerRef = useRef(null);
 
   useEffect(() => {
@@ -42,13 +42,25 @@ const VisMap = () => {
         .attr("fill", (d) => {
           const countryName = d.properties.name;
           const data = countriesData[countryName];
-          // Check if data exists and use the selectedSelection for coloring
           if (data) {
-            return colorScale(
-              selectedSelection === "Sentiment" ? data.sentiment : data.denial
-            );
+            // Select the metric based on selectedSelection
+            let metricValue;
+            switch (selectedSelection) {
+              case "Sentiment":
+                metricValue = data.sentiment;
+                break;
+              case "Denial Rate":
+                metricValue = data.denial;
+                break;
+              case "Aggressiveness":
+                metricValue = data.aggressive;
+                break;
+              default:
+                metricValue = 0; // Default value if selection is not recognized
+            }
+            return colorScale(metricValue);
           }
-          return "#ccc"; // Default color
+          return "#ccc"; // Default color for countries without data
         })
         .attr("class", "country");
     };
@@ -60,12 +72,12 @@ const VisMap = () => {
         d3.select(mapContainerRef.current).select("svg").remove();
       }
     };
-  }, [selectedCountry, selectedSelection]); // Add selectedSelection as a dependency
+  }, [selectedCountry, selectedSelection]);
 
   return (
     <div
       ref={mapContainerRef}
-      className="mainViz flex justify-center items-center bg-white rounded-xl bg-opacity-5"></div>
+      className="mainViz flex justify-center items-center bg-white rounded-sm bg-opacity-5"></div>
   );
 };
 

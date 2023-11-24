@@ -15,7 +15,7 @@ const VizheaderMap = () => {
   const selections = [
     { id: 1, name: "Sentiment" },
     { id: 2, name: "Denial Rate" },
-    { id: 3, name: "Agressiveness" },
+    { id: 3, name: "Aggressiveness" },
   ];
 
   const years = [
