@@ -6,18 +6,33 @@ import Link from "next/link";
 type Props = {};
 
 const Nav = (props: Props) => {
-  const navItems = ["Visualizations", "About", "Team", "Samples"];
+  const items = [
+    { title: "Main viz", link: "/" },
+    { title: "Map", link: "/map" },
+    { title: "Scatter Plot", link: "/scatter-plot" },
+    { title: "About", link: "/about" },
+    { title: "Team", link: "/team" },
+    { title: "Samples", link: "/samples" },
+  ];
+  const navItems = [
+    "Map",
+    "Scatter Plot",
+    "Brush & Link",
+    "About",
+    "Team",
+    "Samples",
+  ];
   return (
     <nav className="row-auto text-white w-full flex justify-center h-20">
       <div className="text-white w-full max-w-8xl  border-b border-white border-opacity-20 flex flex-row justify-between items-center">
         <Logo />
         <div className="flex flex-row gap-8 items-center">
-          {navItems.map((navItem) => (
+          {items.map((navItem, id) => (
             <Link
-              href={`/${navItem.toLowerCase()}`}
-              key={navItem}
+              href={navItem.link}
+              key={navItem.link + id}
               className="text-white text-opacity-50 hover:text-opacity-100">
-              {navItem}
+              {navItem.title}
             </Link>
           ))}
         </div>
