@@ -5,13 +5,13 @@ import { useSelection } from "@/app/context/store";
 
 // Sample countries data
 const countriesData = {
-  Bolivia: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
+  Bolivia: { sentiment: 0.1, denial: 0.1, aggressive: 0.05 },
   China: { sentiment: 0.1, denial: 0.9, aggressive: 0.1 },
   // ... other countries
 };
 
 const VisMap = () => {
-  const { selectedCountry } = useSelection();
+  const { selectedCountry, selectedSelection } = useSelection(); // Added selectedSelection
   const mapContainerRef = useRef(null);
 
   useEffect(() => {
@@ -23,16 +23,14 @@ const VisMap = () => {
 
     const createMap = async () => {
       const geoData = await d3.json("geo.json");
-
       if (!geoData) return;
 
       const projection = d3.geoNaturalEarth1().scale(220).translate([480, 350]);
       const pathGenerator = d3.geoPath().projection(projection);
 
-      // Create a color scale (modify this based on your data)
       const colorScale = d3
         .scaleLinear()
-        .domain([0, 1]) // Assuming the data is between 0 and 1
+        .domain([0, 1]) // Assuming data is between 0 and 1
         .range(["#ffffcc", "#800026"]); // Color range
 
       svgElement
@@ -44,25 +42,30 @@ const VisMap = () => {
         .attr("fill", (d) => {
           const countryName = d.properties.name;
           const data = countriesData[countryName];
-          return data ? colorScale(data.sentiment) : "#ccc"; // Use sentiment for color
+          // Check if data exists and use the selectedSelection for coloring
+          if (data) {
+            return colorScale(
+              selectedSelection === "Sentiment" ? data.sentiment : data.denial
+            );
+          }
+          return "#ccc"; // Default color
         })
         .attr("class", "country");
     };
 
     createMap();
 
-    // Cleanup function to remove the svg element on unmount
     return () => {
       if (mapContainerRef.current) {
         d3.select(mapContainerRef.current).select("svg").remove();
       }
     };
-  }, [selectedCountry]); // Dependencies array for useEffect
+  }, [selectedCountry, selectedSelection]); // Add selectedSelection as a dependency
 
   return (
     <div
       ref={mapContainerRef}
-      className="mainViz flex justify-center items-center"></div>
+      className="mainViz flex justify-center items-center bg-white rounded-xl bg-opacity-5"></div>
   );
 };
 
