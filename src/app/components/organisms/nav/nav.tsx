@@ -7,7 +7,7 @@ type Props = {};
 
 const Nav = (props: Props) => {
   const items = [
-    { title: "Main viz", link: "/" },
+    { title: "Brush & Link", link: "/" },
     { title: "Map", link: "/map" },
     { title: "Scatter Plot", link: "/scatter-plot" },
     { title: "About", link: "/about" },

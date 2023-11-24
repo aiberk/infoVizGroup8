@@ -2,12 +2,13 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 import { useSelection } from "@/app/context/store";
+import { countriesData } from "@/app/data/testData";
 
-const countriesData = {
-  Bolivia: { sentiment: 0.1, denial: 0.1, aggressive: 0.9 },
-  China: { sentiment: 0.1, denial: 0.9, aggressive: 0.05 },
-  // ... other countries
-};
+// const countriesData = {
+//   Bolivia: { sentiment: 0.1, denial: 0.1, aggressive: 0.9 },
+//   China: { sentiment: 0.1, denial: 0.9, aggressive: 0.05 },
+//   // ... other countries
+// };
 
 const VisMap = () => {
   const { selectedCountry, selectedSelection } = useSelection();
