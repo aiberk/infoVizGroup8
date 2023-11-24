@@ -13,7 +13,7 @@ export type CountryData = {
  */
 export interface ICountry {
   name: string;
-  svg?: React.FC<React.SVGProps<SVGSVGElement>>;
+  svg: string;
   data?: CountryData[];
 }
 
