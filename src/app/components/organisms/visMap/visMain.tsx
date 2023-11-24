@@ -13,56 +13,64 @@ const VisMap = () => {
     position: { x: 0, y: 0 },
   });
 
+  // Define updateColors function outside of useEffect
+  const updateColors = () => {
+    const colorScale = d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range(["#ffffcc", "#800026"]);
+
+    d3.select(mapContainerRef.current)
+      .selectAll("path")
+      .transition()
+      .duration(500)
+      .attr("fill", (d) => {
+        const countryName = d.properties.name;
+        const data = countriesData[countryName];
+        if (data) {
+          let metricValue;
+          switch (selectedSelection) {
+            case "Sentiment":
+              metricValue = data.sentiment;
+              break;
+            case "Denial Rate":
+              metricValue = data.denial;
+              break;
+            case "Aggressiveness":
+              metricValue = data.aggressive;
+              break;
+            default:
+              metricValue = 0;
+          }
+          return colorScale(metricValue);
+        }
+        return "#ccc";
+      });
+  };
   useEffect(() => {
-    const projection = d3.geoNaturalEarth1().scale(220).translate([480, 350]);
-    const geoGenerator = d3.geoPath().projection(projection);
-
-    const createMap = async () => {
-      const geoData = await d3.json("geo.json");
-      if (!geoData) return;
-
-      // Clear previous SVG to prevent duplication
-      d3.select(mapContainerRef.current).selectAll("svg").remove();
-
-      const svgElement = d3
+    // Create the SVG element only if it doesn't exist
+    let svgElement = d3.select(mapContainerRef.current).select("svg");
+    if (svgElement.empty()) {
+      svgElement = d3
         .select(mapContainerRef.current)
         .append("svg")
         .attr("width", 1000)
         .attr("height", 600);
+    }
 
-      const colorScale = d3
-        .scaleLinear()
-        .domain([0, 1])
-        .range(["#ffffcc", "#800026"]);
+    const projection = d3.geoNaturalEarth1().scale(220).translate([480, 350]);
+    const geoGenerator = d3.geoPath().projection(projection);
 
-      svgElement
-        .selectAll("path")
-        .data(geoData.features)
+    d3.json("geo.json").then((geoData) => {
+      if (!geoData) return;
+
+      const paths = svgElement.selectAll("path").data(geoData.features);
+
+      paths
         .enter()
         .append("path")
+        .merge(paths) // Combine enter and update selections
         .attr("d", geoGenerator)
-        .attr("fill", (d) => {
-          const countryName = d.properties.name;
-          const data = countriesData[countryName];
-          if (data) {
-            let metricValue;
-            switch (selectedSelection) {
-              case "Sentiment":
-                metricValue = data.sentiment;
-                break;
-              case "Denial Rate":
-                metricValue = data.denial;
-                break;
-              case "Aggressiveness":
-                metricValue = data.aggressive;
-                break;
-              default:
-                metricValue = 0;
-            }
-            return colorScale(metricValue);
-          }
-          return "#ccc";
-        })
         .attr("class", "country")
         .on("mouseover", (event, d) => {
           const countryName = d.properties.name;
@@ -85,16 +93,55 @@ const VisMap = () => {
         .on("mouseout", () => {
           setTooltip({ show: false, content: "", position: { x: 0, y: 0 } });
         });
-    };
 
-    createMap();
+      updateColors();
+    });
+
+    function updateColors() {
+      const colorScale = d3
+        .scaleLinear()
+        .domain([0, 1])
+        .range(["#ffffcc", "#800026"]);
+
+      svgElement
+        .selectAll("path")
+        .transition()
+        .duration(500)
+        .attr("fill", (d) => {
+          const countryName = d.properties.name;
+          const data = countriesData[countryName];
+          if (data) {
+            let metricValue;
+            switch (selectedSelection) {
+              case "Sentiment":
+                metricValue = data.sentiment;
+                break;
+              case "Denial Rate":
+                metricValue = data.denial;
+                break;
+              case "Aggressiveness":
+                metricValue = data.aggressive;
+                break;
+              default:
+                metricValue = 0;
+            }
+            return colorScale(metricValue);
+          }
+          return "#ccc";
+        });
+    }
 
     return () => {
+      // Cleanup
       if (mapContainerRef.current) {
         d3.select(mapContainerRef.current).select("svg").remove();
       }
     };
-  }, [selectedCountry, selectedSelection]);
+  }, []);
+
+  useEffect(() => {
+    updateColors();
+  }, [selectedSelection]);
 
   return (
     <div
@@ -110,6 +157,7 @@ const VisMap = () => {
             backgroundColor: "black",
             padding: "0.5rem",
             borderRadius: "0.2rem",
+            pointerEvents: "none",
           }}
           className="tooltip">
           {tooltip.content}
