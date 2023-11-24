@@ -19,7 +19,6 @@ export default function Home() {
   }, [selectedCountry]);
   return (
     <main className="row-auto flex-grow flex flex-col items-center">
-      <div>Current Country: {selectedCountry}</div>
       <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
         <Vizheader />
         <VizLegend />
