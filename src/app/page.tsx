@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useEffect } from "react";
 import Image from "next/image";
 
 import Vizheader from "@/app/components/organisms/vizHeader/vizheader";
@@ -8,11 +9,17 @@ import VizLegend from "@/app/components/organisms/vizLegend/vizLegend";
 import VizTimeline from "@/app/components/organisms/vizTimeLine/vizTimeline";
 import VisMain from "@/app/components/organisms/vizMain/visMain";
 import data from "@/app/data/sampleData.json";
+import { useSelection } from "@/app/context/store";
 
 export default function Home() {
-  console.log(data.sf);
+  const { selectedCountry, setSelectedCountry } = useSelection();
+  // Test setting and getting the context value
+  useEffect(() => {
+    console.log("Current selected country:", selectedCountry);
+  }, [selectedCountry]);
   return (
     <main className="row-auto flex-grow flex flex-col items-center">
+      <div>Current Country: {selectedCountry}</div>
       <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
         <Vizheader />
         <VizLegend />
