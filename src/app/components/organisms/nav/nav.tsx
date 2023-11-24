@@ -9,9 +9,8 @@ const Nav = (props: Props) => {
   const items = [
     { title: "Brush & Link", link: "/" },
     { title: "Map", link: "/map" },
-    { title: "Scatter Plot", link: "/scatter-plot" },
+    // { title: "Scatter Plot", link: "/scatter-plot" },
     { title: "About", link: "/about" },
-    { title: "Team", link: "/team" },
     { title: "Samples", link: "/samples" },
   ];
   const navItems = [

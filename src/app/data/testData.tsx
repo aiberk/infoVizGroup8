@@ -1,3 +1,4 @@
+// Name: {svg: string; data:{year:data{sentiment:number; denial:number; aggressive:number;}}}}
 export const countriesData = {
   Bolivia: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
   China: { sentiment: 0.5, denial: 0.2, aggressive: 0.1 },
