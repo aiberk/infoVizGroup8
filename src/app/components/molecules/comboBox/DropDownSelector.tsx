@@ -1,15 +1,17 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 
 type ItemProps<T> = {
   items: T[];
   displayKey: keyof T;
+  onSelectionChange: (selectedItem: T) => void; // Callback function
 };
 
 export default function DropDownSelector<T extends { id: number }>({
   items,
   displayKey,
+  onSelectionChange,
 }: ItemProps<T>) {
   const [selected, setSelected] = useState<T>(items[0]);
   const [query, setQuery] = useState<string>("");
@@ -24,8 +26,12 @@ export default function DropDownSelector<T extends { id: number }>({
             .includes(query.toLowerCase().replace(/\s+/g, ""))
         );
 
+  const handleSelectionChange = (value: T) => {
+    setSelected(value);
+    onSelectionChange(value); // Notify parent component
+  };
   return (
-    <Combobox value={selected} onChange={setSelected}>
+    <Combobox value={selected} onChange={handleSelectionChange}>
       <div className="relative mt-1 w-1/8">
         <div className="relative w-full cursor-default overflow-hidden rounded-lg bg-black text-left shadow-md focus:outline-none focus-visible:ring-2 focus-visible:ring-white/75 focus-visible:ring-offset-2 focus-visible:ring-offset-blue-300 sm:text-sm">
           <Combobox.Input
