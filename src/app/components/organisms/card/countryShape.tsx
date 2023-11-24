@@ -21,7 +21,7 @@ const CountryShape = ({ countryName }) => {
         .join("path")
         .attr("d", pathGenerator)
         .attr("fill", (d) =>
-          d.properties.name === countryName ? "#ffcc00" : "#ddd"
+          d.properties.name === countryName ? "#ffcc00" : "#dddd"
         ) // Use the countryName prop to determine which country to highlight
         .attr("stroke", "#fff")
         .attr("stroke-width", 0.5);
