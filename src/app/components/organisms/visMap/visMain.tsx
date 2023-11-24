@@ -106,6 +106,10 @@ const VisMap = () => {
             left: tooltip.position.x,
             top: tooltip.position.y,
             position: "absolute",
+            color: "white",
+            backgroundColor: "black",
+            padding: "0.5rem",
+            borderRadius: "0.2rem",
           }}
           className="tooltip">
           {tooltip.content}
