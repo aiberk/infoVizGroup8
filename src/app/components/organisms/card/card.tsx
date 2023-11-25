@@ -16,10 +16,7 @@ function Card({ country }: Props) {
           <div key={index} className="flex flex-col ">
             <p className="prose mb-6 leading-relaxed">
               The average{" "}
-              <span className="font-bold text-sky-400">
-                {" "}
-                climante sentiment
-              </span>{" "}
+              <span className="font-bold text-sky-400"> climate sentiment</span>{" "}
               of <span className="font-bold">{country.name}</span> has a value
               of{" "}
               <span className="font-bold text-sky-400">
