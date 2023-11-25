@@ -2,17 +2,11 @@
 import React from "react";
 import DropDownSelector from "@/app/components/molecules/comboBox/DropDownSelector";
 import { useSelection } from "@/app/context/store";
-import { countries, selections } from "@/app/data/data";
+import { countries, selections, years } from "@/app/data/data";
 
 const Vizheader = () => {
   const { setSelectedCountry, setSelectedSelection, setSelectedYear } =
     useSelection();
-
-  const years = [
-    { id: 1, name: "1990" },
-    { id: 2, name: "2000" },
-    { id: 3, name: "2020" },
-  ];
 
   return (
     <div className="header  flex flex-row justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
