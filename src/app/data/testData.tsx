@@ -1,4 +1,57 @@
 // Name: {svg: string; data:{year:data{sentiment:number; denial:number; aggressive:number;}}}}
+
+export const countriesDataTime = {
+  Bolivia: [
+    { year: 2010, sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
+    { year: 2011, sentiment: 0.32, denial: 0.11, aggressive: 0.04 },
+    { year: 2012, sentiment: 0.34, denial: 0.12, aggressive: 0.06 },
+    { year: 2013, sentiment: 0.36, denial: 0.14, aggressive: 0.05 },
+    { year: 2014, sentiment: 0.31, denial: 0.13, aggressive: 0.07 },
+    { year: 2015, sentiment: 0.33, denial: 0.15, aggressive: 0.06 },
+    { year: 2016, sentiment: 0.35, denial: 0.14, aggressive: 0.08 },
+    { year: 2017, sentiment: 0.37, denial: 0.12, aggressive: 0.09 },
+    { year: 2018, sentiment: 0.4, denial: 0.1, aggressive: 0.1 },
+    { year: 2019, sentiment: 0.42, denial: 0.08, aggressive: 0.11 },
+  ],
+  China: [
+    { year: 2010, sentiment: 0.5, denial: 0.2, aggressive: 0.1 },
+    { year: 2011, sentiment: 0.52, denial: 0.19, aggressive: 0.11 },
+    { year: 2012, sentiment: 0.53, denial: 0.21, aggressive: 0.12 },
+    { year: 2013, sentiment: 0.54, denial: 0.22, aggressive: 0.13 },
+    { year: 2014, sentiment: 0.56, denial: 0.24, aggressive: 0.14 },
+    { year: 2015, sentiment: 0.58, denial: 0.23, aggressive: 0.16 },
+    { year: 2016, sentiment: 0.6, denial: 0.25, aggressive: 0.17 },
+    { year: 2017, sentiment: 0.62, denial: 0.26, aggressive: 0.18 },
+    { year: 2018, sentiment: 0.64, denial: 0.27, aggressive: 0.19 },
+    { year: 2019, sentiment: 0.66, denial: 0.28, aggressive: 0.2 },
+  ],
+  Brazil: [
+    { year: 2010, sentiment: 0.4, denial: 0.15, aggressive: 0.08 },
+    { year: 2011, sentiment: 0.42, denial: 0.16, aggressive: 0.07 },
+    { year: 2012, sentiment: 0.44, denial: 0.17, aggressive: 0.09 },
+    { year: 2013, sentiment: 0.46, denial: 0.18, aggressive: 0.1 },
+    { year: 2014, sentiment: 0.48, denial: 0.19, aggressive: 0.11 },
+    { year: 2015, sentiment: 0.5, denial: 0.2, aggressive: 0.12 },
+    { year: 2016, sentiment: 0.52, denial: 0.21, aggressive: 0.13 },
+    { year: 2017, sentiment: 0.54, denial: 0.22, aggressive: 0.14 },
+    { year: 2018, sentiment: 0.56, denial: 0.23, aggressive: 0.15 },
+    { year: 2019, sentiment: 0.58, denial: 0.24, aggressive: 0.16 },
+  ],
+  Canada: [
+    { year: 2010, sentiment: 0.7, denial: 0.05, aggressive: 0.03 },
+    { year: 2011, sentiment: 0.72, denial: 0.06, aggressive: 0.04 },
+    { year: 2012, sentiment: 0.74, denial: 0.07, aggressive: 0.05 },
+    { year: 2013, sentiment: 0.76, denial: 0.08, aggressive: 0.06 },
+    { year: 2014, sentiment: 0.78, denial: 0.09, aggressive: 0.07 },
+    { year: 2015, sentiment: 0.8, denial: 0.1, aggressive: 0.08 },
+    { year: 2016, sentiment: 0.82, denial: 0.11, aggressive: 0.09 },
+    { year: 2017, sentiment: 0.84, denial: 0.12, aggressive: 0.1 },
+    { year: 2018, sentiment: 0.86, denial: 0.13, aggressive: 0.11 },
+    { year: 2019, sentiment: 0.88, denial: 0.14, aggressive: 0.12 },
+  ],
+  // ... Additional countries as needed
+};
+
 export const countriesData = {
   Bolivia: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
   China: { sentiment: 0.5, denial: 0.2, aggressive: 0.1 },
