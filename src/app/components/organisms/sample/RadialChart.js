@@ -67,7 +67,7 @@ class RadialChart extends Component {
           {this.state.tempAnnotations.map((d, i) => (
             <g key={i}>
               <circle r={d.r} fill="none" stroke="#999" />
-              <text y={-d.r - 2} textAnchor="middle">
+              <text y={-d.r - 2} textAnchor="middle" fill="white">
                 {d.temp}℉
               </text>
             </g>
