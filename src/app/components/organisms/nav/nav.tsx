@@ -11,7 +11,6 @@ const Nav = (props: Props) => {
     { title: "Map", link: "/map" },
     // { title: "Scatter Plot", link: "/scatter-plot" },
     { title: "About", link: "/about" },
-    { title: "Samples", link: "/samples" },
   ];
   const navItems = [
     "Map",
