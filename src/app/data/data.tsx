@@ -14,6 +14,21 @@ export const countries = [
     svg: "us.svg",
     data: [{ year: 2018, sentiment: 0.5, denial: 0.2, aggressive: 0.1 }],
   },
+  {
+    name: "United Kingdom",
+    svg: "us.svg",
+    data: [{ year: 2018, sentiment: 0.5, denial: 0.2, aggressive: 0.1 }],
+  },
+  {
+    name: "Puerto Rico",
+    svg: "us.svg",
+    data: [{ year: 2018, sentiment: 0.5, denial: 0.2, aggressive: 0.1 }],
+  },
+  {
+    name: "Israel",
+    svg: "us.svg",
+    data: [{ year: 2018, sentiment: 0.5, denial: 0.2, aggressive: 0.1 }],
+  },
   // Added countries
   {
     name: "Germany",

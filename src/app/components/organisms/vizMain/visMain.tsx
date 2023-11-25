@@ -42,10 +42,12 @@ const VisMain = () => {
         {/* Pass the found country data to the Card component */}
         <Card country={selectedCountryData} />
       </div>
-      <div className="cardanmapMap  h-full bg-cardColor flex items-center justify-center rounded-lg">
+      <div className="cardanmapMap px-10  flex-col  h-full bg-cardColor flex items-center justify-center rounded-lg">
+        <div className="w-full "> Temperatures</div>
         <BarChart data={data} range={range} updateRange={updateRange} />
       </div>
-      <div className="cardanmapViz  h-full bg-cardColor flex items-center justify-center rounded-lg">
+      <div className="cardanmapViz px-10  flex-col h-full bg-cardColor flex items-center justify-center rounded-lg">
+        <div className="w-full "> Sentiment</div>
         <RadialChart data={data} range={range} />
       </div>
     </div>
