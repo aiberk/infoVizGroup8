@@ -38,7 +38,7 @@ export const SelectionProvider: React.FC<SelectionProviderProps> = ({
 }) => {
   const [selectedCountry, setSelectedCountry] = useState("Bolivia");
   const [selectedSelection, setSelectedSelection] = useState("Sentiment");
-  const [selectedYear, setSelectedYear] = useState("2020");
+  const [selectedYear, setSelectedYear] = useState("2010");
 
   // ... Any logic to handle changes in these states
 
