@@ -8,7 +8,7 @@ const VizheaderMap = () => {
     useSelection();
 
   return (
-    <div className="header font-serif flex flex-row justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
+    <div className="header flex flex-row justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
       Climate{" "}
       <DropDownSelector
         items={selections}
