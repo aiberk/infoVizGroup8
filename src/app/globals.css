@@ -19,7 +19,7 @@ body {
   background-position: left bottom, right top;
   min-height: 100vh;
   height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
   /* padding-top: 95px; */
 }
 
@@ -117,4 +117,9 @@ body {
 }
 .cardanmapViz {
   grid-area: 4 / 4 / 7 / 6;
+}
+
+.text-block {
+  flex: 1; /* Each text block will take equal space */
+  /* Additional styling as needed */
 }
