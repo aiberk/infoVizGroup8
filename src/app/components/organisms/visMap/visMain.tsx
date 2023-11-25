@@ -5,7 +5,7 @@ import { useSelection } from "@/app/context/store";
 import { countriesData } from "@/app/data/testData";
 
 const VisMap = () => {
-  const { selectedCountry, selectedSelection } = useSelection();
+  const { selectedYear, selectedSelection } = useSelection();
   const mapContainerRef = useRef(null);
   const [tooltip, setTooltip] = useState({
     show: false,

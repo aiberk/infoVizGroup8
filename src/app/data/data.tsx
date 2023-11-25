@@ -1,3 +1,9 @@
+export const selections = [
+  { id: 1, name: "Sentiment" },
+  { id: 2, name: "Denial Rate" },
+  { id: 3, name: "Agressiveness" },
+];
+
 export const countries = [
   {
     name: "Bolivia",

@@ -2,23 +2,11 @@
 import React from "react";
 import DropDownSelector from "@/app/components/molecules/comboBox/DropDownSelector";
 import { useSelection } from "@/app/context/store";
-import { countries } from "@/app/data/data";
+import { countries, selections } from "@/app/data/data";
 
 const Vizheader = () => {
   const { setSelectedCountry, setSelectedSelection, setSelectedYear } =
     useSelection();
-
-  // const countries = [
-  //   { id: 1, name: "Bolivia" },
-  //   { id: 2, name: "United States" },
-  //   { id: 3, name: "China" },
-  // ];
-
-  const selections = [
-    { id: 1, name: "Sentiment" },
-    { id: 2, name: "Denial Rate" },
-    { id: 3, name: "Agressiveness" },
-  ];
 
   const years = [
     { id: 1, name: "1990" },
