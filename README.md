@@ -1,5 +1,14 @@
 # infoVizGroup8
 
+## Contributtion process
+
+- Pull from master
+- Create a new branch with the name of the feature you are working on
+- Commit and push to your branch
+- Create a pull request to merge your branch into master
+- Add code reviwers to your pull request
+- Once your code is approved, merge your branch into master
+
 ## Data Model
 
 CountriesData : {
