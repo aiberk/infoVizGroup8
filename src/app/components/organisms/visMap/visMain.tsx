@@ -67,7 +67,6 @@ const VisMap = () => {
             case "Aggressiveness":
               metricValue = yearData.aggressive;
               break;
-            // No default needed, metricValue already set to 0
           }
           return colorScale(metricValue);
         }

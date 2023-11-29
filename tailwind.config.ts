@@ -12,7 +12,7 @@ const config: Config = {
         cardColor: "#20252D",
       },
       maxWidth: {
-        "8xl": "1500px", // or any value you prefer
+        "8xl": "1500px",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

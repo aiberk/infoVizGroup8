@@ -12,7 +12,6 @@ import { useSelection } from "@/app/context/store";
 
 export default function Home() {
   const { selectedCountry, setSelectedCountry } = useSelection();
-  // Test setting and getting the context value
   useEffect(() => {
     console.log("Current selected country:", selectedCountry);
   }, [selectedCountry]);

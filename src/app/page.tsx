@@ -13,10 +13,7 @@ import { useSelection } from "@/app/context/store";
 
 export default function Home() {
   const { selectedCountry, setSelectedCountry } = useSelection();
-  // Test setting and getting the context value
-  useEffect(() => {
-    console.log("Current selected country:", selectedCountry);
-  }, [selectedCountry]);
+
   return (
     <main className="row-auto flex-grow flex flex-col items-center">
       <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">

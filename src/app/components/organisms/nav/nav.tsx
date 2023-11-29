@@ -9,17 +9,9 @@ const Nav = (props: Props) => {
   const items = [
     { title: "Brush & Link", link: "/" },
     { title: "Map", link: "/map" },
-    // { title: "Scatter Plot", link: "/scatter-plot" },
     { title: "About", link: "/about" },
   ];
-  const navItems = [
-    "Map",
-    "Scatter Plot",
-    "Brush & Link",
-    "About",
-    "Team",
-    "Samples",
-  ];
+
   return (
     <nav className="row-auto text-white w-full flex justify-center h-20">
       <div className="text-white w-full max-w-8xl  border-b border-white border-opacity-20 flex flex-row justify-between items-center">

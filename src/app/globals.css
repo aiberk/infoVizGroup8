@@ -23,52 +23,28 @@ body {
   /* padding-top: 95px; */
 }
 
-/* .vizParent {
-  display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; 
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr; 
-  grid-column-gap: 1rem;
-  grid-row-gap: 1rem;
-}
-
-.header {
-  grid-area: 1 / 1 / 2 / 6; 
-}
-.colorScale {
-  grid-area: 2 / 1 / 6 / 2; 
-}
-.legend {
-  grid-area: 2 / 5 / 6 / 6; 
-}
-.timeline {
-  grid-area: 5 / 2 / 6 / 5; 
-}
-.mainViz {
-  grid-area: 2 / 2 / 6 / 5; 
-} */
-
 .vizParent {
   display: grid;
-  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr; /* Adjust columns */
-  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr; /* Adjust rows */
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 0.5fr 1fr 1fr 1fr 0.5fr;
   grid-column-gap: 1rem;
   grid-row-gap: 1rem;
 }
 
 .header {
-  grid-area: 1 / 1 / 2 / 6; /* Half-height */
+  grid-area: 1 / 1 / 2 / 6;
 }
 .colorScale {
-  grid-area: 2 / 1 / 6 / 2; /* Half-width */
+  grid-area: 2 / 1 / 6 / 2;
 }
 .legend {
-  grid-area: 2 / 5 / 6 / 6; /* Half-width */
+  grid-area: 2 / 5 / 6 / 6;
 }
 .timeline {
-  grid-area: 5 / 2 / 6 / 5; /* Half-height */
+  grid-area: 5 / 2 / 6 / 5;
 }
 .mainViz {
-  grid-area: 2 / 2 / 5 / 5; /* Adjusted to stop before the timeline */
+  grid-area: 2 / 2 / 5 / 5;
 }
 
 .part {
@@ -120,6 +96,5 @@ body {
 }
 
 .text-block {
-  flex: 1; /* Each text block will take equal space */
-  /* Additional styling as needed */
+  flex: 1;
 }

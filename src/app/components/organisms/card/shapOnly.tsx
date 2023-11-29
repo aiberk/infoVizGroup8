@@ -1,14 +1,13 @@
 //@ts-nocheck
 import React, { useRef, useEffect } from "react";
 import * as d3 from "d3";
-import geoJsonData from "@/app/data/geo.json"; // Ensure this path is correct
+import geoJsonData from "@/app/data/geo.json";
 
 const CountryShape = () => {
   const ref = useRef(null);
 
   useEffect(() => {
     if (ref.current) {
-      // Adjust this line to match the structure of your GeoJSON data
       const countryFeature = geoJsonData.features.find(
         (f) => f.properties.name === "Bolivia"
       );
@@ -22,18 +21,12 @@ const CountryShape = () => {
           .data([countryFeature])
           .join("path")
           .attr("d", pathGenerator)
-          .attr("fill", "currentColor"); // You can set a class or direct style here for the fill color
+          .attr("fill", "currentColor");
       }
     }
-  }, []); // This effect runs once on mount and not on every render
+  }, []);
 
-  return (
-    <svg
-      ref={ref}
-      viewBox="0 0 420 250" // Adjust the viewBox depending on your sizing needs
-      className="w-full h-auto"
-    />
-  );
+  return <svg ref={ref} viewBox="0 0 420 250" className="w-full h-auto" />;
 };
 
 export default CountryShape;

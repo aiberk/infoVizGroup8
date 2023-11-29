@@ -74,8 +74,6 @@ function Card({ country, selection }: Props) {
           than the average of the other countries.
           {/* <br /> This means, A, B, and C. */}
         </p>
-
-        {/* Additional elements and mappings, if necessary */}
       </div>
       <div className="w-full mt-5 max-h-10 pb-5">
         <CountryShape countryName={country.name} />

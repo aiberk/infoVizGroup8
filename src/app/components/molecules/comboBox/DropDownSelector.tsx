@@ -5,7 +5,7 @@ import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
 type ItemProps<T> = {
   items: T[];
   displayKey: keyof T;
-  onSelectionChange: (selectedItem: T) => void; // Callback function
+  onSelectionChange: (selectedItem: T) => void;
 };
 
 export default function DropDownSelector<T extends { id: number }>({
@@ -28,7 +28,7 @@ export default function DropDownSelector<T extends { id: number }>({
 
   const handleSelectionChange = (value: T) => {
     setSelected(value);
-    onSelectionChange(value); // Notify parent component
+    onSelectionChange(value);
   };
   return (
     <Combobox value={selected} onChange={handleSelectionChange}>

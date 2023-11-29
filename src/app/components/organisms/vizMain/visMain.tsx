@@ -1,19 +1,17 @@
 import React, { useState, useEffect } from "react";
 import Card from "@/app/components/organisms/card/card";
 import { countries, selections } from "@/app/data/data";
-import { useSelection } from "@/app/context/store"; // Assuming this is the path to your context
+import { useSelection } from "@/app/context/store";
 
-import RadialChart from "@/app/components/organisms/sample/RadialChart";
+import RadialChart from "@/app/components/organisms/d3/RadialChart";
 import { sf as sfData, ny as nyData } from "@/app/data/sampleData.json";
-import BarChart from "@/app/components/organisms/sample/BarChart";
+import BarChart from "@/app/components/organisms/d3/BarChart";
 
 type City = "sf" | "ny";
 
 const VisMain = () => {
-  const [city, setCity] = useState<City>("sf"); // city whose temperatures to show
-  const [range, setRange] = useState<Date[]>([]); // time range set by the brush
-
-  // Process the imported data (convert dates)
+  const [city, setCity] = useState<City>("sf");
+  const [range, setRange] = useState<Date[]>([]);
   const temps = {
     sf: sfData.map((day) => ({ ...day, date: new Date(day.date) })),
     ny: nyData.map((day) => ({ ...day, date: new Date(day.date) })),
@@ -29,9 +27,8 @@ const VisMain = () => {
 
   const data = temps[city];
 
-  const { selectedCountry, selectedSelection } = useSelection(); // Use the context to get the selected country
+  const { selectedCountry, selectedSelection } = useSelection();
 
-  // Find the country data based on the selected country from the context
   const selectedCountryData =
     countries.find((country) => country.name === selectedCountry) ||
     countries[0];
@@ -43,7 +40,6 @@ const VisMain = () => {
   return (
     <div className="mainViz flex justify-center items-center cardandmap">
       <div className="cardanmapCard h-full">
-        {/* Pass the found country data to the Card component */}
         <Card
           country={selectedCountryData}
           selection={selectedSelectionData.name}

@@ -26,12 +26,6 @@ const Vizheader = () => {
           setSelectedCountry(selectedItem.name)
         }
       />
-      {/* the year
-      <DropDownSelector
-        items={years}
-        displayKey="name"
-        onSelectionChange={(selectedItem) => setSelectedYear(selectedItem.name)}
-      /> */}
     </div>
   );
 };
