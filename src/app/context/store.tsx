@@ -15,10 +15,9 @@ interface SelectionContextType {
   setSelectedYear: (value: string) => void;
 }
 interface SelectionProviderProps {
-  children: ReactNode; // Type for children prop
+  children: ReactNode;
 }
 
-// Provide a default value for the context with the correct types
 const defaultContextValue: SelectionContextType = {
   selectedCountry: "Bolivia",
   setSelectedCountry: () => {},
@@ -39,8 +38,6 @@ export const SelectionProvider: React.FC<SelectionProviderProps> = ({
   const [selectedCountry, setSelectedCountry] = useState("Bolivia");
   const [selectedSelection, setSelectedSelection] = useState("Sentiment");
   const [selectedYear, setSelectedYear] = useState("2010");
-
-  // ... Any logic to handle changes in these states
 
   return (
     <SelectionContext.Provider

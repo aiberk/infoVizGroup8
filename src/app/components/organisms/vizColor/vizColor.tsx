@@ -20,7 +20,6 @@ const VizColor = (props: Props) => {
               "bg-sky-500": color === 5,
               "bg-sky-600": color === 6,
               "bg-sky-700": color === 7,
-              // Add more cases as needed
             })}></div>
         ))}
         <div className="text-xs mt-2">100%</div>

@@ -79,5 +79,4 @@ export const countries = [
     svg: "za.svg",
     data: [{ year: 2018, sentiment: 0.5, denial: 0.25, aggressive: 0.1 }],
   },
-  // ... add as many as needed
 ];

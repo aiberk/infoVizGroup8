@@ -9,7 +9,7 @@ class BarChart extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bars: [], // array of rects
+      bars: [],
     };
     this.xAxisRef = React.createRef();
     this.yAxisRef = React.createRef();

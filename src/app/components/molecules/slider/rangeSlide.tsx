@@ -10,9 +10,7 @@ const RangeSlider: React.FC = () => {
       const min = parseInt(rangeRef.current.min);
       const max = parseInt(rangeRef.current.max);
       const percent = ((value - min) / (max - min)) * 100;
-
-      // Calculate the offset based on thumb width
-      const thumbWidth = 20; // Approximate width of the thumb
+      const thumbWidth = 20;
       const offset = (thumbWidth * percent) / 100 - thumbWidth / 2;
 
       thumbRef.current.style.left = `calc(${percent}% - ${offset}px)`;
