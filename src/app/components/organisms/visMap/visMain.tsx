@@ -83,7 +83,7 @@ const VisMap = () => {
         .attr("width", 1000)
         .attr("height", 600);
 
-      const projection = d3.geoNaturalEarth1().scale(220).translate([480, 350]);
+      const projection = d3.geoMercator().scale(150).translate([480, 420]);
       const geoGenerator = d3.geoPath().projection(projection);
 
       const geoDataPromise = d3.json("geo.json");
