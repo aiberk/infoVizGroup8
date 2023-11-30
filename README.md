@@ -23,7 +23,7 @@ Big map - `src/app/components/organisms/vizMap/vizMain.tsx`
 
 Bar chart - `src/app/components/organisms/d3/BarChart.tsx`
 
-Radial chart - `src/app/components/organisms/d3/RadialChart.tsx`
+Linked Bar chart - `src/app/components/organisms/d3/LinkedChart.tsx`
 
 ## Contributtion process
 
