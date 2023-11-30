@@ -1,4 +1,10 @@
 //@ts-nocheck
+
+// This file is based on the following sources:
+// - https://geojson-maps.ash.ms/
+// - https://github.com/xihai01/d3-mapping-with-react/tree/main
+// - https://www.d3indepth.com/geographic/
+
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import { useSelection } from "@/app/context/store";
