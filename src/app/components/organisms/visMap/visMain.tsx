@@ -5,6 +5,7 @@ import { useSelection } from "@/app/context/store";
 import { countriesData } from "@/app/data/testData";
 
 const VisMap = () => {
+  // Controls the maps state (year, selection)
   const { selectedYear, selectedSelection } = useSelection();
   const mapContainerRef = useRef(null);
   const [tooltip, setTooltip] = useState({
@@ -13,11 +14,13 @@ const VisMap = () => {
     position: { x: 0, y: 0 },
   });
 
+  // Create a color scale
   const colorScale = d3
     .scaleLinear()
     .domain([0, 1])
     .range(["#ffffcc", "#800026"]);
 
+    // Generate the tooltip content
   const generateTooltipContent = (countryName) => {
     const yearData = countriesData[countryName]
       ? countriesData[countryName][selectedYear]
@@ -45,6 +48,7 @@ const VisMap = () => {
     return `${countryName}: ${metricValue}`;
   };
 
+  // Update the colors of the map when a selection is changed
   const updateColors = () => {
     d3.select(mapContainerRef.current)
       .selectAll("path")
@@ -74,6 +78,7 @@ const VisMap = () => {
       });
   };
 
+  // Creates the map and listens for changes in the selection
   useEffect(() => {
     let svgElement = d3.select(mapContainerRef.current).select("svg");
     if (svgElement.empty()) {
@@ -134,6 +139,7 @@ const VisMap = () => {
   }, [selectedSelection, selectedYear]);
 
   return (
+    // Actual map rendering happens here
     <div
       ref={mapContainerRef}
       className="mainViz flex justify-center items-center bg-white rounded-xl bg-opacity-5">
