@@ -1,3 +1,7 @@
+// Created using following tutorials
+// https://kamibrumi.medium.com/getting-started-with-react-d3-js-d86ccea05f08
+
+
 import React, { Component } from "react";
 import * as d3 from "d3";
 
@@ -6,24 +10,31 @@ const height = 200;
 const margin = { top: 20, right: 5, bottom: 20, left: 35 };
 
 class BarChart extends Component {
+  //Constructor for the BarChart component
   constructor(props) {
     super(props);
     this.state = {
       bars: [],
     };
+
+    //Create refs for the x and y axis
     this.xAxisRef = React.createRef();
     this.yAxisRef = React.createRef();
     this.brushRef = React.createRef();
 
+    // Draw the x and y axis
     this.xAxis = d3.axisBottom().tickFormat(d3.timeFormat("%b"));
     this.yAxis = d3.axisLeft().tickFormat((d) => `${d}℉`);
   }
 
+  //This function updates the chart when the country and subject selector change
   static getDerivedStateFromProps(nextProps, prevState) {
     const { data, range } = nextProps;
     if (!data) return {};
 
     const extent = d3.extent(data, (d) => d.date);
+
+    // Create X and Y Scales
     const xScale = d3
       .scaleTime()
       .domain(extent)
@@ -35,12 +46,14 @@ class BarChart extends Component {
       .domain([Math.min(min, 0), max])
       .range([height - margin.bottom, margin.top]);
 
+    // Create color scale
     const colorExtent = d3.extent(data, (d) => d.avg).reverse();
     const colorScale = d3
       .scaleSequential()
       .domain(colorExtent)
       .interpolator(d3.interpolateRdYlBu);
 
+      // Create bars
     const bars = data.map((d) => {
       const isColored =
         !range.length || (range[0] <= d.date && d.date <= range[1]);
@@ -55,6 +68,7 @@ class BarChart extends Component {
     return { bars, xScale, yScale };
   }
 
+  // Keep track of brushing and send data to the parent component
   componentDidMount() {
     this.brush = d3
       .brushX()
@@ -66,6 +80,7 @@ class BarChart extends Component {
     d3.select(this.brushRef.current).call(this.brush);
   }
 
+  // Update graph when brushed
   componentDidUpdate() {
     this.xAxis.scale(this.state.xScale);
     d3.select(this.xAxisRef.current).call(this.xAxis);
@@ -73,6 +88,7 @@ class BarChart extends Component {
     d3.select(this.yAxisRef.current).call(this.yAxis);
   }
 
+  // This function updates the range when the brush is used
   brushEnd = (event) => {
     const selection = event.selection;
     if (!selection) {
@@ -84,6 +100,7 @@ class BarChart extends Component {
     this.props.updateRange(range);
   };
 
+  // Render Everything
   render() {
     return (
       <svg width={width} height={height}>
