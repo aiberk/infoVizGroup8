@@ -1,5 +1,8 @@
 # infoVizGroup8
 
+## Live Demo Link
+https://info-viz-group8.vercel.app/
+
 ## D3.js paths for submission
 Small map - `src/app/components/organisms/card/countryShape.tsx`
 Big map - `src/app/components/organisms/vizMap/vizMain.tsx`
