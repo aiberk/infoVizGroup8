@@ -1,5 +1,12 @@
 # infoVizGroup8
 
+## D3.js paths for submission
+Small map - `src/app/components/organisms/card/countryShape.tsx`
+Big map - `src/app/components/organisms/vizMap/vizMain.tsx`
+
+Bar chart - `src/app/components/organisms/d3/BarChart.tsx`
+Radial chart - `src/app/components/organisms/d3/RadialChart.tsx`
+
 ## Contributtion process
 
 - Pull from master
