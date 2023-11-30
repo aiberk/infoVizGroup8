@@ -1,3 +1,7 @@
+// Created using following tutorials and code.
+//https://livebook.manning.com/book/d3js-in-action-second-edition/chapter-9/v-6/141
+// https://kamibrumi.medium.com/getting-started-with-react-d3-js-d86ccea05f08
+//https://imneo.medium.com/building-a-d3js-dashboard-with-react-in-2023-93a0324c7469
 import React, { Component } from "react";
 import * as d3 from "d3";
 
