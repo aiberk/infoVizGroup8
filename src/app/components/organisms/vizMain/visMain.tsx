@@ -3,9 +3,9 @@ import Card from "@/app/components/organisms/card/card";
 import { countries, selections } from "@/app/data/data";
 import { useSelection } from "@/app/context/store";
 
-import RadialChart from "@/app/components/organisms/d3/RadialChart";
 import { sf as sfData, ny as nyData } from "@/app/data/sampleData.json";
 import BarChart from "@/app/components/organisms/d3/BarChart";
+import LinkedChart from "@/app/components/organisms/d3/LinkedChart";
 
 type City = "sf" | "ny";
 
@@ -51,7 +51,7 @@ const VisMain = () => {
       </div>
       <div className="cardanmapViz px-10  flex-col h-full bg-cardColor flex items-center justify-center rounded-lg">
         <div className="w-full "> Sentiment</div>
-        <RadialChart data={data} range={range} />
+        <LinkedChart data={data} range={range} />
       </div>
     </div>
   );
