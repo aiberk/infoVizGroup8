@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import { SelectionProvider, useSelection } from "@/app/context/store";
 import "./globals.css";
 import Nav from "@/app/components/organisms/nav/nav";
-import Footer from "@/app/components/organisms/footer/footer";
+import ForkBanner from "@/app/components/organisms/forkGithub/forkBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -21,6 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className=" px-2 flex flex-col">
+        <ForkBanner />
         <Nav />
         <SelectionProvider>{children}</SelectionProvider>
       </body>
