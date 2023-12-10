@@ -4,25 +4,40 @@ import { useSelection } from "@/app/context/store";
 import { countries, selections, years } from "@/app/data/data";
 
 const VizheaderMap = () => {
-  const { setSelectedCountry, setSelectedSelection, setSelectedYear } =
-    useSelection();
+  const {
+    setSelectedCountry,
+    setSelectedSelection,
+    setSelectedYear,
+    selectedSelection,
+  } = useSelection();
 
   return (
-    <div className="header flex flex-row justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
-      Climate{" "}
-      <DropDownSelector
-        items={selections}
-        displayKey="name"
-        onSelectionChange={(selectedItem) =>
-          setSelectedSelection(selectedItem.name)
-        }
-      />
-      tweets around the world the year
-      <DropDownSelector
-        items={years}
-        displayKey="name"
-        onSelectionChange={(selectedItem) => setSelectedYear(selectedItem.name)}
-      />
+    <div className="header flex flex-col justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
+      <div className="flex flex-row justify-center items-center gap-2">
+        Climate{" "}
+        <DropDownSelector
+          items={selections}
+          displayKey="name"
+          onSelectionChange={(selectedItem) =>
+            setSelectedSelection(selectedItem.name)
+          }
+        />
+        tweets around the world the year
+        <DropDownSelector
+          items={years}
+          displayKey="name"
+          onSelectionChange={(selectedItem) =>
+            setSelectedYear(selectedItem.name)
+          }
+        />
+      </div>
+      <p className="text-sm text-white">
+        Try out the dropdowns to see the different visualizations.{" "}
+        <span className="bg-black p-2 rounded-md text-sky-400">
+          {selectedSelection}
+        </span>{" "}
+        was calculated from twitter tweets
+      </p>
     </div>
   );
 };
