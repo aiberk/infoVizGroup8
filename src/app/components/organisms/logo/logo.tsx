@@ -6,7 +6,7 @@ type Props = {};
 const Logo = (props: Props) => {
   const letters = ["A", "C", "J", "R"];
   return (
-    <Link href="/" className="flex flex-row gap-2">
+    <Link href="/" className="flex flex-row gap-2 m-10">
       {letters.map((letter) => (
         <div
           key={letter}
