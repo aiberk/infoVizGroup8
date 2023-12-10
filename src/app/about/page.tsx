@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   const loomEmbedUrl =
-    "https:www.loom.com/embed/e55c1d72997f4fceb7d41b4e19b8b2bf";
+    "https://www.loom.com/embed/e55c1d72997f4fceb7d41b4e19b8b2bf";
 
   return (
     <main className="flex flex-col items-center rounded-xl mt-5 prose ">
