@@ -38,7 +38,7 @@ const VisMain = () => {
     selections[0];
 
   return (
-    <div className="mainViz flex justify-center items-center cardandmap">
+    <div className="mainVizMain flex justify-center items-center cardandmap">
       <div className="cardanmapCard h-full">
         <Card
           country={selectedCountryData}
