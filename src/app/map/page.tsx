@@ -20,7 +20,7 @@ export default function Home() {
       <div className="bg-whit bg-opacity-5 w-full max-w-8xl h-full text-white vizParent">
         <VizheaderMap />
         <VizLegend />
-        <VizTimeline />
+
         <VisMap />
         <VizColor />
       </div>

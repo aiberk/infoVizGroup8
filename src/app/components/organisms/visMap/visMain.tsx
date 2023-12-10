@@ -20,13 +20,20 @@ const VisMap = () => {
     position: { x: 0, y: 0 },
   });
 
-  // Create a color scale
-  const colorScale = d3
-    .scaleLinear()
-    .domain([0, 1])
-    .range(["#ffffcc", "#800026"]);
+  // Define different color scales for each selection
+  const colorScales = {
+    Sentiment: d3.scaleLinear().domain([0, 1]).range(["#b3cde3", "#011f4b"]),
+    "Denial Rate": d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range(["#ffffcc", "#800026"]),
+    Aggressiveness: d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range(["#ffd2a0", "#662200"]),
+  };
 
-    // Generate the tooltip content
+  // Generate the tooltip content
   const generateTooltipContent = (countryName) => {
     const yearData = countriesData[countryName]
       ? countriesData[countryName][selectedYear]
@@ -56,6 +63,9 @@ const VisMap = () => {
 
   // Update the colors of the map when a selection is changed
   const updateColors = () => {
+    const currentColorScale =
+      colorScales[selectedSelection] || colorScales["Denial Rate"];
+
     d3.select(mapContainerRef.current)
       .selectAll("path")
       .transition()
@@ -78,7 +88,7 @@ const VisMap = () => {
               metricValue = yearData.aggressive;
               break;
           }
-          return colorScale(metricValue);
+          return currentColorScale(metricValue);
         }
         return "#ccc";
       });
