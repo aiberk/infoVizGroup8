@@ -1,5 +1,94 @@
 import { DataStructure } from "@/app/types/types";
 
+export const worldData = {
+  World: {
+    2006: {
+      total_count: 5,
+      sentiment: 0.15768405473709107,
+      denial: 0.2,
+      aggressive: 0.8,
+    },
+    2007: {
+      total_count: 1412,
+      sentiment: -0.04301936278737903,
+      denial: 0.09206798866855524,
+      aggressive: 0.4143059490084986,
+    },
+    2008: {
+      total_count: 11445,
+      sentiment: -0.04335364156682373,
+      denial: 0.127391874180865,
+      aggressive: 0.3965923984272608,
+    },
+    2009: {
+      total_count: 155716,
+      sentiment: -0.017731700891640126,
+      denial: 0.1193518970433353,
+      aggressive: 0.32164966991189087,
+    },
+    2010: {
+      total_count: 123110,
+      sentiment: -0.038892361067315376,
+      denial: 0.14789212899033385,
+      aggressive: 0.3296239135732272,
+    },
+    2011: {
+      total_count: 84608,
+      sentiment: -0.03114081967443106,
+      denial: 0.14638095688350983,
+      aggressive: 0.33313634644478063,
+    },
+    2012: {
+      total_count: 55789,
+      sentiment: -0.00729990577534113,
+      denial: 0.11486135259638997,
+      aggressive: 0.34580293606266466,
+    },
+    2013: {
+      total_count: 78454,
+      sentiment: -0.05051405372824251,
+      denial: 0.15438346037168277,
+      aggressive: 0.3388482422821016,
+    },
+    2014: {
+      total_count: 121933,
+      sentiment: -0.005944338325618148,
+      denial: 0.15317428423806517,
+      aggressive: 0.33347822164631397,
+    },
+    2015: {
+      total_count: 375359,
+      sentiment: 0.0370907096152961,
+      denial: 0.06512964921581739,
+      aggressive: 0.3376660743448272,
+    },
+    2016: {
+      total_count: 422599,
+      sentiment: 0.06328088809569522,
+      denial: 0.05837448739821911,
+      aggressive: 0.3273836426494147,
+    },
+    2017: {
+      total_count: 969635,
+      sentiment: 0.020195996127461594,
+      denial: 0.060985834876010045,
+      aggressive: 0.28586736246113226,
+    },
+    2018: {
+      total_count: 2217793,
+      sentiment: 0.030676474213639896,
+      denial: 0.0551796312820899,
+      aggressive: 0.27249432205800994,
+    },
+    2019: {
+      total_count: 689680,
+      sentiment: -0.030832321776447614,
+      denial: 0.06775171093840622,
+      aggressive: 0.2551183157406333,
+    },
+  },
+};
+
 export const countriesData = {
   Bolivia: {
     2010: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
