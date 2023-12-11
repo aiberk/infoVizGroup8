@@ -5,8 +5,8 @@
 import React, { Component } from "react";
 import * as d3 from "d3";
 
-const width = 350;
-const height = 200;
+const width = 400;
+const height = 230;
 const margin = { top: 20, right: 5, bottom: 20, left: 35 };
 
 class BarChart extends Component {
@@ -53,7 +53,7 @@ class BarChart extends Component {
       .domain(colorExtent)
       .interpolator(d3.interpolateRdYlBu);
 
-      // Create bars
+    // Create bars
     const bars = data.map((d) => {
       const isColored =
         !range.length || (range[0] <= d.date && d.date <= range[1]);
