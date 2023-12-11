@@ -16,11 +16,20 @@ export default function Home() {
   const Munzner = "https://www.cs.ubc.ca/~tmm/vadbook/";
   return (
     <main className="flex flex-col items-center rounded-xl mt-5 prose ">
-      <h1 className="text-3xl mb-4 prose text-white">
+      <h1 className="text-3xl mb-4 prose text-white mt-10">
         The World Tweets about Climate Change
       </h1>
 
       <div className="max-w-prose bg-white bg-opacity-5 p-10 text-white flex flex-col gap-7">
+        <div className="video-container">
+          <iframe
+            width="560"
+            height="315"
+            src={loomEmbedUrl}
+            title="Loom Video Player"
+            frameBorder="0"
+            allowFullScreen></iframe>
+        </div>
         <div className="flex flex-col gap-5">
           {" "}
           <span className="underline -mb-4">Motivation</span>
@@ -259,16 +268,6 @@ export default function Home() {
             value-driven evaluation of visualizations. IEEE transactions on
             visualization and computer graphics, 25&#40;1&#41;, 491-500.
           </p>
-        </div>
-
-        <div className="video-container">
-          <iframe
-            width="560"
-            height="315"
-            src={loomEmbedUrl}
-            title="Loom Video Player"
-            frameBorder="0"
-            allowFullScreen></iframe>
         </div>
       </div>
     </main>
