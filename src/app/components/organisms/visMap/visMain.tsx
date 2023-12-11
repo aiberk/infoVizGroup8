@@ -8,7 +8,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import * as d3 from "d3";
 import { useSelection } from "@/app/context/store";
-import { data } from "@/app/data/realData";
+import { countryData } from "@/app/data/realData";
 
 const VisMap = () => {
   // Controls the maps state (year, selection)
@@ -35,7 +35,9 @@ const VisMap = () => {
 
   // Generate the tooltip content
   const generateTooltipContent = (countryName) => {
-    const yearData = data[countryName] ? data[countryName][selectedYear] : null;
+    const yearData = countryData[countryName]
+      ? countryData[countryName][selectedYear]
+      : null;
 
     let metricValue;
     if (yearData) {
@@ -70,8 +72,8 @@ const VisMap = () => {
       .duration(500)
       .attr("fill", (d) => {
         const countryName = d.properties.name;
-        const yearData = data[countryName]
-          ? data[countryName][selectedYear]
+        const yearData = countryData[countryName]
+          ? countryData[countryName][selectedYear]
           : null;
         if (yearData) {
           let metricValue = 0;
