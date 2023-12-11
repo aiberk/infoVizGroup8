@@ -113,13 +113,25 @@ export default function Home() {
             learning techniques
           </p>
           <p className="text-block prose">
-            Preprocessing on our end was done within a Jupyter Notebook with the
-            pandas Python library, where only geolocated tweets were subsampled
-            from the original dataset, and coordinates were mapped to countries.
-            The sampled data was then converted into a month-separated json file
-            for efficient dictionary lookup. This is the data that runs the
-            current visualization.
+            Preprocessing on our end was done within a{" "}
+            <a
+              className="underline mr-1"
+              target="_blank"
+              href="https://colab.research.google.com/drive/1disNlsk8e5nGG_7kSzYNK6LGR_JHI0VO?usp=drive_link">
+              Google Collab Notebook
+            </a>
+            with the pandas Python library, where only geolocated tweets were
+            subsampled from the original dataset, and coordinates were mapped to
+            countries. The sampled data was then converted into a
+            month-separated json file for efficient dictionary lookup. This is
+            the data that runs the current visualization.
           </p>
+          <a
+            className="underline"
+            target="_blank"
+            href="https://colab.research.google.com/drive/1disNlsk8e5nGG_7kSzYNK6LGR_JHI0VO?usp=drive_link">
+            Google Collab Link
+          </a>
         </div>
 
         <div className="flex flex-col gap-5">
