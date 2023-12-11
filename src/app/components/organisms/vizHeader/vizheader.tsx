@@ -3,6 +3,7 @@ import React from "react";
 import DropDownSelector from "@/app/components/molecules/comboBox/DropDownSelector";
 import { useSelection } from "@/app/context/store";
 import { countries, selections, years } from "@/app/data/data";
+import { countryData } from "@/app/data/realData";
 
 const Vizheader = () => {
   const {
@@ -11,6 +12,13 @@ const Vizheader = () => {
     setSelectedYear,
     selectedSelection,
   } = useSelection();
+
+  const countryNames = Object.keys(countryData).map((name, index) => ({
+    id: index,
+    name: name,
+  }));
+
+  console.log(countryNames);
 
   return (
     <div className="header  flex flex-col justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
@@ -26,7 +34,7 @@ const Vizheader = () => {
         />
         tweets statistics in{" "}
         <DropDownSelector
-          items={countries}
+          items={countryNames}
           displayKey="name"
           onSelectionChange={(selectedItem) =>
             setSelectedCountry(selectedItem.name)

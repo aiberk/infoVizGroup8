@@ -41,7 +41,6 @@ const VisMain = () => {
   };
 
   const countryNames = Object.keys(countryData);
-  // console.log(countryNames); // This will log the array of country names
 
   const updateCity = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setCity(e.target.value as City);
@@ -55,11 +54,6 @@ const VisMain = () => {
 
   const { selectedCountry, selectedSelection } = useSelection();
 
-  // const selectedCountryData =
-  //   countries.find((country) => country.name === selectedCountry) ||
-  //   countries[0];
-
-  // Assuming `data` is of type `DataStructure` and `selectedCountry` is a string
   const selectedCountryData =
     selectedCountry && selectedCountry in countryData
       ? countryData[selectedCountry]
@@ -68,8 +62,6 @@ const VisMain = () => {
   const selectedSelectionData =
     selections.find((selection) => selection.name === selectedSelection) ||
     selections[0];
-
-  console.log(selectedCountryData);
 
   return (
     <div className="mainVizMain flex justify-center items-center cardandmap">

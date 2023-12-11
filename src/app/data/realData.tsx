@@ -1,4 +1,4 @@
-import {DataStructure} from '@/app/types/types';
+import { DataStructure } from "@/app/types/types";
 
 export const countriesData = {
   Bolivia: {
@@ -53,7 +53,7 @@ export const countriesData = {
   },
 };
 
-export const countryData : DataStructure = {
+export const countryData: DataStructure = {
   Afghanistan: {
     2010: {
       total_count: 3,
@@ -3728,7 +3728,7 @@ export const countryData : DataStructure = {
       aggressive: 0.2087912087912088,
     },
   },
-  BurkinaFaso: {
+  "Burkina Faso": {
     2015: {
       total_count: 3,
       sentiment_std: 0.28869299269192317,
@@ -3852,92 +3852,7 @@ export const countryData : DataStructure = {
       aggressive: 0.0,
     },
   },
-  CaboVerde: {
-    2010: {
-      total_count: 1,
-      sentiment_std: NaN,
-      beliver_v_denier: NaN,
-      aggressive_rate_believer: NaN,
-      aggressive_rate_denier: NaN,
-      sentiment: 0.1198861002922058,
-      believer: 0.0,
-      neutral: 1.0,
-      denial: 0.0,
-      aggressive: 1.0,
-    },
-    2013: {
-      total_count: 1,
-      sentiment_std: NaN,
-      beliver_v_denier: NaN,
-      aggressive_rate_believer: NaN,
-      aggressive_rate_denier: NaN,
-      sentiment: -0.7096033226966858,
-      believer: 0.0,
-      neutral: 1.0,
-      denial: 0.0,
-      aggressive: 0.0,
-    },
-    2014: {
-      total_count: 3,
-      sentiment_std: 0.1297292458799653,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 0.5,
-      aggressive_rate_denier: NaN,
-      sentiment: -0.6034957111903599,
-      believer: 0.6666666666666666,
-      neutral: 0.3333333333333333,
-      denial: 0.0,
-      aggressive: 0.3333333333333333,
-    },
-    2015: {
-      total_count: 4,
-      sentiment_std: 0.36046535438135346,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 0.3333333333333333,
-      aggressive_rate_denier: NaN,
-      sentiment: 0.1802052133063475,
-      believer: 0.75,
-      neutral: 0.25,
-      denial: 0.0,
-      aggressive: 0.25,
-    },
-    2016: {
-      total_count: 3,
-      sentiment_std: 0.1621244179123794,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 0.0,
-      aggressive_rate_denier: NaN,
-      sentiment: 0.2012356662193934,
-      believer: 0.6666666666666666,
-      neutral: 0.3333333333333333,
-      denial: 0.0,
-      aggressive: 0.0,
-    },
-    2017: {
-      total_count: 4,
-      sentiment_std: 0.3902857243039782,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 0.25,
-      aggressive_rate_denier: NaN,
-      sentiment: 0.06926932327151297,
-      believer: 1.0,
-      neutral: 0.0,
-      denial: 0.0,
-      aggressive: 0.25,
-    },
-    2018: {
-      total_count: 14,
-      sentiment_std: 0.30555219456169797,
-      beliver_v_denier: 0.9285714285714286,
-      aggressive_rate_believer: 0.23076923076923078,
-      aggressive_rate_denier: 1.0,
-      sentiment: 0.15315417698882233,
-      believer: 0.9285714285714286,
-      neutral: 0.0,
-      denial: 0.07142857142857142,
-      aggressive: 0.2857142857142857,
-    },
-  },
+
   Cambodia: {
     2009: {
       total_count: 49,
@@ -25058,32 +24973,6 @@ export const countryData : DataStructure = {
     },
   },
 
-  WesternSahara: {
-    2016: {
-      total_count: 8,
-      sentiment_std: 0.28185087599287695,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 0.2857142857142857,
-      aggressive_rate_denier: NaN,
-      sentiment: 0.41230730538070204,
-      believer: 0.875,
-      neutral: 0.125,
-      denial: 0.0,
-      aggressive: 0.25,
-    },
-    2018: {
-      total_count: 2,
-      sentiment_std: 0.7341223408857465,
-      beliver_v_denier: 1.0,
-      aggressive_rate_believer: 1.0,
-      aggressive_rate_denier: NaN,
-      sentiment: -0.022560863828659072,
-      believer: 0.5,
-      neutral: 0.5,
-      denial: 0.0,
-      aggressive: 0.5,
-    },
-  },
   Yemen: {
     2009: {
       total_count: 3,
