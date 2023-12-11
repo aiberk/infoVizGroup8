@@ -12,7 +12,7 @@ export default function Home() {
       <h1 className="text-3xl mb-4 prose text-white">About</h1>
 
       <div className="max-w-prose bg-white bg-opacity-5 p-10 text-white flex flex-col gap-7">
-        <p className="text-block ">
+        <p className="text-block prose">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat odio
           at soluta iusto quos rem incidunt eius, perspiciatis pariatur, neque
           velit! Magnam tenetur nulla maiores possimus, et natus a illum. Lorem
