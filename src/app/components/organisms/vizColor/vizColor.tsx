@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useSelection } from "@/app/context/store";
 
 // Define an interface for the color scales

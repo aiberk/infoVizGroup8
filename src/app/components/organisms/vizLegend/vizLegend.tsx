@@ -1,35 +1,67 @@
-import { useState, Fragment } from "react";
-import { RadioGroup } from "@headlessui/react";
-import { CheckIcon } from "@heroicons/react/20/solid";
+import React from "react";
+import { useSelection } from "@/app/context/store";
 
-import { subjects as legend } from "@/app/config/config";
+interface ColorScales {
+  Sentiment: string[];
+  "Denial Rate": string[];
+  Aggressiveness: string[];
+}
 
 const VizLegend = () => {
-  const [selectedPlan, setSelectedPlan] = useState(legend[0]);
+  const { selectedSelection } = useSelection();
+
+  // Define the color scales
+  const colorScales: ColorScales = {
+    Sentiment: ["#b3cde3", "#6497b1", "#005b96", "#03396c", "#011f4b"],
+    "Denial Rate": [
+      "#ffffcc",
+      "#ffeda0",
+      "#fed976",
+      "#feb24c",
+      "#fd8d3c",
+      "#fc4e2a",
+      "#e31a1c",
+      "#bd0026",
+      "#800026",
+    ],
+    Aggressiveness: [
+      "#ffd2a0",
+      "#ffaa76",
+      "#ff823c",
+      "#ff5900",
+      "#cc4600",
+      "#993400",
+      "#662200",
+    ],
+  };
+
+  // Determine which color scale to use based on the selected selection
+  const currentColorScale =
+    colorScales[selectedSelection as keyof ColorScales] ||
+    colorScales["Denial Rate"];
+
+  // Calculate the range each color represents
+  const percentageStep = 100 / currentColorScale.length;
 
   return (
     <div className="legend">
       <div className="bg-cardColor p-4 rounded-sm h-1/2">
-        <RadioGroup value={selectedPlan} onChange={setSelectedPlan}>
-          <RadioGroup.Label>Legend:</RadioGroup.Label>
-          {legend.map((plan) => (
-            <RadioGroup.Option key={plan.id} value={plan} as={Fragment}>
-              {({ checked }) => (
-                <div
-                  className={`flex items-center gap-2 ${
-                    checked ? "text-white" : "text-gray-300"
-                  }`}>
-                  <div
-                    className={`h-3 w-3 rounded-full border ${
-                      checked ? "bg-blue-500" : ""
-                    }`}
-                  />
-                  {plan.name}
-                </div>
-              )}
-            </RadioGroup.Option>
+        <h1>Legend</h1>
+        <div>
+          {currentColorScale.map((color, index) => (
+            <div key={index} className="flex flex-row items-center">
+              <div
+                className="h-4 w-4 mr-2"
+                style={{ backgroundColor: color }}></div>
+              <div>
+                {Math.round(percentageStep * index)}% -{" "}
+                {index === currentColorScale.length - 1
+                  ? "100%"
+                  : `${Math.round(percentageStep * (index + 1))}%`}
+              </div>
+            </div>
           ))}
-        </RadioGroup>
+        </div>
       </div>
     </div>
   );
