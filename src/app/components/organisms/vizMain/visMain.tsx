@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 import Card from "@/app/components/organisms/card/card";
 import { countries, selections } from "@/app/data/data";
 import { useSelection } from "@/app/context/store";
-import { countryData } from "@/app/data/realData";
+import { countryData, worldData } from "@/app/data/realData";
 
 import { sf as sfData, ny as nyData } from "@/app/data/sampleData.json";
 import BarChart from "@/app/components/organisms/d3/BarChart";
@@ -73,12 +73,12 @@ const VisMain = () => {
         />
       </div>
       <div className="cardanmapMap px-10  flex-col  h-full bg-cardColor flex items-center justify-center rounded-lg">
-        <div className="w-full "> Temperatures</div>
-        <BarChart data={data} range={range} updateRange={updateRange} />
+        <div className="w-full "> World Average {selectedSelection}</div>
+        <BarChart data={worldData} range={range} updateRange={updateRange} />
       </div>
       <div className="cardanmapViz px-10  flex-col h-full bg-cardColor flex items-center justify-center rounded-lg">
         <div className="w-full "> Sentiment</div>
-        <LinkedChart data={data} range={range} />
+        <LinkedChart data={worldData} range={range} />
       </div>
     </div>
   );
