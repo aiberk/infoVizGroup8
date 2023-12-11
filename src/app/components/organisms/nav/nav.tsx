@@ -10,6 +10,7 @@ const Nav = (props: Props) => {
     { title: "Brush & Link", link: "/" },
     { title: "Map", link: "/map" },
     { title: "About", link: "/about" },
+    { title: "Google Collab", link: "/about" },
   ];
 
   return (
