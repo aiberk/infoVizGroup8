@@ -14,19 +14,16 @@ class LinkedChart extends Component {
     bars: [],
     xScale: null,
     yScale: null,
-    selectedColorScale: d3.scaleSequential((t) =>
-      t < 0.5 ? "#4575b4" : "#313695"
-    ), // Blue gradient for selected data
-    nonSelectedColorScale: d3.scaleSequential((t) =>
-      t < 0.5 ? "#fee08b" : "#ffffbf"
-    ), // Yellow gradient for non-selected data
+    selectedColorScale: d3.scaleSequential(d3.interpolateRdYlBu),
+    nonSelectedColorScale: d3.scaleSequential(d3.interpolateGreys),
+    idleColorScale: d3.scaleSequential(d3.interpolateRdYlBu), // New color scale for idle state
   };
 
   static getDerivedStateFromProps(nextProps, prevState) {
     const { data, range } = nextProps;
     if (!data) return {};
 
-    // Create X and Y Scales with adjusted ranges
+    // Create X and Y Scales
     const xScale = d3
       .scaleBand()
       .domain(data.map((d) => d.date))
@@ -38,30 +35,43 @@ class LinkedChart extends Component {
       .domain([0, d3.max(data, (d) => d.high)])
       .range([height - margin.top - margin.bottom, 0]);
 
-    // Define the domain for the color scales based on the data
+    // Define the domain for all color scales
     const highExtent = d3.extent(data, (d) => d.high);
     prevState.selectedColorScale.domain(highExtent);
     prevState.nonSelectedColorScale.domain(highExtent);
+    prevState.idleColorScale.domain(highExtent);
 
+    // Determine whether the data is in range, out of range, or idle
     const isInRange = (date) => {
       if (!range || range.length === 0) {
-        return false; // Default to false if no range
+        return "idle"; // Default to 'idle' if no range
       }
-      const [start, end] = range;
-      return start <= date && date <= end;
+      return range[0] <= date && date <= range[1] ? "selected" : "non-selected";
     };
 
     // Map data to bars
     const bars = data.map((d) => {
-      const inRange = isInRange(d.date);
+      const rangeStatus = isInRange(d.date);
+      let fill;
+      switch (rangeStatus) {
+        case "selected":
+          fill = prevState.selectedColorScale(d.high);
+          break;
+        case "non-selected":
+          fill = prevState.nonSelectedColorScale(d.high);
+          break;
+        case "idle":
+          fill = prevState.idleColorScale(d.high);
+          break;
+        default:
+          fill = "#ccc";
+      }
       return {
         x: xScale(d.date),
         y: yScale(d.high),
         height: yScale(0) - yScale(d.high),
         width: xScale.bandwidth(),
-        fill: inRange
-          ? prevState.selectedColorScale(d.high)
-          : prevState.nonSelectedColorScale(d.high),
+        fill,
       };
     });
 
