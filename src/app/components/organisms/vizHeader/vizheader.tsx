@@ -24,7 +24,7 @@ const Vizheader = () => {
             setSelectedSelection(selectedItem.name)
           }
         />
-        tweets in{" "}
+        tweets statistics in{" "}
         <DropDownSelector
           items={countries}
           displayKey="name"
