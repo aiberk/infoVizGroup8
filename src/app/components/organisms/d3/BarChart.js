@@ -78,6 +78,12 @@ class BarChart extends Component {
       ])
       .on("end", this.brushEnd);
     d3.select(this.brushRef.current).call(this.brush);
+
+    // Render the axes after the component mounts.
+    this.xAxis.scale(this.state.xScale);
+    d3.select(this.xAxisRef.current).call(this.xAxis);
+    this.yAxis.scale(this.state.yScale);
+    d3.select(this.yAxisRef.current).call(this.yAxis);
   }
 
   // Update graph when brushed
