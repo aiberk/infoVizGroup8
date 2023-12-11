@@ -95,6 +95,27 @@ body {
   grid-area: 4 / 4 / 7 / 6;
 }
 
+@media (max-width: 1200px) {
+  .cardandmap {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    height: 2000px;
+  }
+
+  .cardanmapCard {
+    grid-area: auto; /* reset specific grid positioning */
+  }
+
+  .cardanmapMap {
+    grid-area: auto; /* reset specific grid positioning */
+  }
+
+  .cardanmapViz {
+    grid-area: auto; /* reset specific grid positioning */
+  }
+}
+
 .text-block {
   flex: 1;
 }
