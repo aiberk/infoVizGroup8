@@ -1,3 +1,5 @@
+import {DataStructure} from '@/app/types/types';
+
 export const countriesData = {
   Bolivia: {
     2010: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
@@ -51,7 +53,7 @@ export const countriesData = {
   },
 };
 
-export const data = {
+export const countryData : DataStructure = {
   Afghanistan: {
     2010: {
       total_count: 3,
@@ -63,7 +65,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -75,7 +77,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 2,
@@ -87,7 +89,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -99,7 +101,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 5,
@@ -111,7 +113,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.0,
       denial: 0.2,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 28,
@@ -123,7 +125,7 @@ export const data = {
       believer: 0.8214285714285714,
       neutral: 0.10714285714285714,
       denial: 0.07142857142857142,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 28,
@@ -135,7 +137,7 @@ export const data = {
       believer: 0.8928571428571429,
       neutral: 0.07142857142857142,
       denial: 0.03571428571428571,
-      aggressive: 0.39285714285714285
+      aggressive: 0.39285714285714285,
     },
     2017: {
       total_count: 43,
@@ -147,7 +149,7 @@ export const data = {
       believer: 0.9534883720930233,
       neutral: 0.023255813953488372,
       denial: 0.023255813953488372,
-      aggressive: 0.2558139534883721
+      aggressive: 0.2558139534883721,
     },
     2018: {
       total_count: 119,
@@ -159,7 +161,7 @@ export const data = {
       believer: 0.8991596638655462,
       neutral: 0.09243697478991597,
       denial: 0.008403361344537815,
-      aggressive: 0.19327731092436976
+      aggressive: 0.19327731092436976,
     },
     2019: {
       total_count: 30,
@@ -171,8 +173,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.16666666666666666
-    }
+      aggressive: 0.16666666666666666,
+    },
   },
   Albania: {
     2009: {
@@ -185,7 +187,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 2,
@@ -197,7 +199,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2011: {
       total_count: 1,
@@ -209,7 +211,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 2,
@@ -221,7 +223,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 1,
@@ -233,7 +235,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -245,7 +247,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 21,
@@ -257,7 +259,7 @@ export const data = {
       believer: 0.8095238095238095,
       neutral: 0.19047619047619047,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2016: {
       total_count: 6,
@@ -269,7 +271,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 36,
@@ -281,7 +283,7 @@ export const data = {
       believer: 0.9166666666666666,
       neutral: 0.0,
       denial: 0.08333333333333333,
-      aggressive: 0.1388888888888889
+      aggressive: 0.1388888888888889,
     },
     2018: {
       total_count: 51,
@@ -293,7 +295,7 @@ export const data = {
       believer: 0.7254901960784313,
       neutral: 0.2549019607843137,
       denial: 0.0196078431372549,
-      aggressive: 0.1568627450980392
+      aggressive: 0.1568627450980392,
     },
     2019: {
       total_count: 13,
@@ -305,8 +307,8 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.15384615384615385,
       denial: 0.0,
-      aggressive: 0.38461538461538464
-    }
+      aggressive: 0.38461538461538464,
+    },
   },
   Algeria: {
     2009: {
@@ -319,7 +321,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 4,
@@ -331,7 +333,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 3,
@@ -343,7 +345,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 21,
@@ -355,7 +357,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.09523809523809523,
       denial: 0.047619047619047616,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2016: {
       total_count: 13,
@@ -367,7 +369,7 @@ export const data = {
       believer: 0.7692307692307693,
       neutral: 0.23076923076923078,
       denial: 0.0,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2017: {
       total_count: 68,
@@ -379,7 +381,7 @@ export const data = {
       believer: 0.8970588235294118,
       neutral: 0.08823529411764706,
       denial: 0.014705882352941176,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2018: {
       total_count: 80,
@@ -391,7 +393,7 @@ export const data = {
       believer: 0.725,
       neutral: 0.2375,
       denial: 0.0375,
-      aggressive: 0.3375
+      aggressive: 0.3375,
     },
     2019: {
       total_count: 9,
@@ -403,8 +405,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.2222222222222222
-    }
+      aggressive: 0.2222222222222222,
+    },
   },
   Andorra: {
     2011: {
@@ -417,7 +419,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -429,7 +431,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 2,
@@ -441,7 +443,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 12,
@@ -453,7 +455,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.08333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 44,
@@ -465,7 +467,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.4090909090909091,
       denial: 0.045454545454545456,
-      aggressive: 0.29545454545454547
+      aggressive: 0.29545454545454547,
     },
     2019: {
       total_count: 5,
@@ -477,8 +479,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Angola: {
     2010: {
@@ -491,7 +493,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -503,7 +505,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -515,7 +517,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 6,
@@ -527,7 +529,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 7,
@@ -539,7 +541,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2017: {
       total_count: 24,
@@ -551,7 +553,7 @@ export const data = {
       believer: 0.7916666666666666,
       neutral: 0.20833333333333334,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2018: {
       total_count: 43,
@@ -563,7 +565,7 @@ export const data = {
       believer: 0.8604651162790697,
       neutral: 0.13953488372093023,
       denial: 0.0,
-      aggressive: 0.18604651162790697
+      aggressive: 0.18604651162790697,
     },
     2019: {
       total_count: 23,
@@ -575,8 +577,8 @@ export const data = {
       believer: 0.7391304347826086,
       neutral: 0.2608695652173913,
       denial: 0.0,
-      aggressive: 0.21739130434782608
-    }
+      aggressive: 0.21739130434782608,
+    },
   },
   Anguilla: {
     2014: {
@@ -589,7 +591,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 1,
@@ -601,7 +603,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 1,
@@ -613,7 +615,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 2,
@@ -625,7 +627,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -637,8 +639,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Antarctica: {
     2009: {
@@ -651,7 +653,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 3,
@@ -663,7 +665,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.6666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 5,
@@ -675,7 +677,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2016: {
       total_count: 12,
@@ -687,7 +689,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.08333333333333333
+      aggressive: 0.08333333333333333,
     },
     2017: {
       total_count: 20,
@@ -699,7 +701,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2018: {
       total_count: 59,
@@ -711,7 +713,7 @@ export const data = {
       believer: 0.7796610169491526,
       neutral: 0.15254237288135594,
       denial: 0.06779661016949153,
-      aggressive: 0.2033898305084746
+      aggressive: 0.2033898305084746,
     },
     2019: {
       total_count: 13,
@@ -723,8 +725,8 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.15384615384615385,
       denial: 0.0,
-      aggressive: 0.38461538461538464
-    }
+      aggressive: 0.38461538461538464,
+    },
   },
   Antigua: {
     2013: {
@@ -737,7 +739,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 6,
@@ -749,7 +751,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 1,
@@ -761,7 +763,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 16,
@@ -773,7 +775,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.3125,
       denial: 0.0625,
-      aggressive: 0.0625
+      aggressive: 0.0625,
     },
     2018: {
       total_count: 1,
@@ -785,8 +787,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Argentina: {
     2007: {
@@ -799,7 +801,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 3,
@@ -811,7 +813,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 138,
@@ -823,7 +825,7 @@ export const data = {
       believer: 0.5289855072463768,
       neutral: 0.43478260869565216,
       denial: 0.036231884057971016,
-      aggressive: 0.21014492753623187
+      aggressive: 0.21014492753623187,
     },
     2010: {
       total_count: 103,
@@ -835,7 +837,7 @@ export const data = {
       believer: 0.2815533980582524,
       neutral: 0.6601941747572816,
       denial: 0.05825242718446602,
-      aggressive: 0.21359223300970873
+      aggressive: 0.21359223300970873,
     },
     2011: {
       total_count: 84,
@@ -847,7 +849,7 @@ export const data = {
       believer: 0.23809523809523808,
       neutral: 0.6547619047619048,
       denial: 0.10714285714285714,
-      aggressive: 0.34523809523809523
+      aggressive: 0.34523809523809523,
     },
     2012: {
       total_count: 64,
@@ -859,7 +861,7 @@ export const data = {
       believer: 0.21875,
       neutral: 0.734375,
       denial: 0.046875,
-      aggressive: 0.203125
+      aggressive: 0.203125,
     },
     2013: {
       total_count: 87,
@@ -871,7 +873,7 @@ export const data = {
       believer: 0.26436781609195403,
       neutral: 0.6666666666666666,
       denial: 0.06896551724137931,
-      aggressive: 0.39080459770114945
+      aggressive: 0.39080459770114945,
     },
     2014: {
       total_count: 72,
@@ -883,7 +885,7 @@ export const data = {
       believer: 0.4027777777777778,
       neutral: 0.5138888888888888,
       denial: 0.08333333333333333,
-      aggressive: 0.3611111111111111
+      aggressive: 0.3611111111111111,
     },
     2015: {
       total_count: 666,
@@ -895,7 +897,7 @@ export const data = {
       believer: 0.6846846846846847,
       neutral: 0.2747747747747748,
       denial: 0.04054054054054054,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 717,
@@ -907,7 +909,7 @@ export const data = {
       believer: 0.6638772663877266,
       neutral: 0.3068340306834031,
       denial: 0.029288702928870293,
-      aggressive: 0.31659693165969316
+      aggressive: 0.31659693165969316,
     },
     2017: {
       total_count: 1077,
@@ -919,7 +921,7 @@ export const data = {
       believer: 0.7604456824512534,
       neutral: 0.21541318477251625,
       denial: 0.02414113277623027,
-      aggressive: 0.21727019498607242
+      aggressive: 0.21727019498607242,
     },
     2018: {
       total_count: 2786,
@@ -931,7 +933,7 @@ export const data = {
       believer: 0.7867910983488873,
       neutral: 0.1769562096195262,
       denial: 0.03625269203158651,
-      aggressive: 0.208183776022972
+      aggressive: 0.208183776022972,
     },
     2019: {
       total_count: 1537,
@@ -943,8 +945,8 @@ export const data = {
       believer: 0.8178269355888094,
       neutral: 0.1646063760572544,
       denial: 0.01756668835393624,
-      aggressive: 0.08653220559531555
-    }
+      aggressive: 0.08653220559531555,
+    },
   },
   Armenia: {
     2009: {
@@ -957,7 +959,7 @@ export const data = {
       believer: 0.3157894736842105,
       neutral: 0.15789473684210525,
       denial: 0.5263157894736842,
-      aggressive: 0.2631578947368421
+      aggressive: 0.2631578947368421,
     },
     2010: {
       total_count: 18,
@@ -969,7 +971,7 @@ export const data = {
       believer: 0.2222222222222222,
       neutral: 0.2222222222222222,
       denial: 0.5555555555555556,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2011: {
       total_count: 2,
@@ -981,7 +983,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 2,
@@ -993,7 +995,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 5,
@@ -1005,7 +1007,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.4,
       denial: 0.6,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 3,
@@ -1017,7 +1019,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 22,
@@ -1029,7 +1031,7 @@ export const data = {
       believer: 0.8636363636363636,
       neutral: 0.13636363636363635,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2016: {
       total_count: 28,
@@ -1041,7 +1043,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.21428571428571427,
       denial: 0.03571428571428571,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2017: {
       total_count: 21,
@@ -1053,7 +1055,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 48,
@@ -1065,7 +1067,7 @@ export const data = {
       believer: 0.7708333333333334,
       neutral: 0.1875,
       denial: 0.041666666666666664,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2019: {
       total_count: 12,
@@ -1077,8 +1079,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
-    }
+      aggressive: 0.25,
+    },
   },
   Aruba: {
     2010: {
@@ -1091,7 +1093,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 1,
@@ -1103,7 +1105,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 2,
@@ -1115,7 +1117,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -1127,7 +1129,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 2,
@@ -1139,7 +1141,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -1151,8 +1153,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Australia: {
     2007: {
@@ -1165,7 +1167,7 @@ export const data = {
       believer: 0.3114754098360656,
       neutral: 0.6065573770491803,
       denial: 0.08196721311475409,
-      aggressive: 0.4426229508196721
+      aggressive: 0.4426229508196721,
     },
     2008: {
       total_count: 436,
@@ -1177,7 +1179,7 @@ export const data = {
       believer: 0.481651376146789,
       neutral: 0.46559633027522934,
       denial: 0.052752293577981654,
-      aggressive: 0.31880733944954126
+      aggressive: 0.31880733944954126,
     },
     2009: {
       total_count: 8220,
@@ -1189,7 +1191,7 @@ export const data = {
       believer: 0.5317518248175183,
       neutral: 0.3722627737226277,
       denial: 0.09598540145985401,
-      aggressive: 0.31776155717761556
+      aggressive: 0.31776155717761556,
     },
     2010: {
       total_count: 6636,
@@ -1201,7 +1203,7 @@ export const data = {
       believer: 0.5030138637733574,
       neutral: 0.3872814948764316,
       denial: 0.10970464135021098,
-      aggressive: 0.344333936106088
+      aggressive: 0.344333936106088,
     },
     2011: {
       total_count: 3341,
@@ -1213,7 +1215,7 @@ export const data = {
       believer: 0.35228973361269084,
       neutral: 0.4384914696198743,
       denial: 0.2092187967674349,
-      aggressive: 0.3510924872792577
+      aggressive: 0.3510924872792577,
     },
     2012: {
       total_count: 1543,
@@ -1225,7 +1227,7 @@ export const data = {
       believer: 0.37394685677252104,
       neutral: 0.4471808165910564,
       denial: 0.17887232663642255,
-      aggressive: 0.356448476992871
+      aggressive: 0.356448476992871,
     },
     2013: {
       total_count: 3016,
@@ -1237,7 +1239,7 @@ export const data = {
       believer: 0.4890583554376658,
       neutral: 0.33687002652519893,
       denial: 0.17407161803713528,
-      aggressive: 0.38992042440318303
+      aggressive: 0.38992042440318303,
     },
     2014: {
       total_count: 4932,
@@ -1249,7 +1251,7 @@ export const data = {
       believer: 0.5525141930251419,
       neutral: 0.3077858880778589,
       denial: 0.13969991889699918,
-      aggressive: 0.37388483373884834
+      aggressive: 0.37388483373884834,
     },
     2015: {
       total_count: 20832,
@@ -1261,7 +1263,7 @@ export const data = {
       believer: 0.7174059139784946,
       neutral: 0.21606182795698925,
       denial: 0.06653225806451613,
-      aggressive: 0.4037058371735791
+      aggressive: 0.4037058371735791,
     },
     2016: {
       total_count: 23343,
@@ -1273,7 +1275,7 @@ export const data = {
       believer: 0.7531165659940882,
       neutral: 0.16711648031529794,
       denial: 0.07976695369061389,
-      aggressive: 0.39125219551899926
+      aggressive: 0.39125219551899926,
     },
     2017: {
       total_count: 48024,
@@ -1285,7 +1287,7 @@ export const data = {
       believer: 0.7786315175745461,
       neutral: 0.1650633016824921,
       denial: 0.056305180742961855,
-      aggressive: 0.2826711644177911
+      aggressive: 0.2826711644177911,
     },
     2018: {
       total_count: 131554,
@@ -1297,7 +1299,7 @@ export const data = {
       believer: 0.8046277574228073,
       neutral: 0.13484956747799381,
       denial: 0.06052267509919881,
-      aggressive: 0.2567842863006826
+      aggressive: 0.2567842863006826,
     },
     2019: {
       total_count: 46339,
@@ -1309,8 +1311,8 @@ export const data = {
       believer: 0.7957659854550163,
       neutral: 0.13096959364682018,
       denial: 0.07326442089816354,
-      aggressive: 0.3310818101383284
-    }
+      aggressive: 0.3310818101383284,
+    },
   },
   Austria: {
     2007: {
@@ -1323,7 +1325,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 14,
@@ -1335,7 +1337,7 @@ export const data = {
       believer: 0.35714285714285715,
       neutral: 0.6428571428571429,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2009: {
       total_count: 184,
@@ -1347,7 +1349,7 @@ export const data = {
       believer: 0.5380434782608695,
       neutral: 0.3967391304347826,
       denial: 0.06521739130434782,
-      aggressive: 0.266304347826087
+      aggressive: 0.266304347826087,
     },
     2010: {
       total_count: 87,
@@ -1359,7 +1361,7 @@ export const data = {
       believer: 0.5172413793103449,
       neutral: 0.3563218390804598,
       denial: 0.12643678160919541,
-      aggressive: 0.26436781609195403
+      aggressive: 0.26436781609195403,
     },
     2011: {
       total_count: 63,
@@ -1371,7 +1373,7 @@ export const data = {
       believer: 0.30158730158730157,
       neutral: 0.6031746031746031,
       denial: 0.09523809523809523,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2012: {
       total_count: 33,
@@ -1383,7 +1385,7 @@ export const data = {
       believer: 0.36363636363636365,
       neutral: 0.42424242424242425,
       denial: 0.21212121212121213,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 69,
@@ -1395,7 +1397,7 @@ export const data = {
       believer: 0.37681159420289856,
       neutral: 0.4927536231884058,
       denial: 0.13043478260869565,
-      aggressive: 0.30434782608695654
+      aggressive: 0.30434782608695654,
     },
     2014: {
       total_count: 93,
@@ -1407,7 +1409,7 @@ export const data = {
       believer: 0.4731182795698925,
       neutral: 0.44086021505376344,
       denial: 0.08602150537634409,
-      aggressive: 0.3225806451612903
+      aggressive: 0.3225806451612903,
     },
     2015: {
       total_count: 564,
@@ -1419,7 +1421,7 @@ export const data = {
       believer: 0.725177304964539,
       neutral: 0.2429078014184397,
       denial: 0.031914893617021274,
-      aggressive: 0.30851063829787234
+      aggressive: 0.30851063829787234,
     },
     2016: {
       total_count: 546,
@@ -1431,7 +1433,7 @@ export const data = {
       believer: 0.7435897435897436,
       neutral: 0.2216117216117216,
       denial: 0.0347985347985348,
-      aggressive: 0.2216117216117216
+      aggressive: 0.2216117216117216,
     },
     2017: {
       total_count: 1568,
@@ -1443,7 +1445,7 @@ export const data = {
       believer: 0.8246173469387755,
       neutral: 0.14987244897959184,
       denial: 0.025510204081632654,
-      aggressive: 0.25637755102040816
+      aggressive: 0.25637755102040816,
     },
     2018: {
       total_count: 3289,
@@ -1455,7 +1457,7 @@ export const data = {
       believer: 0.8494983277591973,
       neutral: 0.1331711766494375,
       denial: 0.017330495591365156,
-      aggressive: 0.21708726056552144
+      aggressive: 0.21708726056552144,
     },
     2019: {
       total_count: 1016,
@@ -1467,8 +1469,8 @@ export const data = {
       believer: 0.8375984251968503,
       neutral: 0.13188976377952755,
       denial: 0.03051181102362205,
-      aggressive: 0.20374015748031496
-    }
+      aggressive: 0.20374015748031496,
+    },
   },
   Azerbaijan: {
     2009: {
@@ -1481,7 +1483,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2010: {
       total_count: 7,
@@ -1493,7 +1495,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.14285714285714285,
       denial: 0.14285714285714285,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 3,
@@ -1505,7 +1507,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 3,
@@ -1517,7 +1519,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 2,
@@ -1529,7 +1531,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 6,
@@ -1541,7 +1543,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 5,
@@ -1553,7 +1555,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 14,
@@ -1565,7 +1567,7 @@ export const data = {
       believer: 0.6428571428571429,
       neutral: 0.35714285714285715,
       denial: 0.0,
-      aggressive: 0.07142857142857142
+      aggressive: 0.07142857142857142,
     },
     2018: {
       total_count: 25,
@@ -1577,7 +1579,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.12,
       denial: 0.08,
-      aggressive: 0.16
+      aggressive: 0.16,
     },
     2019: {
       total_count: 12,
@@ -1589,8 +1591,8 @@ export const data = {
       believer: 0.75,
       neutral: 0.16666666666666666,
       denial: 0.08333333333333333,
-      aggressive: 0.16666666666666666
-    }
+      aggressive: 0.16666666666666666,
+    },
   },
   Bahamas: {
     2009: {
@@ -1603,7 +1605,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2010: {
       total_count: 7,
@@ -1615,7 +1617,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.42857142857142855,
       denial: 0.5714285714285714,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2011: {
       total_count: 8,
@@ -1627,7 +1629,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.5,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2012: {
       total_count: 9,
@@ -1639,7 +1641,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 17,
@@ -1651,7 +1653,7 @@ export const data = {
       believer: 0.47058823529411764,
       neutral: 0.5294117647058824,
       denial: 0.0,
-      aggressive: 0.47058823529411764
+      aggressive: 0.47058823529411764,
     },
     2014: {
       total_count: 16,
@@ -1663,7 +1665,7 @@ export const data = {
       believer: 0.5625,
       neutral: 0.1875,
       denial: 0.25,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2015: {
       total_count: 67,
@@ -1675,7 +1677,7 @@ export const data = {
       believer: 0.6865671641791045,
       neutral: 0.31343283582089554,
       denial: 0.0,
-      aggressive: 0.31343283582089554
+      aggressive: 0.31343283582089554,
     },
     2016: {
       total_count: 39,
@@ -1687,7 +1689,7 @@ export const data = {
       believer: 0.7692307692307693,
       neutral: 0.1794871794871795,
       denial: 0.05128205128205128,
-      aggressive: 0.2564102564102564
+      aggressive: 0.2564102564102564,
     },
     2017: {
       total_count: 71,
@@ -1699,7 +1701,7 @@ export const data = {
       believer: 0.7183098591549296,
       neutral: 0.22535211267605634,
       denial: 0.056338028169014086,
-      aggressive: 0.2676056338028169
+      aggressive: 0.2676056338028169,
     },
     2018: {
       total_count: 147,
@@ -1711,7 +1713,7 @@ export const data = {
       believer: 0.8639455782312925,
       neutral: 0.1292517006802721,
       denial: 0.006802721088435374,
-      aggressive: 0.2925170068027211
+      aggressive: 0.2925170068027211,
     },
     2019: {
       total_count: 43,
@@ -1723,8 +1725,8 @@ export const data = {
       believer: 0.627906976744186,
       neutral: 0.23255813953488372,
       denial: 0.13953488372093023,
-      aggressive: 0.32558139534883723
-    }
+      aggressive: 0.32558139534883723,
+    },
   },
   Bahrain: {
     2009: {
@@ -1737,7 +1739,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -1749,7 +1751,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 5,
@@ -1761,7 +1763,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2012: {
       total_count: 3,
@@ -1773,7 +1775,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -1785,7 +1787,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 7,
@@ -1797,7 +1799,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.14285714285714285,
       denial: 0.14285714285714285,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 8,
@@ -1809,7 +1811,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2016: {
       total_count: 1,
@@ -1821,7 +1823,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 3,
@@ -1833,7 +1835,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 18,
@@ -1845,7 +1847,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2777777777777778,
       denial: 0.05555555555555555,
-      aggressive: 0.05555555555555555
+      aggressive: 0.05555555555555555,
     },
     2019: {
       total_count: 11,
@@ -1857,8 +1859,8 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.5454545454545454
-    }
+      aggressive: 0.5454545454545454,
+    },
   },
   Bangladesh: {
     2009: {
@@ -1871,7 +1873,7 @@ export const data = {
       believer: 0.675,
       neutral: 0.2875,
       denial: 0.0375,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 105,
@@ -1883,7 +1885,7 @@ export const data = {
       believer: 0.5238095238095238,
       neutral: 0.38095238095238093,
       denial: 0.09523809523809523,
-      aggressive: 0.17142857142857143
+      aggressive: 0.17142857142857143,
     },
     2011: {
       total_count: 26,
@@ -1895,7 +1897,7 @@ export const data = {
       believer: 0.38461538461538464,
       neutral: 0.5384615384615384,
       denial: 0.07692307692307693,
-      aggressive: 0.19230769230769232
+      aggressive: 0.19230769230769232,
     },
     2012: {
       total_count: 20,
@@ -1907,7 +1909,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2013: {
       total_count: 65,
@@ -1919,7 +1921,7 @@ export const data = {
       believer: 0.6153846153846154,
       neutral: 0.36923076923076925,
       denial: 0.015384615384615385,
-      aggressive: 0.46153846153846156
+      aggressive: 0.46153846153846156,
     },
     2014: {
       total_count: 95,
@@ -1931,7 +1933,7 @@ export const data = {
       believer: 0.631578947368421,
       neutral: 0.30526315789473685,
       denial: 0.06315789473684211,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2015: {
       total_count: 874,
@@ -1943,7 +1945,7 @@ export const data = {
       believer: 0.7528604118993135,
       neutral: 0.2242562929061785,
       denial: 0.02288329519450801,
-      aggressive: 0.2299771167048055
+      aggressive: 0.2299771167048055,
     },
     2016: {
       total_count: 1352,
@@ -1955,7 +1957,7 @@ export const data = {
       believer: 0.8062130177514792,
       neutral: 0.1804733727810651,
       denial: 0.013313609467455622,
-      aggressive: 0.3661242603550296
+      aggressive: 0.3661242603550296,
     },
     2017: {
       total_count: 1884,
@@ -1967,7 +1969,7 @@ export const data = {
       believer: 0.8731422505307855,
       neutral: 0.1178343949044586,
       denial: 0.009023354564755838,
-      aggressive: 0.24097664543524416
+      aggressive: 0.24097664543524416,
     },
     2018: {
       total_count: 3219,
@@ -1979,7 +1981,7 @@ export const data = {
       believer: 0.8446722584653619,
       neutral: 0.14010562286424355,
       denial: 0.015222118670394533,
-      aggressive: 0.1683752718235477
+      aggressive: 0.1683752718235477,
     },
     2019: {
       total_count: 597,
@@ -1991,8 +1993,8 @@ export const data = {
       believer: 0.8458961474036851,
       neutral: 0.1390284757118928,
       denial: 0.01507537688442211,
-      aggressive: 0.2747068676716918
-    }
+      aggressive: 0.2747068676716918,
+    },
   },
   Barbados: {
     2009: {
@@ -2005,7 +2007,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 6,
@@ -2017,7 +2019,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2011: {
       total_count: 3,
@@ -2029,7 +2031,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 5,
@@ -2041,7 +2043,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2013: {
       total_count: 2,
@@ -2053,7 +2055,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 4,
@@ -2065,7 +2067,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 13,
@@ -2077,7 +2079,7 @@ export const data = {
       believer: 0.7692307692307693,
       neutral: 0.15384615384615385,
       denial: 0.07692307692307693,
-      aggressive: 0.15384615384615385
+      aggressive: 0.15384615384615385,
     },
     2016: {
       total_count: 44,
@@ -2089,7 +2091,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.20454545454545456
+      aggressive: 0.20454545454545456,
     },
     2017: {
       total_count: 14,
@@ -2101,7 +2103,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.07142857142857142
+      aggressive: 0.07142857142857142,
     },
     2018: {
       total_count: 18,
@@ -2113,7 +2115,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2019: {
       total_count: 6,
@@ -2125,8 +2127,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
-    }
+      aggressive: 0.16666666666666666,
+    },
   },
   Belarus: {
     2009: {
@@ -2139,7 +2141,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -2151,7 +2153,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2011: {
       total_count: 4,
@@ -2163,7 +2165,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2012: {
       total_count: 2,
@@ -2175,7 +2177,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 6,
@@ -2187,7 +2189,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.8333333333333334,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 6,
@@ -2199,7 +2201,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.6666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2015: {
       total_count: 8,
@@ -2211,7 +2213,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.25,
       denial: 0.125,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2016: {
       total_count: 3,
@@ -2223,7 +2225,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 22,
@@ -2235,7 +2237,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.36363636363636365,
       denial: 0.13636363636363635,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2018: {
       total_count: 42,
@@ -2247,7 +2249,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.2619047619047619,
       denial: 0.16666666666666666,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2019: {
       total_count: 14,
@@ -2259,8 +2261,8 @@ export const data = {
       believer: 0.6428571428571429,
       neutral: 0.35714285714285715,
       denial: 0.0,
-      aggressive: 0.2857142857142857
-    }
+      aggressive: 0.2857142857142857,
+    },
   },
   Belgium: {
     2008: {
@@ -2273,7 +2275,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.7083333333333334,
       denial: 0.041666666666666664,
-      aggressive: 0.20833333333333334
+      aggressive: 0.20833333333333334,
     },
     2009: {
       total_count: 924,
@@ -2285,7 +2287,7 @@ export const data = {
       believer: 0.6807359307359307,
       neutral: 0.28354978354978355,
       denial: 0.03571428571428571,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2010: {
       total_count: 316,
@@ -2297,7 +2299,7 @@ export const data = {
       believer: 0.5158227848101266,
       neutral: 0.39556962025316456,
       denial: 0.08860759493670886,
-      aggressive: 0.29430379746835444
+      aggressive: 0.29430379746835444,
     },
     2011: {
       total_count: 254,
@@ -2309,7 +2311,7 @@ export const data = {
       believer: 0.25984251968503935,
       neutral: 0.6850393700787402,
       denial: 0.05511811023622047,
-      aggressive: 0.20866141732283464
+      aggressive: 0.20866141732283464,
     },
     2012: {
       total_count: 184,
@@ -2321,7 +2323,7 @@ export const data = {
       believer: 0.34782608695652173,
       neutral: 0.6086956521739131,
       denial: 0.043478260869565216,
-      aggressive: 0.27717391304347827
+      aggressive: 0.27717391304347827,
     },
     2013: {
       total_count: 189,
@@ -2333,7 +2335,7 @@ export const data = {
       believer: 0.47619047619047616,
       neutral: 0.4074074074074074,
       denial: 0.1164021164021164,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2014: {
       total_count: 311,
@@ -2345,7 +2347,7 @@ export const data = {
       believer: 0.5434083601286174,
       neutral: 0.3890675241157556,
       denial: 0.06752411575562701,
-      aggressive: 0.2282958199356913
+      aggressive: 0.2282958199356913,
     },
     2015: {
       total_count: 2072,
@@ -2357,7 +2359,7 @@ export const data = {
       believer: 0.7683397683397684,
       neutral: 0.21476833976833976,
       denial: 0.016891891891891893,
-      aggressive: 0.2813706563706564
+      aggressive: 0.2813706563706564,
     },
     2016: {
       total_count: 2087,
@@ -2369,7 +2371,7 @@ export const data = {
       believer: 0.7829420220412074,
       neutral: 0.20124580737901293,
       denial: 0.01581217057977959,
-      aggressive: 0.24245328222328702
+      aggressive: 0.24245328222328702,
     },
     2017: {
       total_count: 5201,
@@ -2381,7 +2383,7 @@ export const data = {
       believer: 0.8532974427994616,
       neutral: 0.12959046337242838,
       denial: 0.017112093828109978,
-      aggressive: 0.22149586617958086
+      aggressive: 0.22149586617958086,
     },
     2018: {
       total_count: 11821,
@@ -2393,7 +2395,7 @@ export const data = {
       believer: 0.8736147534049573,
       neutral: 0.10692834785551138,
       denial: 0.019456898739531343,
-      aggressive: 0.21360291007528973
+      aggressive: 0.21360291007528973,
     },
     2019: {
       total_count: 3093,
@@ -2405,8 +2407,8 @@ export const data = {
       believer: 0.8166828322017459,
       neutral: 0.15033947623666344,
       denial: 0.03297769156159069,
-      aggressive: 0.20562560620756548
-    }
+      aggressive: 0.20562560620756548,
+    },
   },
   Belize: {
     2009: {
@@ -2419,7 +2421,7 @@ export const data = {
       believer: 0.32142857142857145,
       neutral: 0.35714285714285715,
       denial: 0.32142857142857145,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2010: {
       total_count: 7,
@@ -2431,7 +2433,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.5714285714285714,
       denial: 0.2857142857142857,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2011: {
       total_count: 4,
@@ -2443,7 +2445,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 2,
@@ -2455,7 +2457,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 1,
@@ -2467,7 +2469,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 4,
@@ -2479,7 +2481,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2015: {
       total_count: 21,
@@ -2491,7 +2493,7 @@ export const data = {
       believer: 0.8095238095238095,
       neutral: 0.19047619047619047,
       denial: 0.0,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2016: {
       total_count: 17,
@@ -2503,7 +2505,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.17647058823529413,
       denial: 0.058823529411764705,
-      aggressive: 0.11764705882352941
+      aggressive: 0.11764705882352941,
     },
     2017: {
       total_count: 20,
@@ -2515,7 +2517,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.1,
       denial: 0.15,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 111,
@@ -2527,7 +2529,7 @@ export const data = {
       believer: 0.8918918918918919,
       neutral: 0.07207207207207207,
       denial: 0.036036036036036036,
-      aggressive: 0.17117117117117117
+      aggressive: 0.17117117117117117,
     },
     2019: {
       total_count: 149,
@@ -2539,8 +2541,8 @@ export const data = {
       believer: 0.7046979865771812,
       neutral: 0.2483221476510067,
       denial: 0.04697986577181208,
-      aggressive: 0.2550335570469799
-    }
+      aggressive: 0.2550335570469799,
+    },
   },
   Benin: {
     2014: {
@@ -2553,7 +2555,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 8,
@@ -2565,7 +2567,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.625
+      aggressive: 0.625,
     },
     2016: {
       total_count: 4,
@@ -2577,7 +2579,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 41,
@@ -2589,7 +2591,7 @@ export const data = {
       believer: 0.7560975609756098,
       neutral: 0.21951219512195122,
       denial: 0.024390243902439025,
-      aggressive: 0.2682926829268293
+      aggressive: 0.2682926829268293,
     },
     2018: {
       total_count: 61,
@@ -2601,7 +2603,7 @@ export const data = {
       believer: 0.7540983606557377,
       neutral: 0.22950819672131148,
       denial: 0.01639344262295082,
-      aggressive: 0.39344262295081966
+      aggressive: 0.39344262295081966,
     },
     2019: {
       total_count: 4,
@@ -2613,8 +2615,8 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Bermuda: {
     2010: {
@@ -2627,7 +2629,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 3,
@@ -2639,7 +2641,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2012: {
       total_count: 1,
@@ -2651,7 +2653,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 4,
@@ -2663,7 +2665,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 1,
@@ -2675,7 +2677,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -2687,7 +2689,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2018: {
       total_count: 10,
@@ -2699,7 +2701,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2019: {
       total_count: 5,
@@ -2711,8 +2713,8 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
-    }
+      aggressive: 0.2,
+    },
   },
   Bhutan: {
     2009: {
@@ -2725,7 +2727,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 4,
@@ -2737,7 +2739,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 5,
@@ -2749,7 +2751,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2012: {
       total_count: 2,
@@ -2761,7 +2763,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -2773,7 +2775,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -2785,7 +2787,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 5,
@@ -2797,7 +2799,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 10,
@@ -2809,7 +2811,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2017: {
       total_count: 18,
@@ -2821,7 +2823,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2018: {
       total_count: 62,
@@ -2833,7 +2835,7 @@ export const data = {
       believer: 0.9516129032258065,
       neutral: 0.03225806451612903,
       denial: 0.016129032258064516,
-      aggressive: 0.11290322580645161
+      aggressive: 0.11290322580645161,
     },
     2019: {
       total_count: 5,
@@ -2845,8 +2847,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.2
-    }
+      aggressive: 0.2,
+    },
   },
   Bolivia: {
     2008: {
@@ -2859,7 +2861,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2009: {
       total_count: 6,
@@ -2871,7 +2873,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2010: {
       total_count: 10,
@@ -2883,7 +2885,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2011: {
       total_count: 1,
@@ -2895,7 +2897,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 5,
@@ -2907,7 +2909,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2013: {
       total_count: 12,
@@ -2919,7 +2921,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.4166666666666667,
       denial: 0.08333333333333333,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 22,
@@ -2931,7 +2933,7 @@ export const data = {
       believer: 0.7727272727272727,
       neutral: 0.18181818181818182,
       denial: 0.045454545454545456,
-      aggressive: 0.36363636363636365
+      aggressive: 0.36363636363636365,
     },
     2015: {
       total_count: 79,
@@ -2943,7 +2945,7 @@ export const data = {
       believer: 0.810126582278481,
       neutral: 0.1518987341772152,
       denial: 0.0379746835443038,
-      aggressive: 0.35443037974683544
+      aggressive: 0.35443037974683544,
     },
     2016: {
       total_count: 32,
@@ -2955,7 +2957,7 @@ export const data = {
       believer: 0.71875,
       neutral: 0.25,
       denial: 0.03125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2017: {
       total_count: 99,
@@ -2967,7 +2969,7 @@ export const data = {
       believer: 0.797979797979798,
       neutral: 0.1717171717171717,
       denial: 0.030303030303030304,
-      aggressive: 0.30303030303030304
+      aggressive: 0.30303030303030304,
     },
     2018: {
       total_count: 241,
@@ -2979,7 +2981,7 @@ export const data = {
       believer: 0.8838174273858921,
       neutral: 0.08298755186721991,
       denial: 0.03319502074688797,
-      aggressive: 0.21991701244813278
+      aggressive: 0.21991701244813278,
     },
     2019: {
       total_count: 43,
@@ -2991,8 +2993,8 @@ export const data = {
       believer: 0.7906976744186046,
       neutral: 0.20930232558139536,
       denial: 0.0,
-      aggressive: 0.3023255813953488
-    }
+      aggressive: 0.3023255813953488,
+    },
   },
   Bonaire: {
     2011: {
@@ -3005,7 +3007,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -3017,7 +3019,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 1,
@@ -3029,7 +3031,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 11,
@@ -3041,7 +3043,7 @@ export const data = {
       believer: 0.45454545454545453,
       neutral: 0.36363636363636365,
       denial: 0.18181818181818182,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2018: {
       total_count: 21,
@@ -3053,7 +3055,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.0,
       denial: 0.14285714285714285,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2019: {
       total_count: 5,
@@ -3065,8 +3067,8 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Bosnia: {
     2009: {
@@ -3079,7 +3081,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 1,
@@ -3091,7 +3093,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 3,
@@ -3103,7 +3105,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2012: {
       total_count: 11,
@@ -3115,7 +3117,7 @@ export const data = {
       believer: 0.45454545454545453,
       neutral: 0.5454545454545454,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 26,
@@ -3127,7 +3129,7 @@ export const data = {
       believer: 0.6153846153846154,
       neutral: 0.34615384615384615,
       denial: 0.038461538461538464,
-      aggressive: 0.038461538461538464
+      aggressive: 0.038461538461538464,
     },
     2014: {
       total_count: 8,
@@ -3139,7 +3141,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.375,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 15,
@@ -3151,7 +3153,7 @@ export const data = {
       believer: 0.5333333333333333,
       neutral: 0.4666666666666667,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2016: {
       total_count: 14,
@@ -3163,7 +3165,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.2857142857142857,
       denial: 0.14285714285714285,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2017: {
       total_count: 20,
@@ -3175,7 +3177,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2018: {
       total_count: 37,
@@ -3187,7 +3189,7 @@ export const data = {
       believer: 0.8648648648648649,
       neutral: 0.02702702702702703,
       denial: 0.10810810810810811,
-      aggressive: 0.32432432432432434
+      aggressive: 0.32432432432432434,
     },
     2019: {
       total_count: 5,
@@ -3199,8 +3201,8 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.2
-    }
+      aggressive: 0.2,
+    },
   },
   Botswana: {
     2009: {
@@ -3213,7 +3215,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 11,
@@ -3225,7 +3227,7 @@ export const data = {
       believer: 0.2727272727272727,
       neutral: 0.7272727272727273,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2011: {
       total_count: 16,
@@ -3237,7 +3239,7 @@ export const data = {
       believer: 0.125,
       neutral: 0.8125,
       denial: 0.0625,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2012: {
       total_count: 24,
@@ -3249,7 +3251,7 @@ export const data = {
       believer: 0.4166666666666667,
       neutral: 0.4583333333333333,
       denial: 0.125,
-      aggressive: 0.4166666666666667
+      aggressive: 0.4166666666666667,
     },
     2013: {
       total_count: 40,
@@ -3261,7 +3263,7 @@ export const data = {
       believer: 0.225,
       neutral: 0.725,
       denial: 0.05,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2014: {
       total_count: 15,
@@ -3273,7 +3275,7 @@ export const data = {
       believer: 0.13333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.2,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2015: {
       total_count: 32,
@@ -3285,7 +3287,7 @@ export const data = {
       believer: 0.59375,
       neutral: 0.375,
       denial: 0.03125,
-      aggressive: 0.34375
+      aggressive: 0.34375,
     },
     2016: {
       total_count: 47,
@@ -3297,7 +3299,7 @@ export const data = {
       believer: 0.7021276595744681,
       neutral: 0.2765957446808511,
       denial: 0.02127659574468085,
-      aggressive: 0.19148936170212766
+      aggressive: 0.19148936170212766,
     },
     2017: {
       total_count: 55,
@@ -3309,7 +3311,7 @@ export const data = {
       believer: 0.8363636363636363,
       neutral: 0.14545454545454545,
       denial: 0.01818181818181818,
-      aggressive: 0.2545454545454545
+      aggressive: 0.2545454545454545,
     },
     2018: {
       total_count: 204,
@@ -3321,7 +3323,7 @@ export const data = {
       believer: 0.8529411764705882,
       neutral: 0.11764705882352941,
       denial: 0.029411764705882353,
-      aggressive: 0.1715686274509804
+      aggressive: 0.1715686274509804,
     },
     2019: {
       total_count: 48,
@@ -3333,8 +3335,8 @@ export const data = {
       believer: 0.7291666666666666,
       neutral: 0.22916666666666666,
       denial: 0.041666666666666664,
-      aggressive: 0.14583333333333334
-    }
+      aggressive: 0.14583333333333334,
+    },
   },
   Brazil: {
     2007: {
@@ -3347,7 +3349,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2008: {
       total_count: 35,
@@ -3359,7 +3361,7 @@ export const data = {
       believer: 0.4857142857142857,
       neutral: 0.42857142857142855,
       denial: 0.08571428571428572,
-      aggressive: 0.34285714285714286
+      aggressive: 0.34285714285714286,
     },
     2009: {
       total_count: 942,
@@ -3371,7 +3373,7 @@ export const data = {
       believer: 0.5127388535031847,
       neutral: 0.445859872611465,
       denial: 0.041401273885350316,
-      aggressive: 0.22823779193205945
+      aggressive: 0.22823779193205945,
     },
     2010: {
       total_count: 730,
@@ -3383,7 +3385,7 @@ export const data = {
       believer: 0.42054794520547945,
       neutral: 0.48356164383561645,
       denial: 0.0958904109589041,
-      aggressive: 0.28904109589041094
+      aggressive: 0.28904109589041094,
     },
     2011: {
       total_count: 270,
@@ -3395,7 +3397,7 @@ export const data = {
       believer: 0.44074074074074077,
       neutral: 0.48518518518518516,
       denial: 0.07407407407407407,
-      aggressive: 0.34444444444444444
+      aggressive: 0.34444444444444444,
     },
     2012: {
       total_count: 112,
@@ -3407,7 +3409,7 @@ export const data = {
       believer: 0.41964285714285715,
       neutral: 0.5178571428571429,
       denial: 0.0625,
-      aggressive: 0.19642857142857142
+      aggressive: 0.19642857142857142,
     },
     2013: {
       total_count: 213,
@@ -3419,7 +3421,7 @@ export const data = {
       believer: 0.4460093896713615,
       neutral: 0.4460093896713615,
       denial: 0.107981220657277,
-      aggressive: 0.22535211267605634
+      aggressive: 0.22535211267605634,
     },
     2014: {
       total_count: 256,
@@ -3431,7 +3433,7 @@ export const data = {
       believer: 0.484375,
       neutral: 0.390625,
       denial: 0.125,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2015: {
       total_count: 1188,
@@ -3443,7 +3445,7 @@ export const data = {
       believer: 0.7070707070707071,
       neutral: 0.2617845117845118,
       denial: 0.031144781144781145,
-      aggressive: 0.30387205387205385
+      aggressive: 0.30387205387205385,
     },
     2016: {
       total_count: 1106,
@@ -3455,7 +3457,7 @@ export const data = {
       believer: 0.7305605786618445,
       neutral: 0.24141048824593128,
       denial: 0.02802893309222423,
-      aggressive: 0.2974683544303797
+      aggressive: 0.2974683544303797,
     },
     2017: {
       total_count: 3062,
@@ -3467,7 +3469,7 @@ export const data = {
       believer: 0.7220770738079686,
       neutral: 0.23546701502286088,
       denial: 0.042455911169170475,
-      aggressive: 0.26094056172436314
+      aggressive: 0.26094056172436314,
     },
     2018: {
       total_count: 7050,
@@ -3479,7 +3481,7 @@ export const data = {
       believer: 0.7218439716312057,
       neutral: 0.23177304964539008,
       denial: 0.04638297872340426,
-      aggressive: 0.23801418439716313
+      aggressive: 0.23801418439716313,
     },
     2019: {
       total_count: 2750,
@@ -3491,8 +3493,8 @@ export const data = {
       believer: 0.7607272727272727,
       neutral: 0.19054545454545455,
       denial: 0.04872727272727273,
-      aggressive: 0.19963636363636364
-    }
+      aggressive: 0.19963636363636364,
+    },
   },
   Brunei: {
     2010: {
@@ -3505,7 +3507,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2011: {
       total_count: 3,
@@ -3517,7 +3519,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 1,
@@ -3529,7 +3531,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -3541,7 +3543,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 2,
@@ -3553,7 +3555,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 2,
@@ -3565,7 +3567,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2019: {
       total_count: 5,
@@ -3577,8 +3579,8 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Bulgaria: {
     2007: {
@@ -3591,7 +3593,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 71,
@@ -3603,7 +3605,7 @@ export const data = {
       believer: 0.4225352112676056,
       neutral: 0.5211267605633803,
       denial: 0.056338028169014086,
-      aggressive: 0.23943661971830985
+      aggressive: 0.23943661971830985,
     },
     2010: {
       total_count: 34,
@@ -3615,7 +3617,7 @@ export const data = {
       believer: 0.29411764705882354,
       neutral: 0.5294117647058824,
       denial: 0.17647058823529413,
-      aggressive: 0.2647058823529412
+      aggressive: 0.2647058823529412,
     },
     2011: {
       total_count: 53,
@@ -3627,7 +3629,7 @@ export const data = {
       believer: 0.6981132075471698,
       neutral: 0.22641509433962265,
       denial: 0.07547169811320754,
-      aggressive: 0.16981132075471697
+      aggressive: 0.16981132075471697,
     },
     2012: {
       total_count: 14,
@@ -3639,7 +3641,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2013: {
       total_count: 14,
@@ -3651,7 +3653,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.2857142857142857,
       denial: 0.21428571428571427,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2014: {
       total_count: 19,
@@ -3663,7 +3665,7 @@ export const data = {
       believer: 0.631578947368421,
       neutral: 0.3157894736842105,
       denial: 0.05263157894736842,
-      aggressive: 0.21052631578947367
+      aggressive: 0.21052631578947367,
     },
     2015: {
       total_count: 62,
@@ -3675,7 +3677,7 @@ export const data = {
       believer: 0.8225806451612904,
       neutral: 0.11290322580645161,
       denial: 0.06451612903225806,
-      aggressive: 0.2903225806451613
+      aggressive: 0.2903225806451613,
     },
     2016: {
       total_count: 79,
@@ -3687,7 +3689,7 @@ export const data = {
       believer: 0.7848101265822784,
       neutral: 0.189873417721519,
       denial: 0.02531645569620253,
-      aggressive: 0.2911392405063291
+      aggressive: 0.2911392405063291,
     },
     2017: {
       total_count: 175,
@@ -3699,7 +3701,7 @@ export const data = {
       believer: 0.7485714285714286,
       neutral: 0.21714285714285714,
       denial: 0.03428571428571429,
-      aggressive: 0.21142857142857144
+      aggressive: 0.21142857142857144,
     },
     2018: {
       total_count: 389,
@@ -3711,7 +3713,7 @@ export const data = {
       believer: 0.8431876606683805,
       neutral: 0.13367609254498714,
       denial: 0.02313624678663239,
-      aggressive: 0.20822622107969152
+      aggressive: 0.20822622107969152,
     },
     2019: {
       total_count: 91,
@@ -3723,10 +3725,10 @@ export const data = {
       believer: 0.8241758241758241,
       neutral: 0.15384615384615385,
       denial: 0.02197802197802198,
-      aggressive: 0.2087912087912088
-    }
+      aggressive: 0.2087912087912088,
+    },
   },
-  BurkinaFaso : {
+  BurkinaFaso: {
     2015: {
       total_count: 3,
       sentiment_std: 0.28869299269192317,
@@ -3737,7 +3739,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 5,
@@ -3749,7 +3751,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2017: {
       total_count: 7,
@@ -3761,7 +3763,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2018: {
       total_count: 8,
@@ -3773,7 +3775,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2019: {
       total_count: 3,
@@ -3785,8 +3787,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Burundi: {
     2015: {
@@ -3799,7 +3801,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -3811,7 +3813,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 3,
@@ -3823,7 +3825,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2018: {
       total_count: 8,
@@ -3835,7 +3837,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2019: {
       total_count: 1,
@@ -3847,8 +3849,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   CaboVerde: {
     2010: {
@@ -3861,7 +3863,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 1,
@@ -3873,7 +3875,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 3,
@@ -3885,7 +3887,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 4,
@@ -3897,7 +3899,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 3,
@@ -3909,7 +3911,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 4,
@@ -3921,7 +3923,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 14,
@@ -3933,8 +3935,8 @@ export const data = {
       believer: 0.9285714285714286,
       neutral: 0.0,
       denial: 0.07142857142857142,
-      aggressive: 0.2857142857142857
-    }
+      aggressive: 0.2857142857142857,
+    },
   },
   Cambodia: {
     2009: {
@@ -3947,7 +3949,7 @@ export const data = {
       believer: 0.5918367346938775,
       neutral: 0.3469387755102041,
       denial: 0.061224489795918366,
-      aggressive: 0.20408163265306123
+      aggressive: 0.20408163265306123,
     },
     2010: {
       total_count: 7,
@@ -3959,7 +3961,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2011: {
       total_count: 5,
@@ -3971,7 +3973,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2012: {
       total_count: 4,
@@ -3983,7 +3985,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 6,
@@ -3995,7 +3997,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 11,
@@ -4007,7 +4009,7 @@ export const data = {
       believer: 0.7272727272727273,
       neutral: 0.18181818181818182,
       denial: 0.09090909090909091,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2015: {
       total_count: 53,
@@ -4019,7 +4021,7 @@ export const data = {
       believer: 0.7358490566037735,
       neutral: 0.1509433962264151,
       denial: 0.11320754716981132,
-      aggressive: 0.33962264150943394
+      aggressive: 0.33962264150943394,
     },
     2016: {
       total_count: 63,
@@ -4031,7 +4033,7 @@ export const data = {
       believer: 0.7619047619047619,
       neutral: 0.19047619047619047,
       denial: 0.047619047619047616,
-      aggressive: 0.09523809523809523
+      aggressive: 0.09523809523809523,
     },
     2017: {
       total_count: 137,
@@ -4043,7 +4045,7 @@ export const data = {
       believer: 0.7372262773722628,
       neutral: 0.23357664233576642,
       denial: 0.029197080291970802,
-      aggressive: 0.1897810218978102
+      aggressive: 0.1897810218978102,
     },
     2018: {
       total_count: 303,
@@ -4055,7 +4057,7 @@ export const data = {
       believer: 0.8448844884488449,
       neutral: 0.14521452145214522,
       denial: 0.009900990099009901,
-      aggressive: 0.21122112211221122
+      aggressive: 0.21122112211221122,
     },
     2019: {
       total_count: 45,
@@ -4067,8 +4069,8 @@ export const data = {
       believer: 0.8666666666666667,
       neutral: 0.1111111111111111,
       denial: 0.022222222222222223,
-      aggressive: 0.24444444444444444
-    }
+      aggressive: 0.24444444444444444,
+    },
   },
   Cameroon: {
     2009: {
@@ -4081,7 +4083,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 7,
@@ -4093,7 +4095,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -4105,7 +4107,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -4117,7 +4119,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -4129,7 +4131,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -4141,7 +4143,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 22,
@@ -4153,7 +4155,7 @@ export const data = {
       believer: 0.8636363636363636,
       neutral: 0.13636363636363635,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2016: {
       total_count: 52,
@@ -4165,7 +4167,7 @@ export const data = {
       believer: 0.9038461538461539,
       neutral: 0.09615384615384616,
       denial: 0.0,
-      aggressive: 0.3269230769230769
+      aggressive: 0.3269230769230769,
     },
     2017: {
       total_count: 281,
@@ -4177,7 +4179,7 @@ export const data = {
       believer: 0.896797153024911,
       neutral: 0.099644128113879,
       denial: 0.0035587188612099642,
-      aggressive: 0.2704626334519573
+      aggressive: 0.2704626334519573,
     },
     2018: {
       total_count: 702,
@@ -4189,7 +4191,7 @@ export const data = {
       believer: 0.9301994301994302,
       neutral: 0.0641025641025641,
       denial: 0.005698005698005698,
-      aggressive: 0.2094017094017094
+      aggressive: 0.2094017094017094,
     },
     2019: {
       total_count: 170,
@@ -4201,8 +4203,8 @@ export const data = {
       believer: 0.9294117647058824,
       neutral: 0.07058823529411765,
       denial: 0.0,
-      aggressive: 0.17647058823529413
-    }
+      aggressive: 0.17647058823529413,
+    },
   },
   Canada: {
     2007: {
@@ -4215,7 +4217,7 @@ export const data = {
       believer: 0.3673469387755102,
       neutral: 0.5102040816326531,
       denial: 0.12244897959183673,
-      aggressive: 0.3877551020408163
+      aggressive: 0.3877551020408163,
     },
     2008: {
       total_count: 513,
@@ -4227,7 +4229,7 @@ export const data = {
       believer: 0.41130604288499023,
       neutral: 0.46588693957115007,
       denial: 0.12280701754385964,
-      aggressive: 0.41130604288499023
+      aggressive: 0.41130604288499023,
     },
     2009: {
       total_count: 10519,
@@ -4239,7 +4241,7 @@ export const data = {
       believer: 0.5477707006369427,
       neutral: 0.35953988021675065,
       denial: 0.09268941914630668,
-      aggressive: 0.314573628671927
+      aggressive: 0.314573628671927,
     },
     2010: {
       total_count: 7276,
@@ -4251,7 +4253,7 @@ export const data = {
       believer: 0.49505222649807584,
       neutral: 0.3956844420010995,
       denial: 0.10926333150082462,
-      aggressive: 0.33301264431006045
+      aggressive: 0.33301264431006045,
     },
     2011: {
       total_count: 5235,
@@ -4263,7 +4265,7 @@ export const data = {
       believer: 0.4005730659025788,
       neutral: 0.47277936962750716,
       denial: 0.12664756446991404,
-      aggressive: 0.32531041069723016
+      aggressive: 0.32531041069723016,
     },
     2012: {
       total_count: 4533,
@@ -4275,7 +4277,7 @@ export const data = {
       believer: 0.45201853077432164,
       neutral: 0.44495918817560115,
       denial: 0.10302228105007721,
-      aggressive: 0.34679020516214426
+      aggressive: 0.34679020516214426,
     },
     2013: {
       total_count: 5733,
@@ -4287,7 +4289,7 @@ export const data = {
       believer: 0.5067155067155067,
       neutral: 0.3481597767312053,
       denial: 0.14512471655328799,
-      aggressive: 0.3701377987092273
+      aggressive: 0.3701377987092273,
     },
     2014: {
       total_count: 7450,
@@ -4299,7 +4301,7 @@ export const data = {
       believer: 0.561744966442953,
       neutral: 0.30926174496644293,
       denial: 0.12899328859060402,
-      aggressive: 0.34
+      aggressive: 0.34,
     },
     2015: {
       total_count: 29198,
@@ -4311,7 +4313,7 @@ export const data = {
       believer: 0.7217960134255771,
       neutral: 0.2238851976162751,
       denial: 0.05431878895814782,
-      aggressive: 0.32728269059524623
+      aggressive: 0.32728269059524623,
     },
     2016: {
       total_count: 35738,
@@ -4323,7 +4325,7 @@ export const data = {
       believer: 0.7184789299904863,
       neutral: 0.21612849068218704,
       denial: 0.06539257932732666,
-      aggressive: 0.2986736806760311
+      aggressive: 0.2986736806760311,
     },
     2017: {
       total_count: 64485,
@@ -4335,7 +4337,7 @@ export const data = {
       believer: 0.7659920911839962,
       neutral: 0.15364813522524617,
       denial: 0.08035977359075754,
-      aggressive: 0.27959990695510584
+      aggressive: 0.27959990695510584,
     },
     2018: {
       total_count: 194294,
@@ -4347,7 +4349,7 @@ export const data = {
       believer: 0.7981409616354597,
       neutral: 0.12186686156031581,
       denial: 0.07999217680422453,
-      aggressive: 0.2852687164812089
+      aggressive: 0.2852687164812089,
     },
     2019: {
       total_count: 68317,
@@ -4359,10 +4361,10 @@ export const data = {
       believer: 0.7659733302106357,
       neutral: 0.12958707203185152,
       denial: 0.10443959775751277,
-      aggressive: 0.2807353952896058
-    }
+      aggressive: 0.2807353952896058,
+    },
   },
-  CaymanIslands : {
+  CaymanIslands: {
     2009: {
       total_count: 8,
       sentiment_std: 0.546395891740792,
@@ -4373,7 +4375,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.25,
       denial: 0.375,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2010: {
       total_count: 2,
@@ -4385,7 +4387,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 5,
@@ -4397,7 +4399,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2012: {
       total_count: 4,
@@ -4409,7 +4411,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 8,
@@ -4421,7 +4423,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.625,
       denial: 0.375,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2014: {
       total_count: 7,
@@ -4433,7 +4435,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.14285714285714285,
       denial: 0.5714285714285714,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 7,
@@ -4445,7 +4447,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.0,
       denial: 0.42857142857142855,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2016: {
       total_count: 5,
@@ -4457,7 +4459,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2017: {
       total_count: 38,
@@ -4469,7 +4471,7 @@ export const data = {
       believer: 0.7631578947368421,
       neutral: 0.10526315789473684,
       denial: 0.13157894736842105,
-      aggressive: 0.2631578947368421
+      aggressive: 0.2631578947368421,
     },
     2018: {
       total_count: 48,
@@ -4481,7 +4483,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.0625,
       denial: 0.10416666666666667,
-      aggressive: 0.2916666666666667
+      aggressive: 0.2916666666666667,
     },
     2019: {
       total_count: 17,
@@ -4493,8 +4495,8 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.17647058823529413,
       denial: 0.058823529411764705,
-      aggressive: 0.23529411764705882
-    }
+      aggressive: 0.23529411764705882,
+    },
   },
   CAR: {
     2009: {
@@ -4507,7 +4509,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -4519,7 +4521,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -4531,7 +4533,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 1,
@@ -4543,7 +4545,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -4555,7 +4557,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 8,
@@ -4567,7 +4569,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2019: {
       total_count: 1,
@@ -4579,8 +4581,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Chad: {
     2010: {
@@ -4593,7 +4595,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -4605,7 +4607,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 2,
@@ -4617,7 +4619,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 11,
@@ -4629,7 +4631,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -4641,8 +4643,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Chile: {
     2008: {
@@ -4655,7 +4657,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.42857142857142855,
       denial: 0.14285714285714285,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2009: {
       total_count: 241,
@@ -4667,7 +4669,7 @@ export const data = {
       believer: 0.5850622406639004,
       neutral: 0.3817427385892116,
       denial: 0.03319502074688797,
-      aggressive: 0.3983402489626556
+      aggressive: 0.3983402489626556,
     },
     2010: {
       total_count: 163,
@@ -4679,7 +4681,7 @@ export const data = {
       believer: 0.5337423312883436,
       neutral: 0.3558282208588957,
       denial: 0.11042944785276074,
-      aggressive: 0.3067484662576687
+      aggressive: 0.3067484662576687,
     },
     2011: {
       total_count: 119,
@@ -4691,7 +4693,7 @@ export const data = {
       believer: 0.36134453781512604,
       neutral: 0.5714285714285714,
       denial: 0.06722689075630252,
-      aggressive: 0.29411764705882354
+      aggressive: 0.29411764705882354,
     },
     2012: {
       total_count: 69,
@@ -4703,7 +4705,7 @@ export const data = {
       believer: 0.21739130434782608,
       neutral: 0.7101449275362319,
       denial: 0.07246376811594203,
-      aggressive: 0.2463768115942029
+      aggressive: 0.2463768115942029,
     },
     2013: {
       total_count: 55,
@@ -4715,7 +4717,7 @@ export const data = {
       believer: 0.43636363636363634,
       neutral: 0.45454545454545453,
       denial: 0.10909090909090909,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2014: {
       total_count: 71,
@@ -4727,7 +4729,7 @@ export const data = {
       believer: 0.5492957746478874,
       neutral: 0.38028169014084506,
       denial: 0.07042253521126761,
-      aggressive: 0.29577464788732394
+      aggressive: 0.29577464788732394,
     },
     2015: {
       total_count: 301,
@@ -4739,7 +4741,7 @@ export const data = {
       believer: 0.6578073089700996,
       neutral: 0.32558139534883723,
       denial: 0.016611295681063124,
-      aggressive: 0.31893687707641194
+      aggressive: 0.31893687707641194,
     },
     2016: {
       total_count: 483,
@@ -4751,7 +4753,7 @@ export const data = {
       believer: 0.7370600414078675,
       neutral: 0.23809523809523808,
       denial: 0.024844720496894408,
-      aggressive: 0.2443064182194617
+      aggressive: 0.2443064182194617,
     },
     2017: {
       total_count: 1543,
@@ -4763,7 +4765,7 @@ export const data = {
       believer: 0.8237200259235256,
       neutral: 0.15878159429682437,
       denial: 0.017498379779650033,
-      aggressive: 0.1970187945560596
+      aggressive: 0.1970187945560596,
     },
     2018: {
       total_count: 3829,
@@ -4775,7 +4777,7 @@ export const data = {
       believer: 0.8511360668581875,
       neutral: 0.12666492556803344,
       denial: 0.022199007573779055,
-      aggressive: 0.2107599895534082
+      aggressive: 0.2107599895534082,
     },
     2019: {
       total_count: 1113,
@@ -4787,8 +4789,8 @@ export const data = {
       believer: 0.8301886792452831,
       neutral: 0.1518418688230009,
       denial: 0.017969451931716084,
-      aggressive: 0.20664869721473494
-    }
+      aggressive: 0.20664869721473494,
+    },
   },
   China: {
     2007: {
@@ -4801,7 +4803,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2008: {
       total_count: 13,
@@ -4813,7 +4815,7 @@ export const data = {
       believer: 0.7692307692307693,
       neutral: 0.23076923076923078,
       denial: 0.0,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2009: {
       total_count: 1082,
@@ -4825,7 +4827,7 @@ export const data = {
       believer: 0.3835489833641405,
       neutral: 0.4611829944547135,
       denial: 0.15526802218114602,
-      aggressive: 0.30129390018484287
+      aggressive: 0.30129390018484287,
     },
     2010: {
       total_count: 1906,
@@ -4837,7 +4839,7 @@ export const data = {
       believer: 0.47639034627492133,
       neutral: 0.4087093389296957,
       denial: 0.114900314795383,
-      aggressive: 0.332109129066107
+      aggressive: 0.332109129066107,
     },
     2011: {
       total_count: 892,
@@ -4849,7 +4851,7 @@ export const data = {
       believer: 0.43609865470852016,
       neutral: 0.437219730941704,
       denial: 0.1266816143497758,
-      aggressive: 0.28139013452914796
+      aggressive: 0.28139013452914796,
     },
     2012: {
       total_count: 180,
@@ -4861,7 +4863,7 @@ export const data = {
       believer: 0.45,
       neutral: 0.43333333333333335,
       denial: 0.11666666666666667,
-      aggressive: 0.31666666666666665
+      aggressive: 0.31666666666666665,
     },
     2013: {
       total_count: 269,
@@ -4873,7 +4875,7 @@ export const data = {
       believer: 0.46096654275092935,
       neutral: 0.3754646840148699,
       denial: 0.16356877323420074,
-      aggressive: 0.29739776951672864
+      aggressive: 0.29739776951672864,
     },
     2014: {
       total_count: 70,
@@ -4885,7 +4887,7 @@ export const data = {
       believer: 0.5857142857142857,
       neutral: 0.35714285714285715,
       denial: 0.05714285714285714,
-      aggressive: 0.3142857142857143
+      aggressive: 0.3142857142857143,
     },
     2015: {
       total_count: 205,
@@ -4897,7 +4899,7 @@ export const data = {
       believer: 0.7463414634146341,
       neutral: 0.23902439024390243,
       denial: 0.014634146341463415,
-      aggressive: 0.28780487804878047
+      aggressive: 0.28780487804878047,
     },
     2016: {
       total_count: 215,
@@ -4909,7 +4911,7 @@ export const data = {
       believer: 0.7209302325581395,
       neutral: 0.26976744186046514,
       denial: 0.009302325581395349,
-      aggressive: 0.2372093023255814
+      aggressive: 0.2372093023255814,
     },
     2017: {
       total_count: 594,
@@ -4921,7 +4923,7 @@ export const data = {
       believer: 0.835016835016835,
       neutral: 0.13636363636363635,
       denial: 0.02861952861952862,
-      aggressive: 0.2474747474747475
+      aggressive: 0.2474747474747475,
     },
     2018: {
       total_count: 1020,
@@ -4933,7 +4935,7 @@ export const data = {
       believer: 0.8470588235294118,
       neutral: 0.12058823529411765,
       denial: 0.03235294117647059,
-      aggressive: 0.2411764705882353
+      aggressive: 0.2411764705882353,
     },
     2019: {
       total_count: 237,
@@ -4945,8 +4947,8 @@ export const data = {
       believer: 0.7383966244725738,
       neutral: 0.2109704641350211,
       denial: 0.05063291139240506,
-      aggressive: 0.2320675105485232
-    }
+      aggressive: 0.2320675105485232,
+    },
   },
   Cocos: {
     2009: {
@@ -4959,7 +4961,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -4971,8 +4973,8 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Colombia: {
     2007: {
@@ -4985,7 +4987,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2008: {
       total_count: 47,
@@ -4997,7 +4999,7 @@ export const data = {
       believer: 0.40425531914893614,
       neutral: 0.5106382978723404,
       denial: 0.0851063829787234,
-      aggressive: 0.46808510638297873
+      aggressive: 0.46808510638297873,
     },
     2009: {
       total_count: 817,
@@ -5009,7 +5011,7 @@ export const data = {
       believer: 0.5116279069767442,
       neutral: 0.39657282741738065,
       denial: 0.09179926560587515,
-      aggressive: 0.30966952264381886
+      aggressive: 0.30966952264381886,
     },
     2010: {
       total_count: 522,
@@ -5021,7 +5023,7 @@ export const data = {
       believer: 0.4521072796934866,
       neutral: 0.4444444444444444,
       denial: 0.10344827586206896,
-      aggressive: 0.3160919540229885
+      aggressive: 0.3160919540229885,
     },
     2011: {
       total_count: 412,
@@ -5033,7 +5035,7 @@ export const data = {
       believer: 0.5145631067961165,
       neutral: 0.3640776699029126,
       denial: 0.12135922330097088,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 278,
@@ -5045,7 +5047,7 @@ export const data = {
       believer: 0.4676258992805755,
       neutral: 0.41007194244604317,
       denial: 0.1223021582733813,
-      aggressive: 0.35251798561151076
+      aggressive: 0.35251798561151076,
     },
     2013: {
       total_count: 576,
@@ -5057,7 +5059,7 @@ export const data = {
       believer: 0.6510416666666666,
       neutral: 0.2569444444444444,
       denial: 0.0920138888888889,
-      aggressive: 0.4982638888888889
+      aggressive: 0.4982638888888889,
     },
     2014: {
       total_count: 541,
@@ -5069,7 +5071,7 @@ export const data = {
       believer: 0.5637707948243993,
       neutral: 0.31053604436229204,
       denial: 0.1256931608133087,
-      aggressive: 0.41589648798521256
+      aggressive: 0.41589648798521256,
     },
     2015: {
       total_count: 1758,
@@ -5081,7 +5083,7 @@ export const data = {
       believer: 0.7121729237770194,
       neutral: 0.229806598407281,
       denial: 0.05802047781569966,
-      aggressive: 0.35494880546075086
+      aggressive: 0.35494880546075086,
     },
     2016: {
       total_count: 2311,
@@ -5093,7 +5095,7 @@ export const data = {
       believer: 0.7477282561661618,
       neutral: 0.2020770229337949,
       denial: 0.050194720900043274,
-      aggressive: 0.32626568585028126
+      aggressive: 0.32626568585028126,
     },
     2017: {
       total_count: 5698,
@@ -5105,7 +5107,7 @@ export const data = {
       believer: 0.8343278343278343,
       neutral: 0.12811512811512812,
       denial: 0.037557037557037556,
-      aggressive: 0.2669357669357669
+      aggressive: 0.2669357669357669,
     },
     2018: {
       total_count: 10095,
@@ -5117,7 +5119,7 @@ export const data = {
       believer: 0.8292223873204557,
       neutral: 0.12877662209014362,
       denial: 0.0420009905894007,
-      aggressive: 0.25636453689945515
+      aggressive: 0.25636453689945515,
     },
     2019: {
       total_count: 2702,
@@ -5129,8 +5131,8 @@ export const data = {
       believer: 0.8279052553663953,
       neutral: 0.12879348630643966,
       denial: 0.04330125832716506,
-      aggressive: 0.2464840858623242
-    }
+      aggressive: 0.2464840858623242,
+    },
   },
   Congo: {
     2015: {
@@ -5143,7 +5145,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 2,
@@ -5155,7 +5157,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 13,
@@ -5167,7 +5169,7 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.07692307692307693,
       denial: 0.0,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2018: {
       total_count: 39,
@@ -5179,7 +5181,7 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.07692307692307693,
       denial: 0.0,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2019: {
       total_count: 9,
@@ -5191,10 +5193,10 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.2222222222222222
-    }
+      aggressive: 0.2222222222222222,
+    },
   },
- 
+
   CookIslands: {
     2018: {
       total_count: 1,
@@ -5206,7 +5208,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 2,
@@ -5218,8 +5220,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   CostaRica: {
     2008: {
@@ -5232,7 +5234,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.0,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 45,
@@ -5244,7 +5246,7 @@ export const data = {
       believer: 0.4222222222222222,
       neutral: 0.5555555555555556,
       denial: 0.022222222222222223,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2010: {
       total_count: 39,
@@ -5256,7 +5258,7 @@ export const data = {
       believer: 0.3076923076923077,
       neutral: 0.48717948717948717,
       denial: 0.20512820512820512,
-      aggressive: 0.23076923076923078
+      aggressive: 0.23076923076923078,
     },
     2011: {
       total_count: 22,
@@ -5268,7 +5270,7 @@ export const data = {
       believer: 0.18181818181818182,
       neutral: 0.7727272727272727,
       denial: 0.045454545454545456,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2012: {
       total_count: 13,
@@ -5280,7 +5282,7 @@ export const data = {
       believer: 0.46153846153846156,
       neutral: 0.38461538461538464,
       denial: 0.15384615384615385,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 63,
@@ -5292,7 +5294,7 @@ export const data = {
       believer: 0.20634920634920634,
       neutral: 0.7619047619047619,
       denial: 0.031746031746031744,
-      aggressive: 0.20634920634920634
+      aggressive: 0.20634920634920634,
     },
     2014: {
       total_count: 36,
@@ -5304,7 +5306,7 @@ export const data = {
       believer: 0.6111111111111112,
       neutral: 0.3333333333333333,
       denial: 0.05555555555555555,
-      aggressive: 0.3055555555555556
+      aggressive: 0.3055555555555556,
     },
     2015: {
       total_count: 207,
@@ -5316,7 +5318,7 @@ export const data = {
       believer: 0.6521739130434783,
       neutral: 0.2753623188405797,
       denial: 0.07246376811594203,
-      aggressive: 0.3140096618357488
+      aggressive: 0.3140096618357488,
     },
     2016: {
       total_count: 165,
@@ -5328,7 +5330,7 @@ export const data = {
       believer: 0.7090909090909091,
       neutral: 0.21818181818181817,
       denial: 0.07272727272727272,
-      aggressive: 0.2909090909090909
+      aggressive: 0.2909090909090909,
     },
     2017: {
       total_count: 434,
@@ -5340,7 +5342,7 @@ export const data = {
       believer: 0.8341013824884793,
       neutral: 0.12672811059907835,
       denial: 0.03917050691244239,
-      aggressive: 0.2119815668202765
+      aggressive: 0.2119815668202765,
     },
     2018: {
       total_count: 1299,
@@ -5352,7 +5354,7 @@ export const data = {
       believer: 0.8860662047729022,
       neutral: 0.08545034642032333,
       denial: 0.02848344880677444,
-      aggressive: 0.16859122401847576
+      aggressive: 0.16859122401847576,
     },
     2019: {
       total_count: 317,
@@ -5364,8 +5366,8 @@ export const data = {
       believer: 0.722397476340694,
       neutral: 0.24290220820189273,
       denial: 0.03470031545741325,
-      aggressive: 0.22082018927444794
-    }
+      aggressive: 0.22082018927444794,
+    },
   },
   Croatia: {
     2009: {
@@ -5378,7 +5380,7 @@ export const data = {
       believer: 0.17647058823529413,
       neutral: 0.5294117647058824,
       denial: 0.29411764705882354,
-      aggressive: 0.058823529411764705
+      aggressive: 0.058823529411764705,
     },
     2010: {
       total_count: 25,
@@ -5390,7 +5392,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.68,
       denial: 0.12,
-      aggressive: 0.16
+      aggressive: 0.16,
     },
     2011: {
       total_count: 19,
@@ -5402,7 +5404,7 @@ export const data = {
       believer: 0.2631578947368421,
       neutral: 0.7368421052631579,
       denial: 0.0,
-      aggressive: 0.2631578947368421
+      aggressive: 0.2631578947368421,
     },
     2012: {
       total_count: 21,
@@ -5414,7 +5416,7 @@ export const data = {
       believer: 0.38095238095238093,
       neutral: 0.47619047619047616,
       denial: 0.14285714285714285,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2013: {
       total_count: 30,
@@ -5426,7 +5428,7 @@ export const data = {
       believer: 0.5666666666666667,
       neutral: 0.4,
       denial: 0.03333333333333333,
-      aggressive: 0.23333333333333334
+      aggressive: 0.23333333333333334,
     },
     2014: {
       total_count: 31,
@@ -5438,7 +5440,7 @@ export const data = {
       believer: 0.45161290322580644,
       neutral: 0.5161290322580645,
       denial: 0.03225806451612903,
-      aggressive: 0.22580645161290322
+      aggressive: 0.22580645161290322,
     },
     2015: {
       total_count: 66,
@@ -5450,7 +5452,7 @@ export const data = {
       believer: 0.7575757575757576,
       neutral: 0.22727272727272727,
       denial: 0.015151515151515152,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2016: {
       total_count: 41,
@@ -5462,7 +5464,7 @@ export const data = {
       believer: 0.7073170731707317,
       neutral: 0.24390243902439024,
       denial: 0.04878048780487805,
-      aggressive: 0.3170731707317073
+      aggressive: 0.3170731707317073,
     },
     2017: {
       total_count: 132,
@@ -5474,7 +5476,7 @@ export const data = {
       believer: 0.7954545454545454,
       neutral: 0.17424242424242425,
       denial: 0.030303030303030304,
-      aggressive: 0.22727272727272727
+      aggressive: 0.22727272727272727,
     },
     2018: {
       total_count: 245,
@@ -5486,7 +5488,7 @@ export const data = {
       believer: 0.8163265306122449,
       neutral: 0.15918367346938775,
       denial: 0.024489795918367346,
-      aggressive: 0.15510204081632653
+      aggressive: 0.15510204081632653,
     },
     2019: {
       total_count: 62,
@@ -5498,8 +5500,8 @@ export const data = {
       believer: 0.8225806451612904,
       neutral: 0.14516129032258066,
       denial: 0.03225806451612903,
-      aggressive: 0.0967741935483871
-    }
+      aggressive: 0.0967741935483871,
+    },
   },
   Cuba: {
     2009: {
@@ -5512,7 +5514,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 12,
@@ -5524,7 +5526,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.25,
       denial: 0.08333333333333333,
-      aggressive: 0.8333333333333334
+      aggressive: 0.8333333333333334,
     },
     2011: {
       total_count: 7,
@@ -5536,7 +5538,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.5714285714285714,
       denial: 0.0,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2012: {
       total_count: 6,
@@ -5548,7 +5550,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.6666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 5,
@@ -5560,7 +5562,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2014: {
       total_count: 9,
@@ -5572,7 +5574,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2015: {
       total_count: 54,
@@ -5584,7 +5586,7 @@ export const data = {
       believer: 0.7407407407407407,
       neutral: 0.16666666666666666,
       denial: 0.09259259259259259,
-      aggressive: 0.4074074074074074
+      aggressive: 0.4074074074074074,
     },
     2016: {
       total_count: 32,
@@ -5596,7 +5598,7 @@ export const data = {
       believer: 0.53125,
       neutral: 0.46875,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2017: {
       total_count: 59,
@@ -5608,7 +5610,7 @@ export const data = {
       believer: 0.7796610169491526,
       neutral: 0.15254237288135594,
       denial: 0.06779661016949153,
-      aggressive: 0.2033898305084746
+      aggressive: 0.2033898305084746,
     },
     2018: {
       total_count: 138,
@@ -5620,7 +5622,7 @@ export const data = {
       believer: 0.8115942028985508,
       neutral: 0.14492753623188406,
       denial: 0.043478260869565216,
-      aggressive: 0.1956521739130435
+      aggressive: 0.1956521739130435,
     },
     2019: {
       total_count: 22,
@@ -5632,8 +5634,8 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.18181818181818182
-    }
+      aggressive: 0.18181818181818182,
+    },
   },
   Curaçao: {
     2010: {
@@ -5646,7 +5648,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 5,
@@ -5658,7 +5660,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2013: {
       total_count: 1,
@@ -5670,7 +5672,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 2,
@@ -5682,7 +5684,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -5694,7 +5696,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 5,
@@ -5706,7 +5708,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 11,
@@ -5718,7 +5720,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.09090909090909091,
       denial: 0.36363636363636365,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2019: {
       total_count: 4,
@@ -5730,8 +5732,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Cyprus: {
     2009: {
@@ -5744,7 +5746,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2010: {
       total_count: 20,
@@ -5756,7 +5758,7 @@ export const data = {
       believer: 0.35,
       neutral: 0.65,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 11,
@@ -5768,7 +5770,7 @@ export const data = {
       believer: 0.6363636363636364,
       neutral: 0.2727272727272727,
       denial: 0.09090909090909091,
-      aggressive: 0.09090909090909091
+      aggressive: 0.09090909090909091,
     },
     2012: {
       total_count: 4,
@@ -5780,7 +5782,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 15,
@@ -5792,7 +5794,7 @@ export const data = {
       believer: 0.4666666666666667,
       neutral: 0.4,
       denial: 0.13333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 19,
@@ -5804,7 +5806,7 @@ export const data = {
       believer: 0.5789473684210527,
       neutral: 0.3684210526315789,
       denial: 0.05263157894736842,
-      aggressive: 0.15789473684210525
+      aggressive: 0.15789473684210525,
     },
     2015: {
       total_count: 133,
@@ -5816,7 +5818,7 @@ export const data = {
       believer: 0.7894736842105263,
       neutral: 0.19548872180451127,
       denial: 0.015037593984962405,
-      aggressive: 0.22556390977443608
+      aggressive: 0.22556390977443608,
     },
     2016: {
       total_count: 372,
@@ -5828,7 +5830,7 @@ export const data = {
       believer: 0.7258064516129032,
       neutral: 0.26344086021505375,
       denial: 0.010752688172043012,
-      aggressive: 0.21774193548387097
+      aggressive: 0.21774193548387097,
     },
     2017: {
       total_count: 242,
@@ -5840,7 +5842,7 @@ export const data = {
       believer: 0.743801652892562,
       neutral: 0.23140495867768596,
       denial: 0.024793388429752067,
-      aggressive: 0.2396694214876033
+      aggressive: 0.2396694214876033,
     },
     2018: {
       total_count: 336,
@@ -5852,7 +5854,7 @@ export const data = {
       believer: 0.8184523809523809,
       neutral: 0.16964285714285715,
       denial: 0.011904761904761904,
-      aggressive: 0.23511904761904762
+      aggressive: 0.23511904761904762,
     },
     2019: {
       total_count: 70,
@@ -5864,8 +5866,8 @@ export const data = {
       believer: 0.7714285714285715,
       neutral: 0.15714285714285714,
       denial: 0.07142857142857142,
-      aggressive: 0.35714285714285715
-    }
+      aggressive: 0.35714285714285715,
+    },
   },
   Czechia: {
     2007: {
@@ -5878,7 +5880,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 3,
@@ -5890,7 +5892,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 61,
@@ -5902,7 +5904,7 @@ export const data = {
       believer: 0.3442622950819672,
       neutral: 0.5573770491803278,
       denial: 0.09836065573770492,
-      aggressive: 0.29508196721311475
+      aggressive: 0.29508196721311475,
     },
     2010: {
       total_count: 60,
@@ -5914,7 +5916,7 @@ export const data = {
       believer: 0.3,
       neutral: 0.48333333333333334,
       denial: 0.21666666666666667,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2011: {
       total_count: 58,
@@ -5926,7 +5928,7 @@ export const data = {
       believer: 0.3103448275862069,
       neutral: 0.5689655172413793,
       denial: 0.1206896551724138,
-      aggressive: 0.29310344827586204
+      aggressive: 0.29310344827586204,
     },
     2012: {
       total_count: 29,
@@ -5938,7 +5940,7 @@ export const data = {
       believer: 0.13793103448275862,
       neutral: 0.6551724137931034,
       denial: 0.20689655172413793,
-      aggressive: 0.4482758620689655
+      aggressive: 0.4482758620689655,
     },
     2013: {
       total_count: 36,
@@ -5950,7 +5952,7 @@ export const data = {
       believer: 0.3611111111111111,
       neutral: 0.5555555555555556,
       denial: 0.08333333333333333,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2014: {
       total_count: 40,
@@ -5962,7 +5964,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.45,
       denial: 0.175,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2015: {
       total_count: 193,
@@ -5974,7 +5976,7 @@ export const data = {
       believer: 0.6269430051813472,
       neutral: 0.3316062176165803,
       denial: 0.04145077720207254,
-      aggressive: 0.3005181347150259
+      aggressive: 0.3005181347150259,
     },
     2016: {
       total_count: 206,
@@ -5986,7 +5988,7 @@ export const data = {
       believer: 0.7087378640776699,
       neutral: 0.2524271844660194,
       denial: 0.038834951456310676,
-      aggressive: 0.24271844660194175
+      aggressive: 0.24271844660194175,
     },
     2017: {
       total_count: 331,
@@ -5998,7 +6000,7 @@ export const data = {
       believer: 0.7401812688821753,
       neutral: 0.1782477341389728,
       denial: 0.08157099697885196,
-      aggressive: 0.21450151057401812
+      aggressive: 0.21450151057401812,
     },
     2018: {
       total_count: 859,
@@ -6010,7 +6012,7 @@ export const data = {
       believer: 0.7392316647264261,
       neutral: 0.17462165308498254,
       denial: 0.08614668218859138,
-      aggressive: 0.21187427240977882
+      aggressive: 0.21187427240977882,
     },
     2019: {
       total_count: 271,
@@ -6022,10 +6024,10 @@ export const data = {
       believer: 0.7490774907749077,
       neutral: 0.16605166051660517,
       denial: 0.08487084870848709,
-      aggressive: 0.25830258302583026
-    }
+      aggressive: 0.25830258302583026,
+    },
   },
-  IvoryCoast:{
+  IvoryCoast: {
     2008: {
       total_count: 1,
       sentiment_std: NaN,
@@ -6036,7 +6038,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 4,
@@ -6048,7 +6050,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 3,
@@ -6060,7 +6062,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -6072,7 +6074,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 1,
@@ -6084,7 +6086,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 2,
@@ -6096,7 +6098,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 13,
@@ -6108,7 +6110,7 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.15384615384615385,
       denial: 0.0,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2016: {
       total_count: 29,
@@ -6120,7 +6122,7 @@ export const data = {
       believer: 0.8620689655172413,
       neutral: 0.10344827586206896,
       denial: 0.034482758620689655,
-      aggressive: 0.13793103448275862
+      aggressive: 0.13793103448275862,
     },
     2017: {
       total_count: 47,
@@ -6132,7 +6134,7 @@ export const data = {
       believer: 0.851063829787234,
       neutral: 0.14893617021276595,
       denial: 0.0,
-      aggressive: 0.14893617021276595
+      aggressive: 0.14893617021276595,
     },
     2018: {
       total_count: 103,
@@ -6144,7 +6146,7 @@ export const data = {
       believer: 0.9223300970873787,
       neutral: 0.05825242718446602,
       denial: 0.019417475728155338,
-      aggressive: 0.1553398058252427
+      aggressive: 0.1553398058252427,
     },
     2019: {
       total_count: 14,
@@ -6156,8 +6158,8 @@ export const data = {
       believer: 0.9285714285714286,
       neutral: 0.07142857142857142,
       denial: 0.0,
-      aggressive: 0.07142857142857142
-    }
+      aggressive: 0.07142857142857142,
+    },
   },
   Denmark: {
     2007: {
@@ -6170,7 +6172,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2008: {
       total_count: 20,
@@ -6182,7 +6184,7 @@ export const data = {
       believer: 0.35,
       neutral: 0.5,
       denial: 0.15,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2009: {
       total_count: 472,
@@ -6194,7 +6196,7 @@ export const data = {
       believer: 0.5699152542372882,
       neutral: 0.3665254237288136,
       denial: 0.0635593220338983,
-      aggressive: 0.2266949152542373
+      aggressive: 0.2266949152542373,
     },
     2010: {
       total_count: 166,
@@ -6206,7 +6208,7 @@ export const data = {
       believer: 0.3674698795180723,
       neutral: 0.4879518072289157,
       denial: 0.14457831325301204,
-      aggressive: 0.30120481927710846
+      aggressive: 0.30120481927710846,
     },
     2011: {
       total_count: 96,
@@ -6218,7 +6220,7 @@ export const data = {
       believer: 0.34375,
       neutral: 0.5416666666666666,
       denial: 0.11458333333333333,
-      aggressive: 0.28125
+      aggressive: 0.28125,
     },
     2012: {
       total_count: 42,
@@ -6230,7 +6232,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.4523809523809524,
       denial: 0.21428571428571427,
-      aggressive: 0.40476190476190477
+      aggressive: 0.40476190476190477,
     },
     2013: {
       total_count: 71,
@@ -6242,7 +6244,7 @@ export const data = {
       believer: 0.4647887323943662,
       neutral: 0.38028169014084506,
       denial: 0.15492957746478872,
-      aggressive: 0.30985915492957744
+      aggressive: 0.30985915492957744,
     },
     2014: {
       total_count: 115,
@@ -6254,7 +6256,7 @@ export const data = {
       believer: 0.5130434782608696,
       neutral: 0.391304347826087,
       denial: 0.09565217391304348,
-      aggressive: 0.2956521739130435
+      aggressive: 0.2956521739130435,
     },
     2015: {
       total_count: 839,
@@ -6266,7 +6268,7 @@ export const data = {
       believer: 0.7532777115613826,
       neutral: 0.2205005959475566,
       denial: 0.026221692491060787,
-      aggressive: 0.27532777115613827
+      aggressive: 0.27532777115613827,
     },
     2016: {
       total_count: 802,
@@ -6278,7 +6280,7 @@ export const data = {
       believer: 0.7755610972568578,
       neutral: 0.20448877805486285,
       denial: 0.0199501246882793,
-      aggressive: 0.2256857855361596
+      aggressive: 0.2256857855361596,
     },
     2017: {
       total_count: 1913,
@@ -6290,7 +6292,7 @@ export const data = {
       believer: 0.8316779926816519,
       neutral: 0.14584422373235756,
       denial: 0.02247778358599059,
-      aggressive: 0.25143753267119706
+      aggressive: 0.25143753267119706,
     },
     2018: {
       total_count: 4005,
@@ -6302,7 +6304,7 @@ export const data = {
       believer: 0.8461922596754058,
       neutral: 0.12484394506866417,
       denial: 0.028963795255930087,
-      aggressive: 0.23420724094881398
+      aggressive: 0.23420724094881398,
     },
     2019: {
       total_count: 1063,
@@ -6314,8 +6316,8 @@ export const data = {
       believer: 0.8071495766698025,
       neutral: 0.14863593603010347,
       denial: 0.04421448730009407,
-      aggressive: 0.23424270931326435
-    }
+      aggressive: 0.23424270931326435,
+    },
   },
   Djibouti: {
     2011: {
@@ -6328,7 +6330,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 1,
@@ -6340,7 +6342,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 6,
@@ -6352,7 +6354,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 2,
@@ -6364,7 +6366,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2019: {
       total_count: 2,
@@ -6376,8 +6378,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
-    }
+      aggressive: 1.0,
+    },
   },
   Dominica: {
     2010: {
@@ -6390,7 +6392,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -6402,7 +6404,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 4,
@@ -6414,7 +6416,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2016: {
       total_count: 12,
@@ -6426,7 +6428,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2017: {
       total_count: 3,
@@ -6438,7 +6440,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.0,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 18,
@@ -6450,7 +6452,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2019: {
       total_count: 4,
@@ -6462,8 +6464,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
-    }
+      aggressive: 0.25,
+    },
   },
   DominicanRepublic: {
     2009: {
@@ -6476,7 +6478,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.375,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2010: {
       total_count: 20,
@@ -6488,7 +6490,7 @@ export const data = {
       believer: 0.45,
       neutral: 0.45,
       denial: 0.1,
-      aggressive: 0.15
+      aggressive: 0.15,
     },
     2011: {
       total_count: 15,
@@ -6500,7 +6502,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2012: {
       total_count: 5,
@@ -6512,7 +6514,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2013: {
       total_count: 14,
@@ -6524,7 +6526,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.5714285714285714,
       denial: 0.0,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2014: {
       total_count: 21,
@@ -6536,7 +6538,7 @@ export const data = {
       believer: 0.47619047619047616,
       neutral: 0.3333333333333333,
       denial: 0.19047619047619047,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 45,
@@ -6548,7 +6550,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.5333333333333333
+      aggressive: 0.5333333333333333,
     },
     2016: {
       total_count: 47,
@@ -6560,7 +6562,7 @@ export const data = {
       believer: 0.8723404255319149,
       neutral: 0.1276595744680851,
       denial: 0.0,
-      aggressive: 0.1702127659574468
+      aggressive: 0.1702127659574468,
     },
     2017: {
       total_count: 80,
@@ -6572,7 +6574,7 @@ export const data = {
       believer: 0.8375,
       neutral: 0.15,
       denial: 0.0125,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2018: {
       total_count: 206,
@@ -6584,7 +6586,7 @@ export const data = {
       believer: 0.8495145631067961,
       neutral: 0.1407766990291262,
       denial: 0.009708737864077669,
-      aggressive: 0.2669902912621359
+      aggressive: 0.2669902912621359,
     },
     2019: {
       total_count: 26,
@@ -6596,8 +6598,8 @@ export const data = {
       believer: 0.6538461538461539,
       neutral: 0.23076923076923078,
       denial: 0.11538461538461539,
-      aggressive: 0.34615384615384615
-    }
+      aggressive: 0.34615384615384615,
+    },
   },
   Ecuador: {
     2008: {
@@ -6610,7 +6612,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 56,
@@ -6622,7 +6624,7 @@ export const data = {
       believer: 0.4107142857142857,
       neutral: 0.5,
       denial: 0.08928571428571429,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 42,
@@ -6634,7 +6636,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.5238095238095238,
       denial: 0.30952380952380953,
-      aggressive: 0.30952380952380953
+      aggressive: 0.30952380952380953,
     },
     2011: {
       total_count: 60,
@@ -6646,7 +6648,7 @@ export const data = {
       believer: 0.23333333333333334,
       neutral: 0.6166666666666667,
       denial: 0.15,
-      aggressive: 0.36666666666666664
+      aggressive: 0.36666666666666664,
     },
     2012: {
       total_count: 31,
@@ -6658,7 +6660,7 @@ export const data = {
       believer: 0.2903225806451613,
       neutral: 0.6129032258064516,
       denial: 0.0967741935483871,
-      aggressive: 0.1935483870967742
+      aggressive: 0.1935483870967742,
     },
     2013: {
       total_count: 37,
@@ -6670,7 +6672,7 @@ export const data = {
       believer: 0.32432432432432434,
       neutral: 0.5135135135135135,
       denial: 0.16216216216216217,
-      aggressive: 0.32432432432432434
+      aggressive: 0.32432432432432434,
     },
     2014: {
       total_count: 75,
@@ -6682,7 +6684,7 @@ export const data = {
       believer: 0.30666666666666664,
       neutral: 0.56,
       denial: 0.13333333333333333,
-      aggressive: 0.49333333333333335
+      aggressive: 0.49333333333333335,
     },
     2015: {
       total_count: 188,
@@ -6694,7 +6696,7 @@ export const data = {
       believer: 0.6702127659574468,
       neutral: 0.31382978723404253,
       denial: 0.015957446808510637,
-      aggressive: 0.30851063829787234
+      aggressive: 0.30851063829787234,
     },
     2016: {
       total_count: 190,
@@ -6706,7 +6708,7 @@ export const data = {
       believer: 0.7736842105263158,
       neutral: 0.19473684210526315,
       denial: 0.031578947368421054,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2017: {
       total_count: 618,
@@ -6718,7 +6720,7 @@ export const data = {
       believer: 0.8252427184466019,
       neutral: 0.1407766990291262,
       denial: 0.03398058252427184,
-      aggressive: 0.2605177993527508
+      aggressive: 0.2605177993527508,
     },
     2018: {
       total_count: 1805,
@@ -6730,7 +6732,7 @@ export const data = {
       believer: 0.8986149584487535,
       neutral: 0.0886426592797784,
       denial: 0.012742382271468145,
-      aggressive: 0.20166204986149586
+      aggressive: 0.20166204986149586,
     },
     2019: {
       total_count: 450,
@@ -6742,8 +6744,8 @@ export const data = {
       believer: 0.8822222222222222,
       neutral: 0.10666666666666667,
       denial: 0.011111111111111112,
-      aggressive: 0.23555555555555555
-    }
+      aggressive: 0.23555555555555555,
+    },
   },
   Egypt: {
     2007: {
@@ -6756,7 +6758,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 8,
@@ -6768,7 +6770,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 118,
@@ -6780,7 +6782,7 @@ export const data = {
       believer: 0.5932203389830508,
       neutral: 0.3305084745762712,
       denial: 0.07627118644067797,
-      aggressive: 0.3559322033898305
+      aggressive: 0.3559322033898305,
     },
     2010: {
       total_count: 123,
@@ -6792,7 +6794,7 @@ export const data = {
       believer: 0.44715447154471544,
       neutral: 0.34959349593495936,
       denial: 0.2032520325203252,
-      aggressive: 0.3902439024390244
+      aggressive: 0.3902439024390244,
     },
     2011: {
       total_count: 139,
@@ -6804,7 +6806,7 @@ export const data = {
       believer: 0.302158273381295,
       neutral: 0.5467625899280576,
       denial: 0.1510791366906475,
-      aggressive: 0.3381294964028777
+      aggressive: 0.3381294964028777,
     },
     2012: {
       total_count: 115,
@@ -6816,7 +6818,7 @@ export const data = {
       believer: 0.43478260869565216,
       neutral: 0.4434782608695652,
       denial: 0.12173913043478261,
-      aggressive: 0.3652173913043478
+      aggressive: 0.3652173913043478,
     },
     2013: {
       total_count: 197,
@@ -6828,7 +6830,7 @@ export const data = {
       believer: 0.5177664974619289,
       neutral: 0.4213197969543147,
       denial: 0.06091370558375635,
-      aggressive: 0.26903553299492383
+      aggressive: 0.26903553299492383,
     },
     2014: {
       total_count: 147,
@@ -6840,7 +6842,7 @@ export const data = {
       believer: 0.673469387755102,
       neutral: 0.25170068027210885,
       denial: 0.07482993197278912,
-      aggressive: 0.3673469387755102
+      aggressive: 0.3673469387755102,
     },
     2015: {
       total_count: 368,
@@ -6852,7 +6854,7 @@ export const data = {
       believer: 0.717391304347826,
       neutral: 0.24456521739130435,
       denial: 0.03804347826086957,
-      aggressive: 0.2907608695652174
+      aggressive: 0.2907608695652174,
     },
     2016: {
       total_count: 357,
@@ -6864,7 +6866,7 @@ export const data = {
       believer: 0.6750700280112045,
       neutral: 0.2689075630252101,
       denial: 0.056022408963585436,
-      aggressive: 0.25210084033613445
+      aggressive: 0.25210084033613445,
     },
     2017: {
       total_count: 1636,
@@ -6876,7 +6878,7 @@ export const data = {
       believer: 0.6363080684596577,
       neutral: 0.347799511002445,
       denial: 0.01589242053789731,
-      aggressive: 0.20537897310513448
+      aggressive: 0.20537897310513448,
     },
     2018: {
       total_count: 2224,
@@ -6888,7 +6890,7 @@ export const data = {
       believer: 0.7670863309352518,
       neutral: 0.20368705035971224,
       denial: 0.02922661870503597,
-      aggressive: 0.2329136690647482
+      aggressive: 0.2329136690647482,
     },
     2019: {
       total_count: 566,
@@ -6900,8 +6902,8 @@ export const data = {
       believer: 0.7208480565371025,
       neutral: 0.25265017667844525,
       denial: 0.026501766784452298,
-      aggressive: 0.27208480565371024
-    }
+      aggressive: 0.27208480565371024,
+    },
   },
   Salvador: {
     2009: {
@@ -6914,7 +6916,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 5,
@@ -6926,7 +6928,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2011: {
       total_count: 11,
@@ -6938,7 +6940,7 @@ export const data = {
       believer: 0.09090909090909091,
       neutral: 0.8181818181818182,
       denial: 0.09090909090909091,
-      aggressive: 0.45454545454545453
+      aggressive: 0.45454545454545453,
     },
     2012: {
       total_count: 7,
@@ -6950,7 +6952,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.5714285714285714,
       denial: 0.14285714285714285,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2013: {
       total_count: 5,
@@ -6962,7 +6964,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 5,
@@ -6974,7 +6976,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.0,
       denial: 0.2,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 16,
@@ -6986,7 +6988,7 @@ export const data = {
       believer: 0.6875,
       neutral: 0.3125,
       denial: 0.0,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2016: {
       total_count: 42,
@@ -6998,7 +7000,7 @@ export const data = {
       believer: 0.6428571428571429,
       neutral: 0.3333333333333333,
       denial: 0.023809523809523808,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2017: {
       total_count: 130,
@@ -7010,7 +7012,7 @@ export const data = {
       believer: 0.7538461538461538,
       neutral: 0.2153846153846154,
       denial: 0.03076923076923077,
-      aggressive: 0.33076923076923076
+      aggressive: 0.33076923076923076,
     },
     2018: {
       total_count: 170,
@@ -7022,7 +7024,7 @@ export const data = {
       believer: 0.8705882352941177,
       neutral: 0.09411764705882353,
       denial: 0.03529411764705882,
-      aggressive: 0.19411764705882353
+      aggressive: 0.19411764705882353,
     },
     2019: {
       total_count: 54,
@@ -7030,12 +7032,12 @@ export const data = {
       beliver_v_denier: 1.0,
       aggressive_rate_believer: 0.1590909090909091,
       aggressive_rate_denier: NaN,
-      sentiment: 2.2855345746437262e-05,
+      sentiment: 2.2855345746437262e-5,
       believer: 0.8148148148148148,
       neutral: 0.18518518518518517,
       denial: 0.0,
-      aggressive: 0.2037037037037037
-    }
+      aggressive: 0.2037037037037037,
+    },
   },
   EquatorialGuinea: {
     2011: {
@@ -7048,7 +7050,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 1,
@@ -7060,7 +7062,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 4,
@@ -7072,7 +7074,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.0,
       denial: 0.25,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 6,
@@ -7084,8 +7086,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Eritrea: {
     2009: {
@@ -7098,7 +7100,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2010: {
       total_count: 2,
@@ -7110,7 +7112,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 1,
@@ -7122,7 +7124,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 4,
@@ -7134,7 +7136,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.0,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 4,
@@ -7146,7 +7148,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 9,
@@ -7158,7 +7160,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.1111111111111111,
       denial: 0.1111111111111111,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2018: {
       total_count: 19,
@@ -7170,7 +7172,7 @@ export const data = {
       believer: 0.7894736842105263,
       neutral: 0.15789473684210525,
       denial: 0.05263157894736842,
-      aggressive: 0.3684210526315789
+      aggressive: 0.3684210526315789,
     },
     2019: {
       total_count: 2,
@@ -7182,8 +7184,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Estonia: {
     2008: {
@@ -7196,7 +7198,7 @@ export const data = {
       believer: 0.5555555555555556,
       neutral: 0.3333333333333333,
       denial: 0.1111111111111111,
-      aggressive: 0.5555555555555556
+      aggressive: 0.5555555555555556,
     },
     2009: {
       total_count: 23,
@@ -7208,7 +7210,7 @@ export const data = {
       believer: 0.43478260869565216,
       neutral: 0.391304347826087,
       denial: 0.17391304347826086,
-      aggressive: 0.43478260869565216
+      aggressive: 0.43478260869565216,
     },
     2010: {
       total_count: 19,
@@ -7220,7 +7222,7 @@ export const data = {
       believer: 0.5789473684210527,
       neutral: 0.3157894736842105,
       denial: 0.10526315789473684,
-      aggressive: 0.2631578947368421
+      aggressive: 0.2631578947368421,
     },
     2011: {
       total_count: 14,
@@ -7232,7 +7234,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.2857142857142857,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2012: {
       total_count: 1,
@@ -7244,7 +7246,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -7256,7 +7258,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 7,
@@ -7268,7 +7270,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2015: {
       total_count: 25,
@@ -7280,7 +7282,7 @@ export const data = {
       believer: 0.84,
       neutral: 0.16,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2016: {
       total_count: 42,
@@ -7292,7 +7294,7 @@ export const data = {
       believer: 0.6904761904761905,
       neutral: 0.16666666666666666,
       denial: 0.14285714285714285,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2017: {
       total_count: 105,
@@ -7304,7 +7306,7 @@ export const data = {
       believer: 0.8095238095238095,
       neutral: 0.1523809523809524,
       denial: 0.0380952380952381,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2018: {
       total_count: 269,
@@ -7316,7 +7318,7 @@ export const data = {
       believer: 0.8215613382899628,
       neutral: 0.14869888475836432,
       denial: 0.02973977695167286,
-      aggressive: 0.1970260223048327
+      aggressive: 0.1970260223048327,
     },
     2019: {
       total_count: 115,
@@ -7328,8 +7330,8 @@ export const data = {
       believer: 0.7565217391304347,
       neutral: 0.16521739130434782,
       denial: 0.0782608695652174,
-      aggressive: 0.24347826086956523
-    }
+      aggressive: 0.24347826086956523,
+    },
   },
   Eswatini: {
     2009: {
@@ -7342,7 +7344,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 1,
@@ -7354,7 +7356,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 3,
@@ -7366,7 +7368,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 3,
@@ -7378,7 +7380,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 3,
@@ -7390,7 +7392,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 2,
@@ -7402,7 +7404,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 2,
@@ -7414,7 +7416,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 5,
@@ -7426,7 +7428,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 10,
@@ -7438,7 +7440,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.3,
       denial: 0.1,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2018: {
       total_count: 21,
@@ -7450,7 +7452,7 @@ export const data = {
       believer: 0.9047619047619048,
       neutral: 0.09523809523809523,
       denial: 0.0,
-      aggressive: 0.47619047619047616
+      aggressive: 0.47619047619047616,
     },
     2019: {
       total_count: 2,
@@ -7462,8 +7464,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Ethiopia: {
     2009: {
@@ -7476,7 +7478,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 1,
@@ -7488,7 +7490,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 8,
@@ -7500,7 +7502,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.625,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2012: {
       total_count: 6,
@@ -7512,7 +7514,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 3,
@@ -7524,7 +7526,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2014: {
       total_count: 3,
@@ -7536,7 +7538,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 114,
@@ -7548,7 +7550,7 @@ export const data = {
       believer: 0.868421052631579,
       neutral: 0.12280701754385964,
       denial: 0.008771929824561403,
-      aggressive: 0.38596491228070173
+      aggressive: 0.38596491228070173,
     },
     2016: {
       total_count: 64,
@@ -7560,7 +7562,7 @@ export const data = {
       believer: 0.84375,
       neutral: 0.15625,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 204,
@@ -7572,7 +7574,7 @@ export const data = {
       believer: 0.9068627450980392,
       neutral: 0.08333333333333333,
       denial: 0.00980392156862745,
-      aggressive: 0.21568627450980393
+      aggressive: 0.21568627450980393,
     },
     2018: {
       total_count: 543,
@@ -7584,7 +7586,7 @@ export const data = {
       believer: 0.9300184162062615,
       neutral: 0.0570902394106814,
       denial: 0.01289134438305709,
-      aggressive: 0.18047882136279927
+      aggressive: 0.18047882136279927,
     },
     2019: {
       total_count: 76,
@@ -7596,8 +7598,8 @@ export const data = {
       believer: 0.9078947368421053,
       neutral: 0.07894736842105263,
       denial: 0.013157894736842105,
-      aggressive: 0.23684210526315788
-    }
+      aggressive: 0.23684210526315788,
+    },
   },
   FalklandIslands: {
     2011: {
@@ -7610,7 +7612,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 2,
@@ -7622,7 +7624,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 2,
@@ -7634,7 +7636,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 2,
@@ -7646,7 +7648,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 5,
@@ -7658,7 +7660,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 2,
@@ -7670,7 +7672,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 8,
@@ -7682,7 +7684,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2018: {
       total_count: 11,
@@ -7694,7 +7696,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2019: {
       total_count: 5,
@@ -7706,8 +7708,8 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.4
-    }
+      aggressive: 0.4,
+    },
   },
   FaroeIslands: {
     2010: {
@@ -7720,7 +7722,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -7732,7 +7734,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 3,
@@ -7744,7 +7746,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2018: {
       total_count: 3,
@@ -7756,8 +7758,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Fiji: {
     2008: {
@@ -7770,7 +7772,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 7,
@@ -7782,7 +7784,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 6,
@@ -7794,7 +7796,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2011: {
       total_count: 4,
@@ -7806,7 +7808,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2012: {
       total_count: 2,
@@ -7818,7 +7820,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 1,
@@ -7830,7 +7832,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 6,
@@ -7842,7 +7844,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 204,
@@ -7854,7 +7856,7 @@ export const data = {
       believer: 0.8529411764705882,
       neutral: 0.13725490196078433,
       denial: 0.00980392156862745,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 154,
@@ -7866,7 +7868,7 @@ export const data = {
       believer: 0.8896103896103896,
       neutral: 0.11038961038961038,
       denial: 0.0,
-      aggressive: 0.2792207792207792
+      aggressive: 0.2792207792207792,
     },
     2017: {
       total_count: 504,
@@ -7878,7 +7880,7 @@ export const data = {
       believer: 0.873015873015873,
       neutral: 0.11706349206349206,
       denial: 0.00992063492063492,
-      aggressive: 0.20634920634920634
+      aggressive: 0.20634920634920634,
     },
     2018: {
       total_count: 872,
@@ -7890,7 +7892,7 @@ export const data = {
       believer: 0.9071100917431193,
       neutral: 0.08486238532110092,
       denial: 0.008027522935779817,
-      aggressive: 0.15022935779816513
+      aggressive: 0.15022935779816513,
     },
     2019: {
       total_count: 207,
@@ -7902,8 +7904,8 @@ export const data = {
       believer: 0.9468599033816425,
       neutral: 0.04830917874396135,
       denial: 0.004830917874396135,
-      aggressive: 0.09178743961352658
-    }
+      aggressive: 0.09178743961352658,
+    },
   },
   Finland: {
     2007: {
@@ -7916,7 +7918,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 14,
@@ -7928,7 +7930,7 @@ export const data = {
       believer: 0.35714285714285715,
       neutral: 0.5,
       denial: 0.14285714285714285,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2009: {
       total_count: 226,
@@ -7940,7 +7942,7 @@ export const data = {
       believer: 0.5929203539823009,
       neutral: 0.3407079646017699,
       denial: 0.06637168141592921,
-      aggressive: 0.3053097345132743
+      aggressive: 0.3053097345132743,
     },
     2010: {
       total_count: 116,
@@ -7952,7 +7954,7 @@ export const data = {
       believer: 0.4482758620689655,
       neutral: 0.43103448275862066,
       denial: 0.1206896551724138,
-      aggressive: 0.3620689655172414
+      aggressive: 0.3620689655172414,
     },
     2011: {
       total_count: 88,
@@ -7964,7 +7966,7 @@ export const data = {
       believer: 0.4431818181818182,
       neutral: 0.4659090909090909,
       denial: 0.09090909090909091,
-      aggressive: 0.32954545454545453
+      aggressive: 0.32954545454545453,
     },
     2012: {
       total_count: 53,
@@ -7976,7 +7978,7 @@ export const data = {
       believer: 0.5283018867924528,
       neutral: 0.37735849056603776,
       denial: 0.09433962264150944,
-      aggressive: 0.22641509433962265
+      aggressive: 0.22641509433962265,
     },
     2013: {
       total_count: 120,
@@ -7988,7 +7990,7 @@ export const data = {
       believer: 0.5583333333333333,
       neutral: 0.3,
       denial: 0.14166666666666666,
-      aggressive: 0.23333333333333334
+      aggressive: 0.23333333333333334,
     },
     2014: {
       total_count: 191,
@@ -8000,7 +8002,7 @@ export const data = {
       believer: 0.45549738219895286,
       neutral: 0.42408376963350786,
       denial: 0.12041884816753927,
-      aggressive: 0.2931937172774869
+      aggressive: 0.2931937172774869,
     },
     2015: {
       total_count: 988,
@@ -8012,7 +8014,7 @@ export const data = {
       believer: 0.7419028340080972,
       neutral: 0.22773279352226722,
       denial: 0.030364372469635626,
-      aggressive: 0.2793522267206478
+      aggressive: 0.2793522267206478,
     },
     2016: {
       total_count: 1025,
@@ -8024,7 +8026,7 @@ export const data = {
       believer: 0.7882926829268293,
       neutral: 0.19219512195121952,
       denial: 0.01951219512195122,
-      aggressive: 0.2175609756097561
+      aggressive: 0.2175609756097561,
     },
     2017: {
       total_count: 24233,
@@ -8036,7 +8038,7 @@ export const data = {
       believer: 0.9532455742169769,
       neutral: 0.04328807824041596,
       denial: 0.0034663475426071886,
-      aggressive: 0.09912103330169604
+      aggressive: 0.09912103330169604,
     },
     2018: {
       total_count: 39991,
@@ -8048,7 +8050,7 @@ export const data = {
       believer: 0.9637918531669626,
       neutral: 0.032907404165937335,
       denial: 0.0033007426671000976,
-      aggressive: 0.08914505763796854
+      aggressive: 0.08914505763796854,
     },
     2019: {
       total_count: 4429,
@@ -8060,8 +8062,8 @@ export const data = {
       believer: 0.9202980356739671,
       neutral: 0.06796116504854369,
       denial: 0.011740799277489276,
-      aggressive: 0.11424700835403026
-    }
+      aggressive: 0.11424700835403026,
+    },
   },
   France: {
     2007: {
@@ -8074,7 +8076,7 @@ export const data = {
       believer: 0.4666666666666667,
       neutral: 0.4666666666666667,
       denial: 0.06666666666666667,
-      aggressive: 0.13333333333333333
+      aggressive: 0.13333333333333333,
     },
     2008: {
       total_count: 40,
@@ -8086,7 +8088,7 @@ export const data = {
       believer: 0.275,
       neutral: 0.65,
       denial: 0.075,
-      aggressive: 0.325
+      aggressive: 0.325,
     },
     2009: {
       total_count: 888,
@@ -8098,7 +8100,7 @@ export const data = {
       believer: 0.5236486486486487,
       neutral: 0.40315315315315314,
       denial: 0.0731981981981982,
-      aggressive: 0.21396396396396397
+      aggressive: 0.21396396396396397,
     },
     2010: {
       total_count: 476,
@@ -8110,7 +8112,7 @@ export const data = {
       believer: 0.4810924369747899,
       neutral: 0.4327731092436975,
       denial: 0.0861344537815126,
-      aggressive: 0.2773109243697479
+      aggressive: 0.2773109243697479,
     },
     2011: {
       total_count: 440,
@@ -8122,7 +8124,7 @@ export const data = {
       believer: 0.4159090909090909,
       neutral: 0.43636363636363634,
       denial: 0.14772727272727273,
-      aggressive: 0.2636363636363636
+      aggressive: 0.2636363636363636,
     },
     2012: {
       total_count: 327,
@@ -8134,7 +8136,7 @@ export const data = {
       believer: 0.5076452599388379,
       neutral: 0.40672782874617736,
       denial: 0.0856269113149847,
-      aggressive: 0.2782874617737003
+      aggressive: 0.2782874617737003,
     },
     2013: {
       total_count: 1047,
@@ -8146,7 +8148,7 @@ export const data = {
       believer: 0.271251193887297,
       neutral: 0.6571155682903533,
       denial: 0.07163323782234957,
-      aggressive: 0.5749761222540593
+      aggressive: 0.5749761222540593,
     },
     2014: {
       total_count: 623,
@@ -8158,7 +8160,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.36276083467094705,
       denial: 0.06581059390048154,
-      aggressive: 0.2825040128410915
+      aggressive: 0.2825040128410915,
     },
     2015: {
       total_count: 4600,
@@ -8170,7 +8172,7 @@ export const data = {
       believer: 0.703695652173913,
       neutral: 0.2741304347826087,
       denial: 0.02217391304347826,
-      aggressive: 0.26456521739130434
+      aggressive: 0.26456521739130434,
     },
     2016: {
       total_count: 3426,
@@ -8182,7 +8184,7 @@ export const data = {
       believer: 0.6713368359603036,
       neutral: 0.3079392877991827,
       denial: 0.02072387624051372,
-      aggressive: 0.24927028604786924
+      aggressive: 0.24927028604786924,
     },
     2017: {
       total_count: 10729,
@@ -8194,7 +8196,7 @@ export const data = {
       believer: 0.7647497436853388,
       neutral: 0.21614316338894585,
       denial: 0.01910709292571535,
-      aggressive: 0.23804641625500977
+      aggressive: 0.23804641625500977,
     },
     2018: {
       total_count: 20543,
@@ -8206,7 +8208,7 @@ export const data = {
       believer: 0.797497931168768,
       neutral: 0.18259261062162294,
       denial: 0.019909458209609113,
-      aggressive: 0.21895536192376966
+      aggressive: 0.21895536192376966,
     },
     2019: {
       total_count: 6412,
@@ -8218,8 +8220,8 @@ export const data = {
       believer: 0.7518714909544604,
       neutral: 0.21974422956955708,
       denial: 0.028384279475982533,
-      aggressive: 0.19260761072988147
-    }
+      aggressive: 0.19260761072988147,
+    },
   },
   FrenchGuiana: {
     2011: {
@@ -8232,7 +8234,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -8244,7 +8246,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 2,
@@ -8256,7 +8258,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 102,
@@ -8268,7 +8270,7 @@ export const data = {
       believer: 0.9705882352941176,
       neutral: 0.0196078431372549,
       denial: 0.00980392156862745,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2017: {
       total_count: 276,
@@ -8280,7 +8282,7 @@ export const data = {
       believer: 0.8659420289855072,
       neutral: 0.12681159420289856,
       denial: 0.007246376811594203,
-      aggressive: 0.10507246376811594
+      aggressive: 0.10507246376811594,
     },
     2018: {
       total_count: 24,
@@ -8292,8 +8294,8 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.125,
       denial: 0.041666666666666664,
-      aggressive: 0.25
-    }
+      aggressive: 0.25,
+    },
   },
   Gabon: {
     2011: {
@@ -8306,7 +8308,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 1,
@@ -8318,7 +8320,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -8330,7 +8332,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -8342,7 +8344,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -8354,7 +8356,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 6,
@@ -8366,7 +8368,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2018: {
       total_count: 41,
@@ -8378,7 +8380,7 @@ export const data = {
       believer: 0.9024390243902439,
       neutral: 0.0975609756097561,
       denial: 0.0,
-      aggressive: 0.1951219512195122
+      aggressive: 0.1951219512195122,
     },
     2019: {
       total_count: 4,
@@ -8390,8 +8392,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
-    }
+      aggressive: 0.25,
+    },
   },
   Gambia: {
     2012: {
@@ -8404,7 +8406,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2015: {
       total_count: 6,
@@ -8416,7 +8418,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2016: {
       total_count: 4,
@@ -8428,7 +8430,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 8,
@@ -8440,7 +8442,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 27,
@@ -8452,7 +8454,7 @@ export const data = {
       believer: 0.9259259259259259,
       neutral: 0.07407407407407407,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2019: {
       total_count: 6,
@@ -8464,8 +8466,8 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.0,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Georgia: {
     2009: {
@@ -8478,7 +8480,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -8490,7 +8492,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2011: {
       total_count: 7,
@@ -8502,7 +8504,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.7142857142857143,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2013: {
       total_count: 3,
@@ -8514,7 +8516,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 7,
@@ -8526,7 +8528,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.2857142857142857,
       denial: 0.5714285714285714,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2015: {
       total_count: 43,
@@ -8538,7 +8540,7 @@ export const data = {
       believer: 0.7441860465116279,
       neutral: 0.18604651162790697,
       denial: 0.06976744186046512,
-      aggressive: 0.32558139534883723
+      aggressive: 0.32558139534883723,
     },
     2016: {
       total_count: 24,
@@ -8550,7 +8552,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2916666666666667,
       denial: 0.041666666666666664,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2017: {
       total_count: 45,
@@ -8562,7 +8564,7 @@ export const data = {
       believer: 0.8444444444444444,
       neutral: 0.1111111111111111,
       denial: 0.044444444444444446,
-      aggressive: 0.35555555555555557
+      aggressive: 0.35555555555555557,
     },
     2018: {
       total_count: 43,
@@ -8574,7 +8576,7 @@ export const data = {
       believer: 0.813953488372093,
       neutral: 0.16279069767441862,
       denial: 0.023255813953488372,
-      aggressive: 0.3488372093023256
+      aggressive: 0.3488372093023256,
     },
     2019: {
       total_count: 18,
@@ -8586,8 +8588,8 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.05555555555555555
-    }
+      aggressive: 0.05555555555555555,
+    },
   },
   Germany: {
     2007: {
@@ -8600,7 +8602,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.625,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2008: {
       total_count: 112,
@@ -8612,7 +8614,7 @@ export const data = {
       believer: 0.4017857142857143,
       neutral: 0.5178571428571429,
       denial: 0.08035714285714286,
-      aggressive: 0.36607142857142855
+      aggressive: 0.36607142857142855,
     },
     2009: {
       total_count: 1591,
@@ -8624,7 +8626,7 @@ export const data = {
       believer: 0.5304839723444374,
       neutral: 0.40791954745443115,
       denial: 0.061596480201131364,
-      aggressive: 0.25518541797611566
+      aggressive: 0.25518541797611566,
     },
     2010: {
       total_count: 1045,
@@ -8636,7 +8638,7 @@ export const data = {
       believer: 0.47368421052631576,
       neutral: 0.42488038277511964,
       denial: 0.10143540669856459,
-      aggressive: 0.32727272727272727
+      aggressive: 0.32727272727272727,
     },
     2011: {
       total_count: 537,
@@ -8648,7 +8650,7 @@ export const data = {
       believer: 0.4376163873370577,
       neutral: 0.44878957169459965,
       denial: 0.11359404096834265,
-      aggressive: 0.3780260707635009
+      aggressive: 0.3780260707635009,
     },
     2012: {
       total_count: 317,
@@ -8660,7 +8662,7 @@ export const data = {
       believer: 0.49842271293375395,
       neutral: 0.42902208201892744,
       denial: 0.07255520504731862,
-      aggressive: 0.334384858044164
+      aggressive: 0.334384858044164,
     },
     2013: {
       total_count: 476,
@@ -8672,7 +8674,7 @@ export const data = {
       believer: 0.4831932773109244,
       neutral: 0.37184873949579833,
       denial: 0.14495798319327732,
-      aggressive: 0.23949579831932774
+      aggressive: 0.23949579831932774,
     },
     2014: {
       total_count: 754,
@@ -8684,7 +8686,7 @@ export const data = {
       believer: 0.6206896551724138,
       neutral: 0.29708222811671087,
       denial: 0.08222811671087533,
-      aggressive: 0.2917771883289125
+      aggressive: 0.2917771883289125,
     },
     2015: {
       total_count: 3830,
@@ -8696,7 +8698,7 @@ export const data = {
       believer: 0.7425587467362924,
       neutral: 0.21618798955613577,
       denial: 0.0412532637075718,
-      aggressive: 0.29007832898172325
+      aggressive: 0.29007832898172325,
     },
     2016: {
       total_count: 4335,
@@ -8708,7 +8710,7 @@ export const data = {
       believer: 0.7510957324106113,
       neutral: 0.21522491349480968,
       denial: 0.033679354094579006,
-      aggressive: 0.27197231833910035
+      aggressive: 0.27197231833910035,
     },
     2017: {
       total_count: 13285,
@@ -8720,7 +8722,7 @@ export const data = {
       believer: 0.8124952954459917,
       neutral: 0.15784719608581108,
       denial: 0.029657508468197216,
-      aggressive: 0.23989461799021453
+      aggressive: 0.23989461799021453,
     },
     2018: {
       total_count: 28386,
@@ -8732,7 +8734,7 @@ export const data = {
       believer: 0.8126893539068555,
       neutral: 0.15828225181427463,
       denial: 0.029028394278869864,
-      aggressive: 0.22782357500176142
+      aggressive: 0.22782357500176142,
     },
     2019: {
       total_count: 8535,
@@ -8744,8 +8746,8 @@ export const data = {
       believer: 0.8426479203280609,
       neutral: 0.1284124194493263,
       denial: 0.02893966022261277,
-      aggressive: 0.2126537785588752
-    }
+      aggressive: 0.2126537785588752,
+    },
   },
   Ghana: {
     2008: {
@@ -8758,7 +8760,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2009: {
       total_count: 53,
@@ -8770,7 +8772,7 @@ export const data = {
       believer: 0.5660377358490566,
       neutral: 0.41509433962264153,
       denial: 0.018867924528301886,
-      aggressive: 0.33962264150943394
+      aggressive: 0.33962264150943394,
     },
     2010: {
       total_count: 171,
@@ -8782,7 +8784,7 @@ export const data = {
       believer: 0.52046783625731,
       neutral: 0.4327485380116959,
       denial: 0.04678362573099415,
-      aggressive: 0.16374269005847952
+      aggressive: 0.16374269005847952,
     },
     2011: {
       total_count: 70,
@@ -8794,7 +8796,7 @@ export const data = {
       believer: 0.18571428571428572,
       neutral: 0.7571428571428571,
       denial: 0.05714285714285714,
-      aggressive: 0.24285714285714285
+      aggressive: 0.24285714285714285,
     },
     2012: {
       total_count: 63,
@@ -8806,7 +8808,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5714285714285714,
       denial: 0.09523809523809523,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2013: {
       total_count: 119,
@@ -8818,7 +8820,7 @@ export const data = {
       believer: 0.35294117647058826,
       neutral: 0.5714285714285714,
       denial: 0.07563025210084033,
-      aggressive: 0.35294117647058826
+      aggressive: 0.35294117647058826,
     },
     2014: {
       total_count: 101,
@@ -8830,7 +8832,7 @@ export const data = {
       believer: 0.3564356435643564,
       neutral: 0.5346534653465347,
       denial: 0.10891089108910891,
-      aggressive: 0.36633663366336633
+      aggressive: 0.36633663366336633,
     },
     2015: {
       total_count: 395,
@@ -8842,7 +8844,7 @@ export const data = {
       believer: 0.7189873417721518,
       neutral: 0.25063291139240507,
       denial: 0.030379746835443037,
-      aggressive: 0.26582278481012656
+      aggressive: 0.26582278481012656,
     },
     2016: {
       total_count: 504,
@@ -8854,7 +8856,7 @@ export const data = {
       believer: 0.7738095238095238,
       neutral: 0.1884920634920635,
       denial: 0.037698412698412696,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2017: {
       total_count: 1129,
@@ -8866,7 +8868,7 @@ export const data = {
       believer: 0.8272807794508414,
       neutral: 0.15057573073516387,
       denial: 0.022143489813994686,
-      aggressive: 0.2533215234720992
+      aggressive: 0.2533215234720992,
     },
     2018: {
       total_count: 2631,
@@ -8878,7 +8880,7 @@ export const data = {
       believer: 0.8015963511972634,
       neutral: 0.1782592170277461,
       denial: 0.020144431774990496,
-      aggressive: 0.18890155834283542
+      aggressive: 0.18890155834283542,
     },
     2019: {
       total_count: 808,
@@ -8890,8 +8892,8 @@ export const data = {
       believer: 0.8118811881188119,
       neutral: 0.16584158415841585,
       denial: 0.022277227722772276,
-      aggressive: 0.15841584158415842
-    }
+      aggressive: 0.15841584158415842,
+    },
   },
   Gibraltar: {
     2015: {
@@ -8904,7 +8906,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -8916,7 +8918,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 2,
@@ -8928,8 +8930,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Greece: {
     2007: {
@@ -8942,7 +8944,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 12,
@@ -8954,7 +8956,7 @@ export const data = {
       believer: 0.4166666666666667,
       neutral: 0.5,
       denial: 0.08333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2009: {
       total_count: 130,
@@ -8966,7 +8968,7 @@ export const data = {
       believer: 0.5461538461538461,
       neutral: 0.4,
       denial: 0.05384615384615385,
-      aggressive: 0.2923076923076923
+      aggressive: 0.2923076923076923,
     },
     2010: {
       total_count: 66,
@@ -8978,7 +8980,7 @@ export const data = {
       believer: 0.42424242424242425,
       neutral: 0.4696969696969697,
       denial: 0.10606060606060606,
-      aggressive: 0.24242424242424243
+      aggressive: 0.24242424242424243,
     },
     2011: {
       total_count: 53,
@@ -8990,7 +8992,7 @@ export const data = {
       believer: 0.33962264150943394,
       neutral: 0.5660377358490566,
       denial: 0.09433962264150944,
-      aggressive: 0.3018867924528302
+      aggressive: 0.3018867924528302,
     },
     2012: {
       total_count: 47,
@@ -9002,7 +9004,7 @@ export const data = {
       believer: 0.5106382978723404,
       neutral: 0.40425531914893614,
       denial: 0.0851063829787234,
-      aggressive: 0.3404255319148936
+      aggressive: 0.3404255319148936,
     },
     2013: {
       total_count: 54,
@@ -9014,7 +9016,7 @@ export const data = {
       believer: 0.6111111111111112,
       neutral: 0.2962962962962963,
       denial: 0.09259259259259259,
-      aggressive: 0.2037037037037037
+      aggressive: 0.2037037037037037,
     },
     2014: {
       total_count: 70,
@@ -9026,7 +9028,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3142857142857143,
       denial: 0.18571428571428572,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2015: {
       total_count: 314,
@@ -9038,7 +9040,7 @@ export const data = {
       believer: 0.7292993630573248,
       neutral: 0.2356687898089172,
       denial: 0.03503184713375796,
-      aggressive: 0.31528662420382164
+      aggressive: 0.31528662420382164,
     },
     2016: {
       total_count: 298,
@@ -9050,7 +9052,7 @@ export const data = {
       believer: 0.7516778523489933,
       neutral: 0.21476510067114093,
       denial: 0.03355704697986577,
-      aggressive: 0.23154362416107382
+      aggressive: 0.23154362416107382,
     },
     2017: {
       total_count: 913,
@@ -9062,7 +9064,7 @@ export const data = {
       believer: 0.8159912376779846,
       neutral: 0.16429353778751368,
       denial: 0.019715224534501644,
-      aggressive: 0.2497261774370208
+      aggressive: 0.2497261774370208,
     },
     2018: {
       total_count: 1831,
@@ -9074,7 +9076,7 @@ export const data = {
       believer: 0.8454396504642272,
       neutral: 0.12179137083560895,
       denial: 0.03276897870016385,
-      aggressive: 0.2168214090660841
+      aggressive: 0.2168214090660841,
     },
     2019: {
       total_count: 490,
@@ -9086,8 +9088,8 @@ export const data = {
       believer: 0.753061224489796,
       neutral: 0.18979591836734694,
       denial: 0.05714285714285714,
-      aggressive: 0.19183673469387755
-    }
+      aggressive: 0.19183673469387755,
+    },
   },
   Greenland: {
     2009: {
@@ -9100,7 +9102,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 3,
@@ -9112,7 +9114,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 2,
@@ -9124,7 +9126,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -9136,7 +9138,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 3,
@@ -9148,7 +9150,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -9160,7 +9162,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 6,
@@ -9172,7 +9174,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2016: {
       total_count: 14,
@@ -9184,7 +9186,7 @@ export const data = {
       believer: 0.7857142857142857,
       neutral: 0.14285714285714285,
       denial: 0.07142857142857142,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2017: {
       total_count: 15,
@@ -9196,7 +9198,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2018: {
       total_count: 25,
@@ -9208,7 +9210,7 @@ export const data = {
       believer: 0.76,
       neutral: 0.16,
       denial: 0.08,
-      aggressive: 0.16
+      aggressive: 0.16,
     },
     2019: {
       total_count: 7,
@@ -9220,8 +9222,8 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.0,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
-    }
+      aggressive: 0.42857142857142855,
+    },
   },
   Grenada: {
     2010: {
@@ -9234,7 +9236,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 2,
@@ -9246,7 +9248,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -9258,7 +9260,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -9270,7 +9272,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -9282,7 +9284,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2018: {
       total_count: 3,
@@ -9294,7 +9296,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2019: {
       total_count: 6,
@@ -9306,8 +9308,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.6666666666666666
-    }
+      aggressive: 0.6666666666666666,
+    },
   },
   Guadeloupe: {
     2009: {
@@ -9320,7 +9322,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -9332,7 +9334,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -9344,7 +9346,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 6,
@@ -9356,7 +9358,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.0,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2018: {
       total_count: 28,
@@ -9368,7 +9370,7 @@ export const data = {
       believer: 0.8928571428571429,
       neutral: 0.10714285714285714,
       denial: 0.0,
-      aggressive: 0.32142857142857145
+      aggressive: 0.32142857142857145,
     },
     2019: {
       total_count: 4,
@@ -9380,8 +9382,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Guam: {
     2009: {
@@ -9394,7 +9396,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2010: {
       total_count: 4,
@@ -9406,7 +9408,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 3,
@@ -9418,7 +9420,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2013: {
       total_count: 7,
@@ -9430,7 +9432,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2014: {
       total_count: 4,
@@ -9442,7 +9444,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 11,
@@ -9454,7 +9456,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.09090909090909091
+      aggressive: 0.09090909090909091,
     },
     2016: {
       total_count: 18,
@@ -9466,7 +9468,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.16666666666666666,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 34,
@@ -9478,7 +9480,7 @@ export const data = {
       believer: 0.7352941176470589,
       neutral: 0.23529411764705882,
       denial: 0.029411764705882353,
-      aggressive: 0.3235294117647059
+      aggressive: 0.3235294117647059,
     },
     2018: {
       total_count: 54,
@@ -9490,7 +9492,7 @@ export const data = {
       believer: 0.7962962962962963,
       neutral: 0.18518518518518517,
       denial: 0.018518518518518517,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2019: {
       total_count: 23,
@@ -9502,8 +9504,8 @@ export const data = {
       believer: 0.6956521739130435,
       neutral: 0.2608695652173913,
       denial: 0.043478260869565216,
-      aggressive: 0.30434782608695654
-    }
+      aggressive: 0.30434782608695654,
+    },
   },
   Guatemala: {
     2009: {
@@ -9516,7 +9518,7 @@ export const data = {
       believer: 0.7333333333333333,
       neutral: 0.26666666666666666,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2010: {
       total_count: 32,
@@ -9528,7 +9530,7 @@ export const data = {
       believer: 0.9375,
       neutral: 0.0625,
       denial: 0.0,
-      aggressive: 0.0625
+      aggressive: 0.0625,
     },
     2011: {
       total_count: 3,
@@ -9540,7 +9542,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2013: {
       total_count: 3,
@@ -9552,7 +9554,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.6666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 6,
@@ -9564,7 +9566,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 39,
@@ -9576,7 +9578,7 @@ export const data = {
       believer: 0.5128205128205128,
       neutral: 0.48717948717948717,
       denial: 0.0,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2016: {
       total_count: 24,
@@ -9588,7 +9590,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2017: {
       total_count: 49,
@@ -9600,7 +9602,7 @@ export const data = {
       believer: 0.7755102040816326,
       neutral: 0.14285714285714285,
       denial: 0.08163265306122448,
-      aggressive: 0.30612244897959184
+      aggressive: 0.30612244897959184,
     },
     2018: {
       total_count: 70,
@@ -9612,7 +9614,7 @@ export const data = {
       believer: 0.8142857142857143,
       neutral: 0.12857142857142856,
       denial: 0.05714285714285714,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2019: {
       total_count: 20,
@@ -9624,8 +9626,8 @@ export const data = {
       believer: 0.85,
       neutral: 0.1,
       denial: 0.05,
-      aggressive: 0.15
-    }
+      aggressive: 0.15,
+    },
   },
   Guernsey: {
     2009: {
@@ -9638,7 +9640,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2010: {
       total_count: 1,
@@ -9650,7 +9652,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 4,
@@ -9662,7 +9664,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2012: {
       total_count: 1,
@@ -9674,7 +9676,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -9686,7 +9688,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 5,
@@ -9698,7 +9700,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.0,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2016: {
       total_count: 9,
@@ -9710,7 +9712,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2017: {
       total_count: 9,
@@ -9722,7 +9724,7 @@ export const data = {
       believer: 0.4444444444444444,
       neutral: 0.3333333333333333,
       denial: 0.2222222222222222,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 22,
@@ -9734,7 +9736,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3181818181818182,
       denial: 0.18181818181818182,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2019: {
       total_count: 14,
@@ -9746,8 +9748,8 @@ export const data = {
       believer: 0.7857142857142857,
       neutral: 0.14285714285714285,
       denial: 0.07142857142857142,
-      aggressive: 0.2857142857142857
-    }
+      aggressive: 0.2857142857142857,
+    },
   },
   Guinea: {
     2015: {
@@ -9760,7 +9762,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 1,
@@ -9772,7 +9774,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 4,
@@ -9784,7 +9786,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 9,
@@ -9796,8 +9798,8 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.1111111111111111
-    }
+      aggressive: 0.1111111111111111,
+    },
   },
   GuineaBissau: {
     2018: {
@@ -9810,8 +9812,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Guyana: {
     2009: {
@@ -9824,7 +9826,7 @@ export const data = {
       believer: 0.7619047619047619,
       neutral: 0.23809523809523808,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2010: {
       total_count: 8,
@@ -9836,7 +9838,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.125,
       denial: 0.25,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2011: {
       total_count: 6,
@@ -9848,7 +9850,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.16666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2012: {
       total_count: 5,
@@ -9860,7 +9862,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -9872,7 +9874,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 3,
@@ -9884,7 +9886,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 21,
@@ -9896,7 +9898,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2016: {
       total_count: 66,
@@ -9908,7 +9910,7 @@ export const data = {
       believer: 0.7878787878787878,
       neutral: 0.18181818181818182,
       denial: 0.030303030303030304,
-      aggressive: 0.24242424242424243
+      aggressive: 0.24242424242424243,
     },
     2017: {
       total_count: 38,
@@ -9920,7 +9922,7 @@ export const data = {
       believer: 0.7894736842105263,
       neutral: 0.21052631578947367,
       denial: 0.0,
-      aggressive: 0.3157894736842105
+      aggressive: 0.3157894736842105,
     },
     2018: {
       total_count: 82,
@@ -9932,7 +9934,7 @@ export const data = {
       believer: 0.8780487804878049,
       neutral: 0.08536585365853659,
       denial: 0.036585365853658534,
-      aggressive: 0.24390243902439024
+      aggressive: 0.24390243902439024,
     },
     2019: {
       total_count: 17,
@@ -9944,8 +9946,8 @@ export const data = {
       believer: 0.7058823529411765,
       neutral: 0.29411764705882354,
       denial: 0.0,
-      aggressive: 0.29411764705882354
-    }
+      aggressive: 0.29411764705882354,
+    },
   },
   Haiti: {
     2007: {
@@ -9958,7 +9960,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 3,
@@ -9970,7 +9972,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 4,
@@ -9982,7 +9984,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 2,
@@ -9994,7 +9996,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2011: {
       total_count: 3,
@@ -10006,7 +10008,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 2,
@@ -10018,7 +10020,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 7,
@@ -10030,7 +10032,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2014: {
       total_count: 8,
@@ -10042,7 +10044,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2015: {
       total_count: 20,
@@ -10054,7 +10056,7 @@ export const data = {
       believer: 0.65,
       neutral: 0.3,
       denial: 0.05,
-      aggressive: 0.15
+      aggressive: 0.15,
     },
     2016: {
       total_count: 15,
@@ -10066,7 +10068,7 @@ export const data = {
       believer: 0.7333333333333333,
       neutral: 0.26666666666666666,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2017: {
       total_count: 36,
@@ -10078,7 +10080,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.16666666666666666,
       denial: 0.0,
-      aggressive: 0.2777777777777778
+      aggressive: 0.2777777777777778,
     },
     2018: {
       total_count: 56,
@@ -10090,7 +10092,7 @@ export const data = {
       believer: 0.6785714285714286,
       neutral: 0.23214285714285715,
       denial: 0.08928571428571429,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2019: {
       total_count: 10,
@@ -10102,8 +10104,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.3,
       denial: 0.2,
-      aggressive: 0.2
-    }
+      aggressive: 0.2,
+    },
   },
   Honduras: {
     2009: {
@@ -10116,7 +10118,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.375,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 7,
@@ -10128,7 +10130,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.5714285714285714,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2011: {
       total_count: 17,
@@ -10140,7 +10142,7 @@ export const data = {
       believer: 0.17647058823529413,
       neutral: 0.7647058823529411,
       denial: 0.058823529411764705,
-      aggressive: 0.17647058823529413
+      aggressive: 0.17647058823529413,
     },
     2012: {
       total_count: 5,
@@ -10152,7 +10154,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.8,
       denial: 0.2,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2013: {
       total_count: 4,
@@ -10164,7 +10166,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 2,
@@ -10176,7 +10178,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 16,
@@ -10188,7 +10190,7 @@ export const data = {
       believer: 0.8125,
       neutral: 0.125,
       denial: 0.0625,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 17,
@@ -10200,7 +10202,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.23529411764705882,
       denial: 0.0,
-      aggressive: 0.29411764705882354
+      aggressive: 0.29411764705882354,
     },
     2017: {
       total_count: 81,
@@ -10212,7 +10214,7 @@ export const data = {
       believer: 0.8148148148148148,
       neutral: 0.14814814814814814,
       denial: 0.037037037037037035,
-      aggressive: 0.2345679012345679
+      aggressive: 0.2345679012345679,
     },
     2018: {
       total_count: 134,
@@ -10224,7 +10226,7 @@ export const data = {
       believer: 0.9104477611940298,
       neutral: 0.05970149253731343,
       denial: 0.029850746268656716,
-      aggressive: 0.208955223880597
+      aggressive: 0.208955223880597,
     },
     2019: {
       total_count: 46,
@@ -10236,8 +10238,8 @@ export const data = {
       believer: 0.6739130434782609,
       neutral: 0.2608695652173913,
       denial: 0.06521739130434782,
-      aggressive: 0.30434782608695654
-    }
+      aggressive: 0.30434782608695654,
+    },
   },
   HongKong: {
     2009: {
@@ -10250,7 +10252,7 @@ export const data = {
       believer: 0.25925925925925924,
       neutral: 0.6296296296296297,
       denial: 0.1111111111111111,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2010: {
       total_count: 34,
@@ -10262,7 +10264,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.38235294117647056,
       denial: 0.11764705882352941,
-      aggressive: 0.2647058823529412
+      aggressive: 0.2647058823529412,
     },
     2011: {
       total_count: 15,
@@ -10274,7 +10276,7 @@ export const data = {
       believer: 0.26666666666666666,
       neutral: 0.4666666666666667,
       denial: 0.26666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 2,
@@ -10286,7 +10288,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 7,
@@ -10298,7 +10300,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.5714285714285714,
       denial: 0.14285714285714285,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2014: {
       total_count: 13,
@@ -10310,7 +10312,7 @@ export const data = {
       believer: 0.38461538461538464,
       neutral: 0.5384615384615384,
       denial: 0.07692307692307693,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2015: {
       total_count: 42,
@@ -10322,7 +10324,7 @@ export const data = {
       believer: 0.7619047619047619,
       neutral: 0.19047619047619047,
       denial: 0.047619047619047616,
-      aggressive: 0.38095238095238093
+      aggressive: 0.38095238095238093,
     },
     2016: {
       total_count: 56,
@@ -10334,7 +10336,7 @@ export const data = {
       believer: 0.7321428571428571,
       neutral: 0.25,
       denial: 0.017857142857142856,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2017: {
       total_count: 96,
@@ -10346,7 +10348,7 @@ export const data = {
       believer: 0.7708333333333334,
       neutral: 0.19791666666666666,
       denial: 0.03125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 179,
@@ -10358,7 +10360,7 @@ export const data = {
       believer: 0.7653631284916201,
       neutral: 0.18994413407821228,
       denial: 0.0446927374301676,
-      aggressive: 0.22905027932960895
+      aggressive: 0.22905027932960895,
     },
     2019: {
       total_count: 55,
@@ -10370,8 +10372,8 @@ export const data = {
       believer: 0.8363636363636363,
       neutral: 0.10909090909090909,
       denial: 0.05454545454545454,
-      aggressive: 0.16363636363636364
-    }
+      aggressive: 0.16363636363636364,
+    },
   },
   Hungary: {
     2008: {
@@ -10384,7 +10386,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 21,
@@ -10396,7 +10398,7 @@ export const data = {
       believer: 0.47619047619047616,
       neutral: 0.42857142857142855,
       denial: 0.09523809523809523,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 31,
@@ -10408,7 +10410,7 @@ export const data = {
       believer: 0.3548387096774194,
       neutral: 0.5161290322580645,
       denial: 0.12903225806451613,
-      aggressive: 0.25806451612903225
+      aggressive: 0.25806451612903225,
     },
     2011: {
       total_count: 34,
@@ -10420,7 +10422,7 @@ export const data = {
       believer: 0.5294117647058824,
       neutral: 0.3235294117647059,
       denial: 0.14705882352941177,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2012: {
       total_count: 8,
@@ -10432,7 +10434,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 23,
@@ -10444,7 +10446,7 @@ export const data = {
       believer: 0.4782608695652174,
       neutral: 0.391304347826087,
       denial: 0.13043478260869565,
-      aggressive: 0.2608695652173913
+      aggressive: 0.2608695652173913,
     },
     2014: {
       total_count: 22,
@@ -10456,7 +10458,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2015: {
       total_count: 98,
@@ -10468,7 +10470,7 @@ export const data = {
       believer: 0.7448979591836735,
       neutral: 0.23469387755102042,
       denial: 0.02040816326530612,
-      aggressive: 0.30612244897959184
+      aggressive: 0.30612244897959184,
     },
     2016: {
       total_count: 110,
@@ -10480,7 +10482,7 @@ export const data = {
       believer: 0.7363636363636363,
       neutral: 0.23636363636363636,
       denial: 0.02727272727272727,
-      aggressive: 0.22727272727272727
+      aggressive: 0.22727272727272727,
     },
     2017: {
       total_count: 217,
@@ -10492,7 +10494,7 @@ export const data = {
       believer: 0.7741935483870968,
       neutral: 0.18433179723502305,
       denial: 0.041474654377880185,
-      aggressive: 0.271889400921659
+      aggressive: 0.271889400921659,
     },
     2018: {
       total_count: 523,
@@ -10504,7 +10506,7 @@ export const data = {
       believer: 0.8087954110898662,
       neutral: 0.15678776290630975,
       denial: 0.03441682600382409,
-      aggressive: 0.24091778202676864
+      aggressive: 0.24091778202676864,
     },
     2019: {
       total_count: 154,
@@ -10516,8 +10518,8 @@ export const data = {
       believer: 0.7792207792207793,
       neutral: 0.18181818181818182,
       denial: 0.03896103896103896,
-      aggressive: 0.2597402597402597
-    }
+      aggressive: 0.2597402597402597,
+    },
   },
   Iceland: {
     2007: {
@@ -10530,7 +10532,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2008: {
       total_count: 2,
@@ -10542,7 +10544,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 21,
@@ -10554,7 +10556,7 @@ export const data = {
       believer: 0.47619047619047616,
       neutral: 0.42857142857142855,
       denial: 0.09523809523809523,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2010: {
       total_count: 15,
@@ -10566,7 +10568,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6,
       denial: 0.06666666666666667,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2011: {
       total_count: 11,
@@ -10578,7 +10580,7 @@ export const data = {
       believer: 0.45454545454545453,
       neutral: 0.36363636363636365,
       denial: 0.18181818181818182,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2012: {
       total_count: 13,
@@ -10590,7 +10592,7 @@ export const data = {
       believer: 0.38461538461538464,
       neutral: 0.5384615384615384,
       denial: 0.07692307692307693,
-      aggressive: 0.15384615384615385
+      aggressive: 0.15384615384615385,
     },
     2013: {
       total_count: 7,
@@ -10602,7 +10604,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.5714285714285714,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 15,
@@ -10614,7 +10616,7 @@ export const data = {
       believer: 0.5333333333333333,
       neutral: 0.2,
       denial: 0.26666666666666666,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2015: {
       total_count: 67,
@@ -10626,7 +10628,7 @@ export const data = {
       believer: 0.8507462686567164,
       neutral: 0.13432835820895522,
       denial: 0.014925373134328358,
-      aggressive: 0.2537313432835821
+      aggressive: 0.2537313432835821,
     },
     2016: {
       total_count: 48,
@@ -10638,7 +10640,7 @@ export const data = {
       believer: 0.7083333333333334,
       neutral: 0.2708333333333333,
       denial: 0.020833333333333332,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2017: {
       total_count: 183,
@@ -10650,7 +10652,7 @@ export const data = {
       believer: 0.8469945355191257,
       neutral: 0.13114754098360656,
       denial: 0.02185792349726776,
-      aggressive: 0.1912568306010929
+      aggressive: 0.1912568306010929,
     },
     2018: {
       total_count: 305,
@@ -10662,7 +10664,7 @@ export const data = {
       believer: 0.8557377049180328,
       neutral: 0.1180327868852459,
       denial: 0.02622950819672131,
-      aggressive: 0.21639344262295082
+      aggressive: 0.21639344262295082,
     },
     2019: {
       total_count: 240,
@@ -10674,8 +10676,8 @@ export const data = {
       believer: 0.9208333333333333,
       neutral: 0.07916666666666666,
       denial: 0.0,
-      aggressive: 0.25833333333333336
-    }
+      aggressive: 0.25833333333333336,
+    },
   },
   India: {
     2007: {
@@ -10688,7 +10690,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2008: {
       total_count: 53,
@@ -10700,7 +10702,7 @@ export const data = {
       believer: 0.5094339622641509,
       neutral: 0.39622641509433965,
       denial: 0.09433962264150944,
-      aggressive: 0.39622641509433965
+      aggressive: 0.39622641509433965,
     },
     2009: {
       total_count: 2896,
@@ -10712,7 +10714,7 @@ export const data = {
       believer: 0.575621546961326,
       neutral: 0.35842541436464087,
       denial: 0.06595303867403315,
-      aggressive: 0.2037292817679558
+      aggressive: 0.2037292817679558,
     },
     2010: {
       total_count: 2617,
@@ -10724,7 +10726,7 @@ export const data = {
       believer: 0.5196790217806648,
       neutral: 0.3951089033244173,
       denial: 0.08521207489491785,
-      aggressive: 0.2376767290790982
+      aggressive: 0.2376767290790982,
     },
     2011: {
       total_count: 1165,
@@ -10736,7 +10738,7 @@ export const data = {
       believer: 0.4901287553648069,
       neutral: 0.4248927038626609,
       denial: 0.08497854077253218,
-      aggressive: 0.25836909871244634
+      aggressive: 0.25836909871244634,
     },
     2012: {
       total_count: 643,
@@ -10748,7 +10750,7 @@ export const data = {
       believer: 0.4727838258164852,
       neutral: 0.4510108864696734,
       denial: 0.07620528771384137,
-      aggressive: 0.26749611197511663
+      aggressive: 0.26749611197511663,
     },
     2013: {
       total_count: 1144,
@@ -10760,7 +10762,7 @@ export const data = {
       believer: 0.5148601398601399,
       neutral: 0.3505244755244755,
       denial: 0.1346153846153846,
-      aggressive: 0.18094405594405594
+      aggressive: 0.18094405594405594,
     },
     2014: {
       total_count: 1810,
@@ -10772,7 +10774,7 @@ export const data = {
       believer: 0.6033149171270719,
       neutral: 0.3314917127071823,
       denial: 0.06519337016574586,
-      aggressive: 0.23259668508287293
+      aggressive: 0.23259668508287293,
     },
     2015: {
       total_count: 9118,
@@ -10784,7 +10786,7 @@ export const data = {
       believer: 0.7510418951524457,
       neutral: 0.2147400745777583,
       denial: 0.03421803026979601,
-      aggressive: 0.20651458653213425
+      aggressive: 0.20651458653213425,
     },
     2016: {
       total_count: 10083,
@@ -10796,7 +10798,7 @@ export const data = {
       believer: 0.7533472180898542,
       neutral: 0.22354457998611524,
       denial: 0.023108201924030545,
-      aggressive: 0.20311415253396806
+      aggressive: 0.20311415253396806,
     },
     2017: {
       total_count: 22332,
@@ -10808,7 +10810,7 @@ export const data = {
       believer: 0.8064660576750851,
       neutral: 0.16671144545943042,
       denial: 0.026822496865484508,
-      aggressive: 0.1914293390650188
+      aggressive: 0.1914293390650188,
     },
     2018: {
       total_count: 52725,
@@ -10820,7 +10822,7 @@ export const data = {
       believer: 0.8731910858226648,
       neutral: 0.11138928402086297,
       denial: 0.015419630156472262,
-      aggressive: 0.11897581792318634
+      aggressive: 0.11897581792318634,
     },
     2019: {
       total_count: 10318,
@@ -10832,8 +10834,8 @@ export const data = {
       believer: 0.850067842605156,
       neutral: 0.11794921496414033,
       denial: 0.031982942430703626,
-      aggressive: 0.1393680945919752
-    }
+      aggressive: 0.1393680945919752,
+    },
   },
   Indonesia: {
     2007: {
@@ -10846,7 +10848,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 21,
@@ -10858,7 +10860,7 @@ export const data = {
       believer: 0.47619047619047616,
       neutral: 0.5238095238095238,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 845,
@@ -10870,7 +10872,7 @@ export const data = {
       believer: 0.26153846153846155,
       neutral: 0.7041420118343196,
       denial: 0.03431952662721893,
-      aggressive: 0.1727810650887574
+      aggressive: 0.1727810650887574,
     },
     2010: {
       total_count: 4863,
@@ -10882,7 +10884,7 @@ export const data = {
       believer: 0.1022002878881349,
       neutral: 0.8850503804236068,
       denial: 0.012749331688258276,
-      aggressive: 0.08780588114332716
+      aggressive: 0.08780588114332716,
     },
     2011: {
       total_count: 6659,
@@ -10894,7 +10896,7 @@ export const data = {
       believer: 0.06232166992040847,
       neutral: 0.9259648595885268,
       denial: 0.011713470491064724,
-      aggressive: 0.07028082294638835
+      aggressive: 0.07028082294638835,
     },
     2012: {
       total_count: 2826,
@@ -10906,7 +10908,7 @@ export const data = {
       believer: 0.05201698513800425,
       neutral: 0.9419674451521586,
       denial: 0.006015569709837226,
-      aggressive: 0.07289455060155697
+      aggressive: 0.07289455060155697,
     },
     2013: {
       total_count: 4056,
@@ -10918,7 +10920,7 @@ export const data = {
       believer: 0.057445759368836294,
       neutral: 0.9314595660749507,
       denial: 0.011094674556213017,
-      aggressive: 0.06977317554240631
+      aggressive: 0.06977317554240631,
     },
     2014: {
       total_count: 2188,
@@ -10930,7 +10932,7 @@ export const data = {
       believer: 0.13254113345521024,
       neutral: 0.856489945155393,
       denial: 0.010968921389396709,
-      aggressive: 0.11791590493601463
+      aggressive: 0.11791590493601463,
     },
     2015: {
       total_count: 2096,
@@ -10942,7 +10944,7 @@ export const data = {
       believer: 0.49666030534351147,
       neutral: 0.48950381679389315,
       denial: 0.01383587786259542,
-      aggressive: 0.21803435114503816
+      aggressive: 0.21803435114503816,
     },
     2016: {
       total_count: 1844,
@@ -10954,7 +10956,7 @@ export const data = {
       believer: 0.7033622559652929,
       neutral: 0.2841648590021692,
       denial: 0.012472885032537961,
-      aggressive: 0.21908893709327548
+      aggressive: 0.21908893709327548,
     },
     2017: {
       total_count: 2521,
@@ -10966,7 +10968,7 @@ export const data = {
       believer: 0.7036890122967077,
       neutral: 0.2812376041253471,
       denial: 0.01507338357794526,
-      aggressive: 0.18167393891312972
+      aggressive: 0.18167393891312972,
     },
     2018: {
       total_count: 7051,
@@ -10978,7 +10980,7 @@ export const data = {
       believer: 0.7210324776627429,
       neutral: 0.2520209899305063,
       denial: 0.026946532406750816,
-      aggressive: 0.14905687136576373
+      aggressive: 0.14905687136576373,
     },
     2019: {
       total_count: 1640,
@@ -10990,8 +10992,8 @@ export const data = {
       believer: 0.7432926829268293,
       neutral: 0.23231707317073172,
       denial: 0.024390243902439025,
-      aggressive: 0.16463414634146342
-    }
+      aggressive: 0.16463414634146342,
+    },
   },
   Iran: {
     2009: {
@@ -11004,7 +11006,7 @@ export const data = {
       believer: 0.38,
       neutral: 0.32,
       denial: 0.3,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2010: {
       total_count: 10,
@@ -11016,7 +11018,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.4,
       denial: 0.1,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2011: {
       total_count: 10,
@@ -11028,7 +11030,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.3,
       denial: 0.1,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2012: {
       total_count: 6,
@@ -11040,7 +11042,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.6666666666666666,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 4,
@@ -11052,7 +11054,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2014: {
       total_count: 7,
@@ -11064,7 +11066,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2015: {
       total_count: 24,
@@ -11076,7 +11078,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.16666666666666666,
       denial: 0.08333333333333333,
-      aggressive: 0.4583333333333333
+      aggressive: 0.4583333333333333,
     },
     2016: {
       total_count: 20,
@@ -11088,7 +11090,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.25,
       denial: 0.05,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2017: {
       total_count: 102,
@@ -11100,7 +11102,7 @@ export const data = {
       believer: 0.7941176470588235,
       neutral: 0.17647058823529413,
       denial: 0.029411764705882353,
-      aggressive: 0.22549019607843138
+      aggressive: 0.22549019607843138,
     },
     2018: {
       total_count: 190,
@@ -11112,7 +11114,7 @@ export const data = {
       believer: 0.7578947368421053,
       neutral: 0.16842105263157894,
       denial: 0.07368421052631578,
-      aggressive: 0.1631578947368421
+      aggressive: 0.1631578947368421,
     },
     2019: {
       total_count: 27,
@@ -11124,8 +11126,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2222222222222222,
       denial: 0.1111111111111111,
-      aggressive: 0.25925925925925924
-    }
+      aggressive: 0.25925925925925924,
+    },
   },
   Iraq: {
     2008: {
@@ -11138,7 +11140,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 3,
@@ -11150,7 +11152,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 4,
@@ -11162,7 +11164,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 1,
@@ -11174,7 +11176,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 3,
@@ -11186,7 +11188,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 20,
@@ -11198,7 +11200,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 7,
@@ -11210,7 +11212,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2017: {
       total_count: 33,
@@ -11222,7 +11224,7 @@ export const data = {
       believer: 0.7272727272727273,
       neutral: 0.2727272727272727,
       denial: 0.0,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2018: {
       total_count: 44,
@@ -11234,7 +11236,7 @@ export const data = {
       believer: 0.7727272727272727,
       neutral: 0.18181818181818182,
       denial: 0.045454545454545456,
-      aggressive: 0.20454545454545456
+      aggressive: 0.20454545454545456,
     },
     2019: {
       total_count: 18,
@@ -11246,8 +11248,8 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.05555555555555555,
       denial: 0.1111111111111111,
-      aggressive: 0.2777777777777778
-    }
+      aggressive: 0.2777777777777778,
+    },
   },
   Ireland: {
     2007: {
@@ -11260,7 +11262,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 59,
@@ -11272,7 +11274,7 @@ export const data = {
       believer: 0.4745762711864407,
       neutral: 0.4406779661016949,
       denial: 0.0847457627118644,
-      aggressive: 0.288135593220339
+      aggressive: 0.288135593220339,
     },
     2009: {
       total_count: 616,
@@ -11284,7 +11286,7 @@ export const data = {
       believer: 0.5064935064935064,
       neutral: 0.39935064935064934,
       denial: 0.09415584415584416,
-      aggressive: 0.275974025974026
+      aggressive: 0.275974025974026,
     },
     2010: {
       total_count: 419,
@@ -11296,7 +11298,7 @@ export const data = {
       believer: 0.3341288782816229,
       neutral: 0.5202863961813843,
       denial: 0.14558472553699284,
-      aggressive: 0.2720763723150358
+      aggressive: 0.2720763723150358,
     },
     2011: {
       total_count: 350,
@@ -11308,7 +11310,7 @@ export const data = {
       believer: 0.36857142857142855,
       neutral: 0.5,
       denial: 0.13142857142857142,
-      aggressive: 0.3142857142857143
+      aggressive: 0.3142857142857143,
     },
     2012: {
       total_count: 245,
@@ -11320,7 +11322,7 @@ export const data = {
       believer: 0.3346938775510204,
       neutral: 0.49387755102040815,
       denial: 0.17142857142857143,
-      aggressive: 0.27346938775510204
+      aggressive: 0.27346938775510204,
     },
     2013: {
       total_count: 422,
@@ -11332,7 +11334,7 @@ export const data = {
       believer: 0.3791469194312796,
       neutral: 0.45734597156398105,
       denial: 0.16350710900473933,
-      aggressive: 0.27014218009478674
+      aggressive: 0.27014218009478674,
     },
     2014: {
       total_count: 616,
@@ -11344,7 +11346,7 @@ export const data = {
       believer: 0.4642857142857143,
       neutral: 0.42045454545454547,
       denial: 0.11525974025974026,
-      aggressive: 0.28733766233766234
+      aggressive: 0.28733766233766234,
     },
     2015: {
       total_count: 2696,
@@ -11356,7 +11358,7 @@ export const data = {
       believer: 0.711053412462908,
       neutral: 0.24814540059347182,
       denial: 0.04080118694362018,
-      aggressive: 0.28486646884273
+      aggressive: 0.28486646884273,
     },
     2016: {
       total_count: 3014,
@@ -11368,7 +11370,7 @@ export const data = {
       believer: 0.7086927670869276,
       neutral: 0.2538155275381553,
       denial: 0.037491705374917056,
-      aggressive: 0.26907763769077636
+      aggressive: 0.26907763769077636,
     },
     2017: {
       total_count: 6681,
@@ -11380,7 +11382,7 @@ export const data = {
       believer: 0.7774285286633738,
       neutral: 0.17901511749738064,
       denial: 0.04355635383924562,
-      aggressive: 0.2363418649902709
+      aggressive: 0.2363418649902709,
     },
     2018: {
       total_count: 14957,
@@ -11392,7 +11394,7 @@ export const data = {
       believer: 0.814468142007087,
       neutral: 0.14695460319582804,
       denial: 0.03857725479708498,
-      aggressive: 0.20284816473891823
+      aggressive: 0.20284816473891823,
     },
     2019: {
       total_count: 6238,
@@ -11404,8 +11406,8 @@ export const data = {
       believer: 0.7940044886181469,
       neutral: 0.15806348188521963,
       denial: 0.047932029496633534,
-      aggressive: 0.217217056748958
-    }
+      aggressive: 0.217217056748958,
+    },
   },
   IsleofMan: {
     2009: {
@@ -11418,7 +11420,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2010: {
       total_count: 25,
@@ -11430,7 +11432,7 @@ export const data = {
       believer: 0.32,
       neutral: 0.52,
       denial: 0.16,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2011: {
       total_count: 8,
@@ -11442,7 +11444,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.625,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2012: {
       total_count: 11,
@@ -11454,7 +11456,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.45454545454545453
+      aggressive: 0.45454545454545453,
     },
     2013: {
       total_count: 16,
@@ -11466,7 +11468,7 @@ export const data = {
       believer: 0.4375,
       neutral: 0.4375,
       denial: 0.125,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2014: {
       total_count: 16,
@@ -11478,7 +11480,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2015: {
       total_count: 61,
@@ -11490,7 +11492,7 @@ export const data = {
       believer: 0.7704918032786885,
       neutral: 0.18032786885245902,
       denial: 0.04918032786885246,
-      aggressive: 0.32786885245901637
+      aggressive: 0.32786885245901637,
     },
     2016: {
       total_count: 51,
@@ -11502,7 +11504,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.21568627450980393,
       denial: 0.0196078431372549,
-      aggressive: 0.27450980392156865
+      aggressive: 0.27450980392156865,
     },
     2017: {
       total_count: 101,
@@ -11514,7 +11516,7 @@ export const data = {
       believer: 0.801980198019802,
       neutral: 0.13861386138613863,
       denial: 0.0594059405940594,
-      aggressive: 0.26732673267326734
+      aggressive: 0.26732673267326734,
     },
     2018: {
       total_count: 190,
@@ -11526,7 +11528,7 @@ export const data = {
       believer: 0.8105263157894737,
       neutral: 0.14210526315789473,
       denial: 0.04736842105263158,
-      aggressive: 0.23157894736842105
+      aggressive: 0.23157894736842105,
     },
     2019: {
       total_count: 80,
@@ -11538,8 +11540,8 @@ export const data = {
       believer: 0.75,
       neutral: 0.225,
       denial: 0.025,
-      aggressive: 0.275
-    }
+      aggressive: 0.275,
+    },
   },
   Israel: {
     2008: {
@@ -11552,7 +11554,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2009: {
       total_count: 98,
@@ -11564,7 +11566,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.45918367346938777,
       denial: 0.11224489795918367,
-      aggressive: 0.41836734693877553
+      aggressive: 0.41836734693877553,
     },
     2010: {
       total_count: 45,
@@ -11576,7 +11578,7 @@ export const data = {
       believer: 0.4888888888888889,
       neutral: 0.4222222222222222,
       denial: 0.08888888888888889,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2011: {
       total_count: 19,
@@ -11588,7 +11590,7 @@ export const data = {
       believer: 0.2631578947368421,
       neutral: 0.5263157894736842,
       denial: 0.21052631578947367,
-      aggressive: 0.3157894736842105
+      aggressive: 0.3157894736842105,
     },
     2012: {
       total_count: 17,
@@ -11600,7 +11602,7 @@ export const data = {
       believer: 0.35294117647058826,
       neutral: 0.47058823529411764,
       denial: 0.17647058823529413,
-      aggressive: 0.4117647058823529
+      aggressive: 0.4117647058823529,
     },
     2013: {
       total_count: 22,
@@ -11612,7 +11614,7 @@ export const data = {
       believer: 0.4090909090909091,
       neutral: 0.4090909090909091,
       denial: 0.18181818181818182,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2014: {
       total_count: 30,
@@ -11624,7 +11626,7 @@ export const data = {
       believer: 0.43333333333333335,
       neutral: 0.4,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 102,
@@ -11636,7 +11638,7 @@ export const data = {
       believer: 0.6470588235294118,
       neutral: 0.22549019607843138,
       denial: 0.12745098039215685,
-      aggressive: 0.43137254901960786
+      aggressive: 0.43137254901960786,
     },
     2016: {
       total_count: 78,
@@ -11648,7 +11650,7 @@ export const data = {
       believer: 0.717948717948718,
       neutral: 0.21794871794871795,
       denial: 0.0641025641025641,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 208,
@@ -11660,7 +11662,7 @@ export const data = {
       believer: 0.6586538461538461,
       neutral: 0.27884615384615385,
       denial: 0.0625,
-      aggressive: 0.32211538461538464
+      aggressive: 0.32211538461538464,
     },
     2018: {
       total_count: 376,
@@ -11672,7 +11674,7 @@ export const data = {
       believer: 0.7473404255319149,
       neutral: 0.13829787234042554,
       denial: 0.11436170212765957,
-      aggressive: 0.30851063829787234
+      aggressive: 0.30851063829787234,
     },
     2019: {
       total_count: 112,
@@ -11684,8 +11686,8 @@ export const data = {
       believer: 0.7232142857142857,
       neutral: 0.10714285714285714,
       denial: 0.16964285714285715,
-      aggressive: 0.3482142857142857
-    }
+      aggressive: 0.3482142857142857,
+    },
   },
   Italy: {
     2007: {
@@ -11698,7 +11700,7 @@ export const data = {
       believer: 0.1,
       neutral: 0.9,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2008: {
       total_count: 19,
@@ -11710,7 +11712,7 @@ export const data = {
       believer: 0.2631578947368421,
       neutral: 0.6842105263157895,
       denial: 0.05263157894736842,
-      aggressive: 0.42105263157894735
+      aggressive: 0.42105263157894735,
     },
     2009: {
       total_count: 1074,
@@ -11722,7 +11724,7 @@ export const data = {
       believer: 0.553072625698324,
       neutral: 0.4134078212290503,
       denial: 0.0335195530726257,
-      aggressive: 0.21973929236499068
+      aggressive: 0.21973929236499068,
     },
     2010: {
       total_count: 1386,
@@ -11734,7 +11736,7 @@ export const data = {
       believer: 0.5981240981240982,
       neutral: 0.3448773448773449,
       denial: 0.056998556998557,
-      aggressive: 0.20562770562770563
+      aggressive: 0.20562770562770563,
     },
     2011: {
       total_count: 395,
@@ -11746,7 +11748,7 @@ export const data = {
       believer: 0.4278481012658228,
       neutral: 0.46835443037974683,
       denial: 0.10379746835443038,
-      aggressive: 0.2430379746835443
+      aggressive: 0.2430379746835443,
     },
     2012: {
       total_count: 275,
@@ -11758,7 +11760,7 @@ export const data = {
       believer: 0.37454545454545457,
       neutral: 0.5854545454545454,
       denial: 0.04,
-      aggressive: 0.2872727272727273
+      aggressive: 0.2872727272727273,
     },
     2013: {
       total_count: 443,
@@ -11770,7 +11772,7 @@ export const data = {
       believer: 0.38826185101580135,
       neutral: 0.5079006772009029,
       denial: 0.1038374717832957,
-      aggressive: 0.2979683972911964
+      aggressive: 0.2979683972911964,
     },
     2014: {
       total_count: 2046,
@@ -11782,7 +11784,7 @@ export const data = {
       believer: 0.19990224828934505,
       neutral: 0.7834799608993157,
       denial: 0.016617790811339198,
-      aggressive: 0.12756598240469208
+      aggressive: 0.12756598240469208,
     },
     2015: {
       total_count: 3588,
@@ -11794,7 +11796,7 @@ export const data = {
       believer: 0.6438127090301003,
       neutral: 0.3375139353400223,
       denial: 0.018673355629877368,
-      aggressive: 0.2895763656633222
+      aggressive: 0.2895763656633222,
     },
     2016: {
       total_count: 3995,
@@ -11806,7 +11808,7 @@ export const data = {
       believer: 0.6763454317897372,
       neutral: 0.3086357947434293,
       denial: 0.015018773466833541,
-      aggressive: 0.2523153942428035
+      aggressive: 0.2523153942428035,
     },
     2017: {
       total_count: 6972,
@@ -11818,7 +11820,7 @@ export const data = {
       believer: 0.7226047045324153,
       neutral: 0.25372920252438325,
       denial: 0.023666092943201378,
-      aggressive: 0.22188755020080322
+      aggressive: 0.22188755020080322,
     },
     2018: {
       total_count: 13100,
@@ -11830,7 +11832,7 @@ export const data = {
       believer: 0.7001526717557252,
       neutral: 0.27916030534351144,
       denial: 0.02068702290076336,
-      aggressive: 0.18847328244274808
+      aggressive: 0.18847328244274808,
     },
     2019: {
       total_count: 3772,
@@ -11842,8 +11844,8 @@ export const data = {
       believer: 0.6513785790031813,
       neutral: 0.32104984093319194,
       denial: 0.027571580063626724,
-      aggressive: 0.18080593849416754
-    }
+      aggressive: 0.18080593849416754,
+    },
   },
   Jamaica: {
     2008: {
@@ -11856,7 +11858,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 19,
@@ -11868,7 +11870,7 @@ export const data = {
       believer: 0.42105263157894735,
       neutral: 0.5789473684210527,
       denial: 0.0,
-      aggressive: 0.10526315789473684
+      aggressive: 0.10526315789473684,
     },
     2010: {
       total_count: 33,
@@ -11880,7 +11882,7 @@ export const data = {
       believer: 0.21212121212121213,
       neutral: 0.6363636363636364,
       denial: 0.15151515151515152,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2011: {
       total_count: 22,
@@ -11892,7 +11894,7 @@ export const data = {
       believer: 0.4090909090909091,
       neutral: 0.45454545454545453,
       denial: 0.13636363636363635,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2012: {
       total_count: 17,
@@ -11904,7 +11906,7 @@ export const data = {
       believer: 0.35294117647058826,
       neutral: 0.5882352941176471,
       denial: 0.058823529411764705,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2013: {
       total_count: 39,
@@ -11916,7 +11918,7 @@ export const data = {
       believer: 0.4358974358974359,
       neutral: 0.5128205128205128,
       denial: 0.05128205128205128,
-      aggressive: 0.4358974358974359
+      aggressive: 0.4358974358974359,
     },
     2014: {
       total_count: 33,
@@ -11928,7 +11930,7 @@ export const data = {
       believer: 0.5151515151515151,
       neutral: 0.45454545454545453,
       denial: 0.030303030303030304,
-      aggressive: 0.30303030303030304
+      aggressive: 0.30303030303030304,
     },
     2015: {
       total_count: 202,
@@ -11940,7 +11942,7 @@ export const data = {
       believer: 0.698019801980198,
       neutral: 0.2722772277227723,
       denial: 0.0297029702970297,
-      aggressive: 0.22772277227722773
+      aggressive: 0.22772277227722773,
     },
     2016: {
       total_count: 256,
@@ -11952,7 +11954,7 @@ export const data = {
       believer: 0.68359375,
       neutral: 0.28515625,
       denial: 0.03125,
-      aggressive: 0.203125
+      aggressive: 0.203125,
     },
     2017: {
       total_count: 680,
@@ -11964,7 +11966,7 @@ export const data = {
       believer: 0.8338235294117647,
       neutral: 0.15735294117647058,
       denial: 0.008823529411764706,
-      aggressive: 0.17352941176470588
+      aggressive: 0.17352941176470588,
     },
     2018: {
       total_count: 1134,
@@ -11976,7 +11978,7 @@ export const data = {
       believer: 0.7998236331569665,
       neutral: 0.18694885361552027,
       denial: 0.013227513227513227,
-      aggressive: 0.1693121693121693
+      aggressive: 0.1693121693121693,
     },
     2019: {
       total_count: 195,
@@ -11988,8 +11990,8 @@ export const data = {
       believer: 0.841025641025641,
       neutral: 0.11794871794871795,
       denial: 0.041025641025641026,
-      aggressive: 0.17435897435897435
-    }
+      aggressive: 0.17435897435897435,
+    },
   },
   Japan: {
     2007: {
@@ -12002,7 +12004,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.7142857142857143,
       denial: 0.0,
-      aggressive: 0.6428571428571429
+      aggressive: 0.6428571428571429,
     },
     2008: {
       total_count: 32,
@@ -12014,7 +12016,7 @@ export const data = {
       believer: 0.34375,
       neutral: 0.59375,
       denial: 0.0625,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 675,
@@ -12026,7 +12028,7 @@ export const data = {
       believer: 0.554074074074074,
       neutral: 0.4074074074074074,
       denial: 0.03851851851851852,
-      aggressive: 0.2237037037037037
+      aggressive: 0.2237037037037037,
     },
     2010: {
       total_count: 375,
@@ -12038,7 +12040,7 @@ export const data = {
       believer: 0.44,
       neutral: 0.4826666666666667,
       denial: 0.07733333333333334,
-      aggressive: 0.22933333333333333
+      aggressive: 0.22933333333333333,
     },
     2011: {
       total_count: 203,
@@ -12050,7 +12052,7 @@ export const data = {
       believer: 0.35467980295566504,
       neutral: 0.5665024630541872,
       denial: 0.07881773399014778,
-      aggressive: 0.21182266009852216
+      aggressive: 0.21182266009852216,
     },
     2012: {
       total_count: 131,
@@ -12062,7 +12064,7 @@ export const data = {
       believer: 0.37404580152671757,
       neutral: 0.5267175572519084,
       denial: 0.09923664122137404,
-      aggressive: 0.35877862595419846
+      aggressive: 0.35877862595419846,
     },
     2013: {
       total_count: 171,
@@ -12074,7 +12076,7 @@ export const data = {
       believer: 0.43859649122807015,
       neutral: 0.4678362573099415,
       denial: 0.0935672514619883,
-      aggressive: 0.23391812865497075
+      aggressive: 0.23391812865497075,
     },
     2014: {
       total_count: 208,
@@ -12086,7 +12088,7 @@ export const data = {
       believer: 0.4375,
       neutral: 0.3894230769230769,
       denial: 0.17307692307692307,
-      aggressive: 0.3173076923076923
+      aggressive: 0.3173076923076923,
     },
     2015: {
       total_count: 480,
@@ -12098,7 +12100,7 @@ export const data = {
       believer: 0.6375,
       neutral: 0.30416666666666664,
       denial: 0.058333333333333334,
-      aggressive: 0.2625
+      aggressive: 0.2625,
     },
     2016: {
       total_count: 488,
@@ -12110,7 +12112,7 @@ export const data = {
       believer: 0.7008196721311475,
       neutral: 0.26639344262295084,
       denial: 0.03278688524590164,
-      aggressive: 0.2848360655737705
+      aggressive: 0.2848360655737705,
     },
     2017: {
       total_count: 1181,
@@ -12122,7 +12124,7 @@ export const data = {
       believer: 0.7527519051651143,
       neutral: 0.18204911092294665,
       denial: 0.06519898391193904,
-      aggressive: 0.25994919559695173
+      aggressive: 0.25994919559695173,
     },
     2018: {
       total_count: 2806,
@@ -12134,7 +12136,7 @@ export const data = {
       believer: 0.8064861012116893,
       neutral: 0.13898788310762653,
       denial: 0.05452601568068425,
-      aggressive: 0.26300784034212404
+      aggressive: 0.26300784034212404,
     },
     2019: {
       total_count: 821,
@@ -12146,8 +12148,8 @@ export const data = {
       believer: 0.7417783191230207,
       neutral: 0.20828258221680876,
       denial: 0.049939098660170524,
-      aggressive: 0.2192448233861145
-    }
+      aggressive: 0.2192448233861145,
+    },
   },
   Jersey: {
     2009: {
@@ -12160,7 +12162,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2010: {
       total_count: 9,
@@ -12172,7 +12174,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2011: {
       total_count: 1,
@@ -12184,7 +12186,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 3,
@@ -12196,7 +12198,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.0,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 5,
@@ -12208,7 +12210,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2014: {
       total_count: 5,
@@ -12220,7 +12222,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2015: {
       total_count: 14,
@@ -12232,7 +12234,7 @@ export const data = {
       believer: 0.7857142857142857,
       neutral: 0.14285714285714285,
       denial: 0.07142857142857142,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2016: {
       total_count: 16,
@@ -12244,7 +12246,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.1875,
       denial: 0.0625,
-      aggressive: 0.0625
+      aggressive: 0.0625,
     },
     2017: {
       total_count: 11,
@@ -12256,7 +12258,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2018: {
       total_count: 38,
@@ -12268,7 +12270,7 @@ export const data = {
       believer: 0.7105263157894737,
       neutral: 0.21052631578947367,
       denial: 0.07894736842105263,
-      aggressive: 0.15789473684210525
+      aggressive: 0.15789473684210525,
     },
     2019: {
       total_count: 43,
@@ -12280,8 +12282,8 @@ export const data = {
       believer: 0.9069767441860465,
       neutral: 0.06976744186046512,
       denial: 0.023255813953488372,
-      aggressive: 0.2558139534883721
-    }
+      aggressive: 0.2558139534883721,
+    },
   },
   Jordan: {
     2009: {
@@ -12294,7 +12296,7 @@ export const data = {
       believer: 0.6507936507936508,
       neutral: 0.3333333333333333,
       denial: 0.015873015873015872,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2010: {
       total_count: 45,
@@ -12306,7 +12308,7 @@ export const data = {
       believer: 0.6888888888888889,
       neutral: 0.28888888888888886,
       denial: 0.022222222222222223,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2011: {
       total_count: 30,
@@ -12318,7 +12320,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.5333333333333333,
       denial: 0.06666666666666667,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2012: {
       total_count: 16,
@@ -12330,7 +12332,7 @@ export const data = {
       believer: 0.4375,
       neutral: 0.5625,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 22,
@@ -12342,7 +12344,7 @@ export const data = {
       believer: 0.6818181818181818,
       neutral: 0.18181818181818182,
       denial: 0.13636363636363635,
-      aggressive: 0.09090909090909091
+      aggressive: 0.09090909090909091,
     },
     2014: {
       total_count: 28,
@@ -12354,7 +12356,7 @@ export const data = {
       believer: 0.6071428571428571,
       neutral: 0.39285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2015: {
       total_count: 84,
@@ -12366,7 +12368,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2261904761904762,
       denial: 0.05952380952380952,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2016: {
       total_count: 113,
@@ -12378,7 +12380,7 @@ export const data = {
       believer: 0.7876106194690266,
       neutral: 0.21238938053097345,
       denial: 0.0,
-      aggressive: 0.35398230088495575
+      aggressive: 0.35398230088495575,
     },
     2017: {
       total_count: 181,
@@ -12390,7 +12392,7 @@ export const data = {
       believer: 0.8342541436464088,
       neutral: 0.15469613259668508,
       denial: 0.011049723756906077,
-      aggressive: 0.32044198895027626
+      aggressive: 0.32044198895027626,
     },
     2018: {
       total_count: 568,
@@ -12402,7 +12404,7 @@ export const data = {
       believer: 0.8485915492957746,
       neutral: 0.13380281690140844,
       denial: 0.017605633802816902,
-      aggressive: 0.24471830985915494
+      aggressive: 0.24471830985915494,
     },
     2019: {
       total_count: 70,
@@ -12414,8 +12416,8 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.12857142857142856,
       denial: 0.014285714285714285,
-      aggressive: 0.22857142857142856
-    }
+      aggressive: 0.22857142857142856,
+    },
   },
   Kazakhstan: {
     2011: {
@@ -12428,7 +12430,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2012: {
       total_count: 3,
@@ -12440,7 +12442,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 2,
@@ -12452,7 +12454,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -12464,7 +12466,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 7,
@@ -12476,7 +12478,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2016: {
       total_count: 7,
@@ -12488,7 +12490,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 11,
@@ -12500,7 +12502,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 60,
@@ -12512,7 +12514,7 @@ export const data = {
       believer: 0.6333333333333333,
       neutral: 0.36666666666666664,
       denial: 0.0,
-      aggressive: 0.05
+      aggressive: 0.05,
     },
     2019: {
       total_count: 17,
@@ -12524,8 +12526,8 @@ export const data = {
       believer: 0.9411764705882353,
       neutral: 0.058823529411764705,
       denial: 0.0,
-      aggressive: 0.11764705882352941
-    }
+      aggressive: 0.11764705882352941,
+    },
   },
   Kenya: {
     2008: {
@@ -12538,7 +12540,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 235,
@@ -12550,7 +12552,7 @@ export const data = {
       believer: 0.6510638297872341,
       neutral: 0.3276595744680851,
       denial: 0.02127659574468085,
-      aggressive: 0.19574468085106383
+      aggressive: 0.19574468085106383,
     },
     2010: {
       total_count: 131,
@@ -12562,7 +12564,7 @@ export const data = {
       believer: 0.3969465648854962,
       neutral: 0.549618320610687,
       denial: 0.05343511450381679,
-      aggressive: 0.26717557251908397
+      aggressive: 0.26717557251908397,
     },
     2011: {
       total_count: 293,
@@ -12574,7 +12576,7 @@ export const data = {
       believer: 0.2764505119453925,
       neutral: 0.658703071672355,
       denial: 0.06484641638225255,
-      aggressive: 0.24232081911262798
+      aggressive: 0.24232081911262798,
     },
     2012: {
       total_count: 201,
@@ -12586,7 +12588,7 @@ export const data = {
       believer: 0.29850746268656714,
       neutral: 0.5970149253731343,
       denial: 0.1044776119402985,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 334,
@@ -12598,7 +12600,7 @@ export const data = {
       believer: 0.3083832335329341,
       neutral: 0.6047904191616766,
       denial: 0.08682634730538923,
-      aggressive: 0.281437125748503
+      aggressive: 0.281437125748503,
     },
     2014: {
       total_count: 491,
@@ -12610,7 +12612,7 @@ export const data = {
       believer: 0.5621181262729125,
       neutral: 0.3665987780040733,
       denial: 0.07128309572301425,
-      aggressive: 0.28105906313645623
+      aggressive: 0.28105906313645623,
     },
     2015: {
       total_count: 2276,
@@ -12622,7 +12624,7 @@ export const data = {
       believer: 0.7820738137082601,
       neutral: 0.20123022847100175,
       denial: 0.016695957820738138,
-      aggressive: 0.2513181019332162
+      aggressive: 0.2513181019332162,
     },
     2016: {
       total_count: 2269,
@@ -12634,7 +12636,7 @@ export const data = {
       believer: 0.8016747465843984,
       neutral: 0.18245923314235346,
       denial: 0.015866020273248127,
-      aggressive: 0.24724548259145
+      aggressive: 0.24724548259145,
     },
     2017: {
       total_count: 5234,
@@ -12646,7 +12648,7 @@ export const data = {
       believer: 0.8878486816965991,
       neutral: 0.10126098586167367,
       denial: 0.010890332441727168,
-      aggressive: 0.20290408865112725
+      aggressive: 0.20290408865112725,
     },
     2018: {
       total_count: 13602,
@@ -12658,7 +12660,7 @@ export const data = {
       believer: 0.8809733862667255,
       neutral: 0.10733715630054404,
       denial: 0.01168945743273048,
-      aggressive: 0.14938979561829144
+      aggressive: 0.14938979561829144,
     },
     2019: {
       total_count: 3271,
@@ -12670,8 +12672,8 @@ export const data = {
       believer: 0.8807704066034852,
       neutral: 0.10149801284011006,
       denial: 0.01773158055640477,
-      aggressive: 0.14857841638642616
-    }
+      aggressive: 0.14857841638642616,
+    },
   },
   Kiribati: {
     2010: {
@@ -12684,7 +12686,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 2,
@@ -12696,7 +12698,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 6,
@@ -12708,7 +12710,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.16666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 5,
@@ -12720,7 +12722,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.2,
       denial: 0.6,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2018: {
       total_count: 26,
@@ -12732,7 +12734,7 @@ export const data = {
       believer: 0.8846153846153846,
       neutral: 0.11538461538461539,
       denial: 0.0,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2019: {
       total_count: 3,
@@ -12744,10 +12746,10 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 1.0
-    }
+      aggressive: 1.0,
+    },
   },
-  Korea: {
+  "South Korea": {
     2008: {
       total_count: 1,
       sentiment_std: NaN,
@@ -12758,7 +12760,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 1,
@@ -12770,7 +12772,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2010: {
       total_count: 1,
@@ -12782,7 +12784,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 1,
@@ -12794,7 +12796,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 5,
@@ -12806,7 +12808,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2014: {
       total_count: 1,
@@ -12818,7 +12820,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 3,
@@ -12830,7 +12832,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -12842,7 +12844,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 7,
@@ -12854,7 +12856,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.42857142857142855,
       denial: 0.2857142857142857,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2018: {
       total_count: 30,
@@ -12866,7 +12868,7 @@ export const data = {
       believer: 0.5666666666666667,
       neutral: 0.2,
       denial: 0.23333333333333334,
-      aggressive: 0.36666666666666664
+      aggressive: 0.36666666666666664,
     },
     2019: {
       total_count: 4,
@@ -12878,8 +12880,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
-    }
+      aggressive: 0.25,
+    },
   },
   Kosovo: {
     2011: {
@@ -12892,7 +12894,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 2,
@@ -12904,7 +12906,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 5,
@@ -12916,7 +12918,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 14,
@@ -12928,7 +12930,7 @@ export const data = {
       believer: 0.6428571428571429,
       neutral: 0.14285714285714285,
       denial: 0.21428571428571427,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2016: {
       total_count: 1,
@@ -12940,7 +12942,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 6,
@@ -12952,7 +12954,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 18,
@@ -12964,7 +12966,7 @@ export const data = {
       believer: 0.6111111111111112,
       neutral: 0.2222222222222222,
       denial: 0.16666666666666666,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2019: {
       total_count: 6,
@@ -12976,8 +12978,8 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Kuwait: {
     2010: {
@@ -12990,7 +12992,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2011: {
       total_count: 15,
@@ -13002,7 +13004,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 4,
@@ -13014,7 +13016,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 6,
@@ -13026,7 +13028,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2014: {
       total_count: 9,
@@ -13038,7 +13040,7 @@ export const data = {
       believer: 0.4444444444444444,
       neutral: 0.2222222222222222,
       denial: 0.3333333333333333,
-      aggressive: 0.5555555555555556
+      aggressive: 0.5555555555555556,
     },
     2015: {
       total_count: 10,
@@ -13050,7 +13052,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2016: {
       total_count: 20,
@@ -13062,7 +13064,7 @@ export const data = {
       believer: 0.55,
       neutral: 0.4,
       denial: 0.05,
-      aggressive: 0.15
+      aggressive: 0.15,
     },
     2017: {
       total_count: 29,
@@ -13074,7 +13076,7 @@ export const data = {
       believer: 0.7586206896551724,
       neutral: 0.1724137931034483,
       denial: 0.06896551724137931,
-      aggressive: 0.1724137931034483
+      aggressive: 0.1724137931034483,
     },
     2018: {
       total_count: 68,
@@ -13086,7 +13088,7 @@ export const data = {
       believer: 0.7205882352941176,
       neutral: 0.25,
       denial: 0.029411764705882353,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2019: {
       total_count: 18,
@@ -13098,8 +13100,8 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.2777777777777778
-    }
+      aggressive: 0.2777777777777778,
+    },
   },
   Kyrgyzstan: {
     2008: {
@@ -13112,7 +13114,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 4,
@@ -13124,7 +13126,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.75,
       denial: 0.25,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2010: {
       total_count: 5,
@@ -13136,7 +13138,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2011: {
       total_count: 4,
@@ -13148,7 +13150,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -13160,7 +13162,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -13172,7 +13174,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 5,
@@ -13184,7 +13186,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2015: {
       total_count: 6,
@@ -13196,7 +13198,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 10,
@@ -13208,7 +13210,7 @@ export const data = {
       believer: 0.9,
       neutral: 0.1,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 17,
@@ -13220,7 +13222,7 @@ export const data = {
       believer: 0.8823529411764706,
       neutral: 0.11764705882352941,
       denial: 0.0,
-      aggressive: 0.058823529411764705
+      aggressive: 0.058823529411764705,
     },
     2018: {
       total_count: 66,
@@ -13232,7 +13234,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.06060606060606061,
       denial: 0.030303030303030304,
-      aggressive: 0.30303030303030304
+      aggressive: 0.30303030303030304,
     },
     2019: {
       total_count: 6,
@@ -13244,8 +13246,8 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.16666666666666666,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Lao: {
     2009: {
@@ -13258,7 +13260,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2010: {
       total_count: 1,
@@ -13270,7 +13272,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -13282,7 +13284,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -13294,7 +13296,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -13306,7 +13308,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -13318,7 +13320,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 2,
@@ -13330,7 +13332,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 7,
@@ -13342,7 +13344,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.2857142857142857,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2017: {
       total_count: 14,
@@ -13354,7 +13356,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.14285714285714285,
       denial: 0.14285714285714285,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2018: {
       total_count: 37,
@@ -13366,7 +13368,7 @@ export const data = {
       believer: 0.7297297297297297,
       neutral: 0.13513513513513514,
       denial: 0.13513513513513514,
-      aggressive: 0.2972972972972973
+      aggressive: 0.2972972972972973,
     },
     2019: {
       total_count: 14,
@@ -13378,8 +13380,8 @@ export const data = {
       believer: 0.35714285714285715,
       neutral: 0.21428571428571427,
       denial: 0.42857142857142855,
-      aggressive: 0.35714285714285715
-    }
+      aggressive: 0.35714285714285715,
+    },
   },
   Latvia: {
     2009: {
@@ -13392,7 +13394,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.6,
       denial: 0.11428571428571428,
-      aggressive: 0.3142857142857143
+      aggressive: 0.3142857142857143,
     },
     2010: {
       total_count: 35,
@@ -13404,7 +13406,7 @@ export const data = {
       believer: 0.17142857142857143,
       neutral: 0.6857142857142857,
       denial: 0.14285714285714285,
-      aggressive: 0.34285714285714286
+      aggressive: 0.34285714285714286,
     },
     2011: {
       total_count: 29,
@@ -13416,7 +13418,7 @@ export const data = {
       believer: 0.20689655172413793,
       neutral: 0.7241379310344828,
       denial: 0.06896551724137931,
-      aggressive: 0.27586206896551724
+      aggressive: 0.27586206896551724,
     },
     2012: {
       total_count: 6,
@@ -13428,7 +13430,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 15,
@@ -13440,7 +13442,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.7333333333333333,
       denial: 0.06666666666666667,
-      aggressive: 0.13333333333333333
+      aggressive: 0.13333333333333333,
     },
     2014: {
       total_count: 17,
@@ -13452,7 +13454,7 @@ export const data = {
       believer: 0.5882352941176471,
       neutral: 0.17647058823529413,
       denial: 0.23529411764705882,
-      aggressive: 0.17647058823529413
+      aggressive: 0.17647058823529413,
     },
     2015: {
       total_count: 61,
@@ -13464,7 +13466,7 @@ export const data = {
       believer: 0.5901639344262295,
       neutral: 0.3770491803278688,
       denial: 0.03278688524590164,
-      aggressive: 0.22950819672131148
+      aggressive: 0.22950819672131148,
     },
     2016: {
       total_count: 511,
@@ -13476,7 +13478,7 @@ export const data = {
       believer: 0.9178082191780822,
       neutral: 0.0684931506849315,
       denial: 0.0136986301369863,
-      aggressive: 0.0958904109589041
+      aggressive: 0.0958904109589041,
     },
     2017: {
       total_count: 121,
@@ -13488,7 +13490,7 @@ export const data = {
       believer: 0.7107438016528925,
       neutral: 0.256198347107438,
       denial: 0.03305785123966942,
-      aggressive: 0.1652892561983471
+      aggressive: 0.1652892561983471,
     },
     2018: {
       total_count: 287,
@@ -13500,7 +13502,7 @@ export const data = {
       believer: 0.8013937282229965,
       neutral: 0.14982578397212543,
       denial: 0.04878048780487805,
-      aggressive: 0.1951219512195122
+      aggressive: 0.1951219512195122,
     },
     2019: {
       total_count: 92,
@@ -13512,8 +13514,8 @@ export const data = {
       believer: 0.8804347826086957,
       neutral: 0.06521739130434782,
       denial: 0.05434782608695652,
-      aggressive: 0.21739130434782608
-    }
+      aggressive: 0.21739130434782608,
+    },
   },
   Lebanon: {
     2009: {
@@ -13526,7 +13528,7 @@ export const data = {
       believer: 0.5675675675675675,
       neutral: 0.40540540540540543,
       denial: 0.02702702702702703,
-      aggressive: 0.21621621621621623
+      aggressive: 0.21621621621621623,
     },
     2010: {
       total_count: 20,
@@ -13538,7 +13540,7 @@ export const data = {
       believer: 0.45,
       neutral: 0.55,
       denial: 0.0,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2011: {
       total_count: 22,
@@ -13550,7 +13552,7 @@ export const data = {
       believer: 0.2727272727272727,
       neutral: 0.6818181818181818,
       denial: 0.045454545454545456,
-      aggressive: 0.3181818181818182
+      aggressive: 0.3181818181818182,
     },
     2012: {
       total_count: 17,
@@ -13562,7 +13564,7 @@ export const data = {
       believer: 0.29411764705882354,
       neutral: 0.5882352941176471,
       denial: 0.11764705882352941,
-      aggressive: 0.17647058823529413
+      aggressive: 0.17647058823529413,
     },
     2013: {
       total_count: 26,
@@ -13574,7 +13576,7 @@ export const data = {
       believer: 0.38461538461538464,
       neutral: 0.46153846153846156,
       denial: 0.15384615384615385,
-      aggressive: 0.15384615384615385
+      aggressive: 0.15384615384615385,
     },
     2014: {
       total_count: 31,
@@ -13586,7 +13588,7 @@ export const data = {
       believer: 0.5161290322580645,
       neutral: 0.45161290322580644,
       denial: 0.03225806451612903,
-      aggressive: 0.3870967741935484
+      aggressive: 0.3870967741935484,
     },
     2015: {
       total_count: 173,
@@ -13598,7 +13600,7 @@ export const data = {
       believer: 0.6358381502890174,
       neutral: 0.3352601156069364,
       denial: 0.028901734104046242,
-      aggressive: 0.2832369942196532
+      aggressive: 0.2832369942196532,
     },
     2016: {
       total_count: 129,
@@ -13610,7 +13612,7 @@ export const data = {
       believer: 0.7364341085271318,
       neutral: 0.23255813953488372,
       denial: 0.031007751937984496,
-      aggressive: 0.32558139534883723
+      aggressive: 0.32558139534883723,
     },
     2017: {
       total_count: 130,
@@ -13622,7 +13624,7 @@ export const data = {
       believer: 0.8076923076923077,
       neutral: 0.18461538461538463,
       denial: 0.007692307692307693,
-      aggressive: 0.2923076923076923
+      aggressive: 0.2923076923076923,
     },
     2018: {
       total_count: 264,
@@ -13634,7 +13636,7 @@ export const data = {
       believer: 0.821969696969697,
       neutral: 0.1553030303030303,
       denial: 0.022727272727272728,
-      aggressive: 0.23484848484848486
+      aggressive: 0.23484848484848486,
     },
     2019: {
       total_count: 80,
@@ -13646,8 +13648,8 @@ export const data = {
       believer: 0.8625,
       neutral: 0.125,
       denial: 0.0125,
-      aggressive: 0.225
-    }
+      aggressive: 0.225,
+    },
   },
   Lesotho: {
     2009: {
@@ -13660,7 +13662,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 1,
@@ -13672,7 +13674,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 7,
@@ -13684,7 +13686,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 8,
@@ -13696,7 +13698,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.625,
       denial: 0.0,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2014: {
       total_count: 2,
@@ -13708,7 +13710,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 10,
@@ -13720,7 +13722,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2016: {
       total_count: 74,
@@ -13732,7 +13734,7 @@ export const data = {
       believer: 0.8513513513513513,
       neutral: 0.10810810810810811,
       denial: 0.04054054054054054,
-      aggressive: 0.33783783783783783
+      aggressive: 0.33783783783783783,
     },
     2017: {
       total_count: 80,
@@ -13744,7 +13746,7 @@ export const data = {
       believer: 0.9375,
       neutral: 0.05,
       denial: 0.0125,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2018: {
       total_count: 168,
@@ -13756,7 +13758,7 @@ export const data = {
       believer: 0.9642857142857143,
       neutral: 0.02976190476190476,
       denial: 0.005952380952380952,
-      aggressive: 0.19642857142857142
+      aggressive: 0.19642857142857142,
     },
     2019: {
       total_count: 11,
@@ -13768,8 +13770,8 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.0,
       denial: 0.09090909090909091,
-      aggressive: 0.36363636363636365
-    }
+      aggressive: 0.36363636363636365,
+    },
   },
   Liberia: {
     2010: {
@@ -13782,7 +13784,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 5,
@@ -13794,7 +13796,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.6,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2012: {
       total_count: 3,
@@ -13806,7 +13808,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.6666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 2,
@@ -13818,7 +13820,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 2,
@@ -13830,7 +13832,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 12,
@@ -13842,7 +13844,7 @@ export const data = {
       believer: 0.5833333333333334,
       neutral: 0.3333333333333333,
       denial: 0.08333333333333333,
-      aggressive: 0.08333333333333333
+      aggressive: 0.08333333333333333,
     },
     2016: {
       total_count: 8,
@@ -13854,7 +13856,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 22,
@@ -13866,7 +13868,7 @@ export const data = {
       believer: 0.7272727272727273,
       neutral: 0.18181818181818182,
       denial: 0.09090909090909091,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2018: {
       total_count: 92,
@@ -13878,7 +13880,7 @@ export const data = {
       believer: 0.8913043478260869,
       neutral: 0.08695652173913043,
       denial: 0.021739130434782608,
-      aggressive: 0.1956521739130435
+      aggressive: 0.1956521739130435,
     },
     2019: {
       total_count: 22,
@@ -13890,8 +13892,8 @@ export const data = {
       believer: 0.8636363636363636,
       neutral: 0.09090909090909091,
       denial: 0.045454545454545456,
-      aggressive: 0.22727272727272727
-    }
+      aggressive: 0.22727272727272727,
+    },
   },
   Libya: {
     2009: {
@@ -13904,7 +13906,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 1,
@@ -13916,7 +13918,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 3,
@@ -13928,7 +13930,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2015: {
       total_count: 6,
@@ -13940,7 +13942,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 2,
@@ -13952,7 +13954,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 50,
@@ -13964,7 +13966,7 @@ export const data = {
       believer: 0.78,
       neutral: 0.2,
       denial: 0.02,
-      aggressive: 0.24
+      aggressive: 0.24,
     },
     2018: {
       total_count: 397,
@@ -13976,7 +13978,7 @@ export const data = {
       believer: 0.947103274559194,
       neutral: 0.04785894206549118,
       denial: 0.005037783375314861,
-      aggressive: 0.1889168765743073
+      aggressive: 0.1889168765743073,
     },
     2019: {
       total_count: 56,
@@ -13988,10 +13990,10 @@ export const data = {
       believer: 0.875,
       neutral: 0.08928571428571429,
       denial: 0.03571428571428571,
-      aggressive: 0.16071428571428573
-    }
+      aggressive: 0.16071428571428573,
+    },
   },
- 
+
   Lithuania: {
     2009: {
       total_count: 10,
@@ -14003,7 +14005,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.3,
       denial: 0.1,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2010: {
       total_count: 5,
@@ -14015,7 +14017,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2011: {
       total_count: 3,
@@ -14027,7 +14029,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 4,
@@ -14039,7 +14041,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 3,
@@ -14051,7 +14053,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.3333333333333333,
       denial: 0.6666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 12,
@@ -14063,7 +14065,7 @@ export const data = {
       believer: 0.4166666666666667,
       neutral: 0.5,
       denial: 0.08333333333333333,
-      aggressive: 0.5833333333333334
+      aggressive: 0.5833333333333334,
     },
     2015: {
       total_count: 26,
@@ -14075,7 +14077,7 @@ export const data = {
       believer: 0.7307692307692307,
       neutral: 0.19230769230769232,
       denial: 0.07692307692307693,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2016: {
       total_count: 29,
@@ -14087,7 +14089,7 @@ export const data = {
       believer: 0.7241379310344828,
       neutral: 0.2413793103448276,
       denial: 0.034482758620689655,
-      aggressive: 0.2413793103448276
+      aggressive: 0.2413793103448276,
     },
     2017: {
       total_count: 108,
@@ -14099,7 +14101,7 @@ export const data = {
       believer: 0.8240740740740741,
       neutral: 0.1574074074074074,
       denial: 0.018518518518518517,
-      aggressive: 0.19444444444444445
+      aggressive: 0.19444444444444445,
     },
     2018: {
       total_count: 187,
@@ -14111,7 +14113,7 @@ export const data = {
       believer: 0.7540106951871658,
       neutral: 0.22459893048128343,
       denial: 0.0213903743315508,
-      aggressive: 0.2192513368983957
+      aggressive: 0.2192513368983957,
     },
     2019: {
       total_count: 66,
@@ -14123,8 +14125,8 @@ export const data = {
       believer: 0.7121212121212122,
       neutral: 0.21212121212121213,
       denial: 0.07575757575757576,
-      aggressive: 0.16666666666666666
-    }
+      aggressive: 0.16666666666666666,
+    },
   },
   Luxembourg: {
     2008: {
@@ -14137,7 +14139,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 1,
@@ -14149,7 +14151,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2010: {
       total_count: 2,
@@ -14161,7 +14163,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -14173,7 +14175,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 5,
@@ -14185,7 +14187,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.6,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2015: {
       total_count: 14,
@@ -14197,7 +14199,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.35714285714285715,
       denial: 0.07142857142857142,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2016: {
       total_count: 6,
@@ -14209,7 +14211,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2017: {
       total_count: 40,
@@ -14221,7 +14223,7 @@ export const data = {
       believer: 0.85,
       neutral: 0.1,
       denial: 0.05,
-      aggressive: 0.225
+      aggressive: 0.225,
     },
     2018: {
       total_count: 64,
@@ -14233,7 +14235,7 @@ export const data = {
       believer: 0.84375,
       neutral: 0.125,
       denial: 0.03125,
-      aggressive: 0.265625
+      aggressive: 0.265625,
     },
     2019: {
       total_count: 24,
@@ -14245,8 +14247,8 @@ export const data = {
       believer: 0.875,
       neutral: 0.08333333333333333,
       denial: 0.041666666666666664,
-      aggressive: 0.20833333333333334
-    }
+      aggressive: 0.20833333333333334,
+    },
   },
   Macao: {
     2009: {
@@ -14259,7 +14261,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2010: {
       total_count: 1,
@@ -14271,7 +14273,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 2,
@@ -14283,7 +14285,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 1,
@@ -14295,7 +14297,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 1,
@@ -14307,7 +14309,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -14319,8 +14321,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Madagascar: {
     2009: {
@@ -14333,7 +14335,7 @@ export const data = {
       believer: 0.5789473684210527,
       neutral: 0.42105263157894735,
       denial: 0.0,
-      aggressive: 0.10526315789473684
+      aggressive: 0.10526315789473684,
     },
     2010: {
       total_count: 10,
@@ -14345,7 +14347,7 @@ export const data = {
       believer: 0.9,
       neutral: 0.1,
       denial: 0.0,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2011: {
       total_count: 3,
@@ -14357,7 +14359,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 3,
@@ -14369,7 +14371,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2013: {
       total_count: 1,
@@ -14381,7 +14383,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -14393,7 +14395,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 7,
@@ -14405,7 +14407,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2016: {
       total_count: 2,
@@ -14417,7 +14419,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 102,
@@ -14429,7 +14431,7 @@ export const data = {
       believer: 0.37254901960784315,
       neutral: 0.5882352941176471,
       denial: 0.0392156862745098,
-      aggressive: 0.45098039215686275
+      aggressive: 0.45098039215686275,
     },
     2018: {
       total_count: 289,
@@ -14441,7 +14443,7 @@ export const data = {
       believer: 0.3806228373702422,
       neutral: 0.5986159169550173,
       denial: 0.020761245674740483,
-      aggressive: 0.4671280276816609
+      aggressive: 0.4671280276816609,
     },
     2019: {
       total_count: 45,
@@ -14453,8 +14455,8 @@ export const data = {
       believer: 0.37777777777777777,
       neutral: 0.6,
       denial: 0.022222222222222223,
-      aggressive: 0.4666666666666667
-    }
+      aggressive: 0.4666666666666667,
+    },
   },
   Malawi: {
     2008: {
@@ -14467,7 +14469,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 13,
@@ -14479,7 +14481,7 @@ export const data = {
       believer: 0.6153846153846154,
       neutral: 0.3076923076923077,
       denial: 0.07692307692307693,
-      aggressive: 0.23076923076923078
+      aggressive: 0.23076923076923078,
     },
     2010: {
       total_count: 7,
@@ -14491,7 +14493,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2011: {
       total_count: 13,
@@ -14503,7 +14505,7 @@ export const data = {
       believer: 0.23076923076923078,
       neutral: 0.6923076923076923,
       denial: 0.07692307692307693,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2012: {
       total_count: 12,
@@ -14515,7 +14517,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 10,
@@ -14527,7 +14529,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.7,
       denial: 0.1,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2014: {
       total_count: 16,
@@ -14539,7 +14541,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2015: {
       total_count: 50,
@@ -14551,7 +14553,7 @@ export const data = {
       believer: 0.76,
       neutral: 0.22,
       denial: 0.02,
-      aggressive: 0.32
+      aggressive: 0.32,
     },
     2016: {
       total_count: 47,
@@ -14563,7 +14565,7 @@ export const data = {
       believer: 0.8297872340425532,
       neutral: 0.1702127659574468,
       denial: 0.0,
-      aggressive: 0.2765957446808511
+      aggressive: 0.2765957446808511,
     },
     2017: {
       total_count: 73,
@@ -14575,7 +14577,7 @@ export const data = {
       believer: 0.8356164383561644,
       neutral: 0.1506849315068493,
       denial: 0.0136986301369863,
-      aggressive: 0.1917808219178082
+      aggressive: 0.1917808219178082,
     },
     2018: {
       total_count: 237,
@@ -14587,7 +14589,7 @@ export const data = {
       believer: 0.8776371308016878,
       neutral: 0.11814345991561181,
       denial: 0.004219409282700422,
-      aggressive: 0.20675105485232068
+      aggressive: 0.20675105485232068,
     },
     2019: {
       total_count: 36,
@@ -14599,8 +14601,8 @@ export const data = {
       believer: 0.9166666666666666,
       neutral: 0.027777777777777776,
       denial: 0.05555555555555555,
-      aggressive: 0.1388888888888889
-    }
+      aggressive: 0.1388888888888889,
+    },
   },
   Malaysia: {
     2007: {
@@ -14613,7 +14615,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 8,
@@ -14625,7 +14627,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.625,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 456,
@@ -14637,7 +14639,7 @@ export const data = {
       believer: 0.4298245614035088,
       neutral: 0.4649122807017544,
       denial: 0.10526315789473684,
-      aggressive: 0.3092105263157895
+      aggressive: 0.3092105263157895,
     },
     2010: {
       total_count: 315,
@@ -14649,7 +14651,7 @@ export const data = {
       believer: 0.33650793650793653,
       neutral: 0.5555555555555556,
       denial: 0.10793650793650794,
-      aggressive: 0.22857142857142856
+      aggressive: 0.22857142857142856,
     },
     2011: {
       total_count: 384,
@@ -14661,7 +14663,7 @@ export const data = {
       believer: 0.2421875,
       neutral: 0.7213541666666666,
       denial: 0.036458333333333336,
-      aggressive: 0.2109375
+      aggressive: 0.2109375,
     },
     2012: {
       total_count: 494,
@@ -14673,7 +14675,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.4797570850202429,
       denial: 0.020242914979757085,
-      aggressive: 0.22874493927125505
+      aggressive: 0.22874493927125505,
     },
     2013: {
       total_count: 541,
@@ -14685,7 +14687,7 @@ export const data = {
       believer: 0.3179297597042514,
       neutral: 0.6524953789279113,
       denial: 0.029574861367837338,
-      aggressive: 0.2088724584103512
+      aggressive: 0.2088724584103512,
     },
     2014: {
       total_count: 259,
@@ -14697,7 +14699,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.6872586872586872,
       denial: 0.02702702702702703,
-      aggressive: 0.23166023166023167
+      aggressive: 0.23166023166023167,
     },
     2015: {
       total_count: 399,
@@ -14709,7 +14711,7 @@ export const data = {
       believer: 0.5639097744360902,
       neutral: 0.41102756892230574,
       denial: 0.02506265664160401,
-      aggressive: 0.24812030075187969
+      aggressive: 0.24812030075187969,
     },
     2016: {
       total_count: 483,
@@ -14721,7 +14723,7 @@ export const data = {
       believer: 0.6894409937888198,
       neutral: 0.28778467908902694,
       denial: 0.022774327122153208,
-      aggressive: 0.2525879917184265
+      aggressive: 0.2525879917184265,
     },
     2017: {
       total_count: 1162,
@@ -14733,7 +14735,7 @@ export const data = {
       believer: 0.7624784853700516,
       neutral: 0.21600688468158347,
       denial: 0.021514629948364887,
-      aggressive: 0.18588640275387264
+      aggressive: 0.18588640275387264,
     },
     2018: {
       total_count: 3111,
@@ -14745,7 +14747,7 @@ export const data = {
       believer: 0.8106718097074895,
       neutral: 0.16843458694953392,
       denial: 0.020893603342976536,
-      aggressive: 0.16393442622950818
+      aggressive: 0.16393442622950818,
     },
     2019: {
       total_count: 1590,
@@ -14757,8 +14759,8 @@ export const data = {
       believer: 0.7264150943396226,
       neutral: 0.259748427672956,
       denial: 0.013836477987421384,
-      aggressive: 0.1641509433962264
-    }
+      aggressive: 0.1641509433962264,
+    },
   },
   Maldives: {
     2009: {
@@ -14771,7 +14773,7 @@ export const data = {
       believer: 0.4444444444444444,
       neutral: 0.3888888888888889,
       denial: 0.16666666666666666,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2010: {
       total_count: 12,
@@ -14783,7 +14785,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.4166666666666667,
       denial: 0.08333333333333333,
-      aggressive: 0.4166666666666667
+      aggressive: 0.4166666666666667,
     },
     2011: {
       total_count: 4,
@@ -14795,7 +14797,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 10,
@@ -14807,7 +14809,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.5,
       denial: 0.1,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2013: {
       total_count: 7,
@@ -14819,7 +14821,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.14285714285714285,
       denial: 0.2857142857142857,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2014: {
       total_count: 17,
@@ -14831,7 +14833,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.17647058823529413,
       denial: 0.058823529411764705,
-      aggressive: 0.11764705882352941
+      aggressive: 0.11764705882352941,
     },
     2015: {
       total_count: 59,
@@ -14843,7 +14845,7 @@ export const data = {
       believer: 0.6779661016949152,
       neutral: 0.288135593220339,
       denial: 0.03389830508474576,
-      aggressive: 0.23728813559322035
+      aggressive: 0.23728813559322035,
     },
     2016: {
       total_count: 53,
@@ -14855,7 +14857,7 @@ export const data = {
       believer: 0.7735849056603774,
       neutral: 0.22641509433962265,
       denial: 0.0,
-      aggressive: 0.2641509433962264
+      aggressive: 0.2641509433962264,
     },
     2017: {
       total_count: 169,
@@ -14867,7 +14869,7 @@ export const data = {
       believer: 0.8047337278106509,
       neutral: 0.1893491124260355,
       denial: 0.005917159763313609,
-      aggressive: 0.11834319526627218
+      aggressive: 0.11834319526627218,
     },
     2018: {
       total_count: 278,
@@ -14879,7 +14881,7 @@ export const data = {
       believer: 0.89568345323741,
       neutral: 0.10071942446043165,
       denial: 0.0035971223021582736,
-      aggressive: 0.13309352517985612
+      aggressive: 0.13309352517985612,
     },
     2019: {
       total_count: 55,
@@ -14891,8 +14893,8 @@ export const data = {
       believer: 0.8909090909090909,
       neutral: 0.10909090909090909,
       denial: 0.0,
-      aggressive: 0.12727272727272726
-    }
+      aggressive: 0.12727272727272726,
+    },
   },
   Mali: {
     2014: {
@@ -14905,7 +14907,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 41,
@@ -14917,7 +14919,7 @@ export const data = {
       believer: 0.9512195121951219,
       neutral: 0.04878048780487805,
       denial: 0.0,
-      aggressive: 0.2682926829268293
+      aggressive: 0.2682926829268293,
     },
     2016: {
       total_count: 87,
@@ -14929,7 +14931,7 @@ export const data = {
       believer: 0.9080459770114943,
       neutral: 0.08045977011494253,
       denial: 0.011494252873563218,
-      aggressive: 0.20689655172413793
+      aggressive: 0.20689655172413793,
     },
     2017: {
       total_count: 189,
@@ -14941,7 +14943,7 @@ export const data = {
       believer: 0.873015873015873,
       neutral: 0.10582010582010581,
       denial: 0.021164021164021163,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2018: {
       total_count: 509,
@@ -14953,7 +14955,7 @@ export const data = {
       believer: 0.9489194499017681,
       neutral: 0.04911591355599214,
       denial: 0.0019646365422396855,
-      aggressive: 0.14145383104125736
+      aggressive: 0.14145383104125736,
     },
     2019: {
       total_count: 38,
@@ -14965,8 +14967,8 @@ export const data = {
       believer: 0.8421052631578947,
       neutral: 0.13157894736842105,
       denial: 0.02631578947368421,
-      aggressive: 0.34210526315789475
-    }
+      aggressive: 0.34210526315789475,
+    },
   },
   Malta: {
     2008: {
@@ -14979,7 +14981,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 6,
@@ -14991,7 +14993,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.5,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 6,
@@ -15003,7 +15005,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2011: {
       total_count: 4,
@@ -15015,7 +15017,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2013: {
       total_count: 3,
@@ -15027,7 +15029,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 1,
@@ -15039,7 +15041,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 20,
@@ -15051,7 +15053,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2016: {
       total_count: 24,
@@ -15063,7 +15065,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.16666666666666666,
       denial: 0.0,
-      aggressive: 0.20833333333333334
+      aggressive: 0.20833333333333334,
     },
     2017: {
       total_count: 33,
@@ -15075,7 +15077,7 @@ export const data = {
       believer: 0.8484848484848485,
       neutral: 0.12121212121212122,
       denial: 0.030303030303030304,
-      aggressive: 0.30303030303030304
+      aggressive: 0.30303030303030304,
     },
     2018: {
       total_count: 63,
@@ -15087,7 +15089,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.31746031746031744
+      aggressive: 0.31746031746031744,
     },
     2019: {
       total_count: 10,
@@ -15099,8 +15101,8 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   MarshallIslands: {
     2009: {
@@ -15113,7 +15115,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 4,
@@ -15125,7 +15127,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 3,
@@ -15137,7 +15139,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 5,
@@ -15149,7 +15151,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.2,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2018: {
       total_count: 4,
@@ -15161,7 +15163,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 2,
@@ -15173,8 +15175,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Martinique: {
     2011: {
@@ -15187,7 +15189,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 4,
@@ -15199,7 +15201,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2016: {
       total_count: 2,
@@ -15211,7 +15213,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2017: {
       total_count: 8,
@@ -15223,7 +15225,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.125,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 5,
@@ -15235,8 +15237,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.4
-    }
+      aggressive: 0.4,
+    },
   },
   Mauritania: {
     2013: {
@@ -15249,7 +15251,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 2,
@@ -15261,7 +15263,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 3,
@@ -15273,7 +15275,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.6666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 20,
@@ -15285,7 +15287,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 31,
@@ -15297,7 +15299,7 @@ export const data = {
       believer: 0.4838709677419355,
       neutral: 0.45161290322580644,
       denial: 0.06451612903225806,
-      aggressive: 0.22580645161290322
+      aggressive: 0.22580645161290322,
     },
     2019: {
       total_count: 3,
@@ -15309,8 +15311,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.0,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Mauritius: {
     2009: {
@@ -15323,7 +15325,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.0,
       denial: 0.125,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -15335,7 +15337,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -15347,7 +15349,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 1,
@@ -15359,7 +15361,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -15371,7 +15373,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 5,
@@ -15383,7 +15385,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2016: {
       total_count: 3,
@@ -15395,7 +15397,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 18,
@@ -15407,7 +15409,7 @@ export const data = {
       believer: 0.9444444444444444,
       neutral: 0.05555555555555555,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2018: {
       total_count: 84,
@@ -15419,7 +15421,7 @@ export const data = {
       believer: 0.9166666666666666,
       neutral: 0.047619047619047616,
       denial: 0.03571428571428571,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2019: {
       total_count: 25,
@@ -15431,8 +15433,8 @@ export const data = {
       believer: 0.92,
       neutral: 0.08,
       denial: 0.0,
-      aggressive: 0.32
-    }
+      aggressive: 0.32,
+    },
   },
   Mexico: {
     2007: {
@@ -15445,7 +15447,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.8,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2008: {
       total_count: 21,
@@ -15457,7 +15459,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.47619047619047616,
       denial: 0.09523809523809523,
-      aggressive: 0.38095238095238093
+      aggressive: 0.38095238095238093,
     },
     2009: {
       total_count: 288,
@@ -15469,7 +15471,7 @@ export const data = {
       believer: 0.4826388888888889,
       neutral: 0.4444444444444444,
       denial: 0.07291666666666667,
-      aggressive: 0.2638888888888889
+      aggressive: 0.2638888888888889,
     },
     2010: {
       total_count: 643,
@@ -15481,7 +15483,7 @@ export const data = {
       believer: 0.4261275272161742,
       neutral: 0.5225505443234837,
       denial: 0.05132192846034215,
-      aggressive: 0.24572317262830481
+      aggressive: 0.24572317262830481,
     },
     2011: {
       total_count: 469,
@@ -15493,7 +15495,7 @@ export const data = {
       believer: 0.1513859275053305,
       neutral: 0.7867803837953091,
       denial: 0.06183368869936034,
-      aggressive: 0.32196162046908317
+      aggressive: 0.32196162046908317,
     },
     2012: {
       total_count: 153,
@@ -15505,7 +15507,7 @@ export const data = {
       believer: 0.2549019607843137,
       neutral: 0.6209150326797386,
       denial: 0.12418300653594772,
-      aggressive: 0.3464052287581699
+      aggressive: 0.3464052287581699,
     },
     2013: {
       total_count: 257,
@@ -15517,7 +15519,7 @@ export const data = {
       believer: 0.33073929961089493,
       neutral: 0.5758754863813229,
       denial: 0.0933852140077821,
-      aggressive: 0.311284046692607
+      aggressive: 0.311284046692607,
     },
     2014: {
       total_count: 293,
@@ -15529,7 +15531,7 @@ export const data = {
       believer: 0.4334470989761092,
       neutral: 0.3515358361774744,
       denial: 0.2150170648464164,
-      aggressive: 0.3856655290102389
+      aggressive: 0.3856655290102389,
     },
     2015: {
       total_count: 1013,
@@ -15541,7 +15543,7 @@ export const data = {
       believer: 0.6238894373149062,
       neutral: 0.3079960513326752,
       denial: 0.06811451135241856,
-      aggressive: 0.3770977295162882
+      aggressive: 0.3770977295162882,
     },
     2016: {
       total_count: 1107,
@@ -15553,7 +15555,7 @@ export const data = {
       believer: 0.6621499548328816,
       neutral: 0.3017163504968383,
       denial: 0.036133694670280034,
-      aggressive: 0.25835591689250226
+      aggressive: 0.25835591689250226,
     },
     2017: {
       total_count: 3863,
@@ -15565,7 +15567,7 @@ export const data = {
       believer: 0.6518250064716542,
       neutral: 0.20191560962982139,
       denial: 0.14625938389852447,
-      aggressive: 0.3196997152472172
+      aggressive: 0.3196997152472172,
     },
     2018: {
       total_count: 7973,
@@ -15577,7 +15579,7 @@ export const data = {
       believer: 0.7384924118901292,
       neutral: 0.18499937288348176,
       denial: 0.07650821522638906,
-      aggressive: 0.2577448890003763
+      aggressive: 0.2577448890003763,
     },
     2019: {
       total_count: 2847,
@@ -15589,8 +15591,8 @@ export const data = {
       believer: 0.7755532139093783,
       neutral: 0.1974007727432385,
       denial: 0.02704601334738321,
-      aggressive: 0.1749209694415174
-    }
+      aggressive: 0.1749209694415174,
+    },
   },
   Micronesia: {
     2008: {
@@ -15603,7 +15605,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 1,
@@ -15615,7 +15617,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 2,
@@ -15627,7 +15629,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 2,
@@ -15639,7 +15641,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -15651,7 +15653,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 11,
@@ -15663,7 +15665,7 @@ export const data = {
       believer: 0.7272727272727273,
       neutral: 0.2727272727272727,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2016: {
       total_count: 5,
@@ -15675,7 +15677,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2017: {
       total_count: 16,
@@ -15687,7 +15689,7 @@ export const data = {
       believer: 0.8125,
       neutral: 0.0625,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 91,
@@ -15699,7 +15701,7 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.12087912087912088,
       denial: 0.03296703296703297,
-      aggressive: 0.24175824175824176
+      aggressive: 0.24175824175824176,
     },
     2019: {
       total_count: 39,
@@ -15711,8 +15713,8 @@ export const data = {
       believer: 0.8205128205128205,
       neutral: 0.10256410256410256,
       denial: 0.07692307692307693,
-      aggressive: 0.23076923076923078
-    }
+      aggressive: 0.23076923076923078,
+    },
   },
   Moldova: {
     2009: {
@@ -15725,7 +15727,7 @@ export const data = {
       believer: 0.16666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.5,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2010: {
       total_count: 4,
@@ -15737,7 +15739,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2011: {
       total_count: 2,
@@ -15749,7 +15751,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 3,
@@ -15761,7 +15763,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -15773,7 +15775,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 9,
@@ -15785,7 +15787,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 6,
@@ -15797,7 +15799,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.0,
       denial: 0.16666666666666666,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 27,
@@ -15809,7 +15811,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2018: {
       total_count: 87,
@@ -15821,7 +15823,7 @@ export const data = {
       believer: 0.8620689655172413,
       neutral: 0.09195402298850575,
       denial: 0.04597701149425287,
-      aggressive: 0.25287356321839083
+      aggressive: 0.25287356321839083,
     },
     2019: {
       total_count: 22,
@@ -15833,8 +15835,8 @@ export const data = {
       believer: 0.8181818181818182,
       neutral: 0.13636363636363635,
       denial: 0.045454545454545456,
-      aggressive: 0.22727272727272727
-    }
+      aggressive: 0.22727272727272727,
+    },
   },
   Monaco: {
     2014: {
@@ -15847,7 +15849,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -15859,7 +15861,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 4,
@@ -15871,7 +15873,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 7,
@@ -15883,7 +15885,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2018: {
       total_count: 9,
@@ -15895,7 +15897,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2019: {
       total_count: 1,
@@ -15907,8 +15909,8 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Mongolia: {
     2009: {
@@ -15921,7 +15923,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 4,
@@ -15933,7 +15935,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 2,
@@ -15945,7 +15947,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2012: {
       total_count: 1,
@@ -15957,7 +15959,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 4,
@@ -15969,7 +15971,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 4,
@@ -15981,7 +15983,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 22,
@@ -15993,7 +15995,7 @@ export const data = {
       believer: 0.6818181818181818,
       neutral: 0.2727272727272727,
       denial: 0.045454545454545456,
-      aggressive: 0.09090909090909091
+      aggressive: 0.09090909090909091,
     },
     2016: {
       total_count: 19,
@@ -16005,7 +16007,7 @@ export const data = {
       believer: 0.8421052631578947,
       neutral: 0.10526315789473684,
       denial: 0.05263157894736842,
-      aggressive: 0.2631578947368421
+      aggressive: 0.2631578947368421,
     },
     2017: {
       total_count: 52,
@@ -16017,7 +16019,7 @@ export const data = {
       believer: 0.8269230769230769,
       neutral: 0.1346153846153846,
       denial: 0.038461538461538464,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 189,
@@ -16029,7 +16031,7 @@ export const data = {
       believer: 0.8624338624338624,
       neutral: 0.1111111111111111,
       denial: 0.026455026455026454,
-      aggressive: 0.19576719576719576
+      aggressive: 0.19576719576719576,
     },
     2019: {
       total_count: 31,
@@ -16041,8 +16043,8 @@ export const data = {
       believer: 0.8709677419354839,
       neutral: 0.0967741935483871,
       denial: 0.03225806451612903,
-      aggressive: 0.1935483870967742
-    }
+      aggressive: 0.1935483870967742,
+    },
   },
   Montenegro: {
     2009: {
@@ -16055,7 +16057,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 1,
@@ -16067,7 +16069,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 3,
@@ -16079,7 +16081,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 1,
@@ -16091,7 +16093,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 7,
@@ -16103,7 +16105,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.7142857142857143,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 5,
@@ -16115,7 +16117,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2017: {
       total_count: 15,
@@ -16127,7 +16129,7 @@ export const data = {
       believer: 0.7333333333333333,
       neutral: 0.26666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 42,
@@ -16139,7 +16141,7 @@ export const data = {
       believer: 0.9761904761904762,
       neutral: 0.023809523809523808,
       denial: 0.0,
-      aggressive: 0.09523809523809523
+      aggressive: 0.09523809523809523,
     },
     2019: {
       total_count: 6,
@@ -16151,8 +16153,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Montserrat: {
     2008: {
@@ -16165,7 +16167,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 3,
@@ -16177,7 +16179,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 5,
@@ -16189,7 +16191,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.0,
       denial: 0.2,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2016: {
       total_count: 4,
@@ -16201,7 +16203,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 4,
@@ -16213,7 +16215,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 35,
@@ -16225,7 +16227,7 @@ export const data = {
       believer: 0.9142857142857143,
       neutral: 0.05714285714285714,
       denial: 0.02857142857142857,
-      aggressive: 0.22857142857142856
+      aggressive: 0.22857142857142856,
     },
     2019: {
       total_count: 10,
@@ -16237,8 +16239,8 @@ export const data = {
       believer: 0.9,
       neutral: 0.1,
       denial: 0.0,
-      aggressive: 0.1
-    }
+      aggressive: 0.1,
+    },
   },
   Morocco: {
     2009: {
@@ -16251,7 +16253,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 8,
@@ -16263,7 +16265,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 4,
@@ -16275,7 +16277,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 8,
@@ -16287,7 +16289,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.625,
       denial: 0.125,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 12,
@@ -16299,7 +16301,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2014: {
       total_count: 9,
@@ -16311,7 +16313,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 69,
@@ -16323,7 +16325,7 @@ export const data = {
       believer: 0.7681159420289855,
       neutral: 0.2028985507246377,
       denial: 0.028985507246376812,
-      aggressive: 0.2753623188405797
+      aggressive: 0.2753623188405797,
     },
     2016: {
       total_count: 181,
@@ -16335,7 +16337,7 @@ export const data = {
       believer: 0.6629834254143646,
       neutral: 0.3314917127071823,
       denial: 0.0055248618784530384,
-      aggressive: 0.2541436464088398
+      aggressive: 0.2541436464088398,
     },
     2017: {
       total_count: 338,
@@ -16347,7 +16349,7 @@ export const data = {
       believer: 0.8520710059171598,
       neutral: 0.1390532544378698,
       denial: 0.008875739644970414,
-      aggressive: 0.257396449704142
+      aggressive: 0.257396449704142,
     },
     2018: {
       total_count: 521,
@@ -16359,7 +16361,7 @@ export const data = {
       believer: 0.8733205374280231,
       neutral: 0.12092130518234165,
       denial: 0.005758157389635317,
-      aggressive: 0.19769673704414586
+      aggressive: 0.19769673704414586,
     },
     2019: {
       total_count: 105,
@@ -16371,8 +16373,8 @@ export const data = {
       believer: 0.8380952380952381,
       neutral: 0.11428571428571428,
       denial: 0.047619047619047616,
-      aggressive: 0.2857142857142857
-    }
+      aggressive: 0.2857142857142857,
+    },
   },
   Mozambique: {
     2009: {
@@ -16385,7 +16387,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 9,
@@ -16397,7 +16399,7 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 3,
@@ -16409,7 +16411,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -16421,7 +16423,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 17,
@@ -16433,7 +16435,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.17647058823529413,
       denial: 0.058823529411764705,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2016: {
       total_count: 7,
@@ -16445,7 +16447,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2017: {
       total_count: 30,
@@ -16457,7 +16459,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.13333333333333333,
       denial: 0.03333333333333333,
-      aggressive: 0.13333333333333333
+      aggressive: 0.13333333333333333,
     },
     2018: {
       total_count: 64,
@@ -16469,7 +16471,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.265625
+      aggressive: 0.265625,
     },
     2019: {
       total_count: 21,
@@ -16481,8 +16483,8 @@ export const data = {
       believer: 0.9047619047619048,
       neutral: 0.047619047619047616,
       denial: 0.047619047619047616,
-      aggressive: 0.23809523809523808
-    }
+      aggressive: 0.23809523809523808,
+    },
   },
   Myanmar: {
     2009: {
@@ -16495,7 +16497,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2010: {
       total_count: 7,
@@ -16507,7 +16509,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.8571428571428571,
       denial: 0.0,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2011: {
       total_count: 7,
@@ -16519,7 +16521,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.5714285714285714,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2012: {
       total_count: 3,
@@ -16531,7 +16533,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -16543,7 +16545,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 9,
@@ -16555,7 +16557,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2222222222222222,
       denial: 0.1111111111111111,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2015: {
       total_count: 42,
@@ -16567,7 +16569,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.11904761904761904,
       denial: 0.047619047619047616,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2016: {
       total_count: 66,
@@ -16579,7 +16581,7 @@ export const data = {
       believer: 0.8787878787878788,
       neutral: 0.12121212121212122,
       denial: 0.0,
-      aggressive: 0.2878787878787879
+      aggressive: 0.2878787878787879,
     },
     2017: {
       total_count: 66,
@@ -16591,7 +16593,7 @@ export const data = {
       believer: 0.8787878787878788,
       neutral: 0.09090909090909091,
       denial: 0.030303030303030304,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2018: {
       total_count: 98,
@@ -16603,7 +16605,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.1326530612244898,
       denial: 0.01020408163265306,
-      aggressive: 0.24489795918367346
+      aggressive: 0.24489795918367346,
     },
     2019: {
       total_count: 37,
@@ -16615,8 +16617,8 @@ export const data = {
       believer: 0.8918918918918919,
       neutral: 0.10810810810810811,
       denial: 0.0,
-      aggressive: 0.16216216216216217
-    }
+      aggressive: 0.16216216216216217,
+    },
   },
   Namibia: {
     2009: {
@@ -16629,7 +16631,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 6,
@@ -16641,7 +16643,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.16666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 12,
@@ -16653,7 +16655,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.6666666666666666,
       denial: 0.08333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 10,
@@ -16665,7 +16667,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.7,
       denial: 0.1,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 16,
@@ -16677,7 +16679,7 @@ export const data = {
       believer: 0.4375,
       neutral: 0.5,
       denial: 0.0625,
-      aggressive: 0.625
+      aggressive: 0.625,
     },
     2014: {
       total_count: 12,
@@ -16689,7 +16691,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.25,
       denial: 0.08333333333333333,
-      aggressive: 0.5833333333333334
+      aggressive: 0.5833333333333334,
     },
     2015: {
       total_count: 41,
@@ -16701,7 +16703,7 @@ export const data = {
       believer: 0.6585365853658537,
       neutral: 0.34146341463414637,
       denial: 0.0,
-      aggressive: 0.4146341463414634
+      aggressive: 0.4146341463414634,
     },
     2016: {
       total_count: 31,
@@ -16713,7 +16715,7 @@ export const data = {
       believer: 0.7419354838709677,
       neutral: 0.22580645161290322,
       denial: 0.03225806451612903,
-      aggressive: 0.2903225806451613
+      aggressive: 0.2903225806451613,
     },
     2017: {
       total_count: 60,
@@ -16725,7 +16727,7 @@ export const data = {
       believer: 0.8666666666666667,
       neutral: 0.1,
       denial: 0.03333333333333333,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 138,
@@ -16737,7 +16739,7 @@ export const data = {
       believer: 0.8840579710144928,
       neutral: 0.10144927536231885,
       denial: 0.014492753623188406,
-      aggressive: 0.2391304347826087
+      aggressive: 0.2391304347826087,
     },
     2019: {
       total_count: 55,
@@ -16749,8 +16751,8 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.09090909090909091
-    }
+      aggressive: 0.09090909090909091,
+    },
   },
   Nauru: {
     2009: {
@@ -16763,8 +16765,8 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Nepal: {
     2008: {
@@ -16777,7 +16779,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 148,
@@ -16789,7 +16791,7 @@ export const data = {
       believer: 0.6891891891891891,
       neutral: 0.30405405405405406,
       denial: 0.006756756756756757,
-      aggressive: 0.0945945945945946
+      aggressive: 0.0945945945945946,
     },
     2010: {
       total_count: 67,
@@ -16801,7 +16803,7 @@ export const data = {
       believer: 0.6268656716417911,
       neutral: 0.3582089552238806,
       denial: 0.014925373134328358,
-      aggressive: 0.07462686567164178
+      aggressive: 0.07462686567164178,
     },
     2011: {
       total_count: 25,
@@ -16813,7 +16815,7 @@ export const data = {
       believer: 0.48,
       neutral: 0.48,
       denial: 0.04,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2012: {
       total_count: 22,
@@ -16825,7 +16827,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.045454545454545456
+      aggressive: 0.045454545454545456,
     },
     2013: {
       total_count: 50,
@@ -16837,7 +16839,7 @@ export const data = {
       believer: 0.68,
       neutral: 0.3,
       denial: 0.02,
-      aggressive: 0.12
+      aggressive: 0.12,
     },
     2014: {
       total_count: 59,
@@ -16849,7 +16851,7 @@ export const data = {
       believer: 0.559322033898305,
       neutral: 0.3728813559322034,
       denial: 0.06779661016949153,
-      aggressive: 0.2542372881355932
+      aggressive: 0.2542372881355932,
     },
     2015: {
       total_count: 276,
@@ -16861,7 +16863,7 @@ export const data = {
       believer: 0.7355072463768116,
       neutral: 0.2572463768115942,
       denial: 0.007246376811594203,
-      aggressive: 0.19927536231884058
+      aggressive: 0.19927536231884058,
     },
     2016: {
       total_count: 307,
@@ -16873,7 +16875,7 @@ export const data = {
       believer: 0.8045602605863192,
       neutral: 0.1758957654723127,
       denial: 0.019543973941368076,
-      aggressive: 0.1563517915309446
+      aggressive: 0.1563517915309446,
     },
     2017: {
       total_count: 424,
@@ -16885,7 +16887,7 @@ export const data = {
       believer: 0.8231132075471698,
       neutral: 0.16981132075471697,
       denial: 0.007075471698113208,
-      aggressive: 0.14150943396226415
+      aggressive: 0.14150943396226415,
     },
     2018: {
       total_count: 820,
@@ -16897,7 +16899,7 @@ export const data = {
       believer: 0.8926829268292683,
       neutral: 0.10121951219512196,
       denial: 0.006097560975609756,
-      aggressive: 0.1524390243902439
+      aggressive: 0.1524390243902439,
     },
     2019: {
       total_count: 141,
@@ -16909,8 +16911,8 @@ export const data = {
       believer: 0.8936170212765957,
       neutral: 0.10638297872340426,
       denial: 0.0,
-      aggressive: 0.15602836879432624
-    }
+      aggressive: 0.15602836879432624,
+    },
   },
   Netherlands: {
     2007: {
@@ -16923,7 +16925,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2008: {
       total_count: 87,
@@ -16935,7 +16937,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5517241379310345,
       denial: 0.11494252873563218,
-      aggressive: 0.3103448275862069
+      aggressive: 0.3103448275862069,
     },
     2009: {
       total_count: 712,
@@ -16947,7 +16949,7 @@ export const data = {
       believer: 0.46207865168539325,
       neutral: 0.46629213483146065,
       denial: 0.07162921348314606,
-      aggressive: 0.24297752808988765
+      aggressive: 0.24297752808988765,
     },
     2010: {
       total_count: 962,
@@ -16959,7 +16961,7 @@ export const data = {
       believer: 0.2390852390852391,
       neutral: 0.6891891891891891,
       denial: 0.07172557172557173,
-      aggressive: 0.26715176715176714
+      aggressive: 0.26715176715176714,
     },
     2011: {
       total_count: 574,
@@ -16971,7 +16973,7 @@ export const data = {
       believer: 0.18466898954703834,
       neutral: 0.7543554006968641,
       denial: 0.06097560975609756,
-      aggressive: 0.2665505226480836
+      aggressive: 0.2665505226480836,
     },
     2012: {
       total_count: 240,
@@ -16983,7 +16985,7 @@ export const data = {
       believer: 0.2916666666666667,
       neutral: 0.6541666666666667,
       denial: 0.05416666666666667,
-      aggressive: 0.31666666666666665
+      aggressive: 0.31666666666666665,
     },
     2013: {
       total_count: 460,
@@ -16995,7 +16997,7 @@ export const data = {
       believer: 0.2847826086956522,
       neutral: 0.6478260869565218,
       denial: 0.06739130434782609,
-      aggressive: 0.24130434782608695
+      aggressive: 0.24130434782608695,
     },
     2014: {
       total_count: 502,
@@ -17007,7 +17009,7 @@ export const data = {
       believer: 0.5159362549800797,
       neutral: 0.41832669322709165,
       denial: 0.06573705179282868,
-      aggressive: 0.2948207171314741
+      aggressive: 0.2948207171314741,
     },
     2015: {
       total_count: 2462,
@@ -17019,7 +17021,7 @@ export const data = {
       believer: 0.7071486596263201,
       neutral: 0.264825345247766,
       denial: 0.028025995125913892,
-      aggressive: 0.25060926076360684
+      aggressive: 0.25060926076360684,
     },
     2016: {
       total_count: 2548,
@@ -17031,7 +17033,7 @@ export const data = {
       believer: 0.7519623233908949,
       neutral: 0.22723704866562008,
       denial: 0.020800627943485087,
-      aggressive: 0.21860282574568288
+      aggressive: 0.21860282574568288,
     },
     2017: {
       total_count: 5300,
@@ -17043,7 +17045,7 @@ export const data = {
       believer: 0.7854716981132075,
       neutral: 0.18169811320754717,
       denial: 0.03283018867924528,
-      aggressive: 0.2320754716981132
+      aggressive: 0.2320754716981132,
     },
     2018: {
       total_count: 12005,
@@ -17055,7 +17057,7 @@ export const data = {
       believer: 0.8082465639316951,
       neutral: 0.1526030820491462,
       denial: 0.03915035401915869,
-      aggressive: 0.20308204914618908
+      aggressive: 0.20308204914618908,
     },
     2019: {
       total_count: 3369,
@@ -17067,8 +17069,8 @@ export const data = {
       believer: 0.7931136835856337,
       neutral: 0.16028495102404275,
       denial: 0.046601365390323536,
-      aggressive: 0.22439893143365983
-    }
+      aggressive: 0.22439893143365983,
+    },
   },
   NewZealand: {
     2007: {
@@ -17081,7 +17083,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.6,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2008: {
       total_count: 110,
@@ -17089,11 +17091,11 @@ export const data = {
       beliver_v_denier: 0.8545454545454545,
       aggressive_rate_believer: 0.40425531914893614,
       aggressive_rate_denier: 0.625,
-      sentiment: -7.778452010538325e-05,
+      sentiment: -7.778452010538325e-5,
       believer: 0.42727272727272725,
       neutral: 0.5,
       denial: 0.07272727272727272,
-      aggressive: 0.4090909090909091
+      aggressive: 0.4090909090909091,
     },
     2009: {
       total_count: 1324,
@@ -17105,7 +17107,7 @@ export const data = {
       believer: 0.513595166163142,
       neutral: 0.3459214501510574,
       denial: 0.1404833836858006,
-      aggressive: 0.3187311178247734
+      aggressive: 0.3187311178247734,
     },
     2010: {
       total_count: 698,
@@ -17117,7 +17119,7 @@ export const data = {
       believer: 0.4269340974212034,
       neutral: 0.4340974212034384,
       denial: 0.13896848137535817,
-      aggressive: 0.32521489971346706
+      aggressive: 0.32521489971346706,
     },
     2011: {
       total_count: 340,
@@ -17129,7 +17131,7 @@ export const data = {
       believer: 0.27647058823529413,
       neutral: 0.55,
       denial: 0.17352941176470588,
-      aggressive: 0.3264705882352941
+      aggressive: 0.3264705882352941,
     },
     2012: {
       total_count: 171,
@@ -17141,7 +17143,7 @@ export const data = {
       believer: 0.49122807017543857,
       neutral: 0.40350877192982454,
       denial: 0.10526315789473684,
-      aggressive: 0.3216374269005848
+      aggressive: 0.3216374269005848,
     },
     2013: {
       total_count: 271,
@@ -17153,7 +17155,7 @@ export const data = {
       believer: 0.42435424354243545,
       neutral: 0.4132841328413284,
       denial: 0.16236162361623616,
-      aggressive: 0.26199261992619927
+      aggressive: 0.26199261992619927,
     },
     2014: {
       total_count: 467,
@@ -17165,7 +17167,7 @@ export const data = {
       believer: 0.5053533190578159,
       neutral: 0.3854389721627409,
       denial: 0.10920770877944326,
-      aggressive: 0.2762312633832976
+      aggressive: 0.2762312633832976,
     },
     2015: {
       total_count: 2457,
@@ -17177,7 +17179,7 @@ export const data = {
       believer: 0.6988196988196989,
       neutral: 0.25844525844525845,
       denial: 0.042735042735042736,
-      aggressive: 0.27635327635327633
+      aggressive: 0.27635327635327633,
     },
     2016: {
       total_count: 2487,
@@ -17189,7 +17191,7 @@ export const data = {
       believer: 0.7096903900281464,
       neutral: 0.24688379573783675,
       denial: 0.04342581423401689,
-      aggressive: 0.2525130679533575
+      aggressive: 0.2525130679533575,
     },
     2017: {
       total_count: 6564,
@@ -17201,7 +17203,7 @@ export const data = {
       believer: 0.7891529555149299,
       neutral: 0.17062766605728213,
       denial: 0.04021937842778794,
-      aggressive: 0.22181596587446678
+      aggressive: 0.22181596587446678,
     },
     2018: {
       total_count: 13886,
@@ -17213,7 +17215,7 @@ export const data = {
       believer: 0.8147774737145326,
       neutral: 0.12804263286763648,
       denial: 0.05717989341783091,
-      aggressive: 0.2208699409477171
+      aggressive: 0.2208699409477171,
     },
     2019: {
       total_count: 3818,
@@ -17225,8 +17227,8 @@ export const data = {
       believer: 0.8027763226820325,
       neutral: 0.1354112100576218,
       denial: 0.061812467260345734,
-      aggressive: 0.21267679413305396
-    }
+      aggressive: 0.21267679413305396,
+    },
   },
   Nicaragua: {
     2009: {
@@ -17239,7 +17241,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2010: {
       total_count: 2,
@@ -17251,7 +17253,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 2,
@@ -17263,7 +17265,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 1,
@@ -17275,7 +17277,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 10,
@@ -17287,7 +17289,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.3,
       denial: 0.3,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2014: {
       total_count: 2,
@@ -17299,7 +17301,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 26,
@@ -17311,7 +17313,7 @@ export const data = {
       believer: 0.7307692307692307,
       neutral: 0.23076923076923078,
       denial: 0.038461538461538464,
-      aggressive: 0.4230769230769231
+      aggressive: 0.4230769230769231,
     },
     2016: {
       total_count: 49,
@@ -17323,7 +17325,7 @@ export const data = {
       believer: 0.9387755102040817,
       neutral: 0.061224489795918366,
       denial: 0.0,
-      aggressive: 0.1836734693877551
+      aggressive: 0.1836734693877551,
     },
     2017: {
       total_count: 28,
@@ -17335,7 +17337,7 @@ export const data = {
       believer: 0.7857142857142857,
       neutral: 0.10714285714285714,
       denial: 0.10714285714285714,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2018: {
       total_count: 90,
@@ -17347,7 +17349,7 @@ export const data = {
       believer: 0.8555555555555555,
       neutral: 0.1,
       denial: 0.044444444444444446,
-      aggressive: 0.24444444444444444
+      aggressive: 0.24444444444444444,
     },
     2019: {
       total_count: 23,
@@ -17359,8 +17361,8 @@ export const data = {
       believer: 0.8260869565217391,
       neutral: 0.08695652173913043,
       denial: 0.08695652173913043,
-      aggressive: 0.30434782608695654
-    }
+      aggressive: 0.30434782608695654,
+    },
   },
   Niger: {
     2010: {
@@ -17373,7 +17375,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -17385,7 +17387,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -17397,7 +17399,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 7,
@@ -17409,7 +17411,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2015: {
       total_count: 49,
@@ -17421,7 +17423,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.22448979591836735,
       denial: 0.20408163265306123,
-      aggressive: 0.1836734693877551
+      aggressive: 0.1836734693877551,
     },
     2016: {
       total_count: 16,
@@ -17433,7 +17435,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.3125,
       denial: 0.0625,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2017: {
       total_count: 51,
@@ -17445,7 +17447,7 @@ export const data = {
       believer: 0.6078431372549019,
       neutral: 0.27450980392156865,
       denial: 0.11764705882352941,
-      aggressive: 0.37254901960784315
+      aggressive: 0.37254901960784315,
     },
     2018: {
       total_count: 95,
@@ -17457,7 +17459,7 @@ export const data = {
       believer: 0.7894736842105263,
       neutral: 0.17894736842105263,
       denial: 0.031578947368421054,
-      aggressive: 0.24210526315789474
+      aggressive: 0.24210526315789474,
     },
     2019: {
       total_count: 22,
@@ -17469,8 +17471,8 @@ export const data = {
       believer: 0.6818181818181818,
       neutral: 0.3181818181818182,
       denial: 0.0,
-      aggressive: 0.18181818181818182
-    }
+      aggressive: 0.18181818181818182,
+    },
   },
   Nigeria: {
     2009: {
@@ -17483,7 +17485,7 @@ export const data = {
       believer: 0.4807692307692308,
       neutral: 0.46153846153846156,
       denial: 0.057692307692307696,
-      aggressive: 0.2692307692307692
+      aggressive: 0.2692307692307692,
     },
     2010: {
       total_count: 163,
@@ -17495,7 +17497,7 @@ export const data = {
       believer: 0.2147239263803681,
       neutral: 0.6932515337423313,
       denial: 0.09202453987730061,
-      aggressive: 0.26993865030674846
+      aggressive: 0.26993865030674846,
     },
     2011: {
       total_count: 475,
@@ -17507,7 +17509,7 @@ export const data = {
       believer: 0.2063157894736842,
       neutral: 0.7242105263157895,
       denial: 0.06947368421052631,
-      aggressive: 0.25684210526315787
+      aggressive: 0.25684210526315787,
     },
     2012: {
       total_count: 378,
@@ -17519,7 +17521,7 @@ export const data = {
       believer: 0.2619047619047619,
       neutral: 0.656084656084656,
       denial: 0.082010582010582,
-      aggressive: 0.2698412698412698
+      aggressive: 0.2698412698412698,
     },
     2013: {
       total_count: 542,
@@ -17531,7 +17533,7 @@ export const data = {
       believer: 0.35793357933579334,
       neutral: 0.5719557195571956,
       denial: 0.07011070110701106,
-      aggressive: 0.31365313653136534
+      aggressive: 0.31365313653136534,
     },
     2014: {
       total_count: 648,
@@ -17543,7 +17545,7 @@ export const data = {
       believer: 0.49537037037037035,
       neutral: 0.4382716049382716,
       denial: 0.06635802469135803,
-      aggressive: 0.2932098765432099
+      aggressive: 0.2932098765432099,
     },
     2015: {
       total_count: 2583,
@@ -17555,7 +17557,7 @@ export const data = {
       believer: 0.6515679442508711,
       neutral: 0.316298877274487,
       denial: 0.03213317847464189,
-      aggressive: 0.27448703058459156
+      aggressive: 0.27448703058459156,
     },
     2016: {
       total_count: 2824,
@@ -17567,7 +17569,7 @@ export const data = {
       believer: 0.7092776203966006,
       neutral: 0.266643059490085,
       denial: 0.024079320113314446,
-      aggressive: 0.2896600566572238
+      aggressive: 0.2896600566572238,
     },
     2017: {
       total_count: 4781,
@@ -17579,7 +17581,7 @@ export const data = {
       believer: 0.8314160217527714,
       neutral: 0.1520602384438402,
       denial: 0.016523739803388414,
-      aggressive: 0.21731855260405772
+      aggressive: 0.21731855260405772,
     },
     2018: {
       total_count: 12199,
@@ -17591,7 +17593,7 @@ export const data = {
       believer: 0.8083449463070743,
       neutral: 0.16927617017788343,
       denial: 0.022378883515042216,
-      aggressive: 0.1578817935896385
+      aggressive: 0.1578817935896385,
     },
     2019: {
       total_count: 3478,
@@ -17603,8 +17605,8 @@ export const data = {
       believer: 0.8274870615296147,
       neutral: 0.14634847613571017,
       denial: 0.0261644623346751,
-      aggressive: 0.17165037377803335
-    }
+      aggressive: 0.17165037377803335,
+    },
   },
   Niue: {
     2009: {
@@ -17617,7 +17619,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 3,
@@ -17629,7 +17631,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 3,
@@ -17641,7 +17643,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2017: {
       total_count: 3,
@@ -17653,7 +17655,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2018: {
       total_count: 6,
@@ -17665,8 +17667,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Norfolk: {
     2012: {
@@ -17679,7 +17681,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -17691,7 +17693,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 1,
@@ -17703,7 +17705,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 3,
@@ -17715,7 +17717,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2016: {
       total_count: 4,
@@ -17727,7 +17729,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2017: {
       total_count: 1,
@@ -17739,7 +17741,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 4,
@@ -17751,7 +17753,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -17763,10 +17765,10 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
- 
+
   Norway: {
     2007: {
       total_count: 7,
@@ -17778,7 +17780,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.8571428571428571,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2008: {
       total_count: 19,
@@ -17790,7 +17792,7 @@ export const data = {
       believer: 0.2631578947368421,
       neutral: 0.5263157894736842,
       denial: 0.21052631578947367,
-      aggressive: 0.47368421052631576
+      aggressive: 0.47368421052631576,
     },
     2009: {
       total_count: 454,
@@ -17802,7 +17804,7 @@ export const data = {
       believer: 0.4911894273127753,
       neutral: 0.394273127753304,
       denial: 0.1145374449339207,
-      aggressive: 0.3237885462555066
+      aggressive: 0.3237885462555066,
     },
     2010: {
       total_count: 445,
@@ -17814,7 +17816,7 @@ export const data = {
       believer: 0.503370786516854,
       neutral: 0.3955056179775281,
       denial: 0.10112359550561797,
-      aggressive: 0.2876404494382023
+      aggressive: 0.2876404494382023,
     },
     2011: {
       total_count: 253,
@@ -17826,7 +17828,7 @@ export const data = {
       believer: 0.45454545454545453,
       neutral: 0.43478260869565216,
       denial: 0.11067193675889328,
-      aggressive: 0.2885375494071146
+      aggressive: 0.2885375494071146,
     },
     2012: {
       total_count: 154,
@@ -17838,7 +17840,7 @@ export const data = {
       believer: 0.5844155844155844,
       neutral: 0.2792207792207792,
       denial: 0.13636363636363635,
-      aggressive: 0.33766233766233766
+      aggressive: 0.33766233766233766,
     },
     2013: {
       total_count: 243,
@@ -17850,7 +17852,7 @@ export const data = {
       believer: 0.5390946502057613,
       neutral: 0.2962962962962963,
       denial: 0.1646090534979424,
-      aggressive: 0.22633744855967078
+      aggressive: 0.22633744855967078,
     },
     2014: {
       total_count: 341,
@@ -17862,7 +17864,7 @@ export const data = {
       believer: 0.6011730205278593,
       neutral: 0.30498533724340177,
       denial: 0.093841642228739,
-      aggressive: 0.2434017595307918
+      aggressive: 0.2434017595307918,
     },
     2015: {
       total_count: 1220,
@@ -17874,7 +17876,7 @@ export const data = {
       believer: 0.7508196721311475,
       neutral: 0.2098360655737705,
       denial: 0.03934426229508197,
-      aggressive: 0.2836065573770492
+      aggressive: 0.2836065573770492,
     },
     2016: {
       total_count: 1377,
@@ -17886,7 +17888,7 @@ export const data = {
       believer: 0.7523602033405955,
       neutral: 0.20915032679738563,
       denial: 0.03848946986201888,
-      aggressive: 0.2788671023965142
+      aggressive: 0.2788671023965142,
     },
     2017: {
       total_count: 3023,
@@ -17898,7 +17900,7 @@ export const data = {
       believer: 0.8071452199801522,
       neutral: 0.1442275884882567,
       denial: 0.04862719153159113,
-      aggressive: 0.23916639100231557
+      aggressive: 0.23916639100231557,
     },
     2018: {
       total_count: 6300,
@@ -17910,7 +17912,7 @@ export const data = {
       believer: 0.8306349206349206,
       neutral: 0.12746031746031747,
       denial: 0.0419047619047619,
-      aggressive: 0.23126984126984126
+      aggressive: 0.23126984126984126,
     },
     2019: {
       total_count: 2088,
@@ -17922,8 +17924,8 @@ export const data = {
       believer: 0.8045977011494253,
       neutral: 0.13793103448275862,
       denial: 0.05747126436781609,
-      aggressive: 0.2274904214559387
-    }
+      aggressive: 0.2274904214559387,
+    },
   },
   Oman: {
     2009: {
@@ -17936,7 +17938,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 10,
@@ -17948,7 +17950,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.5,
       denial: 0.1,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2011: {
       total_count: 10,
@@ -17960,7 +17962,7 @@ export const data = {
       believer: 0.3,
       neutral: 0.7,
       denial: 0.0,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2012: {
       total_count: 5,
@@ -17972,7 +17974,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2013: {
       total_count: 31,
@@ -17984,7 +17986,7 @@ export const data = {
       believer: 0.5806451612903226,
       neutral: 0.3225806451612903,
       denial: 0.0967741935483871,
-      aggressive: 0.12903225806451613
+      aggressive: 0.12903225806451613,
     },
     2014: {
       total_count: 51,
@@ -17996,7 +17998,7 @@ export const data = {
       believer: 0.7254901960784313,
       neutral: 0.23529411764705882,
       denial: 0.0392156862745098,
-      aggressive: 0.37254901960784315
+      aggressive: 0.37254901960784315,
     },
     2015: {
       total_count: 72,
@@ -18008,7 +18010,7 @@ export const data = {
       believer: 0.7361111111111112,
       neutral: 0.2222222222222222,
       denial: 0.041666666666666664,
-      aggressive: 0.20833333333333334
+      aggressive: 0.20833333333333334,
     },
     2016: {
       total_count: 64,
@@ -18020,7 +18022,7 @@ export const data = {
       believer: 0.71875,
       neutral: 0.21875,
       denial: 0.0625,
-      aggressive: 0.109375
+      aggressive: 0.109375,
     },
     2017: {
       total_count: 126,
@@ -18032,7 +18034,7 @@ export const data = {
       believer: 0.8650793650793651,
       neutral: 0.12698412698412698,
       denial: 0.007936507936507936,
-      aggressive: 0.1349206349206349
+      aggressive: 0.1349206349206349,
     },
     2018: {
       total_count: 416,
@@ -18044,7 +18046,7 @@ export const data = {
       believer: 0.8605769230769231,
       neutral: 0.125,
       denial: 0.014423076923076924,
-      aggressive: 0.20192307692307693
+      aggressive: 0.20192307692307693,
     },
     2019: {
       total_count: 109,
@@ -18056,8 +18058,8 @@ export const data = {
       believer: 0.7981651376146789,
       neutral: 0.1743119266055046,
       denial: 0.027522935779816515,
-      aggressive: 0.24770642201834864
-    }
+      aggressive: 0.24770642201834864,
+    },
   },
   Pakistan: {
     2008: {
@@ -18070,7 +18072,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2009: {
       total_count: 111,
@@ -18082,7 +18084,7 @@ export const data = {
       believer: 0.5765765765765766,
       neutral: 0.3153153153153153,
       denial: 0.10810810810810811,
-      aggressive: 0.2702702702702703
+      aggressive: 0.2702702702702703,
     },
     2010: {
       total_count: 121,
@@ -18094,7 +18096,7 @@ export const data = {
       believer: 0.5537190082644629,
       neutral: 0.36363636363636365,
       denial: 0.08264462809917356,
-      aggressive: 0.1487603305785124
+      aggressive: 0.1487603305785124,
     },
     2011: {
       total_count: 77,
@@ -18106,7 +18108,7 @@ export const data = {
       believer: 0.4675324675324675,
       neutral: 0.5194805194805194,
       denial: 0.012987012987012988,
-      aggressive: 0.16883116883116883
+      aggressive: 0.16883116883116883,
     },
     2012: {
       total_count: 74,
@@ -18118,7 +18120,7 @@ export const data = {
       believer: 0.35135135135135137,
       neutral: 0.6081081081081081,
       denial: 0.04054054054054054,
-      aggressive: 0.28378378378378377
+      aggressive: 0.28378378378378377,
     },
     2013: {
       total_count: 137,
@@ -18130,7 +18132,7 @@ export const data = {
       believer: 0.48175182481751827,
       neutral: 0.41605839416058393,
       denial: 0.10218978102189781,
-      aggressive: 0.24817518248175183
+      aggressive: 0.24817518248175183,
     },
     2014: {
       total_count: 334,
@@ -18142,7 +18144,7 @@ export const data = {
       believer: 0.5718562874251497,
       neutral: 0.38023952095808383,
       denial: 0.04790419161676647,
-      aggressive: 0.25748502994011974
+      aggressive: 0.25748502994011974,
     },
     2015: {
       total_count: 1399,
@@ -18154,7 +18156,7 @@ export const data = {
       believer: 0.7290922087205146,
       neutral: 0.24088634739099357,
       denial: 0.03002144388849178,
-      aggressive: 0.2065761258041458
+      aggressive: 0.2065761258041458,
     },
     2016: {
       total_count: 1709,
@@ -18166,7 +18168,7 @@ export const data = {
       believer: 0.743124634289058,
       neutral: 0.23522527794031597,
       denial: 0.021650087770626096,
-      aggressive: 0.18841427735517846
+      aggressive: 0.18841427735517846,
     },
     2017: {
       total_count: 8137,
@@ -18178,7 +18180,7 @@ export const data = {
       believer: 0.846995207078776,
       neutral: 0.1269509647290156,
       denial: 0.02605382819220843,
-      aggressive: 0.20843062553766745
+      aggressive: 0.20843062553766745,
     },
     2018: {
       total_count: 14861,
@@ -18190,7 +18192,7 @@ export const data = {
       believer: 0.8902496467263307,
       neutral: 0.10207926788237669,
       denial: 0.007671085391292645,
-      aggressive: 0.2580580041719938
+      aggressive: 0.2580580041719938,
     },
     2019: {
       total_count: 2275,
@@ -18202,8 +18204,8 @@ export const data = {
       believer: 0.7916483516483517,
       neutral: 0.18637362637362637,
       denial: 0.02197802197802198,
-      aggressive: 0.1076923076923077
-    }
+      aggressive: 0.1076923076923077,
+    },
   },
   Palau: {
     2018: {
@@ -18216,7 +18218,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2019: {
       total_count: 1,
@@ -18228,10 +18230,10 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
- 
+
   Panama: {
     2008: {
       total_count: 1,
@@ -18243,7 +18245,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 27,
@@ -18255,7 +18257,7 @@ export const data = {
       believer: 0.5185185185185185,
       neutral: 0.3333333333333333,
       denial: 0.14814814814814814,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 40,
@@ -18267,7 +18269,7 @@ export const data = {
       believer: 0.475,
       neutral: 0.35,
       denial: 0.175,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2011: {
       total_count: 27,
@@ -18279,7 +18281,7 @@ export const data = {
       believer: 0.5185185185185185,
       neutral: 0.4074074074074074,
       denial: 0.07407407407407407,
-      aggressive: 0.25925925925925924
+      aggressive: 0.25925925925925924,
     },
     2012: {
       total_count: 9,
@@ -18291,7 +18293,7 @@ export const data = {
       believer: 0.5555555555555556,
       neutral: 0.2222222222222222,
       denial: 0.2222222222222222,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2013: {
       total_count: 16,
@@ -18303,7 +18305,7 @@ export const data = {
       believer: 0.6875,
       neutral: 0.0625,
       denial: 0.25,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2014: {
       total_count: 14,
@@ -18315,7 +18317,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.42857142857142855,
       denial: 0.07142857142857142,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2015: {
       total_count: 36,
@@ -18327,7 +18329,7 @@ export const data = {
       believer: 0.6111111111111112,
       neutral: 0.2222222222222222,
       denial: 0.16666666666666666,
-      aggressive: 0.2777777777777778
+      aggressive: 0.2777777777777778,
     },
     2016: {
       total_count: 38,
@@ -18339,7 +18341,7 @@ export const data = {
       believer: 0.7894736842105263,
       neutral: 0.13157894736842105,
       denial: 0.07894736842105263,
-      aggressive: 0.23684210526315788
+      aggressive: 0.23684210526315788,
     },
     2017: {
       total_count: 188,
@@ -18351,7 +18353,7 @@ export const data = {
       believer: 0.8776595744680851,
       neutral: 0.07446808510638298,
       denial: 0.047872340425531915,
-      aggressive: 0.2712765957446808
+      aggressive: 0.2712765957446808,
     },
     2018: {
       total_count: 406,
@@ -18363,7 +18365,7 @@ export const data = {
       believer: 0.770935960591133,
       neutral: 0.13054187192118227,
       denial: 0.09852216748768473,
-      aggressive: 0.2438423645320197
+      aggressive: 0.2438423645320197,
     },
     2019: {
       total_count: 118,
@@ -18375,8 +18377,8 @@ export const data = {
       believer: 0.8220338983050848,
       neutral: 0.0847457627118644,
       denial: 0.09322033898305085,
-      aggressive: 0.2627118644067797
-    }
+      aggressive: 0.2627118644067797,
+    },
   },
   Papua: {
     2009: {
@@ -18389,7 +18391,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2010: {
       total_count: 7,
@@ -18401,7 +18403,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.42857142857142855,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2013: {
       total_count: 1,
@@ -18413,7 +18415,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 2,
@@ -18425,7 +18427,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 15,
@@ -18437,7 +18439,7 @@ export const data = {
       believer: 0.8666666666666667,
       neutral: 0.13333333333333333,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2016: {
       total_count: 22,
@@ -18449,7 +18451,7 @@ export const data = {
       believer: 0.8181818181818182,
       neutral: 0.18181818181818182,
       denial: 0.0,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2017: {
       total_count: 46,
@@ -18461,7 +18463,7 @@ export const data = {
       believer: 0.8478260869565217,
       neutral: 0.10869565217391304,
       denial: 0.043478260869565216,
-      aggressive: 0.2608695652173913
+      aggressive: 0.2608695652173913,
     },
     2018: {
       total_count: 107,
@@ -18473,7 +18475,7 @@ export const data = {
       believer: 0.9252336448598131,
       neutral: 0.07476635514018691,
       denial: 0.0,
-      aggressive: 0.24299065420560748
+      aggressive: 0.24299065420560748,
     },
     2019: {
       total_count: 27,
@@ -18485,8 +18487,8 @@ export const data = {
       believer: 0.9259259259259259,
       neutral: 0.07407407407407407,
       denial: 0.0,
-      aggressive: 0.14814814814814814
-    }
+      aggressive: 0.14814814814814814,
+    },
   },
   Paraguay: {
     2008: {
@@ -18499,7 +18501,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 3,
@@ -18511,7 +18513,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 4,
@@ -18523,7 +18525,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 6,
@@ -18535,7 +18537,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.8333333333333334
+      aggressive: 0.8333333333333334,
     },
     2012: {
       total_count: 11,
@@ -18547,7 +18549,7 @@ export const data = {
       believer: 0.18181818181818182,
       neutral: 0.7272727272727273,
       denial: 0.09090909090909091,
-      aggressive: 0.5454545454545454
+      aggressive: 0.5454545454545454,
     },
     2013: {
       total_count: 2,
@@ -18559,7 +18561,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 10,
@@ -18571,7 +18573,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.3,
       denial: 0.1,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2015: {
       total_count: 22,
@@ -18583,7 +18585,7 @@ export const data = {
       believer: 0.5909090909090909,
       neutral: 0.4090909090909091,
       denial: 0.0,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2016: {
       total_count: 21,
@@ -18595,7 +18597,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.23809523809523808
+      aggressive: 0.23809523809523808,
     },
     2017: {
       total_count: 139,
@@ -18607,7 +18609,7 @@ export const data = {
       believer: 0.8345323741007195,
       neutral: 0.1510791366906475,
       denial: 0.014388489208633094,
-      aggressive: 0.1510791366906475
+      aggressive: 0.1510791366906475,
     },
     2018: {
       total_count: 285,
@@ -18619,7 +18621,7 @@ export const data = {
       believer: 0.8315789473684211,
       neutral: 0.14736842105263157,
       denial: 0.021052631578947368,
-      aggressive: 0.22105263157894736
+      aggressive: 0.22105263157894736,
     },
     2019: {
       total_count: 122,
@@ -18631,8 +18633,8 @@ export const data = {
       believer: 0.7704918032786885,
       neutral: 0.22131147540983606,
       denial: 0.00819672131147541,
-      aggressive: 0.08196721311475409
-    }
+      aggressive: 0.08196721311475409,
+    },
   },
   Peru: {
     2008: {
@@ -18645,7 +18647,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.3333333333333333,
       denial: 0.16666666666666666,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 190,
@@ -18657,7 +18659,7 @@ export const data = {
       believer: 0.7736842105263158,
       neutral: 0.20526315789473684,
       denial: 0.021052631578947368,
-      aggressive: 0.4421052631578947
+      aggressive: 0.4421052631578947,
     },
     2010: {
       total_count: 82,
@@ -18669,7 +18671,7 @@ export const data = {
       believer: 0.4268292682926829,
       neutral: 0.47560975609756095,
       denial: 0.0975609756097561,
-      aggressive: 0.2926829268292683
+      aggressive: 0.2926829268292683,
     },
     2011: {
       total_count: 80,
@@ -18681,7 +18683,7 @@ export const data = {
       believer: 0.475,
       neutral: 0.375,
       denial: 0.15,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2012: {
       total_count: 68,
@@ -18693,7 +18695,7 @@ export const data = {
       believer: 0.6764705882352942,
       neutral: 0.25,
       denial: 0.07352941176470588,
-      aggressive: 0.17647058823529413
+      aggressive: 0.17647058823529413,
     },
     2013: {
       total_count: 106,
@@ -18705,7 +18707,7 @@ export const data = {
       believer: 0.5943396226415094,
       neutral: 0.2641509433962264,
       denial: 0.14150943396226415,
-      aggressive: 0.19811320754716982
+      aggressive: 0.19811320754716982,
     },
     2014: {
       total_count: 316,
@@ -18717,7 +18719,7 @@ export const data = {
       believer: 0.7215189873417721,
       neutral: 0.19936708860759494,
       denial: 0.07911392405063292,
-      aggressive: 0.17405063291139242
+      aggressive: 0.17405063291139242,
     },
     2015: {
       total_count: 903,
@@ -18729,7 +18731,7 @@ export const data = {
       believer: 0.8493909191583611,
       neutral: 0.13178294573643412,
       denial: 0.018826135105204873,
-      aggressive: 0.13510520487264674
+      aggressive: 0.13510520487264674,
     },
     2016: {
       total_count: 407,
@@ -18741,7 +18743,7 @@ export const data = {
       believer: 0.8108108108108109,
       neutral: 0.1769041769041769,
       denial: 0.012285012285012284,
-      aggressive: 0.1769041769041769
+      aggressive: 0.1769041769041769,
     },
     2017: {
       total_count: 1052,
@@ -18753,7 +18755,7 @@ export const data = {
       believer: 0.8754752851711026,
       neutral: 0.10741444866920152,
       denial: 0.017110266159695818,
-      aggressive: 0.22433460076045628
+      aggressive: 0.22433460076045628,
     },
     2018: {
       total_count: 1929,
@@ -18765,7 +18767,7 @@ export const data = {
       believer: 0.87817522032141,
       neutral: 0.10160705028512182,
       denial: 0.02021772939346812,
-      aggressive: 0.24261275272161742
+      aggressive: 0.24261275272161742,
     },
     2019: {
       total_count: 534,
@@ -18777,8 +18779,8 @@ export const data = {
       believer: 0.8108614232209738,
       neutral: 0.17228464419475656,
       denial: 0.016853932584269662,
-      aggressive: 0.18352059925093633
-    }
+      aggressive: 0.18352059925093633,
+    },
   },
   Philippines: {
     2007: {
@@ -18791,7 +18793,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2008: {
       total_count: 33,
@@ -18803,7 +18805,7 @@ export const data = {
       believer: 0.6060606060606061,
       neutral: 0.3333333333333333,
       denial: 0.06060606060606061,
-      aggressive: 0.24242424242424243
+      aggressive: 0.24242424242424243,
     },
     2009: {
       total_count: 1081,
@@ -18815,7 +18817,7 @@ export const data = {
       believer: 0.5402405180388529,
       neutral: 0.4116558741905643,
       denial: 0.04810360777058279,
-      aggressive: 0.19796484736355227
+      aggressive: 0.19796484736355227,
     },
     2010: {
       total_count: 644,
@@ -18827,7 +18829,7 @@ export const data = {
       believer: 0.4363354037267081,
       neutral: 0.5124223602484472,
       denial: 0.05124223602484472,
-      aggressive: 0.234472049689441
+      aggressive: 0.234472049689441,
     },
     2011: {
       total_count: 644,
@@ -18839,7 +18841,7 @@ export const data = {
       believer: 0.29347826086956524,
       neutral: 0.65527950310559,
       denial: 0.05124223602484472,
-      aggressive: 0.2080745341614907
+      aggressive: 0.2080745341614907,
     },
     2012: {
       total_count: 451,
@@ -18851,7 +18853,7 @@ export const data = {
       believer: 0.25942350332594233,
       neutral: 0.6873614190687362,
       denial: 0.05321507760532151,
-      aggressive: 0.24390243902439024
+      aggressive: 0.24390243902439024,
     },
     2013: {
       total_count: 507,
@@ -18863,7 +18865,7 @@ export const data = {
       believer: 0.2958579881656805,
       neutral: 0.6489151873767258,
       denial: 0.055226824457593686,
-      aggressive: 0.14595660749506903
+      aggressive: 0.14595660749506903,
     },
     2014: {
       total_count: 652,
@@ -18875,7 +18877,7 @@ export const data = {
       believer: 0.3773006134969325,
       neutral: 0.5858895705521472,
       denial: 0.03680981595092025,
-      aggressive: 0.1794478527607362
+      aggressive: 0.1794478527607362,
     },
     2015: {
       total_count: 1965,
@@ -18887,7 +18889,7 @@ export const data = {
       believer: 0.6254452926208651,
       neutral: 0.3623409669211196,
       denial: 0.012213740458015267,
-      aggressive: 0.21424936386768448
+      aggressive: 0.21424936386768448,
     },
     2016: {
       total_count: 1803,
@@ -18899,7 +18901,7 @@ export const data = {
       believer: 0.5995562950637826,
       neutral: 0.3793677204658902,
       denial: 0.02107598447032723,
-      aggressive: 0.21797004991680533
+      aggressive: 0.21797004991680533,
     },
     2017: {
       total_count: 2007,
@@ -18911,7 +18913,7 @@ export const data = {
       believer: 0.7095166915794718,
       neutral: 0.2670652715495765,
       denial: 0.023418036870951668,
-      aggressive: 0.20976581963129048
+      aggressive: 0.20976581963129048,
     },
     2018: {
       total_count: 4829,
@@ -18923,7 +18925,7 @@ export const data = {
       believer: 0.7171256989024642,
       neutral: 0.26713605301304616,
       denial: 0.015738248084489544,
-      aggressive: 0.19237937461172086
+      aggressive: 0.19237937461172086,
     },
     2019: {
       total_count: 1532,
@@ -18935,8 +18937,8 @@ export const data = {
       believer: 0.6690600522193212,
       neutral: 0.30613577023498695,
       denial: 0.024804177545691905,
-      aggressive: 0.152088772845953
-    }
+      aggressive: 0.152088772845953,
+    },
   },
   Pitcairn: {
     2012: {
@@ -18949,7 +18951,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 3,
@@ -18961,7 +18963,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 1,
@@ -18973,8 +18975,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Poland: {
     2007: {
@@ -18987,7 +18989,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2008: {
       total_count: 7,
@@ -18999,7 +19001,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.7142857142857143,
       denial: 0.14285714285714285,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2009: {
       total_count: 68,
@@ -19011,7 +19013,7 @@ export const data = {
       believer: 0.29411764705882354,
       neutral: 0.5441176470588235,
       denial: 0.16176470588235295,
-      aggressive: 0.36764705882352944
+      aggressive: 0.36764705882352944,
     },
     2010: {
       total_count: 80,
@@ -19023,7 +19025,7 @@ export const data = {
       believer: 0.2875,
       neutral: 0.575,
       denial: 0.1375,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 44,
@@ -19035,7 +19037,7 @@ export const data = {
       believer: 0.2727272727272727,
       neutral: 0.6136363636363636,
       denial: 0.11363636363636363,
-      aggressive: 0.29545454545454547
+      aggressive: 0.29545454545454547,
     },
     2012: {
       total_count: 21,
@@ -19047,7 +19049,7 @@ export const data = {
       believer: 0.23809523809523808,
       neutral: 0.6666666666666666,
       denial: 0.09523809523809523,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 52,
@@ -19059,7 +19061,7 @@ export const data = {
       believer: 0.34615384615384615,
       neutral: 0.4423076923076923,
       denial: 0.21153846153846154,
-      aggressive: 0.3269230769230769
+      aggressive: 0.3269230769230769,
     },
     2014: {
       total_count: 71,
@@ -19071,7 +19073,7 @@ export const data = {
       believer: 0.4647887323943662,
       neutral: 0.4084507042253521,
       denial: 0.1267605633802817,
-      aggressive: 0.323943661971831
+      aggressive: 0.323943661971831,
     },
     2015: {
       total_count: 248,
@@ -19083,7 +19085,7 @@ export const data = {
       believer: 0.7298387096774194,
       neutral: 0.2217741935483871,
       denial: 0.04838709677419355,
-      aggressive: 0.27419354838709675
+      aggressive: 0.27419354838709675,
     },
     2016: {
       total_count: 684,
@@ -19095,7 +19097,7 @@ export const data = {
       believer: 0.783625730994152,
       neutral: 0.17543859649122806,
       denial: 0.04093567251461988,
-      aggressive: 0.5570175438596491
+      aggressive: 0.5570175438596491,
     },
     2017: {
       total_count: 1189,
@@ -19107,7 +19109,7 @@ export const data = {
       believer: 0.8149705634987384,
       neutral: 0.14970563498738435,
       denial: 0.03532380151387721,
-      aggressive: 0.25063078216989065
+      aggressive: 0.25063078216989065,
     },
     2018: {
       total_count: 3298,
@@ -19119,7 +19121,7 @@ export const data = {
       believer: 0.8077622801697999,
       neutral: 0.16555488174651303,
       denial: 0.026682838083687082,
-      aggressive: 0.22953305033353547
+      aggressive: 0.22953305033353547,
     },
     2019: {
       total_count: 705,
@@ -19131,8 +19133,8 @@ export const data = {
       believer: 0.8028368794326242,
       neutral: 0.1574468085106383,
       denial: 0.03971631205673759,
-      aggressive: 0.251063829787234
-    }
+      aggressive: 0.251063829787234,
+    },
   },
   Portugal: {
     2007: {
@@ -19145,7 +19147,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2008: {
       total_count: 15,
@@ -19157,7 +19159,7 @@ export const data = {
       believer: 0.26666666666666666,
       neutral: 0.7333333333333333,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2009: {
       total_count: 251,
@@ -19169,7 +19171,7 @@ export const data = {
       believer: 0.5617529880478087,
       neutral: 0.398406374501992,
       denial: 0.0398406374501992,
-      aggressive: 0.21912350597609562
+      aggressive: 0.21912350597609562,
     },
     2010: {
       total_count: 105,
@@ -19181,7 +19183,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.5047619047619047,
       denial: 0.09523809523809523,
-      aggressive: 0.29523809523809524
+      aggressive: 0.29523809523809524,
     },
     2011: {
       total_count: 75,
@@ -19193,7 +19195,7 @@ export const data = {
       believer: 0.44,
       neutral: 0.4266666666666667,
       denial: 0.13333333333333333,
-      aggressive: 0.37333333333333335
+      aggressive: 0.37333333333333335,
     },
     2012: {
       total_count: 32,
@@ -19205,7 +19207,7 @@ export const data = {
       believer: 0.3125,
       neutral: 0.53125,
       denial: 0.15625,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2013: {
       total_count: 98,
@@ -19217,7 +19219,7 @@ export const data = {
       believer: 0.7653061224489796,
       neutral: 0.16326530612244897,
       denial: 0.07142857142857142,
-      aggressive: 0.08163265306122448
+      aggressive: 0.08163265306122448,
     },
     2014: {
       total_count: 294,
@@ -19229,7 +19231,7 @@ export const data = {
       believer: 0.3129251700680272,
       neutral: 0.14285714285714285,
       denial: 0.54421768707483,
-      aggressive: 0.08163265306122448
+      aggressive: 0.08163265306122448,
     },
     2015: {
       total_count: 549,
@@ -19241,7 +19243,7 @@ export const data = {
       believer: 0.6065573770491803,
       neutral: 0.1930783242258652,
       denial: 0.20036429872495445,
-      aggressive: 0.30783242258652094
+      aggressive: 0.30783242258652094,
     },
     2016: {
       total_count: 593,
@@ -19253,7 +19255,7 @@ export const data = {
       believer: 0.5952782462057336,
       neutral: 0.19561551433389546,
       denial: 0.209106239460371,
-      aggressive: 0.2934232715008432
+      aggressive: 0.2934232715008432,
     },
     2017: {
       total_count: 2177,
@@ -19265,7 +19267,7 @@ export const data = {
       believer: 0.847955902618282,
       neutral: 0.12356453835553514,
       denial: 0.02847955902618282,
-      aggressive: 0.15663757464400552
+      aggressive: 0.15663757464400552,
     },
     2018: {
       total_count: 3145,
@@ -19277,7 +19279,7 @@ export const data = {
       believer: 0.7971383147853736,
       neutral: 0.1713831478537361,
       denial: 0.031478537360890305,
-      aggressive: 0.21176470588235294
+      aggressive: 0.21176470588235294,
     },
     2019: {
       total_count: 2101,
@@ -19289,8 +19291,8 @@ export const data = {
       believer: 0.7177534507377439,
       neutral: 0.2589243217515469,
       denial: 0.023322227510709188,
-      aggressive: 0.11089957163255593
-    }
+      aggressive: 0.11089957163255593,
+    },
   },
 
   Qatar: {
@@ -19304,7 +19306,7 @@ export const data = {
       believer: 0.26666666666666666,
       neutral: 0.6666666666666666,
       denial: 0.06666666666666667,
-      aggressive: 0.06666666666666667
+      aggressive: 0.06666666666666667,
     },
     2008: {
       total_count: 4,
@@ -19316,7 +19318,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 37,
@@ -19328,7 +19330,7 @@ export const data = {
       believer: 0.5405405405405406,
       neutral: 0.35135135135135137,
       denial: 0.10810810810810811,
-      aggressive: 0.21621621621621623
+      aggressive: 0.21621621621621623,
     },
     2010: {
       total_count: 23,
@@ -19340,7 +19342,7 @@ export const data = {
       believer: 0.34782608695652173,
       neutral: 0.5652173913043478,
       denial: 0.08695652173913043,
-      aggressive: 0.17391304347826086
+      aggressive: 0.17391304347826086,
     },
     2011: {
       total_count: 57,
@@ -19352,7 +19354,7 @@ export const data = {
       believer: 0.3684210526315789,
       neutral: 0.5087719298245614,
       denial: 0.12280701754385964,
-      aggressive: 0.42105263157894735
+      aggressive: 0.42105263157894735,
     },
     2012: {
       total_count: 32,
@@ -19364,7 +19366,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.625,
       denial: 0.0,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2013: {
       total_count: 37,
@@ -19376,7 +19378,7 @@ export const data = {
       believer: 0.43243243243243246,
       neutral: 0.5135135135135135,
       denial: 0.05405405405405406,
-      aggressive: 0.24324324324324326
+      aggressive: 0.24324324324324326,
     },
     2014: {
       total_count: 68,
@@ -19388,7 +19390,7 @@ export const data = {
       believer: 0.7205882352941176,
       neutral: 0.23529411764705882,
       denial: 0.04411764705882353,
-      aggressive: 0.3382352941176471
+      aggressive: 0.3382352941176471,
     },
     2015: {
       total_count: 692,
@@ -19400,7 +19402,7 @@ export const data = {
       believer: 0.8121387283236994,
       neutral: 0.1777456647398844,
       denial: 0.010115606936416185,
-      aggressive: 0.3468208092485549
+      aggressive: 0.3468208092485549,
     },
     2016: {
       total_count: 614,
@@ -19412,7 +19414,7 @@ export const data = {
       believer: 0.8403908794788274,
       neutral: 0.1465798045602606,
       denial: 0.013029315960912053,
-      aggressive: 0.30781758957654726
+      aggressive: 0.30781758957654726,
     },
     2017: {
       total_count: 1060,
@@ -19424,7 +19426,7 @@ export const data = {
       believer: 0.8962264150943396,
       neutral: 0.09150943396226414,
       denial: 0.012264150943396227,
-      aggressive: 0.2849056603773585
+      aggressive: 0.2849056603773585,
     },
     2018: {
       total_count: 1785,
@@ -19436,7 +19438,7 @@ export const data = {
       believer: 0.8974789915966387,
       neutral: 0.0907563025210084,
       denial: 0.011764705882352941,
-      aggressive: 0.23249299719887956
+      aggressive: 0.23249299719887956,
     },
     2019: {
       total_count: 448,
@@ -19448,8 +19450,8 @@ export const data = {
       believer: 0.8973214285714286,
       neutral: 0.08928571428571429,
       denial: 0.013392857142857142,
-      aggressive: 0.22098214285714285
-    }
+      aggressive: 0.22098214285714285,
+    },
   },
   Romania: {
     2007: {
@@ -19462,7 +19464,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 15,
@@ -19474,7 +19476,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.5333333333333333,
       denial: 0.06666666666666667,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 146,
@@ -19486,7 +19488,7 @@ export const data = {
       believer: 0.547945205479452,
       neutral: 0.3835616438356164,
       denial: 0.0684931506849315,
-      aggressive: 0.3287671232876712
+      aggressive: 0.3287671232876712,
     },
     2010: {
       total_count: 128,
@@ -19498,7 +19500,7 @@ export const data = {
       believer: 0.3671875,
       neutral: 0.5078125,
       denial: 0.125,
-      aggressive: 0.3203125
+      aggressive: 0.3203125,
     },
     2011: {
       total_count: 40,
@@ -19510,7 +19512,7 @@ export const data = {
       believer: 0.45,
       neutral: 0.425,
       denial: 0.125,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2012: {
       total_count: 18,
@@ -19522,7 +19524,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2777777777777778,
       denial: 0.05555555555555555,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2013: {
       total_count: 26,
@@ -19534,7 +19536,7 @@ export const data = {
       believer: 0.46153846153846156,
       neutral: 0.4230769230769231,
       denial: 0.11538461538461539,
-      aggressive: 0.2692307692307692
+      aggressive: 0.2692307692307692,
     },
     2014: {
       total_count: 71,
@@ -19546,7 +19548,7 @@ export const data = {
       believer: 0.647887323943662,
       neutral: 0.29577464788732394,
       denial: 0.056338028169014086,
-      aggressive: 0.16901408450704225
+      aggressive: 0.16901408450704225,
     },
     2015: {
       total_count: 160,
@@ -19558,7 +19560,7 @@ export const data = {
       believer: 0.70625,
       neutral: 0.275,
       denial: 0.01875,
-      aggressive: 0.3125
+      aggressive: 0.3125,
     },
     2016: {
       total_count: 145,
@@ -19570,7 +19572,7 @@ export const data = {
       believer: 0.593103448275862,
       neutral: 0.33793103448275863,
       denial: 0.06896551724137931,
-      aggressive: 0.2827586206896552
+      aggressive: 0.2827586206896552,
     },
     2017: {
       total_count: 534,
@@ -19582,7 +19584,7 @@ export const data = {
       believer: 0.6797752808988764,
       neutral: 0.25842696629213485,
       denial: 0.06179775280898876,
-      aggressive: 0.2565543071161049
+      aggressive: 0.2565543071161049,
     },
     2018: {
       total_count: 1172,
@@ -19594,7 +19596,7 @@ export const data = {
       believer: 0.8071672354948806,
       neutral: 0.14675767918088736,
       denial: 0.04607508532423208,
-      aggressive: 0.29692832764505117
+      aggressive: 0.29692832764505117,
     },
     2019: {
       total_count: 210,
@@ -19606,8 +19608,8 @@ export const data = {
       believer: 0.7666666666666667,
       neutral: 0.14761904761904762,
       denial: 0.08571428571428572,
-      aggressive: 0.18571428571428572
-    }
+      aggressive: 0.18571428571428572,
+    },
   },
   Russia: {
     2008: {
@@ -19620,7 +19622,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 79,
@@ -19632,7 +19634,7 @@ export const data = {
       believer: 0.45569620253164556,
       neutral: 0.379746835443038,
       denial: 0.16455696202531644,
-      aggressive: 0.2911392405063291
+      aggressive: 0.2911392405063291,
     },
     2010: {
       total_count: 83,
@@ -19644,7 +19646,7 @@ export const data = {
       believer: 0.3373493975903614,
       neutral: 0.46987951807228917,
       denial: 0.1927710843373494,
-      aggressive: 0.30120481927710846
+      aggressive: 0.30120481927710846,
     },
     2011: {
       total_count: 62,
@@ -19656,7 +19658,7 @@ export const data = {
       believer: 0.24193548387096775,
       neutral: 0.5967741935483871,
       denial: 0.16129032258064516,
-      aggressive: 0.3225806451612903
+      aggressive: 0.3225806451612903,
     },
     2012: {
       total_count: 35,
@@ -19668,7 +19670,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4857142857142857,
       denial: 0.11428571428571428,
-      aggressive: 0.34285714285714286
+      aggressive: 0.34285714285714286,
     },
     2013: {
       total_count: 66,
@@ -19680,7 +19682,7 @@ export const data = {
       believer: 0.4090909090909091,
       neutral: 0.4090909090909091,
       denial: 0.18181818181818182,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2014: {
       total_count: 66,
@@ -19692,7 +19694,7 @@ export const data = {
       believer: 0.4090909090909091,
       neutral: 0.4090909090909091,
       denial: 0.18181818181818182,
-      aggressive: 0.2878787878787879
+      aggressive: 0.2878787878787879,
     },
     2015: {
       total_count: 275,
@@ -19704,7 +19706,7 @@ export const data = {
       believer: 0.6690909090909091,
       neutral: 0.26545454545454544,
       denial: 0.06545454545454546,
-      aggressive: 0.3381818181818182
+      aggressive: 0.3381818181818182,
     },
     2016: {
       total_count: 303,
@@ -19716,7 +19718,7 @@ export const data = {
       believer: 0.6402640264026402,
       neutral: 0.29372937293729373,
       denial: 0.066006600660066,
-      aggressive: 0.33003300330033003
+      aggressive: 0.33003300330033003,
     },
     2017: {
       total_count: 1457,
@@ -19728,7 +19730,7 @@ export const data = {
       believer: 0.7645847632120796,
       neutral: 0.18599862731640357,
       denial: 0.04941660947151681,
-      aggressive: 0.2127659574468085
+      aggressive: 0.2127659574468085,
     },
     2018: {
       total_count: 2224,
@@ -19740,7 +19742,7 @@ export const data = {
       believer: 0.7733812949640287,
       neutral: 0.1650179856115108,
       denial: 0.06160071942446043,
-      aggressive: 0.23516187050359713
+      aggressive: 0.23516187050359713,
     },
     2019: {
       total_count: 597,
@@ -19752,8 +19754,8 @@ export const data = {
       believer: 0.7621440536013401,
       neutral: 0.15912897822445563,
       denial: 0.07872696817420435,
-      aggressive: 0.22445561139028475
-    }
+      aggressive: 0.22445561139028475,
+    },
   },
   Rwanda: {
     2009: {
@@ -19766,7 +19768,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2010: {
       total_count: 5,
@@ -19778,7 +19780,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 7,
@@ -19790,7 +19792,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.0,
       denial: 0.14285714285714285,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2012: {
       total_count: 3,
@@ -19802,7 +19804,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.6666666666666666
+      aggressive: 0.6666666666666666,
     },
     2013: {
       total_count: 6,
@@ -19814,7 +19816,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 9,
@@ -19826,7 +19828,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2222222222222222,
       denial: 0.1111111111111111,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2015: {
       total_count: 82,
@@ -19838,7 +19840,7 @@ export const data = {
       believer: 0.8536585365853658,
       neutral: 0.14634146341463414,
       denial: 0.0,
-      aggressive: 0.21951219512195122
+      aggressive: 0.21951219512195122,
     },
     2016: {
       total_count: 175,
@@ -19850,7 +19852,7 @@ export const data = {
       believer: 0.8857142857142857,
       neutral: 0.11428571428571428,
       denial: 0.0,
-      aggressive: 0.17142857142857143
+      aggressive: 0.17142857142857143,
     },
     2017: {
       total_count: 217,
@@ -19862,7 +19864,7 @@ export const data = {
       believer: 0.9354838709677419,
       neutral: 0.059907834101382486,
       denial: 0.004608294930875576,
-      aggressive: 0.2073732718894009
+      aggressive: 0.2073732718894009,
     },
     2018: {
       total_count: 667,
@@ -19874,7 +19876,7 @@ export const data = {
       believer: 0.9265367316341829,
       neutral: 0.06296851574212893,
       denial: 0.010494752623688156,
-      aggressive: 0.15742128935532235
+      aggressive: 0.15742128935532235,
     },
     2019: {
       total_count: 85,
@@ -19886,8 +19888,8 @@ export const data = {
       believer: 0.9294117647058824,
       neutral: 0.07058823529411765,
       denial: 0.0,
-      aggressive: 0.11764705882352941
-    }
+      aggressive: 0.11764705882352941,
+    },
   },
   Réunion: {
     2009: {
@@ -19900,7 +19902,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -19912,7 +19914,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 2,
@@ -19924,7 +19926,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 1,
@@ -19936,7 +19938,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 3,
@@ -19948,7 +19950,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 21,
@@ -19960,7 +19962,7 @@ export const data = {
       believer: 0.8095238095238095,
       neutral: 0.14285714285714285,
       denial: 0.047619047619047616,
-      aggressive: 0.047619047619047616
+      aggressive: 0.047619047619047616,
     },
     2016: {
       total_count: 7,
@@ -19972,7 +19974,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2017: {
       total_count: 36,
@@ -19984,7 +19986,7 @@ export const data = {
       believer: 0.8055555555555556,
       neutral: 0.19444444444444445,
       denial: 0.0,
-      aggressive: 0.08333333333333333
+      aggressive: 0.08333333333333333,
     },
     2018: {
       total_count: 57,
@@ -19996,7 +19998,7 @@ export const data = {
       believer: 0.8421052631578947,
       neutral: 0.12280701754385964,
       denial: 0.03508771929824561,
-      aggressive: 0.22807017543859648
+      aggressive: 0.22807017543859648,
     },
     2019: {
       total_count: 11,
@@ -20008,10 +20010,9 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.2727272727272727
-    }
+      aggressive: 0.2727272727272727,
+    },
   },
-  
 
   Samoa: {
     2011: {
@@ -20024,7 +20025,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 1,
@@ -20036,7 +20037,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 4,
@@ -20048,7 +20049,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 5,
@@ -20060,7 +20061,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2017: {
       total_count: 15,
@@ -20072,7 +20073,7 @@ export const data = {
       believer: 0.9333333333333333,
       neutral: 0.06666666666666667,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2018: {
       total_count: 39,
@@ -20084,7 +20085,7 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.07692307692307693,
       denial: 0.0,
-      aggressive: 0.23076923076923078
+      aggressive: 0.23076923076923078,
     },
     2019: {
       total_count: 23,
@@ -20096,11 +20097,11 @@ export const data = {
       believer: 0.9565217391304348,
       neutral: 0.043478260869565216,
       denial: 0.0,
-      aggressive: 0.21739130434782608
-    }
+      aggressive: 0.21739130434782608,
+    },
   },
- 
-  SaudiArabia: {
+
+  "Saudi Arabia": {
     2008: {
       total_count: 1,
       sentiment_std: NaN,
@@ -20111,7 +20112,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 24,
@@ -20123,7 +20124,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.4583333333333333,
       denial: 0.041666666666666664,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 29,
@@ -20135,7 +20136,7 @@ export const data = {
       believer: 0.3448275862068966,
       neutral: 0.5172413793103449,
       denial: 0.13793103448275862,
-      aggressive: 0.13793103448275862
+      aggressive: 0.13793103448275862,
     },
     2011: {
       total_count: 70,
@@ -20147,7 +20148,7 @@ export const data = {
       believer: 0.2714285714285714,
       neutral: 0.6428571428571429,
       denial: 0.08571428571428572,
-      aggressive: 0.18571428571428572
+      aggressive: 0.18571428571428572,
     },
     2012: {
       total_count: 47,
@@ -20159,7 +20160,7 @@ export const data = {
       believer: 0.44680851063829785,
       neutral: 0.48936170212765956,
       denial: 0.06382978723404255,
-      aggressive: 0.23404255319148937
+      aggressive: 0.23404255319148937,
     },
     2013: {
       total_count: 54,
@@ -20171,7 +20172,7 @@ export const data = {
       believer: 0.48148148148148145,
       neutral: 0.42592592592592593,
       denial: 0.09259259259259259,
-      aggressive: 0.3148148148148148
+      aggressive: 0.3148148148148148,
     },
     2014: {
       total_count: 619,
@@ -20183,7 +20184,7 @@ export const data = {
       believer: 0.9644588045234249,
       neutral: 0.03231017770597738,
       denial: 0.0032310177705977385,
-      aggressive: 0.5137318255250404
+      aggressive: 0.5137318255250404,
     },
     2015: {
       total_count: 442,
@@ -20195,7 +20196,7 @@ export const data = {
       believer: 0.8778280542986425,
       neutral: 0.1085972850678733,
       denial: 0.013574660633484163,
-      aggressive: 0.38009049773755654
+      aggressive: 0.38009049773755654,
     },
     2016: {
       total_count: 143,
@@ -20207,7 +20208,7 @@ export const data = {
       believer: 0.7622377622377622,
       neutral: 0.22377622377622378,
       denial: 0.013986013986013986,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2017: {
       total_count: 301,
@@ -20219,7 +20220,7 @@ export const data = {
       believer: 0.8372093023255814,
       neutral: 0.12956810631229235,
       denial: 0.03322259136212625,
-      aggressive: 0.18272425249169436
+      aggressive: 0.18272425249169436,
     },
     2018: {
       total_count: 832,
@@ -20231,7 +20232,7 @@ export const data = {
       believer: 0.7848557692307693,
       neutral: 0.16826923076923078,
       denial: 0.046875,
-      aggressive: 0.2403846153846154
+      aggressive: 0.2403846153846154,
     },
     2019: {
       total_count: 169,
@@ -20243,8 +20244,8 @@ export const data = {
       believer: 0.757396449704142,
       neutral: 0.20710059171597633,
       denial: 0.03550295857988166,
-      aggressive: 0.1834319526627219
-    }
+      aggressive: 0.1834319526627219,
+    },
   },
   Senegal: {
     2009: {
@@ -20257,7 +20258,7 @@ export const data = {
       believer: 0.5833333333333334,
       neutral: 0.4166666666666667,
       denial: 0.0,
-      aggressive: 0.1388888888888889
+      aggressive: 0.1388888888888889,
     },
     2010: {
       total_count: 2,
@@ -20269,7 +20270,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 1,
@@ -20281,7 +20282,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 3,
@@ -20293,7 +20294,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 5,
@@ -20305,7 +20306,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2015: {
       total_count: 41,
@@ -20317,7 +20318,7 @@ export const data = {
       believer: 0.7560975609756098,
       neutral: 0.24390243902439024,
       denial: 0.0,
-      aggressive: 0.5121951219512195
+      aggressive: 0.5121951219512195,
     },
     2016: {
       total_count: 58,
@@ -20329,7 +20330,7 @@ export const data = {
       believer: 0.8448275862068966,
       neutral: 0.15517241379310345,
       denial: 0.0,
-      aggressive: 0.41379310344827586
+      aggressive: 0.41379310344827586,
     },
     2017: {
       total_count: 160,
@@ -20341,7 +20342,7 @@ export const data = {
       believer: 0.88125,
       neutral: 0.1125,
       denial: 0.00625,
-      aggressive: 0.2125
+      aggressive: 0.2125,
     },
     2018: {
       total_count: 296,
@@ -20353,7 +20354,7 @@ export const data = {
       believer: 0.8952702702702703,
       neutral: 0.10135135135135136,
       denial: 0.0033783783783783786,
-      aggressive: 0.2635135135135135
+      aggressive: 0.2635135135135135,
     },
     2019: {
       total_count: 34,
@@ -20365,8 +20366,8 @@ export const data = {
       believer: 0.9117647058823529,
       neutral: 0.08823529411764706,
       denial: 0.0,
-      aggressive: 0.23529411764705882
-    }
+      aggressive: 0.23529411764705882,
+    },
   },
   Serbia: {
     2008: {
@@ -20379,7 +20380,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.14285714285714285,
       denial: 0.42857142857142855,
-      aggressive: 0.7142857142857143
+      aggressive: 0.7142857142857143,
     },
     2009: {
       total_count: 81,
@@ -20391,7 +20392,7 @@ export const data = {
       believer: 0.5061728395061729,
       neutral: 0.4567901234567901,
       denial: 0.037037037037037035,
-      aggressive: 0.12345679012345678
+      aggressive: 0.12345679012345678,
     },
     2010: {
       total_count: 45,
@@ -20403,7 +20404,7 @@ export const data = {
       believer: 0.5333333333333333,
       neutral: 0.35555555555555557,
       denial: 0.1111111111111111,
-      aggressive: 0.08888888888888889
+      aggressive: 0.08888888888888889,
     },
     2011: {
       total_count: 21,
@@ -20415,7 +20416,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.3333333333333333,
       denial: 0.09523809523809523,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2012: {
       total_count: 20,
@@ -20427,7 +20428,7 @@ export const data = {
       believer: 0.35,
       neutral: 0.5,
       denial: 0.15,
-      aggressive: 0.15
+      aggressive: 0.15,
     },
     2013: {
       total_count: 8,
@@ -20439,7 +20440,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.0,
       denial: 0.125,
-      aggressive: 0.625
+      aggressive: 0.625,
     },
     2014: {
       total_count: 27,
@@ -20451,7 +20452,7 @@ export const data = {
       believer: 0.48148148148148145,
       neutral: 0.37037037037037035,
       denial: 0.14814814814814814,
-      aggressive: 0.4074074074074074
+      aggressive: 0.4074074074074074,
     },
     2015: {
       total_count: 95,
@@ -20463,7 +20464,7 @@ export const data = {
       believer: 0.7789473684210526,
       neutral: 0.2,
       denial: 0.021052631578947368,
-      aggressive: 0.3263157894736842
+      aggressive: 0.3263157894736842,
     },
     2016: {
       total_count: 55,
@@ -20475,7 +20476,7 @@ export const data = {
       believer: 0.6727272727272727,
       neutral: 0.3090909090909091,
       denial: 0.01818181818181818,
-      aggressive: 0.23636363636363636
+      aggressive: 0.23636363636363636,
     },
     2017: {
       total_count: 194,
@@ -20487,7 +20488,7 @@ export const data = {
       believer: 0.7938144329896907,
       neutral: 0.18041237113402062,
       denial: 0.02577319587628866,
-      aggressive: 0.25773195876288657
+      aggressive: 0.25773195876288657,
     },
     2018: {
       total_count: 358,
@@ -20499,7 +20500,7 @@ export const data = {
       believer: 0.7821229050279329,
       neutral: 0.19832402234636873,
       denial: 0.019553072625698324,
-      aggressive: 0.20391061452513967
+      aggressive: 0.20391061452513967,
     },
     2019: {
       total_count: 99,
@@ -20511,8 +20512,8 @@ export const data = {
       believer: 0.9292929292929293,
       neutral: 0.0707070707070707,
       denial: 0.0,
-      aggressive: 0.21212121212121213
-    }
+      aggressive: 0.21212121212121213,
+    },
   },
   Seychelles: {
     2011: {
@@ -20525,7 +20526,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -20537,7 +20538,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 1,
@@ -20549,7 +20550,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 4,
@@ -20561,7 +20562,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 2,
@@ -20573,7 +20574,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 4,
@@ -20585,7 +20586,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2018: {
       total_count: 7,
@@ -20597,7 +20598,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2019: {
       total_count: 3,
@@ -20609,8 +20610,8 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.0,
       denial: 0.3333333333333333,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   SierraLeone: {
     2009: {
@@ -20623,7 +20624,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 10,
@@ -20635,7 +20636,7 @@ export const data = {
       believer: 0.3,
       neutral: 0.7,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 3,
@@ -20647,7 +20648,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -20659,7 +20660,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 14,
@@ -20671,7 +20672,7 @@ export const data = {
       believer: 0.7857142857142857,
       neutral: 0.21428571428571427,
       denial: 0.0,
-      aggressive: 0.5714285714285714
+      aggressive: 0.5714285714285714,
     },
     2016: {
       total_count: 17,
@@ -20683,7 +20684,7 @@ export const data = {
       believer: 0.9411764705882353,
       neutral: 0.058823529411764705,
       denial: 0.0,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2017: {
       total_count: 21,
@@ -20695,7 +20696,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.38095238095238093
+      aggressive: 0.38095238095238093,
     },
     2018: {
       total_count: 60,
@@ -20707,7 +20708,7 @@ export const data = {
       believer: 0.7833333333333333,
       neutral: 0.18333333333333332,
       denial: 0.03333333333333333,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2019: {
       total_count: 7,
@@ -20719,8 +20720,8 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.0,
       denial: 0.14285714285714285,
-      aggressive: 0.14285714285714285
-    }
+      aggressive: 0.14285714285714285,
+    },
   },
   Singapore: {
     2008: {
@@ -20733,7 +20734,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 23,
@@ -20745,7 +20746,7 @@ export const data = {
       believer: 0.5217391304347826,
       neutral: 0.34782608695652173,
       denial: 0.13043478260869565,
-      aggressive: 0.17391304347826086
+      aggressive: 0.17391304347826086,
     },
     2010: {
       total_count: 67,
@@ -20757,7 +20758,7 @@ export const data = {
       believer: 0.22388059701492538,
       neutral: 0.7313432835820896,
       denial: 0.04477611940298507,
-      aggressive: 0.11940298507462686
+      aggressive: 0.11940298507462686,
     },
     2011: {
       total_count: 109,
@@ -20769,7 +20770,7 @@ export const data = {
       believer: 0.1651376146788991,
       neutral: 0.7798165137614679,
       denial: 0.05504587155963303,
-      aggressive: 0.1743119266055046
+      aggressive: 0.1743119266055046,
     },
     2012: {
       total_count: 43,
@@ -20781,7 +20782,7 @@ export const data = {
       believer: 0.23255813953488372,
       neutral: 0.7441860465116279,
       denial: 0.023255813953488372,
-      aggressive: 0.18604651162790697
+      aggressive: 0.18604651162790697,
     },
     2013: {
       total_count: 86,
@@ -20793,7 +20794,7 @@ export const data = {
       believer: 0.20930232558139536,
       neutral: 0.7209302325581395,
       denial: 0.06976744186046512,
-      aggressive: 0.23255813953488372
+      aggressive: 0.23255813953488372,
     },
     2014: {
       total_count: 54,
@@ -20805,7 +20806,7 @@ export const data = {
       believer: 0.4074074074074074,
       neutral: 0.5925925925925926,
       denial: 0.0,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2015: {
       total_count: 194,
@@ -20817,7 +20818,7 @@ export const data = {
       believer: 0.5979381443298969,
       neutral: 0.34536082474226804,
       denial: 0.05670103092783505,
-      aggressive: 0.2268041237113402
+      aggressive: 0.2268041237113402,
     },
     2016: {
       total_count: 84,
@@ -20829,7 +20830,7 @@ export const data = {
       believer: 0.7023809523809523,
       neutral: 0.2619047619047619,
       denial: 0.03571428571428571,
-      aggressive: 0.2261904761904762
+      aggressive: 0.2261904761904762,
     },
     2017: {
       total_count: 133,
@@ -20841,7 +20842,7 @@ export const data = {
       believer: 0.7443609022556391,
       neutral: 0.19548872180451127,
       denial: 0.06015037593984962,
-      aggressive: 0.21052631578947367
+      aggressive: 0.21052631578947367,
     },
     2018: {
       total_count: 277,
@@ -20853,7 +20854,7 @@ export const data = {
       believer: 0.8194945848375451,
       neutral: 0.1588447653429603,
       denial: 0.021660649819494584,
-      aggressive: 0.16967509025270758
+      aggressive: 0.16967509025270758,
     },
     2019: {
       total_count: 118,
@@ -20865,10 +20866,10 @@ export const data = {
       believer: 0.7966101694915254,
       neutral: 0.17796610169491525,
       denial: 0.025423728813559324,
-      aggressive: 0.13559322033898305
-    }
+      aggressive: 0.13559322033898305,
+    },
   },
- 
+
   Slovakia: {
     2009: {
       total_count: 9,
@@ -20880,7 +20881,7 @@ export const data = {
       believer: 0.4444444444444444,
       neutral: 0.4444444444444444,
       denial: 0.1111111111111111,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2010: {
       total_count: 11,
@@ -20892,7 +20893,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.36363636363636365,
       denial: 0.09090909090909091,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2011: {
       total_count: 4,
@@ -20904,7 +20905,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 9,
@@ -20916,7 +20917,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.4444444444444444,
       denial: 0.2222222222222222,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2013: {
       total_count: 10,
@@ -20928,7 +20929,7 @@ export const data = {
       believer: 0.1,
       neutral: 0.8,
       denial: 0.1,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 16,
@@ -20940,7 +20941,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.6875,
       denial: 0.0625,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2015: {
       total_count: 44,
@@ -20952,7 +20953,7 @@ export const data = {
       believer: 0.7727272727272727,
       neutral: 0.18181818181818182,
       denial: 0.045454545454545456,
-      aggressive: 0.29545454545454547
+      aggressive: 0.29545454545454547,
     },
     2016: {
       total_count: 55,
@@ -20964,7 +20965,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.36363636363636365,
       denial: 0.03636363636363636,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2017: {
       total_count: 81,
@@ -20976,7 +20977,7 @@ export const data = {
       believer: 0.7283950617283951,
       neutral: 0.18518518518518517,
       denial: 0.08641975308641975,
-      aggressive: 0.2962962962962963
+      aggressive: 0.2962962962962963,
     },
     2018: {
       total_count: 215,
@@ -20988,7 +20989,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.11162790697674418,
       denial: 0.08837209302325581,
-      aggressive: 0.2744186046511628
+      aggressive: 0.2744186046511628,
     },
     2019: {
       total_count: 74,
@@ -21000,8 +21001,8 @@ export const data = {
       believer: 0.7432432432432432,
       neutral: 0.14864864864864866,
       denial: 0.10810810810810811,
-      aggressive: 0.2972972972972973
-    }
+      aggressive: 0.2972972972972973,
+    },
   },
   Slovenia: {
     2008: {
@@ -21014,7 +21015,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.5,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2009: {
       total_count: 31,
@@ -21026,7 +21027,7 @@ export const data = {
       believer: 0.45161290322580644,
       neutral: 0.3870967741935484,
       denial: 0.16129032258064516,
-      aggressive: 0.2903225806451613
+      aggressive: 0.2903225806451613,
     },
     2010: {
       total_count: 32,
@@ -21038,7 +21039,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.65625,
       denial: 0.09375,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2011: {
       total_count: 15,
@@ -21050,7 +21051,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6,
       denial: 0.06666666666666667,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2012: {
       total_count: 10,
@@ -21062,7 +21063,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.3
+      aggressive: 0.3,
     },
     2013: {
       total_count: 17,
@@ -21074,7 +21075,7 @@ export const data = {
       believer: 0.4117647058823529,
       neutral: 0.5294117647058824,
       denial: 0.058823529411764705,
-      aggressive: 0.35294117647058826
+      aggressive: 0.35294117647058826,
     },
     2014: {
       total_count: 20,
@@ -21086,7 +21087,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2015: {
       total_count: 112,
@@ -21098,7 +21099,7 @@ export const data = {
       believer: 0.7321428571428571,
       neutral: 0.23214285714285715,
       denial: 0.03571428571428571,
-      aggressive: 0.2767857142857143
+      aggressive: 0.2767857142857143,
     },
     2016: {
       total_count: 40,
@@ -21110,7 +21111,7 @@ export const data = {
       believer: 0.7,
       neutral: 0.3,
       denial: 0.0,
-      aggressive: 0.275
+      aggressive: 0.275,
     },
     2017: {
       total_count: 80,
@@ -21122,7 +21123,7 @@ export const data = {
       believer: 0.7875,
       neutral: 0.175,
       denial: 0.0375,
-      aggressive: 0.275
+      aggressive: 0.275,
     },
     2018: {
       total_count: 216,
@@ -21134,7 +21135,7 @@ export const data = {
       believer: 0.8009259259259259,
       neutral: 0.16666666666666666,
       denial: 0.032407407407407406,
-      aggressive: 0.19907407407407407
+      aggressive: 0.19907407407407407,
     },
     2019: {
       total_count: 64,
@@ -21146,8 +21147,8 @@ export const data = {
       believer: 0.890625,
       neutral: 0.0625,
       denial: 0.046875,
-      aggressive: 0.09375
-    }
+      aggressive: 0.09375,
+    },
   },
   Solomon: {
     2015: {
@@ -21160,7 +21161,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 1,
@@ -21172,7 +21173,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 6,
@@ -21184,7 +21185,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2018: {
       total_count: 29,
@@ -21196,7 +21197,7 @@ export const data = {
       believer: 0.8620689655172413,
       neutral: 0.13793103448275862,
       denial: 0.0,
-      aggressive: 0.13793103448275862
+      aggressive: 0.13793103448275862,
     },
     2019: {
       total_count: 2,
@@ -21208,8 +21209,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Somalia: {
     2009: {
@@ -21222,7 +21223,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 1,
@@ -21234,7 +21235,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 4,
@@ -21246,7 +21247,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 1,
@@ -21258,7 +21259,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 2,
@@ -21270,7 +21271,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 7,
@@ -21282,7 +21283,7 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2016: {
       total_count: 17,
@@ -21294,7 +21295,7 @@ export const data = {
       believer: 0.8823529411764706,
       neutral: 0.11764705882352941,
       denial: 0.0,
-      aggressive: 0.5294117647058824
+      aggressive: 0.5294117647058824,
     },
     2017: {
       total_count: 39,
@@ -21306,7 +21307,7 @@ export const data = {
       believer: 0.9487179487179487,
       neutral: 0.02564102564102564,
       denial: 0.02564102564102564,
-      aggressive: 0.23076923076923078
+      aggressive: 0.23076923076923078,
     },
     2018: {
       total_count: 119,
@@ -21318,7 +21319,7 @@ export const data = {
       believer: 0.907563025210084,
       neutral: 0.06722689075630252,
       denial: 0.025210084033613446,
-      aggressive: 0.17647058823529413
+      aggressive: 0.17647058823529413,
     },
     2019: {
       total_count: 46,
@@ -21330,10 +21331,10 @@ export const data = {
       believer: 0.9347826086956522,
       neutral: 0.043478260869565216,
       denial: 0.021739130434782608,
-      aggressive: 0.17391304347826086
-    }
+      aggressive: 0.17391304347826086,
+    },
   },
-  SouthAfrica: {
+  "South Africa": {
     2007: {
       total_count: 2,
       sentiment_std: 0.11350878091285088,
@@ -21344,7 +21345,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2008: {
       total_count: 47,
@@ -21356,7 +21357,7 @@ export const data = {
       believer: 0.5531914893617021,
       neutral: 0.3829787234042553,
       denial: 0.06382978723404255,
-      aggressive: 0.1702127659574468
+      aggressive: 0.1702127659574468,
     },
     2009: {
       total_count: 910,
@@ -21368,7 +21369,7 @@ export const data = {
       believer: 0.5263736263736264,
       neutral: 0.3747252747252747,
       denial: 0.0989010989010989,
-      aggressive: 0.29010989010989013
+      aggressive: 0.29010989010989013,
     },
     2010: {
       total_count: 1001,
@@ -21380,7 +21381,7 @@ export const data = {
       believer: 0.4985014985014985,
       neutral: 0.4155844155844156,
       denial: 0.08591408591408592,
-      aggressive: 0.25774225774225773
+      aggressive: 0.25774225774225773,
     },
     2011: {
       total_count: 1248,
@@ -21392,7 +21393,7 @@ export const data = {
       believer: 0.33573717948717946,
       neutral: 0.5713141025641025,
       denial: 0.09294871794871795,
-      aggressive: 0.2796474358974359
+      aggressive: 0.2796474358974359,
     },
     2012: {
       total_count: 736,
@@ -21404,7 +21405,7 @@ export const data = {
       believer: 0.296195652173913,
       neutral: 0.5978260869565217,
       denial: 0.10597826086956522,
-      aggressive: 0.2758152173913043
+      aggressive: 0.2758152173913043,
     },
     2013: {
       total_count: 751,
@@ -21416,7 +21417,7 @@ export const data = {
       believer: 0.3448735019973369,
       neutral: 0.596537949400799,
       denial: 0.05858854860186418,
-      aggressive: 0.2623169107856192
+      aggressive: 0.2623169107856192,
     },
     2014: {
       total_count: 966,
@@ -21428,7 +21429,7 @@ export const data = {
       believer: 0.45652173913043476,
       neutral: 0.44824016563146996,
       denial: 0.09523809523809523,
-      aggressive: 0.29606625258799174
+      aggressive: 0.29606625258799174,
     },
     2015: {
       total_count: 3345,
@@ -21440,7 +21441,7 @@ export const data = {
       believer: 0.761136023916293,
       neutral: 0.20896860986547086,
       denial: 0.029895366218236172,
-      aggressive: 0.2502242152466368
+      aggressive: 0.2502242152466368,
     },
     2016: {
       total_count: 3186,
@@ -21452,7 +21453,7 @@ export const data = {
       believer: 0.7743251726302574,
       neutral: 0.19962335216572505,
       denial: 0.026051475204017578,
-      aggressive: 0.25925925925925924
+      aggressive: 0.25925925925925924,
     },
     2017: {
       total_count: 4987,
@@ -21464,7 +21465,7 @@ export const data = {
       believer: 0.802486464808502,
       neutral: 0.16322438339683176,
       denial: 0.034289151794666135,
-      aggressive: 0.245037096450772
+      aggressive: 0.245037096450772,
     },
     2018: {
       total_count: 12662,
@@ -21476,7 +21477,7 @@ export const data = {
       believer: 0.8481282577791818,
       neutral: 0.12020217975043437,
       denial: 0.03166956247038383,
-      aggressive: 0.2978992260306429
+      aggressive: 0.2978992260306429,
     },
     2019: {
       total_count: 3456,
@@ -21488,11 +21489,10 @@ export const data = {
       believer: 0.8081597222222222,
       neutral: 0.14554398148148148,
       denial: 0.046296296296296294,
-      aggressive: 0.18778935185185186
-    }
+      aggressive: 0.18778935185185186,
+    },
   },
-  
-  
+
   Spain: {
     2007: {
       total_count: 11,
@@ -21504,7 +21504,7 @@ export const data = {
       believer: 0.5454545454545454,
       neutral: 0.45454545454545453,
       denial: 0.0,
-      aggressive: 0.5454545454545454
+      aggressive: 0.5454545454545454,
     },
     2008: {
       total_count: 64,
@@ -21516,7 +21516,7 @@ export const data = {
       believer: 0.515625,
       neutral: 0.375,
       denial: 0.109375,
-      aggressive: 0.125
+      aggressive: 0.125,
     },
     2009: {
       total_count: 564,
@@ -21528,7 +21528,7 @@ export const data = {
       believer: 0.5230496453900709,
       neutral: 0.3953900709219858,
       denial: 0.08156028368794327,
-      aggressive: 0.25354609929078015
+      aggressive: 0.25354609929078015,
     },
     2010: {
       total_count: 322,
@@ -21540,7 +21540,7 @@ export const data = {
       believer: 0.30745341614906835,
       neutral: 0.5559006211180124,
       denial: 0.13664596273291926,
-      aggressive: 0.3167701863354037
+      aggressive: 0.3167701863354037,
     },
     2011: {
       total_count: 328,
@@ -21552,7 +21552,7 @@ export const data = {
       believer: 0.45121951219512196,
       neutral: 0.4847560975609756,
       denial: 0.06402439024390244,
-      aggressive: 0.29573170731707316
+      aggressive: 0.29573170731707316,
     },
     2012: {
       total_count: 366,
@@ -21564,7 +21564,7 @@ export const data = {
       believer: 0.5027322404371585,
       neutral: 0.40437158469945356,
       denial: 0.09289617486338798,
-      aggressive: 0.19398907103825136
+      aggressive: 0.19398907103825136,
     },
     2013: {
       total_count: 334,
@@ -21576,7 +21576,7 @@ export const data = {
       believer: 0.5149700598802395,
       neutral: 0.37425149700598803,
       denial: 0.11077844311377245,
-      aggressive: 0.2964071856287425
+      aggressive: 0.2964071856287425,
     },
     2014: {
       total_count: 467,
@@ -21588,7 +21588,7 @@ export const data = {
       believer: 0.5674518201284796,
       neutral: 0.3490364025695932,
       denial: 0.0835117773019272,
-      aggressive: 0.3404710920770878
+      aggressive: 0.3404710920770878,
     },
     2015: {
       total_count: 2403,
@@ -21600,7 +21600,7 @@ export const data = {
       believer: 0.6912193091968373,
       neutral: 0.27798585101955886,
       denial: 0.03079483978360383,
-      aggressive: 0.2875572201414898
+      aggressive: 0.2875572201414898,
     },
     2016: {
       total_count: 3000,
@@ -21612,7 +21612,7 @@ export const data = {
       believer: 0.753,
       neutral: 0.225,
       denial: 0.022,
-      aggressive: 0.23166666666666666
+      aggressive: 0.23166666666666666,
     },
     2017: {
       total_count: 7072,
@@ -21624,7 +21624,7 @@ export const data = {
       believer: 0.7866233031674208,
       neutral: 0.1828337104072398,
       denial: 0.030542986425339366,
-      aggressive: 0.2261029411764706
+      aggressive: 0.2261029411764706,
     },
     2018: {
       total_count: 14456,
@@ -21636,7 +21636,7 @@ export const data = {
       believer: 0.8063087991145546,
       neutral: 0.16214720531267293,
       denial: 0.03154399557277255,
-      aggressive: 0.2153431101272828
+      aggressive: 0.2153431101272828,
     },
     2019: {
       total_count: 5090,
@@ -21648,8 +21648,8 @@ export const data = {
       believer: 0.8033398821218075,
       neutral: 0.17033398821218074,
       denial: 0.026326129666011788,
-      aggressive: 0.16463654223968566
-    }
+      aggressive: 0.16463654223968566,
+    },
   },
   SriLanka: {
     2008: {
@@ -21662,7 +21662,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 76,
@@ -21674,7 +21674,7 @@ export const data = {
       believer: 0.5131578947368421,
       neutral: 0.4605263157894737,
       denial: 0.02631578947368421,
-      aggressive: 0.27631578947368424
+      aggressive: 0.27631578947368424,
     },
     2010: {
       total_count: 40,
@@ -21686,7 +21686,7 @@ export const data = {
       believer: 0.475,
       neutral: 0.475,
       denial: 0.05,
-      aggressive: 0.275
+      aggressive: 0.275,
     },
     2011: {
       total_count: 28,
@@ -21698,7 +21698,7 @@ export const data = {
       believer: 0.5357142857142857,
       neutral: 0.42857142857142855,
       denial: 0.03571428571428571,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2012: {
       total_count: 14,
@@ -21710,7 +21710,7 @@ export const data = {
       believer: 0.2857142857142857,
       neutral: 0.6428571428571429,
       denial: 0.07142857142857142,
-      aggressive: 0.35714285714285715
+      aggressive: 0.35714285714285715,
     },
     2013: {
       total_count: 23,
@@ -21722,7 +21722,7 @@ export const data = {
       believer: 0.5652173913043478,
       neutral: 0.2608695652173913,
       denial: 0.17391304347826086,
-      aggressive: 0.2608695652173913
+      aggressive: 0.2608695652173913,
     },
     2014: {
       total_count: 27,
@@ -21734,7 +21734,7 @@ export const data = {
       believer: 0.7037037037037037,
       neutral: 0.25925925925925924,
       denial: 0.037037037037037035,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2015: {
       total_count: 100,
@@ -21746,7 +21746,7 @@ export const data = {
       believer: 0.76,
       neutral: 0.23,
       denial: 0.01,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2016: {
       total_count: 160,
@@ -21758,7 +21758,7 @@ export const data = {
       believer: 0.725,
       neutral: 0.26875,
       denial: 0.00625,
-      aggressive: 0.23125
+      aggressive: 0.23125,
     },
     2017: {
       total_count: 149,
@@ -21770,7 +21770,7 @@ export const data = {
       believer: 0.8389261744966443,
       neutral: 0.15436241610738255,
       denial: 0.006711409395973154,
-      aggressive: 0.20134228187919462
+      aggressive: 0.20134228187919462,
     },
     2018: {
       total_count: 455,
@@ -21782,7 +21782,7 @@ export const data = {
       believer: 0.9296703296703297,
       neutral: 0.06373626373626373,
       denial: 0.006593406593406593,
-      aggressive: 0.1824175824175824
+      aggressive: 0.1824175824175824,
     },
     2019: {
       total_count: 110,
@@ -21794,8 +21794,8 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.07272727272727272,
       denial: 0.01818181818181818,
-      aggressive: 0.19090909090909092
-    }
+      aggressive: 0.19090909090909092,
+    },
   },
   Sudan: {
     2009: {
@@ -21808,7 +21808,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.16666666666666666,
       denial: 0.16666666666666666,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2010: {
       total_count: 2,
@@ -21820,7 +21820,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 6,
@@ -21832,7 +21832,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -21844,7 +21844,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 2,
@@ -21856,7 +21856,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 9,
@@ -21868,7 +21868,7 @@ export const data = {
       believer: 0.5555555555555556,
       neutral: 0.3333333333333333,
       denial: 0.1111111111111111,
-      aggressive: 0.5555555555555556
+      aggressive: 0.5555555555555556,
     },
     2015: {
       total_count: 28,
@@ -21880,7 +21880,7 @@ export const data = {
       believer: 0.8928571428571429,
       neutral: 0.10714285714285714,
       denial: 0.0,
-      aggressive: 0.39285714285714285
+      aggressive: 0.39285714285714285,
     },
     2016: {
       total_count: 11,
@@ -21892,7 +21892,7 @@ export const data = {
       believer: 0.8181818181818182,
       neutral: 0.18181818181818182,
       denial: 0.0,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2017: {
       total_count: 21,
@@ -21904,7 +21904,7 @@ export const data = {
       believer: 0.9047619047619048,
       neutral: 0.09523809523809523,
       denial: 0.0,
-      aggressive: 0.047619047619047616
+      aggressive: 0.047619047619047616,
     },
     2018: {
       total_count: 50,
@@ -21916,7 +21916,7 @@ export const data = {
       believer: 0.76,
       neutral: 0.18,
       denial: 0.06,
-      aggressive: 0.26
+      aggressive: 0.26,
     },
     2019: {
       total_count: 12,
@@ -21928,8 +21928,8 @@ export const data = {
       believer: 0.4166666666666667,
       neutral: 0.4166666666666667,
       denial: 0.16666666666666666,
-      aggressive: 0.08333333333333333
-    }
+      aggressive: 0.08333333333333333,
+    },
   },
   Suriname: {
     2011: {
@@ -21942,7 +21942,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2013: {
       total_count: 2,
@@ -21954,7 +21954,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 8,
@@ -21966,7 +21966,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2016: {
       total_count: 5,
@@ -21978,7 +21978,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 12,
@@ -21990,7 +21990,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 13,
@@ -22002,7 +22002,7 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.0,
       denial: 0.07692307692307693,
-      aggressive: 0.15384615384615385
+      aggressive: 0.15384615384615385,
     },
     2019: {
       total_count: 8,
@@ -22014,10 +22014,10 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
-  
+
   Sweden: {
     2007: {
       total_count: 8,
@@ -22029,7 +22029,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2008: {
       total_count: 19,
@@ -22041,7 +22041,7 @@ export const data = {
       believer: 0.3684210526315789,
       neutral: 0.5263157894736842,
       denial: 0.10526315789473684,
-      aggressive: 0.3157894736842105
+      aggressive: 0.3157894736842105,
     },
     2009: {
       total_count: 546,
@@ -22053,7 +22053,7 @@ export const data = {
       believer: 0.5641025641025641,
       neutral: 0.33882783882783885,
       denial: 0.09706959706959707,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2010: {
       total_count: 321,
@@ -22065,7 +22065,7 @@ export const data = {
       believer: 0.3894080996884735,
       neutral: 0.4766355140186916,
       denial: 0.13395638629283488,
-      aggressive: 0.26791277258566976
+      aggressive: 0.26791277258566976,
     },
     2011: {
       total_count: 208,
@@ -22077,7 +22077,7 @@ export const data = {
       believer: 0.3125,
       neutral: 0.5288461538461539,
       denial: 0.15865384615384615,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2012: {
       total_count: 126,
@@ -22089,7 +22089,7 @@ export const data = {
       believer: 0.3492063492063492,
       neutral: 0.5476190476190477,
       denial: 0.10317460317460317,
-      aggressive: 0.36507936507936506
+      aggressive: 0.36507936507936506,
     },
     2013: {
       total_count: 195,
@@ -22101,7 +22101,7 @@ export const data = {
       believer: 0.5076923076923077,
       neutral: 0.37948717948717947,
       denial: 0.11282051282051282,
-      aggressive: 0.2512820512820513
+      aggressive: 0.2512820512820513,
     },
     2014: {
       total_count: 473,
@@ -22113,7 +22113,7 @@ export const data = {
       believer: 0.6088794926004228,
       neutral: 0.3361522198731501,
       denial: 0.05496828752642706,
-      aggressive: 0.32558139534883723
+      aggressive: 0.32558139534883723,
     },
     2015: {
       total_count: 1614,
@@ -22125,7 +22125,7 @@ export const data = {
       believer: 0.7552664188351921,
       neutral: 0.21189591078066913,
       denial: 0.03283767038413878,
-      aggressive: 0.3135068153655514
+      aggressive: 0.3135068153655514,
     },
     2016: {
       total_count: 1995,
@@ -22137,7 +22137,7 @@ export const data = {
       believer: 0.7889724310776942,
       neutral: 0.18847117794486215,
       denial: 0.022556390977443608,
-      aggressive: 0.23859649122807017
+      aggressive: 0.23859649122807017,
     },
     2017: {
       total_count: 4642,
@@ -22149,7 +22149,7 @@ export const data = {
       believer: 0.8545885394226627,
       neutral: 0.11352865144334338,
       denial: 0.03188280913399397,
-      aggressive: 0.2563550193881947
+      aggressive: 0.2563550193881947,
     },
     2018: {
       total_count: 10487,
@@ -22161,7 +22161,7 @@ export const data = {
       believer: 0.8470487269953275,
       neutral: 0.12205587870697053,
       denial: 0.03089539429770192,
-      aggressive: 0.21321636311623915
+      aggressive: 0.21321636311623915,
     },
     2019: {
       total_count: 3123,
@@ -22173,8 +22173,8 @@ export const data = {
       believer: 0.8274095421069484,
       neutral: 0.1271213576689081,
       denial: 0.04546910022414345,
-      aggressive: 0.2042907460774896
-    }
+      aggressive: 0.2042907460774896,
+    },
   },
   Switzerland: {
     2007: {
@@ -22187,7 +22187,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2008: {
       total_count: 24,
@@ -22199,7 +22199,7 @@ export const data = {
       believer: 0.375,
       neutral: 0.5416666666666666,
       denial: 0.08333333333333333,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 581,
@@ -22211,7 +22211,7 @@ export const data = {
       believer: 0.5851979345955249,
       neutral: 0.3855421686746988,
       denial: 0.029259896729776247,
-      aggressive: 0.24440619621342513
+      aggressive: 0.24440619621342513,
     },
     2010: {
       total_count: 263,
@@ -22223,7 +22223,7 @@ export const data = {
       believer: 0.532319391634981,
       neutral: 0.4068441064638783,
       denial: 0.060836501901140684,
-      aggressive: 0.2585551330798479
+      aggressive: 0.2585551330798479,
     },
     2011: {
       total_count: 125,
@@ -22235,7 +22235,7 @@ export const data = {
       believer: 0.464,
       neutral: 0.44,
       denial: 0.096,
-      aggressive: 0.328
+      aggressive: 0.328,
     },
     2012: {
       total_count: 62,
@@ -22247,7 +22247,7 @@ export const data = {
       believer: 0.5161290322580645,
       neutral: 0.43548387096774194,
       denial: 0.04838709677419355,
-      aggressive: 0.20967741935483872
+      aggressive: 0.20967741935483872,
     },
     2013: {
       total_count: 129,
@@ -22259,7 +22259,7 @@ export const data = {
       believer: 0.6201550387596899,
       neutral: 0.29457364341085274,
       denial: 0.08527131782945736,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2014: {
       total_count: 362,
@@ -22271,7 +22271,7 @@ export const data = {
       believer: 0.6878453038674033,
       neutral: 0.26243093922651933,
       denial: 0.049723756906077346,
-      aggressive: 0.27348066298342544
+      aggressive: 0.27348066298342544,
     },
     2015: {
       total_count: 3091,
@@ -22283,7 +22283,7 @@ export const data = {
       believer: 0.8437398900032352,
       neutral: 0.14493691362018765,
       denial: 0.011323196376577159,
-      aggressive: 0.2859915884826917
+      aggressive: 0.2859915884826917,
     },
     2016: {
       total_count: 2836,
@@ -22295,7 +22295,7 @@ export const data = {
       believer: 0.8374471086036671,
       neutral: 0.14950634696755993,
       denial: 0.01304654442877292,
-      aggressive: 0.2598730606488011
+      aggressive: 0.2598730606488011,
     },
     2017: {
       total_count: 5394,
@@ -22307,7 +22307,7 @@ export const data = {
       believer: 0.8689284390063033,
       neutral: 0.10919540229885058,
       denial: 0.021876158694846125,
-      aggressive: 0.24694104560622915
+      aggressive: 0.24694104560622915,
     },
     2018: {
       total_count: 10927,
@@ -22319,7 +22319,7 @@ export const data = {
       believer: 0.881669259632104,
       neutral: 0.0990207742289741,
       denial: 0.019309966138921938,
-      aggressive: 0.20838290473139928
+      aggressive: 0.20838290473139928,
     },
     2019: {
       total_count: 2151,
@@ -22331,8 +22331,8 @@ export const data = {
       believer: 0.8493723849372385,
       neutral: 0.12505811250581125,
       denial: 0.025569502556950254,
-      aggressive: 0.21245932124593211
-    }
+      aggressive: 0.21245932124593211,
+    },
   },
   Syria: {
     2009: {
@@ -22345,7 +22345,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.0,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2010: {
       total_count: 14,
@@ -22357,7 +22357,7 @@ export const data = {
       believer: 0.35714285714285715,
       neutral: 0.2857142857142857,
       denial: 0.35714285714285715,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2011: {
       total_count: 5,
@@ -22369,7 +22369,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.2,
       denial: 0.6,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 3,
@@ -22381,7 +22381,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2013: {
       total_count: 3,
@@ -22393,7 +22393,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2014: {
       total_count: 2,
@@ -22405,7 +22405,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -22417,7 +22417,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 2,
@@ -22429,7 +22429,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 27,
@@ -22441,7 +22441,7 @@ export const data = {
       believer: 0.6296296296296297,
       neutral: 0.37037037037037035,
       denial: 0.0,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2019: {
       total_count: 7,
@@ -22453,8 +22453,8 @@ export const data = {
       believer: 0.7142857142857143,
       neutral: 0.2857142857142857,
       denial: 0.0,
-      aggressive: 0.2857142857142857
-    }
+      aggressive: 0.2857142857142857,
+    },
   },
   Taiwan: {
     2008: {
@@ -22467,7 +22467,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.0,
       denial: 0.25,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2009: {
       total_count: 104,
@@ -22479,7 +22479,7 @@ export const data = {
       believer: 0.6634615384615384,
       neutral: 0.27884615384615385,
       denial: 0.057692307692307696,
-      aggressive: 0.2403846153846154
+      aggressive: 0.2403846153846154,
     },
     2010: {
       total_count: 30,
@@ -22491,7 +22491,7 @@ export const data = {
       believer: 0.3,
       neutral: 0.6666666666666666,
       denial: 0.03333333333333333,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2011: {
       total_count: 31,
@@ -22503,7 +22503,7 @@ export const data = {
       believer: 0.1935483870967742,
       neutral: 0.8064516129032258,
       denial: 0.0,
-      aggressive: 0.22580645161290322
+      aggressive: 0.22580645161290322,
     },
     2012: {
       total_count: 15,
@@ -22515,7 +22515,7 @@ export const data = {
       believer: 0.4666666666666667,
       neutral: 0.5333333333333333,
       denial: 0.0,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2013: {
       total_count: 15,
@@ -22527,7 +22527,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2014: {
       total_count: 17,
@@ -22539,7 +22539,7 @@ export const data = {
       believer: 0.35294117647058826,
       neutral: 0.35294117647058826,
       denial: 0.29411764705882354,
-      aggressive: 0.5882352941176471
+      aggressive: 0.5882352941176471,
     },
     2015: {
       total_count: 68,
@@ -22551,7 +22551,7 @@ export const data = {
       believer: 0.5441176470588235,
       neutral: 0.35294117647058826,
       denial: 0.10294117647058823,
-      aggressive: 0.38235294117647056
+      aggressive: 0.38235294117647056,
     },
     2016: {
       total_count: 104,
@@ -22563,7 +22563,7 @@ export const data = {
       believer: 0.7115384615384616,
       neutral: 0.2692307692307692,
       denial: 0.019230769230769232,
-      aggressive: 0.20192307692307693
+      aggressive: 0.20192307692307693,
     },
     2017: {
       total_count: 259,
@@ -22575,7 +22575,7 @@ export const data = {
       believer: 0.7953667953667953,
       neutral: 0.1891891891891892,
       denial: 0.015444015444015444,
-      aggressive: 0.18532818532818532
+      aggressive: 0.18532818532818532,
     },
     2018: {
       total_count: 637,
@@ -22587,7 +22587,7 @@ export const data = {
       believer: 0.8367346938775511,
       neutral: 0.14285714285714285,
       denial: 0.02040816326530612,
-      aggressive: 0.23233908948194662
+      aggressive: 0.23233908948194662,
     },
     2019: {
       total_count: 302,
@@ -22599,8 +22599,8 @@ export const data = {
       believer: 0.8311258278145696,
       neutral: 0.13245033112582782,
       denial: 0.03642384105960265,
-      aggressive: 0.20198675496688742
-    }
+      aggressive: 0.20198675496688742,
+    },
   },
   Tajikistan: {
     2013: {
@@ -22613,7 +22613,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 1,
@@ -22625,7 +22625,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 1,
@@ -22637,7 +22637,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 4,
@@ -22649,7 +22649,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 13,
@@ -22661,7 +22661,7 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.0,
       denial: 0.07692307692307693,
-      aggressive: 0.15384615384615385
+      aggressive: 0.15384615384615385,
     },
     2019: {
       total_count: 2,
@@ -22673,8 +22673,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Tanzania: {
     2008: {
@@ -22687,7 +22687,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 68,
@@ -22699,7 +22699,7 @@ export const data = {
       believer: 0.6764705882352942,
       neutral: 0.29411764705882354,
       denial: 0.029411764705882353,
-      aggressive: 0.36764705882352944
+      aggressive: 0.36764705882352944,
     },
     2010: {
       total_count: 18,
@@ -22711,7 +22711,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6111111111111112,
       denial: 0.05555555555555555,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2011: {
       total_count: 21,
@@ -22723,7 +22723,7 @@ export const data = {
       believer: 0.42857142857142855,
       neutral: 0.5238095238095238,
       denial: 0.047619047619047616,
-      aggressive: 0.38095238095238093
+      aggressive: 0.38095238095238093,
     },
     2012: {
       total_count: 7,
@@ -22735,7 +22735,7 @@ export const data = {
       believer: 0.14285714285714285,
       neutral: 0.8571428571428571,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2013: {
       total_count: 21,
@@ -22747,7 +22747,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.5714285714285714,
       denial: 0.09523809523809523,
-      aggressive: 0.19047619047619047
+      aggressive: 0.19047619047619047,
     },
     2014: {
       total_count: 26,
@@ -22759,7 +22759,7 @@ export const data = {
       believer: 0.5384615384615384,
       neutral: 0.46153846153846156,
       denial: 0.0,
-      aggressive: 0.38461538461538464
+      aggressive: 0.38461538461538464,
     },
     2015: {
       total_count: 168,
@@ -22771,7 +22771,7 @@ export const data = {
       believer: 0.7083333333333334,
       neutral: 0.27380952380952384,
       denial: 0.017857142857142856,
-      aggressive: 0.2619047619047619
+      aggressive: 0.2619047619047619,
     },
     2016: {
       total_count: 338,
@@ -22783,7 +22783,7 @@ export const data = {
       believer: 0.8816568047337278,
       neutral: 0.11834319526627218,
       denial: 0.0,
-      aggressive: 0.27514792899408286
+      aggressive: 0.27514792899408286,
     },
     2017: {
       total_count: 623,
@@ -22795,7 +22795,7 @@ export const data = {
       believer: 0.898876404494382,
       neutral: 0.08186195826645265,
       denial: 0.019261637239165328,
-      aggressive: 0.1476725521669342
+      aggressive: 0.1476725521669342,
     },
     2018: {
       total_count: 1568,
@@ -22807,7 +22807,7 @@ export const data = {
       believer: 0.8864795918367347,
       neutral: 0.10331632653061225,
       denial: 0.01020408163265306,
-      aggressive: 0.14732142857142858
+      aggressive: 0.14732142857142858,
     },
     2019: {
       total_count: 361,
@@ -22819,8 +22819,8 @@ export const data = {
       believer: 0.8614958448753463,
       neutral: 0.11080332409972299,
       denial: 0.027700831024930747,
-      aggressive: 0.18559556786703602
-    }
+      aggressive: 0.18559556786703602,
+    },
   },
   Thailand: {
     2007: {
@@ -22833,7 +22833,7 @@ export const data = {
       believer: 0.11764705882352941,
       neutral: 0.6470588235294118,
       denial: 0.23529411764705882,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2008: {
       total_count: 30,
@@ -22845,7 +22845,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 335,
@@ -22857,7 +22857,7 @@ export const data = {
       believer: 0.5223880597014925,
       neutral: 0.40298507462686567,
       denial: 0.07462686567164178,
-      aggressive: 0.31044776119402984
+      aggressive: 0.31044776119402984,
     },
     2010: {
       total_count: 450,
@@ -22869,7 +22869,7 @@ export const data = {
       believer: 0.4888888888888889,
       neutral: 0.43777777777777777,
       denial: 0.07333333333333333,
-      aggressive: 0.21333333333333335
+      aggressive: 0.21333333333333335,
     },
     2011: {
       total_count: 254,
@@ -22881,7 +22881,7 @@ export const data = {
       believer: 0.3858267716535433,
       neutral: 0.468503937007874,
       denial: 0.14566929133858267,
-      aggressive: 0.2440944881889764
+      aggressive: 0.2440944881889764,
     },
     2012: {
       total_count: 107,
@@ -22893,7 +22893,7 @@ export const data = {
       believer: 0.5700934579439252,
       neutral: 0.34579439252336447,
       denial: 0.08411214953271028,
-      aggressive: 0.2523364485981308
+      aggressive: 0.2523364485981308,
     },
     2013: {
       total_count: 89,
@@ -22905,7 +22905,7 @@ export const data = {
       believer: 0.5056179775280899,
       neutral: 0.39325842696629215,
       denial: 0.10112359550561797,
-      aggressive: 0.25842696629213485
+      aggressive: 0.25842696629213485,
     },
     2014: {
       total_count: 93,
@@ -22917,7 +22917,7 @@ export const data = {
       believer: 0.5053763440860215,
       neutral: 0.3978494623655914,
       denial: 0.0967741935483871,
-      aggressive: 0.25806451612903225
+      aggressive: 0.25806451612903225,
     },
     2015: {
       total_count: 733,
@@ -22929,7 +22929,7 @@ export const data = {
       believer: 0.747612551159618,
       neutral: 0.208731241473397,
       denial: 0.04365620736698499,
-      aggressive: 0.2592087312414734
+      aggressive: 0.2592087312414734,
     },
     2016: {
       total_count: 692,
@@ -22941,7 +22941,7 @@ export const data = {
       believer: 0.7630057803468208,
       neutral: 0.203757225433526,
       denial: 0.033236994219653176,
-      aggressive: 0.2398843930635838
+      aggressive: 0.2398843930635838,
     },
     2017: {
       total_count: 1537,
@@ -22953,7 +22953,7 @@ export const data = {
       believer: 0.819128171763175,
       neutral: 0.15354586857514638,
       denial: 0.027325959661678594,
-      aggressive: 0.25699414443721535
+      aggressive: 0.25699414443721535,
     },
     2018: {
       total_count: 3667,
@@ -22965,7 +22965,7 @@ export const data = {
       believer: 0.8369239160076357,
       neutral: 0.13526043086992093,
       denial: 0.027815653122443416,
-      aggressive: 0.20370875374965913
+      aggressive: 0.20370875374965913,
     },
     2019: {
       total_count: 3008,
@@ -22977,10 +22977,10 @@ export const data = {
       believer: 0.21775265957446807,
       neutral: 0.773936170212766,
       denial: 0.008311170212765957,
-      aggressive: 0.05152925531914894
-    }
+      aggressive: 0.05152925531914894,
+    },
   },
-  
+
   Togo: {
     2013: {
       total_count: 1,
@@ -22992,7 +22992,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 5,
@@ -23004,7 +23004,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 17,
@@ -23016,7 +23016,7 @@ export const data = {
       believer: 0.7647058823529411,
       neutral: 0.23529411764705882,
       denial: 0.0,
-      aggressive: 0.8235294117647058
+      aggressive: 0.8235294117647058,
     },
     2017: {
       total_count: 72,
@@ -23028,7 +23028,7 @@ export const data = {
       believer: 0.8472222222222222,
       neutral: 0.125,
       denial: 0.027777777777777776,
-      aggressive: 0.4305555555555556
+      aggressive: 0.4305555555555556,
     },
     2018: {
       total_count: 43,
@@ -23040,7 +23040,7 @@ export const data = {
       believer: 0.7209302325581395,
       neutral: 0.27906976744186046,
       denial: 0.0,
-      aggressive: 0.16279069767441862
+      aggressive: 0.16279069767441862,
     },
     2019: {
       total_count: 13,
@@ -23052,10 +23052,10 @@ export const data = {
       believer: 0.9230769230769231,
       neutral: 0.07692307692307693,
       denial: 0.0,
-      aggressive: 0.23076923076923078
-    }
+      aggressive: 0.23076923076923078,
+    },
   },
- 
+
   Tonga: {
     2010: {
       total_count: 1,
@@ -23067,7 +23067,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2011: {
       total_count: 1,
@@ -23079,7 +23079,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.0,
       denial: 1.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 1,
@@ -23091,7 +23091,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 7,
@@ -23103,7 +23103,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.0,
       denial: 0.14285714285714285,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2016: {
       total_count: 9,
@@ -23115,7 +23115,7 @@ export const data = {
       believer: 0.7777777777777778,
       neutral: 0.2222222222222222,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2017: {
       total_count: 10,
@@ -23127,7 +23127,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2018: {
       total_count: 40,
@@ -23139,7 +23139,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.175
+      aggressive: 0.175,
     },
     2019: {
       total_count: 13,
@@ -23151,8 +23151,8 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.15384615384615385,
       denial: 0.0,
-      aggressive: 0.07692307692307693
-    }
+      aggressive: 0.07692307692307693,
+    },
   },
   Trinidad: {
     2008: {
@@ -23165,7 +23165,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 9,
@@ -23177,7 +23177,7 @@ export const data = {
       believer: 0.5555555555555556,
       neutral: 0.4444444444444444,
       denial: 0.0,
-      aggressive: 0.2222222222222222
+      aggressive: 0.2222222222222222,
     },
     2010: {
       total_count: 4,
@@ -23189,7 +23189,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 4,
@@ -23201,7 +23201,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 2,
@@ -23213,7 +23213,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 12,
@@ -23225,7 +23225,7 @@ export const data = {
       believer: 0.5833333333333334,
       neutral: 0.4166666666666667,
       denial: 0.0,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2014: {
       total_count: 9,
@@ -23237,7 +23237,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.2222222222222222,
       denial: 0.1111111111111111,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2015: {
       total_count: 14,
@@ -23249,7 +23249,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2016: {
       total_count: 21,
@@ -23261,7 +23261,7 @@ export const data = {
       believer: 0.9047619047619048,
       neutral: 0.09523809523809523,
       denial: 0.0,
-      aggressive: 0.047619047619047616
+      aggressive: 0.047619047619047616,
     },
     2017: {
       total_count: 27,
@@ -23273,7 +23273,7 @@ export const data = {
       believer: 0.9629629629629629,
       neutral: 0.037037037037037035,
       denial: 0.0,
-      aggressive: 0.2962962962962963
+      aggressive: 0.2962962962962963,
     },
     2018: {
       total_count: 44,
@@ -23285,7 +23285,7 @@ export const data = {
       believer: 0.8863636363636364,
       neutral: 0.11363636363636363,
       denial: 0.0,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2019: {
       total_count: 13,
@@ -23297,8 +23297,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.15384615384615385
-    }
+      aggressive: 0.15384615384615385,
+    },
   },
   Tunisia: {
     2008: {
@@ -23311,7 +23311,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2009: {
       total_count: 8,
@@ -23323,7 +23323,7 @@ export const data = {
       believer: 0.625,
       neutral: 0.25,
       denial: 0.125,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2010: {
       total_count: 3,
@@ -23335,7 +23335,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -23347,7 +23347,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -23359,7 +23359,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2013: {
       total_count: 4,
@@ -23371,7 +23371,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2014: {
       total_count: 4,
@@ -23383,7 +23383,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2015: {
       total_count: 15,
@@ -23395,7 +23395,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2016: {
       total_count: 12,
@@ -23407,7 +23407,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.16666666666666666,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2017: {
       total_count: 21,
@@ -23419,7 +23419,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2018: {
       total_count: 42,
@@ -23431,7 +23431,7 @@ export const data = {
       believer: 0.8571428571428571,
       neutral: 0.14285714285714285,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2019: {
       total_count: 9,
@@ -23443,8 +23443,8 @@ export const data = {
       believer: 0.8888888888888888,
       neutral: 0.1111111111111111,
       denial: 0.0,
-      aggressive: 0.1111111111111111
-    }
+      aggressive: 0.1111111111111111,
+    },
   },
   Turkey: {
     2008: {
@@ -23457,7 +23457,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.6666666666666666,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2009: {
       total_count: 72,
@@ -23469,7 +23469,7 @@ export const data = {
       believer: 0.3055555555555556,
       neutral: 0.6666666666666666,
       denial: 0.027777777777777776,
-      aggressive: 0.4027777777777778
+      aggressive: 0.4027777777777778,
     },
     2010: {
       total_count: 57,
@@ -23481,7 +23481,7 @@ export const data = {
       believer: 0.40350877192982454,
       neutral: 0.543859649122807,
       denial: 0.05263157894736842,
-      aggressive: 0.19298245614035087
+      aggressive: 0.19298245614035087,
     },
     2011: {
       total_count: 55,
@@ -23493,7 +23493,7 @@ export const data = {
       believer: 0.2727272727272727,
       neutral: 0.6727272727272727,
       denial: 0.05454545454545454,
-      aggressive: 0.2909090909090909
+      aggressive: 0.2909090909090909,
     },
     2012: {
       total_count: 44,
@@ -23505,7 +23505,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.7045454545454546,
       denial: 0.045454545454545456,
-      aggressive: 0.38636363636363635
+      aggressive: 0.38636363636363635,
     },
     2013: {
       total_count: 49,
@@ -23517,7 +23517,7 @@ export const data = {
       believer: 0.3877551020408163,
       neutral: 0.5510204081632653,
       denial: 0.061224489795918366,
-      aggressive: 0.24489795918367346
+      aggressive: 0.24489795918367346,
     },
     2014: {
       total_count: 191,
@@ -23529,7 +23529,7 @@ export const data = {
       believer: 0.4973821989528796,
       neutral: 0.42408376963350786,
       denial: 0.07853403141361257,
-      aggressive: 0.38219895287958117
+      aggressive: 0.38219895287958117,
     },
     2015: {
       total_count: 644,
@@ -23541,7 +23541,7 @@ export const data = {
       believer: 0.6925465838509317,
       neutral: 0.24378881987577639,
       denial: 0.06366459627329192,
-      aggressive: 0.24378881987577639
+      aggressive: 0.24378881987577639,
     },
     2016: {
       total_count: 497,
@@ -23553,7 +23553,7 @@ export const data = {
       believer: 0.6680080482897385,
       neutral: 0.29577464788732394,
       denial: 0.03621730382293763,
-      aggressive: 0.2112676056338028
+      aggressive: 0.2112676056338028,
     },
     2017: {
       total_count: 1165,
@@ -23565,7 +23565,7 @@ export const data = {
       believer: 0.7356223175965665,
       neutral: 0.24206008583690988,
       denial: 0.022317596566523604,
-      aggressive: 0.2034334763948498
+      aggressive: 0.2034334763948498,
     },
     2018: {
       total_count: 2533,
@@ -23577,7 +23577,7 @@ export const data = {
       believer: 0.795499407816818,
       neutral: 0.17568101065929728,
       denial: 0.02881958152388472,
-      aggressive: 0.1914725621792341
+      aggressive: 0.1914725621792341,
     },
     2019: {
       total_count: 811,
@@ -23589,8 +23589,8 @@ export const data = {
       believer: 0.8101109741060419,
       neutral: 0.16522811344019728,
       denial: 0.02466091245376079,
-      aggressive: 0.20838471023427868
-    }
+      aggressive: 0.20838471023427868,
+    },
   },
   Turkmenistan: {
     2014: {
@@ -23603,7 +23603,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.6666666666666666,
       denial: 0.3333333333333333,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2015: {
       total_count: 2,
@@ -23615,7 +23615,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.5,
       denial: 0.5,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2016: {
       total_count: 4,
@@ -23627,7 +23627,7 @@ export const data = {
       believer: 0.75,
       neutral: 0.25,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2018: {
       total_count: 1,
@@ -23639,10 +23639,10 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
- 
+
   Tuvalu: {
     2017: {
       total_count: 1,
@@ -23654,7 +23654,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2018: {
       total_count: 3,
@@ -23666,8 +23666,8 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Uganda: {
     2009: {
@@ -23680,7 +23680,7 @@ export const data = {
       believer: 0.8181818181818182,
       neutral: 0.18181818181818182,
       denial: 0.0,
-      aggressive: 0.13636363636363635
+      aggressive: 0.13636363636363635,
     },
     2010: {
       total_count: 33,
@@ -23692,7 +23692,7 @@ export const data = {
       believer: 0.5757575757575758,
       neutral: 0.24242424242424243,
       denial: 0.18181818181818182,
-      aggressive: 0.3939393939393939
+      aggressive: 0.3939393939393939,
     },
     2011: {
       total_count: 15,
@@ -23704,7 +23704,7 @@ export const data = {
       believer: 0.5333333333333333,
       neutral: 0.4666666666666667,
       denial: 0.0,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2012: {
       total_count: 25,
@@ -23716,7 +23716,7 @@ export const data = {
       believer: 0.36,
       neutral: 0.48,
       denial: 0.16,
-      aggressive: 0.44
+      aggressive: 0.44,
     },
     2013: {
       total_count: 32,
@@ -23728,7 +23728,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.375,
       denial: 0.125,
-      aggressive: 0.28125
+      aggressive: 0.28125,
     },
     2014: {
       total_count: 89,
@@ -23740,7 +23740,7 @@ export const data = {
       believer: 0.5056179775280899,
       neutral: 0.34831460674157305,
       denial: 0.14606741573033707,
-      aggressive: 0.2696629213483146
+      aggressive: 0.2696629213483146,
     },
     2015: {
       total_count: 436,
@@ -23752,7 +23752,7 @@ export const data = {
       believer: 0.768348623853211,
       neutral: 0.20871559633027523,
       denial: 0.022935779816513763,
-      aggressive: 0.23853211009174313
+      aggressive: 0.23853211009174313,
     },
     2016: {
       total_count: 570,
@@ -23764,7 +23764,7 @@ export const data = {
       believer: 0.8333333333333334,
       neutral: 0.14736842105263157,
       denial: 0.01929824561403509,
-      aggressive: 0.23684210526315788
+      aggressive: 0.23684210526315788,
     },
     2017: {
       total_count: 1302,
@@ -23776,7 +23776,7 @@ export const data = {
       believer: 0.8748079877112135,
       neutral: 0.11443932411674347,
       denial: 0.010752688172043012,
-      aggressive: 0.16359447004608296
+      aggressive: 0.16359447004608296,
     },
     2018: {
       total_count: 2918,
@@ -23788,7 +23788,7 @@ export const data = {
       believer: 0.9136394790952708,
       neutral: 0.0788211103495545,
       denial: 0.0075394105551747775,
-      aggressive: 0.13982179575051404
+      aggressive: 0.13982179575051404,
     },
     2019: {
       total_count: 761,
@@ -23800,8 +23800,8 @@ export const data = {
       believer: 0.9172141918528253,
       neutral: 0.07227332457293036,
       denial: 0.010512483574244415,
-      aggressive: 0.11826544021024968
-    }
+      aggressive: 0.11826544021024968,
+    },
   },
   Ukraine: {
     2009: {
@@ -23814,7 +23814,7 @@ export const data = {
       believer: 0.5263157894736842,
       neutral: 0.42105263157894735,
       denial: 0.05263157894736842,
-      aggressive: 0.42105263157894735
+      aggressive: 0.42105263157894735,
     },
     2010: {
       total_count: 27,
@@ -23826,7 +23826,7 @@ export const data = {
       believer: 0.5185185185185185,
       neutral: 0.3333333333333333,
       denial: 0.14814814814814814,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2011: {
       total_count: 14,
@@ -23838,7 +23838,7 @@ export const data = {
       believer: 0.21428571428571427,
       neutral: 0.7857142857142857,
       denial: 0.0,
-      aggressive: 0.2857142857142857
+      aggressive: 0.2857142857142857,
     },
     2012: {
       total_count: 13,
@@ -23850,7 +23850,7 @@ export const data = {
       believer: 0.07692307692307693,
       neutral: 0.7692307692307693,
       denial: 0.15384615384615385,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2013: {
       total_count: 11,
@@ -23862,7 +23862,7 @@ export const data = {
       believer: 0.45454545454545453,
       neutral: 0.2727272727272727,
       denial: 0.2727272727272727,
-      aggressive: 0.09090909090909091
+      aggressive: 0.09090909090909091,
     },
     2014: {
       total_count: 14,
@@ -23874,7 +23874,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.35714285714285715,
       denial: 0.14285714285714285,
-      aggressive: 0.14285714285714285
+      aggressive: 0.14285714285714285,
     },
     2015: {
       total_count: 40,
@@ -23886,7 +23886,7 @@ export const data = {
       believer: 0.65,
       neutral: 0.3,
       denial: 0.05,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2016: {
       total_count: 55,
@@ -23898,7 +23898,7 @@ export const data = {
       believer: 0.8363636363636363,
       neutral: 0.16363636363636364,
       denial: 0.0,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2017: {
       total_count: 123,
@@ -23910,7 +23910,7 @@ export const data = {
       believer: 0.7560975609756098,
       neutral: 0.21138211382113822,
       denial: 0.032520325203252036,
-      aggressive: 0.22764227642276422
+      aggressive: 0.22764227642276422,
     },
     2018: {
       total_count: 255,
@@ -23922,7 +23922,7 @@ export const data = {
       believer: 0.8431372549019608,
       neutral: 0.12156862745098039,
       denial: 0.03529411764705882,
-      aggressive: 0.26666666666666666
+      aggressive: 0.26666666666666666,
     },
     2019: {
       total_count: 89,
@@ -23934,8 +23934,8 @@ export const data = {
       believer: 0.8202247191011236,
       neutral: 0.15730337078651685,
       denial: 0.02247191011235955,
-      aggressive: 0.21348314606741572
-    }
+      aggressive: 0.21348314606741572,
+    },
   },
   UnitedArabEmirates: {
     2008: {
@@ -23948,7 +23948,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2009: {
       total_count: 187,
@@ -23960,7 +23960,7 @@ export const data = {
       believer: 0.5026737967914439,
       neutral: 0.40641711229946526,
       denial: 0.09090909090909091,
-      aggressive: 0.24064171122994651
+      aggressive: 0.24064171122994651,
     },
     2010: {
       total_count: 197,
@@ -23972,7 +23972,7 @@ export const data = {
       believer: 0.3197969543147208,
       neutral: 0.5888324873096447,
       denial: 0.09137055837563451,
-      aggressive: 0.23857868020304568
+      aggressive: 0.23857868020304568,
     },
     2011: {
       total_count: 182,
@@ -23984,7 +23984,7 @@ export const data = {
       believer: 0.2802197802197802,
       neutral: 0.6758241758241759,
       denial: 0.04395604395604396,
-      aggressive: 0.25824175824175827
+      aggressive: 0.25824175824175827,
     },
     2012: {
       total_count: 131,
@@ -23996,7 +23996,7 @@ export const data = {
       believer: 0.46564885496183206,
       neutral: 0.48854961832061067,
       denial: 0.04580152671755725,
-      aggressive: 0.29770992366412213
+      aggressive: 0.29770992366412213,
     },
     2013: {
       total_count: 179,
@@ -24008,7 +24008,7 @@ export const data = {
       believer: 0.44692737430167595,
       neutral: 0.48044692737430167,
       denial: 0.07262569832402235,
-      aggressive: 0.22905027932960895
+      aggressive: 0.22905027932960895,
     },
     2014: {
       total_count: 168,
@@ -24020,7 +24020,7 @@ export const data = {
       believer: 0.6190476190476191,
       neutral: 0.3273809523809524,
       denial: 0.05357142857142857,
-      aggressive: 0.3273809523809524
+      aggressive: 0.3273809523809524,
     },
     2015: {
       total_count: 499,
@@ -24032,7 +24032,7 @@ export const data = {
       believer: 0.7374749498997996,
       neutral: 0.24248496993987975,
       denial: 0.02004008016032064,
-      aggressive: 0.24048096192384769
+      aggressive: 0.24048096192384769,
     },
     2016: {
       total_count: 749,
@@ -24044,7 +24044,7 @@ export const data = {
       believer: 0.7556742323097463,
       neutral: 0.21762349799732977,
       denial: 0.0267022696929239,
-      aggressive: 0.20427236315086783
+      aggressive: 0.20427236315086783,
     },
     2017: {
       total_count: 970,
@@ -24056,7 +24056,7 @@ export const data = {
       believer: 0.7969072164948454,
       neutral: 0.1824742268041237,
       denial: 0.020618556701030927,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2018: {
       total_count: 2739,
@@ -24068,7 +24068,7 @@ export const data = {
       believer: 0.845929171230376,
       neutral: 0.13545089448703906,
       denial: 0.018619934282584884,
-      aggressive: 0.244249726177437
+      aggressive: 0.244249726177437,
     },
     2019: {
       total_count: 826,
@@ -24080,10 +24080,10 @@ export const data = {
       believer: 0.7820823244552058,
       neutral: 0.18886198547215496,
       denial: 0.029055690072639227,
-      aggressive: 0.17433414043583534
-    }
+      aggressive: 0.17433414043583534,
+    },
   },
-  UK: {
+  "United Kingdom": {
     2006: {
       total_count: 1,
       sentiment_std: NaN,
@@ -24094,7 +24094,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 1.0
+      aggressive: 1.0,
     },
     2007: {
       total_count: 342,
@@ -24106,7 +24106,7 @@ export const data = {
       believer: 0.5321637426900585,
       neutral: 0.4327485380116959,
       denial: 0.03508771929824561,
-      aggressive: 0.28654970760233917
+      aggressive: 0.28654970760233917,
     },
     2008: {
       total_count: 950,
@@ -24118,7 +24118,7 @@ export const data = {
       believer: 0.48736842105263156,
       neutral: 0.4284210526315789,
       denial: 0.08421052631578947,
-      aggressive: 0.31894736842105265
+      aggressive: 0.31894736842105265,
     },
     2009: {
       total_count: 16082,
@@ -24130,7 +24130,7 @@ export const data = {
       believer: 0.5250590722546947,
       neutral: 0.3996393483397587,
       denial: 0.07530157940554658,
-      aggressive: 0.2894540480039796
+      aggressive: 0.2894540480039796,
     },
     2010: {
       total_count: 10176,
@@ -24142,7 +24142,7 @@ export const data = {
       believer: 0.4214819182389937,
       neutral: 0.4522405660377358,
       denial: 0.12627751572327045,
-      aggressive: 0.3044418238993711
+      aggressive: 0.3044418238993711,
     },
     2011: {
       total_count: 6224,
@@ -24154,7 +24154,7 @@ export const data = {
       believer: 0.34752570694087404,
       neutral: 0.5284383033419023,
       denial: 0.12403598971722365,
-      aggressive: 0.29273778920308485
+      aggressive: 0.29273778920308485,
     },
     2012: {
       total_count: 4535,
@@ -24166,7 +24166,7 @@ export const data = {
       believer: 0.3757442116868798,
       neutral: 0.49084895259095923,
       denial: 0.13340683572216097,
-      aggressive: 0.31664829106945974
+      aggressive: 0.31664829106945974,
     },
     2013: {
       total_count: 7900,
@@ -24178,7 +24178,7 @@ export const data = {
       believer: 0.38316455696202534,
       neutral: 0.44544303797468354,
       denial: 0.17139240506329115,
-      aggressive: 0.32329113924050634
+      aggressive: 0.32329113924050634,
     },
     2014: {
       total_count: 19490,
@@ -24190,7 +24190,7 @@ export const data = {
       believer: 0.3277065161621344,
       neutral: 0.6100564391995895,
       denial: 0.06223704463827604,
-      aggressive: 0.1465366854797332
+      aggressive: 0.1465366854797332,
     },
     2015: {
       total_count: 42902,
@@ -24202,7 +24202,7 @@ export const data = {
       believer: 0.7209920283436669,
       neutral: 0.23087501748170247,
       denial: 0.04813295417463055,
-      aggressive: 0.28982331826022095
+      aggressive: 0.28982331826022095,
     },
     2016: {
       total_count: 40611,
@@ -24214,7 +24214,7 @@ export const data = {
       believer: 0.7281524710053926,
       neutral: 0.22892812292236095,
       denial: 0.04291940607224644,
-      aggressive: 0.26913890325281326
+      aggressive: 0.26913890325281326,
     },
     2017: {
       total_count: 86952,
@@ -24226,7 +24226,7 @@ export const data = {
       believer: 0.7891365350998252,
       neutral: 0.16372251357070566,
       denial: 0.04714095132946913,
-      aggressive: 0.25842993835679456
+      aggressive: 0.25842993835679456,
     },
     2018: {
       total_count: 205605,
@@ -24238,7 +24238,7 @@ export const data = {
       believer: 0.8136475280270421,
       neutral: 0.13863476082780088,
       denial: 0.04771771114515697,
-      aggressive: 0.22521825831083875
+      aggressive: 0.22521825831083875,
     },
     2019: {
       total_count: 116004,
@@ -24250,8 +24250,8 @@ export const data = {
       believer: 0.7596979414502948,
       neutral: 0.16769249336229786,
       denial: 0.07260956518740733,
-      aggressive: 0.23622461294438124
-    }
+      aggressive: 0.23622461294438124,
+    },
   },
   "United States of America": {
     2006: {
@@ -24264,7 +24264,7 @@ export const data = {
       believer: 0.0,
       neutral: 0.75,
       denial: 0.25,
-      aggressive: 0.75
+      aggressive: 0.75,
     },
     2007: {
       total_count: 766,
@@ -24276,7 +24276,7 @@ export const data = {
       believer: 0.33550913838120106,
       neutral: 0.5456919060052219,
       denial: 0.11879895561357702,
-      aggressive: 0.4830287206266319
+      aggressive: 0.4830287206266319,
     },
     2008: {
       total_count: 8392,
@@ -24288,7 +24288,7 @@ export const data = {
       believer: 0.3866777883698761,
       neutral: 0.47199714013346045,
       denial: 0.14132507149666348,
-      aggressive: 0.4167063870352717
+      aggressive: 0.4167063870352717,
     },
     2009: {
       total_count: 95833,
@@ -24300,7 +24300,7 @@ export const data = {
       believer: 0.47344860329948973,
       neutral: 0.3826656788371438,
       denial: 0.14388571786336649,
-      aggressive: 0.3454342449886782
+      aggressive: 0.3454342449886782,
     },
     2010: {
       total_count: 74043,
@@ -24312,7 +24312,7 @@ export const data = {
       believer: 0.42210607349783236,
       neutral: 0.3965128371351782,
       denial: 0.18138108936698946,
-      aggressive: 0.3645719379279608
+      aggressive: 0.3645719379279608,
     },
     2011: {
       total_count: 49673,
@@ -24324,7 +24324,7 @@ export const data = {
       believer: 0.37458981740583414,
       neutral: 0.4461578724860588,
       denial: 0.17925231010810702,
-      aggressive: 0.3857226259738691
+      aggressive: 0.3857226259738691,
     },
     2012: {
       total_count: 34105,
@@ -24336,7 +24336,7 @@ export const data = {
       believer: 0.4135170796070957,
       neutral: 0.4592874945022724,
       denial: 0.12719542589063187,
-      aggressive: 0.38695205981527636
+      aggressive: 0.38695205981527636,
     },
     2013: {
       total_count: 45095,
@@ -24348,7 +24348,7 @@ export const data = {
       believer: 0.4165428539749418,
       neutral: 0.4037032930480098,
       denial: 0.17975385297704846,
-      aggressive: 0.3728573012529105
+      aggressive: 0.3728573012529105,
     },
     2014: {
       total_count: 69684,
@@ -24360,7 +24360,7 @@ export const data = {
       believer: 0.45169622868951265,
       neutral: 0.34293381551001667,
       denial: 0.20536995580047068,
-      aggressive: 0.40479880603868895
+      aggressive: 0.40479880603868895,
     },
     2015: {
       total_count: 206965,
@@ -24372,7 +24372,7 @@ export const data = {
       believer: 0.685922740559998,
       neutral: 0.23204406542168965,
       denial: 0.08203319401831227,
-      aggressive: 0.3679607663131447
+      aggressive: 0.3679607663131447,
     },
     2016: {
       total_count: 242621,
@@ -24384,7 +24384,7 @@ export const data = {
       believer: 0.7227733790562235,
       neutral: 0.2090091129786787,
       denial: 0.06821750796509783,
-      aggressive: 0.36056648023048293
+      aggressive: 0.36056648023048293,
     },
     2017: {
       total_count: 563066,
@@ -24396,7 +24396,7 @@ export const data = {
       believer: 0.7743301850937545,
       neutral: 0.15222726998255978,
       denial: 0.07344254492368568,
-      aggressive: 0.31818294835774136
+      aggressive: 0.31818294835774136,
     },
     2018: {
       total_count: 1249159,
@@ -24408,7 +24408,7 @@ export const data = {
       believer: 0.8101458661387382,
       neutral: 0.12766349199741586,
       denial: 0.06219064186384599,
-      aggressive: 0.3076854107443488
+      aggressive: 0.3076854107443488,
     },
     2019: {
       total_count: 341882,
@@ -24420,8 +24420,8 @@ export const data = {
       believer: 0.7814041101900656,
       neutral: 0.14885837803686652,
       denial: 0.0697375117730679,
-      aggressive: 0.2709970106644983
-    }
+      aggressive: 0.2709970106644983,
+    },
   },
   Uruguay: {
     2009: {
@@ -24434,7 +24434,7 @@ export const data = {
       believer: 0.5555555555555556,
       neutral: 0.3333333333333333,
       denial: 0.1111111111111111,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2010: {
       total_count: 9,
@@ -24446,7 +24446,7 @@ export const data = {
       believer: 0.2222222222222222,
       neutral: 0.7777777777777778,
       denial: 0.0,
-      aggressive: 0.4444444444444444
+      aggressive: 0.4444444444444444,
     },
     2011: {
       total_count: 8,
@@ -24458,7 +24458,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2012: {
       total_count: 4,
@@ -24470,7 +24470,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.25,
       denial: 0.5,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 9,
@@ -24482,7 +24482,7 @@ export const data = {
       believer: 0.1111111111111111,
       neutral: 0.7777777777777778,
       denial: 0.1111111111111111,
-      aggressive: 0.1111111111111111
+      aggressive: 0.1111111111111111,
     },
     2014: {
       total_count: 14,
@@ -24494,7 +24494,7 @@ export const data = {
       believer: 0.5714285714285714,
       neutral: 0.42857142857142855,
       denial: 0.0,
-      aggressive: 0.21428571428571427
+      aggressive: 0.21428571428571427,
     },
     2015: {
       total_count: 54,
@@ -24506,7 +24506,7 @@ export const data = {
       believer: 0.6481481481481481,
       neutral: 0.2962962962962963,
       denial: 0.05555555555555555,
-      aggressive: 0.35185185185185186
+      aggressive: 0.35185185185185186,
     },
     2016: {
       total_count: 41,
@@ -24518,7 +24518,7 @@ export const data = {
       believer: 0.7560975609756098,
       neutral: 0.21951219512195122,
       denial: 0.024390243902439025,
-      aggressive: 0.21951219512195122
+      aggressive: 0.21951219512195122,
     },
     2017: {
       total_count: 168,
@@ -24530,7 +24530,7 @@ export const data = {
       believer: 0.8095238095238095,
       neutral: 0.16666666666666666,
       denial: 0.023809523809523808,
-      aggressive: 0.24404761904761904
+      aggressive: 0.24404761904761904,
     },
     2018: {
       total_count: 441,
@@ -24542,7 +24542,7 @@ export const data = {
       believer: 0.8253968253968254,
       neutral: 0.1292517006802721,
       denial: 0.045351473922902494,
-      aggressive: 0.2562358276643991
+      aggressive: 0.2562358276643991,
     },
     2019: {
       total_count: 234,
@@ -24554,8 +24554,8 @@ export const data = {
       believer: 0.8461538461538461,
       neutral: 0.12393162393162394,
       denial: 0.029914529914529916,
-      aggressive: 0.14957264957264957
-    }
+      aggressive: 0.14957264957264957,
+    },
   },
   Uzbekistan: {
     2009: {
@@ -24568,7 +24568,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -24580,7 +24580,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 1,
@@ -24592,7 +24592,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2013: {
       total_count: 1,
@@ -24604,7 +24604,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2014: {
       total_count: 3,
@@ -24616,7 +24616,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 11,
@@ -24628,7 +24628,7 @@ export const data = {
       believer: 0.8181818181818182,
       neutral: 0.18181818181818182,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2016: {
       total_count: 3,
@@ -24640,7 +24640,7 @@ export const data = {
       believer: 0.6666666666666666,
       neutral: 0.3333333333333333,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 20,
@@ -24652,7 +24652,7 @@ export const data = {
       believer: 0.85,
       neutral: 0.15,
       denial: 0.0,
-      aggressive: 0.1
+      aggressive: 0.1,
     },
     2018: {
       total_count: 28,
@@ -24664,7 +24664,7 @@ export const data = {
       believer: 0.9642857142857143,
       neutral: 0.03571428571428571,
       denial: 0.0,
-      aggressive: 0.10714285714285714
+      aggressive: 0.10714285714285714,
     },
     2019: {
       total_count: 18,
@@ -24676,8 +24676,8 @@ export const data = {
       believer: 0.9444444444444444,
       neutral: 0.05555555555555555,
       denial: 0.0,
-      aggressive: 0.3333333333333333
-    }
+      aggressive: 0.3333333333333333,
+    },
   },
   Vanuatu: {
     2010: {
@@ -24690,7 +24690,7 @@ export const data = {
       believer: 1.0,
       neutral: 0.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2012: {
       total_count: 1,
@@ -24702,7 +24702,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2015: {
       total_count: 5,
@@ -24714,7 +24714,7 @@ export const data = {
       believer: 0.4,
       neutral: 0.4,
       denial: 0.2,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2016: {
       total_count: 5,
@@ -24726,7 +24726,7 @@ export const data = {
       believer: 0.8,
       neutral: 0.2,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2017: {
       total_count: 11,
@@ -24738,7 +24738,7 @@ export const data = {
       believer: 0.9090909090909091,
       neutral: 0.09090909090909091,
       denial: 0.0,
-      aggressive: 0.18181818181818182
+      aggressive: 0.18181818181818182,
     },
     2018: {
       total_count: 19,
@@ -24750,7 +24750,7 @@ export const data = {
       believer: 0.9473684210526315,
       neutral: 0.05263157894736842,
       denial: 0.0,
-      aggressive: 0.21052631578947367
+      aggressive: 0.21052631578947367,
     },
     2019: {
       total_count: 4,
@@ -24762,8 +24762,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
-    }
+      aggressive: 0.0,
+    },
   },
   Venezuela: {
     2007: {
@@ -24776,7 +24776,7 @@ export const data = {
       believer: 0.0,
       neutral: 1.0,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2009: {
       total_count: 39,
@@ -24788,7 +24788,7 @@ export const data = {
       believer: 0.3076923076923077,
       neutral: 0.5897435897435898,
       denial: 0.10256410256410256,
-      aggressive: 0.2564102564102564
+      aggressive: 0.2564102564102564,
     },
     2010: {
       total_count: 58,
@@ -24800,7 +24800,7 @@ export const data = {
       believer: 0.29310344827586204,
       neutral: 0.6379310344827587,
       denial: 0.06896551724137931,
-      aggressive: 0.1206896551724138
+      aggressive: 0.1206896551724138,
     },
     2011: {
       total_count: 95,
@@ -24812,7 +24812,7 @@ export const data = {
       believer: 0.4105263157894737,
       neutral: 0.5578947368421052,
       denial: 0.031578947368421054,
-      aggressive: 0.45263157894736844
+      aggressive: 0.45263157894736844,
     },
     2012: {
       total_count: 12,
@@ -24824,7 +24824,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.08333333333333333
+      aggressive: 0.08333333333333333,
     },
     2013: {
       total_count: 35,
@@ -24836,7 +24836,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.37142857142857144,
       denial: 0.02857142857142857,
-      aggressive: 0.11428571428571428
+      aggressive: 0.11428571428571428,
     },
     2014: {
       total_count: 95,
@@ -24848,7 +24848,7 @@ export const data = {
       believer: 0.6210526315789474,
       neutral: 0.2631578947368421,
       denial: 0.11578947368421053,
-      aggressive: 0.12631578947368421
+      aggressive: 0.12631578947368421,
     },
     2015: {
       total_count: 220,
@@ -24860,7 +24860,7 @@ export const data = {
       believer: 0.7318181818181818,
       neutral: 0.22727272727272727,
       denial: 0.04090909090909091,
-      aggressive: 0.2863636363636364
+      aggressive: 0.2863636363636364,
     },
     2016: {
       total_count: 241,
@@ -24872,7 +24872,7 @@ export const data = {
       believer: 0.7551867219917012,
       neutral: 0.22821576763485477,
       denial: 0.016597510373443983,
-      aggressive: 0.34439834024896265
+      aggressive: 0.34439834024896265,
     },
     2017: {
       total_count: 420,
@@ -24884,7 +24884,7 @@ export const data = {
       believer: 0.8166666666666667,
       neutral: 0.15714285714285714,
       denial: 0.02619047619047619,
-      aggressive: 0.24761904761904763
+      aggressive: 0.24761904761904763,
     },
     2018: {
       total_count: 1098,
@@ -24896,7 +24896,7 @@ export const data = {
       believer: 0.8697632058287796,
       neutral: 0.11202185792349727,
       denial: 0.018214936247723135,
-      aggressive: 0.20127504553734063
+      aggressive: 0.20127504553734063,
     },
     2019: {
       total_count: 297,
@@ -24908,8 +24908,8 @@ export const data = {
       believer: 0.8148148148148148,
       neutral: 0.1447811447811448,
       denial: 0.04040404040404041,
-      aggressive: 0.21885521885521886
-    }
+      aggressive: 0.21885521885521886,
+    },
   },
   Vietnam: {
     2008: {
@@ -24922,7 +24922,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.0,
       denial: 0.5,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2009: {
       total_count: 63,
@@ -24934,7 +24934,7 @@ export const data = {
       believer: 0.4603174603174603,
       neutral: 0.47619047619047616,
       denial: 0.06349206349206349,
-      aggressive: 0.31746031746031744
+      aggressive: 0.31746031746031744,
     },
     2010: {
       total_count: 57,
@@ -24946,7 +24946,7 @@ export const data = {
       believer: 0.5263157894736842,
       neutral: 0.3684210526315789,
       denial: 0.10526315789473684,
-      aggressive: 0.3333333333333333
+      aggressive: 0.3333333333333333,
     },
     2011: {
       total_count: 27,
@@ -24958,7 +24958,7 @@ export const data = {
       believer: 0.4444444444444444,
       neutral: 0.5185185185185185,
       denial: 0.037037037037037035,
-      aggressive: 0.18518518518518517
+      aggressive: 0.18518518518518517,
     },
     2012: {
       total_count: 12,
@@ -24970,7 +24970,7 @@ export const data = {
       believer: 0.5833333333333334,
       neutral: 0.3333333333333333,
       denial: 0.08333333333333333,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2013: {
       total_count: 24,
@@ -24982,7 +24982,7 @@ export const data = {
       believer: 0.4583333333333333,
       neutral: 0.4166666666666667,
       denial: 0.125,
-      aggressive: 0.16666666666666666
+      aggressive: 0.16666666666666666,
     },
     2014: {
       total_count: 25,
@@ -24994,7 +24994,7 @@ export const data = {
       believer: 0.56,
       neutral: 0.36,
       denial: 0.08,
-      aggressive: 0.28
+      aggressive: 0.28,
     },
     2015: {
       total_count: 103,
@@ -25006,7 +25006,7 @@ export const data = {
       believer: 0.7087378640776699,
       neutral: 0.22330097087378642,
       denial: 0.06796116504854369,
-      aggressive: 0.2912621359223301
+      aggressive: 0.2912621359223301,
     },
     2016: {
       total_count: 153,
@@ -25018,7 +25018,7 @@ export const data = {
       believer: 0.8300653594771242,
       neutral: 0.16993464052287582,
       denial: 0.0,
-      aggressive: 0.2875816993464052
+      aggressive: 0.2875816993464052,
     },
     2017: {
       total_count: 273,
@@ -25030,7 +25030,7 @@ export const data = {
       believer: 0.8241758241758241,
       neutral: 0.14285714285714285,
       denial: 0.03296703296703297,
-      aggressive: 0.23076923076923078
+      aggressive: 0.23076923076923078,
     },
     2018: {
       total_count: 584,
@@ -25042,7 +25042,7 @@ export const data = {
       believer: 0.8441780821917808,
       neutral: 0.13184931506849315,
       denial: 0.023972602739726026,
-      aggressive: 0.22602739726027396
+      aggressive: 0.22602739726027396,
     },
     2019: {
       total_count: 211,
@@ -25054,8 +25054,8 @@ export const data = {
       believer: 0.7725118483412322,
       neutral: 0.1848341232227488,
       denial: 0.04265402843601896,
-      aggressive: 0.2796208530805687
-    }
+      aggressive: 0.2796208530805687,
+    },
   },
 
   WesternSahara: {
@@ -25069,7 +25069,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2018: {
       total_count: 2,
@@ -25081,8 +25081,8 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.5
-    }
+      aggressive: 0.5,
+    },
   },
   Yemen: {
     2009: {
@@ -25095,7 +25095,7 @@ export const data = {
       believer: 0.3333333333333333,
       neutral: 0.3333333333333333,
       denial: 0.3333333333333333,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2010: {
       total_count: 2,
@@ -25107,7 +25107,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.5,
       denial: 0.0,
-      aggressive: 0.0
+      aggressive: 0.0,
     },
     2011: {
       total_count: 4,
@@ -25119,7 +25119,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2012: {
       total_count: 4,
@@ -25131,7 +25131,7 @@ export const data = {
       believer: 0.25,
       neutral: 0.75,
       denial: 0.0,
-      aggressive: 0.25
+      aggressive: 0.25,
     },
     2013: {
       total_count: 5,
@@ -25143,7 +25143,7 @@ export const data = {
       believer: 0.2,
       neutral: 0.6,
       denial: 0.2,
-      aggressive: 0.2
+      aggressive: 0.2,
     },
     2014: {
       total_count: 5,
@@ -25155,7 +25155,7 @@ export const data = {
       believer: 0.6,
       neutral: 0.4,
       denial: 0.0,
-      aggressive: 0.6
+      aggressive: 0.6,
     },
     2015: {
       total_count: 8,
@@ -25167,7 +25167,7 @@ export const data = {
       believer: 0.875,
       neutral: 0.125,
       denial: 0.0,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2016: {
       total_count: 4,
@@ -25179,7 +25179,7 @@ export const data = {
       believer: 0.5,
       neutral: 0.25,
       denial: 0.25,
-      aggressive: 0.5
+      aggressive: 0.5,
     },
     2017: {
       total_count: 33,
@@ -25191,7 +25191,7 @@ export const data = {
       believer: 0.8787878787878788,
       neutral: 0.12121212121212122,
       denial: 0.0,
-      aggressive: 0.2727272727272727
+      aggressive: 0.2727272727272727,
     },
     2018: {
       total_count: 69,
@@ -25203,7 +25203,7 @@ export const data = {
       believer: 0.6956521739130435,
       neutral: 0.2318840579710145,
       denial: 0.07246376811594203,
-      aggressive: 0.2028985507246377
+      aggressive: 0.2028985507246377,
     },
     2019: {
       total_count: 20,
@@ -25215,8 +25215,8 @@ export const data = {
       believer: 0.65,
       neutral: 0.3,
       denial: 0.05,
-      aggressive: 0.05
-    }
+      aggressive: 0.05,
+    },
   },
   Zambia: {
     2009: {
@@ -25229,7 +25229,7 @@ export const data = {
       believer: 0.65,
       neutral: 0.3,
       denial: 0.05,
-      aggressive: 0.35
+      aggressive: 0.35,
     },
     2010: {
       total_count: 17,
@@ -25241,7 +25241,7 @@ export const data = {
       believer: 0.47058823529411764,
       neutral: 0.35294117647058826,
       denial: 0.17647058823529413,
-      aggressive: 0.29411764705882354
+      aggressive: 0.29411764705882354,
     },
     2011: {
       total_count: 19,
@@ -25253,7 +25253,7 @@ export const data = {
       believer: 0.21052631578947367,
       neutral: 0.5789473684210527,
       denial: 0.21052631578947367,
-      aggressive: 0.3684210526315789
+      aggressive: 0.3684210526315789,
     },
     2012: {
       total_count: 26,
@@ -25265,7 +25265,7 @@ export const data = {
       believer: 0.23076923076923078,
       neutral: 0.6538461538461539,
       denial: 0.11538461538461539,
-      aggressive: 0.2692307692307692
+      aggressive: 0.2692307692307692,
     },
     2013: {
       total_count: 32,
@@ -25277,7 +25277,7 @@ export const data = {
       believer: 0.1875,
       neutral: 0.625,
       denial: 0.1875,
-      aggressive: 0.375
+      aggressive: 0.375,
     },
     2014: {
       total_count: 40,
@@ -25289,7 +25289,7 @@ export const data = {
       believer: 0.475,
       neutral: 0.475,
       denial: 0.05,
-      aggressive: 0.4
+      aggressive: 0.4,
     },
     2015: {
       total_count: 136,
@@ -25301,7 +25301,7 @@ export const data = {
       believer: 0.7941176470588235,
       neutral: 0.19852941176470587,
       denial: 0.007352941176470588,
-      aggressive: 0.27205882352941174
+      aggressive: 0.27205882352941174,
     },
     2016: {
       total_count: 132,
@@ -25313,7 +25313,7 @@ export const data = {
       believer: 0.6893939393939394,
       neutral: 0.2878787878787879,
       denial: 0.022727272727272728,
-      aggressive: 0.20454545454545456
+      aggressive: 0.20454545454545456,
     },
     2017: {
       total_count: 244,
@@ -25325,7 +25325,7 @@ export const data = {
       believer: 0.8770491803278688,
       neutral: 0.11065573770491803,
       denial: 0.012295081967213115,
-      aggressive: 0.21721311475409835
+      aggressive: 0.21721311475409835,
     },
     2018: {
       total_count: 643,
@@ -25337,7 +25337,7 @@ export const data = {
       believer: 0.8833592534992224,
       neutral: 0.1088646967340591,
       denial: 0.007776049766718507,
-      aggressive: 0.17107309486780714
+      aggressive: 0.17107309486780714,
     },
     2019: {
       total_count: 150,
@@ -25349,8 +25349,8 @@ export const data = {
       believer: 0.86,
       neutral: 0.12,
       denial: 0.02,
-      aggressive: 0.18666666666666668
-    }
+      aggressive: 0.18666666666666668,
+    },
   },
   Zimbabwe: {
     2009: {
@@ -25363,7 +25363,7 @@ export const data = {
       believer: 0.38461538461538464,
       neutral: 0.38461538461538464,
       denial: 0.23076923076923078,
-      aggressive: 0.5384615384615384
+      aggressive: 0.5384615384615384,
     },
     2010: {
       total_count: 18,
@@ -25375,7 +25375,7 @@ export const data = {
       believer: 0.3888888888888889,
       neutral: 0.3888888888888889,
       denial: 0.2222222222222222,
-      aggressive: 0.2777777777777778
+      aggressive: 0.2777777777777778,
     },
     2011: {
       total_count: 28,
@@ -25387,7 +25387,7 @@ export const data = {
       believer: 0.5357142857142857,
       neutral: 0.35714285714285715,
       denial: 0.10714285714285714,
-      aggressive: 0.42857142857142855
+      aggressive: 0.42857142857142855,
     },
     2012: {
       total_count: 17,
@@ -25399,7 +25399,7 @@ export const data = {
       believer: 0.23529411764705882,
       neutral: 0.7058823529411765,
       denial: 0.058823529411764705,
-      aggressive: 0.23529411764705882
+      aggressive: 0.23529411764705882,
     },
     2013: {
       total_count: 26,
@@ -25411,7 +25411,7 @@ export const data = {
       believer: 0.4230769230769231,
       neutral: 0.5,
       denial: 0.07692307692307693,
-      aggressive: 0.3076923076923077
+      aggressive: 0.3076923076923077,
     },
     2014: {
       total_count: 31,
@@ -25423,7 +25423,7 @@ export const data = {
       believer: 0.4838709677419355,
       neutral: 0.4838709677419355,
       denial: 0.03225806451612903,
-      aggressive: 0.3548387096774194
+      aggressive: 0.3548387096774194,
     },
     2015: {
       total_count: 158,
@@ -25435,7 +25435,7 @@ export const data = {
       believer: 0.8227848101265823,
       neutral: 0.14556962025316456,
       denial: 0.03164556962025317,
-      aggressive: 0.310126582278481
+      aggressive: 0.310126582278481,
     },
     2016: {
       total_count: 248,
@@ -25447,7 +25447,7 @@ export const data = {
       believer: 0.8185483870967742,
       neutral: 0.17338709677419356,
       denial: 0.008064516129032258,
-      aggressive: 0.2217741935483871
+      aggressive: 0.2217741935483871,
     },
     2017: {
       total_count: 650,
@@ -25459,7 +25459,7 @@ export const data = {
       believer: 0.8692307692307693,
       neutral: 0.12,
       denial: 0.010769230769230769,
-      aggressive: 0.20923076923076922
+      aggressive: 0.20923076923076922,
     },
     2018: {
       total_count: 1642,
@@ -25471,7 +25471,7 @@ export const data = {
       believer: 0.8982947624847747,
       neutral: 0.08708891595615104,
       denial: 0.014616321559074299,
-      aggressive: 0.2174177831912302
+      aggressive: 0.2174177831912302,
     },
     2019: {
       total_count: 341,
@@ -25483,8 +25483,7 @@ export const data = {
       believer: 0.8475073313782991,
       neutral: 0.11730205278592376,
       denial: 0.03519061583577713,
-      aggressive: 0.187683284457478
-    }
+      aggressive: 0.187683284457478,
+    },
   },
-  
-}
+};
