@@ -12,19 +12,39 @@ type DataKey = "Sentiment" | "Denial Rate" | "Aggressiveness";
 
 function Card({ country, selection, name }: Props) {
   const worldAverage = 6;
-  const test = country;
-  const year = 2019;
-  const sentiment = country[year].sentiment * 100;
-  const aggressiveness = country[year].aggressive * 100;
-  const denial = country[year].denial * 100;
-  // const sentiment = country.data ? country.data[0].sentiment * 100 : 0;
-  // const aggressiveness = country.data ? country.data[0].aggressive * 100 : 0;
-  // const denial = country.data ? country.data[0].denial * 100 : 0;
+
+  let totalSentiment = 0;
+  let totalAggressiveness = 0;
+  let totalDenial = 0;
+  let yearsCounted = 0;
+
+  Object.keys(country).forEach((year) => {
+    const yearData = country[year];
+    if (
+      yearData.sentiment !== undefined &&
+      yearData.aggressive !== undefined &&
+      yearData.denial !== undefined
+    ) {
+      totalSentiment += yearData.sentiment;
+      totalAggressiveness += yearData.aggressive;
+      totalDenial += yearData.denial;
+      yearsCounted++;
+    }
+  });
+
+  const averageSentiment =
+    yearsCounted > 0 ? Math.round((totalSentiment / yearsCounted) * 100) : 0;
+  const averageAggressiveness =
+    yearsCounted > 0
+      ? Math.round((totalAggressiveness / yearsCounted) * 100)
+      : 0;
+  const averageDenial =
+    yearsCounted > 0 ? Math.round((totalDenial / yearsCounted) * 100) : 0;
 
   const dataMapping = {
-    Sentiment: sentiment,
-    "Denial Rate": denial,
-    Aggressiveness: aggressiveness,
+    Sentiment: averageSentiment,
+    "Denial Rate": averageDenial,
+    Aggressiveness: averageAggressiveness,
   };
 
   const selectionKey = selection as DataKey;
