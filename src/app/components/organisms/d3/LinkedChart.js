@@ -47,16 +47,18 @@ class LinkedChart extends Component {
       .domain(d3.extent(filteredData, (d) => d.year))
       .range([margin.left, width - margin.right]);
 
+    const yDomainMin = d3.min(filteredData, (d) =>
+      Math.min(d.sentiment, d.denial, d.aggressive)
+    );
+    const yDomainMax = d3.max(filteredData, (d) =>
+      Math.max(d.sentiment, d.denial, d.aggressive)
+    );
+
+    const yDomainPadding = (yDomainMax - yDomainMin) * 0.5; // 10% padding
+
     const yScale = d3
       .scaleLinear()
-      .domain([
-        d3.min(filteredData, (d) =>
-          Math.min(d.sentiment, d.denial, d.aggressive)
-        ),
-        d3.max(filteredData, (d) =>
-          Math.max(d.sentiment, d.denial, d.aggressive)
-        ),
-      ])
+      .domain([yDomainMin - yDomainPadding, yDomainMax + yDomainPadding])
       .range([height - margin.bottom, margin.top]);
 
     // Line generators for each data type
