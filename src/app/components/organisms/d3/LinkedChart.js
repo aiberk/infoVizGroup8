@@ -26,7 +26,7 @@ class LinkedChart extends Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     const { data, range } = nextProps;
     console.log(range);
-    if (!data || range.length < 4) return null;
+    if (!data || (range.length != 0 && range.length < 4)) return null;
 
     // Convert range to numbers if they are strings
     const numericRange = range.map((year) => +year);
