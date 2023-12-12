@@ -11,6 +11,7 @@ const height = 300;
 const margin = { top: 20, right: 20, bottom: 30, left: 50 };
 
 class LinkedChart extends Component {
+  //Class based component for finer grained control of D3
   constructor(props) {
     super(props);
     this.state = {
@@ -24,12 +25,14 @@ class LinkedChart extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
+    // Data is in the form of a dictionary with the year as the key and the values as the value
     const { data, range } = nextProps;
     console.log(range);
     if (!data || (range.length != 0 && range.length < 4)) return null;
 
     const numericRange = range.map((year) => +year);
 
+    //Filter brushed data from interactive chart
     const filteredData = Object.entries(data.World)
       .filter(([year, _]) => !range.length || numericRange.includes(+year))
       .map(([year, values]) => ({
