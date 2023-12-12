@@ -28,10 +28,8 @@ class LinkedChart extends Component {
     console.log(range);
     if (!data || (range.length != 0 && range.length < 4)) return null;
 
-    // Convert range to numbers if they are strings
     const numericRange = range.map((year) => +year);
 
-    // Filter data based on numeric range
     const filteredData = Object.entries(data.World)
       .filter(([year, _]) => !range.length || numericRange.includes(+year))
       .map(([year, values]) => ({
@@ -41,7 +39,6 @@ class LinkedChart extends Component {
         aggressive: values.aggressive,
       }));
 
-    // Create scales
     const xScale = d3
       .scaleLinear()
       .domain(d3.extent(filteredData, (d) => d.year))
@@ -54,22 +51,19 @@ class LinkedChart extends Component {
       Math.max(d.sentiment, d.denial, d.aggressive)
     );
 
-    const yDomainPadding = (yDomainMax - yDomainMin) * 0.5; // 10% padding
+    const yDomainPadding = (yDomainMax - yDomainMin) * 0.5;
 
     const yScale = d3
       .scaleLinear()
       .domain([yDomainMin - yDomainPadding, yDomainMax + yDomainPadding])
       .range([height - margin.bottom, margin.top]);
 
-    // Line generators for each data type
-    // Line generators for each data type
     const lineGenerator = d3
       .line()
       .x((d) => xScale(d.year))
-      .y((d) => yScale(d.sentiment)) // Use the actual value fields
+      .y((d) => yScale(d.sentiment))
       .curve(d3.curveMonotoneX);
 
-    // Create lines for each type
     const lines = {
       sentiment: lineGenerator(filteredData),
       denial: lineGenerator(
@@ -92,7 +86,6 @@ class LinkedChart extends Component {
   }
 
   renderAxis = () => {
-    // Only proceed if xScale and yScale are not null
     if (!this.state.xScale || !this.state.yScale) {
       return;
     }

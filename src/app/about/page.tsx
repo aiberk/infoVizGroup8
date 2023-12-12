@@ -16,11 +16,11 @@ export default function Home() {
   const Munzner = "https://www.cs.ubc.ca/~tmm/vadbook/";
   return (
     <main className="flex flex-col items-center rounded-xl mt-5 prose ">
-      <h1 className="text-3xl mb-4 prose text-white mt-10">
-        The World Tweets about Climate Change
-      </h1>
-
       <div className="max-w-prose bg-white bg-opacity-5 p-10 text-white flex flex-col gap-7">
+        <h1 className="text-3xl mb-4 prose text-white mt-5">
+          The World Tweets about Climate Change
+        </h1>
+
         <div className="video-container">
           <iframe
             width="560"

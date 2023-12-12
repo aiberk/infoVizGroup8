@@ -10,7 +10,6 @@ interface ColorScales {
 const VizLegend = () => {
   const { selectedSelection } = useSelection();
 
-  // Define the color scales without gray for missing data
   const colorScales: ColorScales = {
     Sentiment: ["#b3cde3", "#6497b1", "#005b96", "#03396c", "#011f4b"],
     "Denial Rate": [
@@ -35,13 +34,11 @@ const VizLegend = () => {
     ],
   };
 
-  // Determine which color scale to use based on the selected selection
   const currentColorScale =
     colorScales[selectedSelection as keyof ColorScales] ||
     colorScales["Denial Rate"];
 
-  // Calculate the range each color represents
-  const percentageStep = 100 / (currentColorScale.length + 1); // Add 1 for the "missing data" gray
+  const percentageStep = 100 / (currentColorScale.length + 1);
 
   return (
     <div className="legend">
