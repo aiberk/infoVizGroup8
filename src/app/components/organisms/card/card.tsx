@@ -88,8 +88,32 @@ function Card({ country, selection, name }: Props) {
             {" "}
             {dataMapping[selectionKey]}%
           </span>
-          <br /> This is {Math.abs(dataMapping[selectionKey] - worldAverage)}%
-          {dataMapping[selectionKey] > worldAverage ? (
+          <br /> This is{" "}
+          {Math.abs(
+            dataMapping[selectionKey] -
+              (selectedSelection === "Sentiment"
+                ? Math.round(worldDataAverage.sentiment * 100)
+                : selectedSelection === "Denial Rate"
+                ? Math.round(worldDataAverage.denial * 100)
+                : Math.round(worldDataAverage.aggressive * 100))
+          )}
+          %
+          {dataMapping[selectionKey] ===
+          (selectedSelection === "Sentiment"
+            ? Math.round(worldDataAverage.sentiment * 100)
+            : selectedSelection === "Denial Rate"
+            ? Math.round(worldDataAverage.denial * 100)
+            : Math.round(worldDataAverage.aggressive * 100)) ? (
+            <>
+              {" "}
+              <span className="text-yellow-400"></span> <span>equal</span>
+            </>
+          ) : dataMapping[selectionKey] >
+            (selectedSelection === "Sentiment"
+              ? Math.round(worldDataAverage.sentiment * 100)
+              : selectedSelection === "Denial Rate"
+              ? Math.round(worldDataAverage.denial * 100)
+              : Math.round(worldDataAverage.aggressive * 100)) ? (
             <>
               {" "}
               <span
