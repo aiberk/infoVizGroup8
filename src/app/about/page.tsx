@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Home() {
   const loomEmbedUrl =
-    "https://www.loom.com/embed/2bf77e0c3a824b1e90dbd4b495dcb0ba?sid=388e3ca3-0f9c-47d1-997b-527c49d9254f";
+    "https://www.loom.com/embed/ca86888146ef47c3b6fd6c1897c71111?sid=3f806384-04fe-4a0e-8dd1-379bc3f1eb6a";
 
   const yaleLink =
     "https://climatecommunication.yale.edu/publications/climate-change-in-the-american-mind-december-2020/";
