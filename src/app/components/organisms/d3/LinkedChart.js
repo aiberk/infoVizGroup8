@@ -26,7 +26,7 @@ class LinkedChart extends Component {
   static getDerivedStateFromProps(nextProps, prevState) {
     const { data, range } = nextProps;
     console.log(range);
-    if (!data) return {};
+    if (!data || range.length < 4) return null;
 
     // Convert range to numbers if they are strings
     const numericRange = range.map((year) => +year);
@@ -92,6 +92,11 @@ class LinkedChart extends Component {
   }
 
   renderAxis = () => {
+    // Only proceed if xScale and yScale are not null
+    if (!this.state.xScale || !this.state.yScale) {
+      return;
+    }
+
     const xAxis = d3.axisBottom(this.state.xScale).tickFormat(d3.format("d"));
     const yAxis = d3.axisLeft(this.state.yScale);
 
