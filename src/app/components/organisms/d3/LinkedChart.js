@@ -115,14 +115,14 @@ class LinkedChart extends Component {
         <g transform={`translate(${margin.left},${margin.top})`}>
           <path
             d={lines.sentiment}
-            stroke="#1f77b4"
+            stroke="#38BDF8CC"
             strokeWidth={2}
             fill="none"
           />
-          <path d={lines.denial} stroke="#ff7f0e" strokeWidth={2} fill="none" />
+          <path d={lines.denial} stroke="orange" strokeWidth={2} fill="none" />
           <path
             d={lines.aggressive}
-            stroke="#2ca02c"
+            stroke="#F87171"
             strokeWidth={2}
             fill="none"
           />

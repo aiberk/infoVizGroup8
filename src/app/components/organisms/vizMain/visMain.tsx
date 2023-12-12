@@ -63,11 +63,19 @@ const VisMain = () => {
         />
       </div>
       <div className="cardanmapMap px-10  flex-col  h-full bg-cardColor flex items-center justify-center rounded-lg">
-        <div className="w-full "> World Average {selectedSelection}</div>
+        <h2 className="w-full font-medium"> World Average &#40;Brush&#41;</h2>
+        <p className="w-full text-xs mt-1 ">
+          {" "}
+          Brush over chart to compare between adjacent time periods
+        </p>
         <BarChart data={worldData} range={range} updateRange={updateRange} />
       </div>
       <div className="cardanmapViz px-10  flex-col h-full bg-cardColor flex items-center justify-center rounded-lg">
-        <div className="w-full "> Sentiment</div>
+        <h2 className="w-full font-medium"> World Average &#40;Linked&#41;</h2>
+        <p className="w-full text-xs mt-1 ">
+          {" "}
+          Reaction from brush can be observed here.
+        </p>
         <LinkedChart data={worldData} range={range} />
       </div>
     </div>

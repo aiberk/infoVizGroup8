@@ -10,7 +10,7 @@ interface ColorScales {
 const VizLegend = () => {
   const { selectedSelection } = useSelection();
 
-  // Define the color scales
+  // Define the color scales without gray for missing data
   const colorScales: ColorScales = {
     Sentiment: ["#b3cde3", "#6497b1", "#005b96", "#03396c", "#011f4b"],
     "Denial Rate": [
@@ -41,13 +41,19 @@ const VizLegend = () => {
     colorScales["Denial Rate"];
 
   // Calculate the range each color represents
-  const percentageStep = 100 / currentColorScale.length;
+  const percentageStep = 100 / (currentColorScale.length + 1); // Add 1 for the "missing data" gray
 
   return (
     <div className="legend">
       <div className="bg-cardColor p-4 rounded-sm h-1/2">
         <h1>Legend</h1>
         <div>
+          <div className="flex flex-row items-center">
+            <div
+              className="h-4 w-4 mr-2"
+              style={{ backgroundColor: "gray" }}></div>
+            <div>Missing Data</div>
+          </div>
           {currentColorScale.map((color, index) => (
             <div key={index} className="flex flex-row items-center">
               <div
