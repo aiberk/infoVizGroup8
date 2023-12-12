@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { ICountry } from "@/app/types/types";
 import CountryShape from "./countryShape";
 import { useSelection } from "@/app/context/store";
+import { worldDataAverage } from "@/app/data/realData";
 
 type Props = {
   country: any;
@@ -11,7 +12,9 @@ type Props = {
 type DataKey = "Sentiment" | "Denial Rate" | "Aggressiveness";
 
 function Card({ country, selection, name }: Props) {
+  const { selectedSelection } = useSelection();
   const worldAverage = 6;
+  const selectedKey = selectedSelection as DataKey;
 
   let totalSentiment = 0;
   let totalAggressiveness = 0;
@@ -48,6 +51,7 @@ function Card({ country, selection, name }: Props) {
   };
 
   const selectionKey = selection as DataKey;
+  console.log(selectedSelection);
 
   return (
     <div className="bg-cardColor w-full h-full p-10 rounded-lg">
@@ -62,7 +66,14 @@ function Card({ country, selection, name }: Props) {
             </span>
           </div>
           <div className="flex flex-col">
-            <span className="text-3xl">{worldAverage}%</span>
+            <span className="text-3xl">
+              {" "}
+              {selectedSelection === "Sentiment"
+                ? `${Math.round(worldDataAverage.sentiment * 100)}%`
+                : selectedSelection === "Denial Rate"
+                ? `${Math.round(worldDataAverage.denial * 100)}%`
+                : `${Math.round(worldDataAverage.aggressive * 100)}%`}
+            </span>
             <span className="text-[0.5rem] uppercase mt-1">World Average</span>
           </div>
         </div>

@@ -89,6 +89,14 @@ export const worldData = {
   },
 };
 
+export const worldDataAverage = {
+  total_count: 415404.0714285714,
+  sentiment: 0.004693107947272614,
+  denial: 0.1211416971567323,
+  aggressive: 0.33283466656114194,
+};
+
+
 export const countriesData = {
   Bolivia: {
     2010: { sentiment: 0.3, denial: 0.1, aggressive: 0.05 },
