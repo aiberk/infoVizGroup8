@@ -1,22 +1,27 @@
 # infoVizGroup8
 
 ## Live Demo Link
+
 https://info-viz-group8.vercel.app/
 
-## Bibliography
+## Video Presentation Link
+
+https://www.loom.com/share/ca86888146ef47c3b6fd6c1897c71111
 
 ### GeoJson Map
+
 - https://geojson-maps.ash.ms/
 - https://github.com/xihai01/d3-mapping-with-react/tree/main
 - https://www.d3indepth.com/geographic/
 
 ### D3 and React Tutorials
+
 - https://livebook.manning.com/book/d3js-in-action-second-edition/chapter-9/v-6/141
 - https://kamibrumi.medium.com/getting-started-with-react-d3-js-d86ccea05f08
 - https://imneo.medium.com/building-a-d3js-dashboard-with-react-in-2023-93a0324c7469
 
-
 ## D3.js paths for submission
+
 Small map - `src/app/components/organisms/card/countryShape.tsx`
 
 Big map - `src/app/components/organisms/vizMap/vizMain.tsx`
@@ -59,7 +64,3 @@ Year2: { sentiment: decimal, denial: decimal, aggressive: decimal },
 .....
 
 }
-
-
-
-
