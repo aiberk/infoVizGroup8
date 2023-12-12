@@ -33,24 +33,14 @@ interface DataStructure {
 }
 
 const VisMain = () => {
-  const [city, setCity] = useState<City>("sf");
   const [range, setRange] = useState<Date[]>([]);
-  const temps = {
-    sf: sfData.map((day) => ({ ...day, date: new Date(day.date) })),
-    ny: nyData.map((day) => ({ ...day, date: new Date(day.date) })),
-  };
 
   const countryNames = Object.keys(countryData);
 
-  const updateCity = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setCity(e.target.value as City);
-  };
-
   const updateRange = (newRange: Date[]) => {
     setRange(newRange);
+    // console.log(newRange);
   };
-
-  const data = temps[city];
 
   const { selectedCountry, selectedSelection } = useSelection();
 
