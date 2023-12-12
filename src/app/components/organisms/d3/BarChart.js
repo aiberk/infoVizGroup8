@@ -63,7 +63,7 @@ class BarChart extends Component {
     const colorScale = d3
       .scaleOrdinal()
       .domain(["Sentiment", "Denial", "Aggressive"])
-      .range(["#1f77b4", "#ff7f0e", "#2ca02c"]); // Add additional color here
+      .range(["#F87171", "orange", "#38BDF8CC"]);
 
     const bars = dataArray.map((d, i) => ({
       year: d.year.toString(),

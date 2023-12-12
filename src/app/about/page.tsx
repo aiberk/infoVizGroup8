@@ -79,12 +79,11 @@ export default function Home() {
             view the data over time with a time slider.
           </p>
           <p className="text-block prose">
-            In our first view, zooming in on a country reveals two plots
-            capturing monthly data, both utilizing positional encoding: a line
-            chart documenting recorded temperatures and a circle chart
-            visualizing the chosen attribute over time. We maximize readability
-            by separating out these visualizations &#40;as well as the time
-            scale&#41;, and doubly encoding the attribute with color.
+            In our first view, a card with country data and a two charts
+            displaying the world averages: a line chart documenting the averages
+            of the world visualizing the chosen attribute over time. We maximize
+            readability by separating out these visualizations &#40;as well as
+            the time scale&#41;, and doubly encoding the attribute with color.
           </p>
           <p className="text-block prose">
             In our second view, we clearly encode geolocation data with spatial
