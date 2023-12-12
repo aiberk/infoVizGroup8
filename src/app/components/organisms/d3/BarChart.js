@@ -84,7 +84,31 @@ class BarChart extends Component {
         [margin.left, margin.top],
         [width - margin.right, height - margin.bottom],
       ])
+      .handleSize(30)
+      .on("brush", (event) => {
+        // New event handling for D3 v6+
+        const selection = event.selection;
+        if (!selection) return;
+
+        const [x0, x1] = selection;
+        const minBrushSize = 30;
+        if (x1 - x0 < minBrushSize) {
+          // Adjust the brush size
+          if (x1 === width - margin.right) {
+            d3.select(this.brushRef.current).call(this.brush.move, [
+              x1 - minBrushSize,
+              x1,
+            ]);
+          } else {
+            d3.select(this.brushRef.current).call(this.brush.move, [
+              x0,
+              x0 + minBrushSize,
+            ]);
+          }
+        }
+      })
       .on("end", this.brushEnd);
+
     d3.select(this.brushRef.current).call(this.brush);
 
     this.xAxis = d3.axisBottom(this.state.xScale).tickFormat(d3.format("d"));
@@ -93,7 +117,6 @@ class BarChart extends Component {
     this.yAxis = d3.axisLeft(this.state.yScale);
     d3.select(this.yAxisRef.current).call(this.yAxis);
   }
-
   componentDidUpdate() {
     this.xAxis.scale(this.state.xScale);
     d3.select(this.xAxisRef.current).call(this.xAxis);
