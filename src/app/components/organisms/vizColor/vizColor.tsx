@@ -2,7 +2,6 @@ import React from "react";
 
 import { useSelection } from "@/app/context/store";
 
-// Define an interface for the color scales
 interface ColorScales {
   Sentiment: string[];
   "Denial Rate": string[];
@@ -12,7 +11,6 @@ interface ColorScales {
 const VizColor = () => {
   const { selectedSelection } = useSelection();
 
-  // Define the color scales
   const colorScales: ColorScales = {
     Sentiment: ["#b3cde3", "#6497b1", "#005b96", "#03396c", "#011f4b"],
     "Denial Rate": [
@@ -37,7 +35,6 @@ const VizColor = () => {
     ],
   };
 
-  // Determine which color scale to use based on the selected selection
   const currentColorScale =
     colorScales[selectedSelection as keyof ColorScales] ||
     colorScales["Denial Rate"];

@@ -18,8 +18,6 @@ const Vizheader = () => {
     name: name,
   }));
 
-  console.log(countryNames);
-
   return (
     <div className="header  flex flex-col justify-center items-center gap-2 text-lg md:text-3xl lg:text-3xl">
       <div className="flex flex-row justify-center items-center gap-2">

@@ -133,7 +133,6 @@ function Card({ country, selection, name }: Props) {
             </>
           )}{" "}
           than the average of the other countries.
-          {/* <br /> This means, A, B, and C. */}
         </p>
       </div>
       <div className="w-full mt-5 max-h-10 pb-5">

@@ -43,7 +43,6 @@ class BarChart extends Component {
         type: "Aggressive",
         value: values.aggressive,
       });
-      // Add additional value here
     });
 
     const yearExtent = d3.extent(dataArray, (d) => d.year);
@@ -86,14 +85,12 @@ class BarChart extends Component {
       ])
       .handleSize(30)
       .on("brush", (event) => {
-        // New event handling for D3 v6+
         const selection = event.selection;
         if (!selection) return;
 
         const [x0, x1] = selection;
         const minBrushSize = 30;
         if (x1 - x0 < minBrushSize) {
-          // Adjust the brush size
           if (x1 === width - margin.right) {
             d3.select(this.brushRef.current).call(this.brush.move, [
               x1 - minBrushSize,
@@ -126,21 +123,6 @@ class BarChart extends Component {
 
     d3.select(this.brushRef.current).call(this.brush);
   }
-
-  // brushEnd = (event) => {
-  //   const selection = event.selection;
-  //   if (!selection) {
-  //     this.props.updateRange([]);
-  //     return;
-  //   }
-
-  //   const [x0, x1] = selection;
-  //   const selectedYears = this.state.bars
-  //     .filter((d) => x0 <= d.x && d.x + d.width <= x1)
-  //     .map((d) => d.year);
-
-  //   this.props.updateRange(selectedYears);
-  // };
 
   brushEnd = (event) => {
     const selection = event.selection;
