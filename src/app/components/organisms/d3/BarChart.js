@@ -198,6 +198,7 @@ class BarChart extends Component {
       .range(["#1f77b4", "#ff7f0e", "#2ca02c"]); // Add additional color here
 
     const bars = dataArray.map((d, i) => ({
+      year: d.year.toString(),
       x: xScale(d.year) + (xScale.bandwidth() / 4) * i,
       y: yScale(d.value),
       width: xScale.bandwidth() / 4,
@@ -235,17 +236,37 @@ class BarChart extends Component {
     d3.select(this.brushRef.current).call(this.brush);
   }
 
+  // brushEnd = (event) => {
+  //   const selection = event.selection;
+  //   if (!selection) {
+  //     this.props.updateRange([]);
+  //     return;
+  //   }
+
+  //   const [x0, x1] = selection;
+  //   const selectedYears = this.state.bars
+  //     .filter((d) => x0 <= d.x && d.x + d.width <= x1)
+  //     .map((d) => d.year);
+
+  //   this.props.updateRange(selectedYears);
+  // };
+
   brushEnd = (event) => {
     const selection = event.selection;
+    console.log("Brush Selection:", selection);
     if (!selection) {
       this.props.updateRange([]);
       return;
     }
 
     const [x0, x1] = selection;
-    const selectedYears = this.state.bars
-      .filter((d) => x0 <= d.x && d.x <= x1)
-      .map((d) => this.state.xScale.domain()[d.x]);
+    const selectedBars = this.state.bars.filter(
+      (d) => x0 <= d.x && d.x + d.width <= x1
+    );
+    console.log("Selected Bars:", selectedBars);
+
+    const selectedYears = selectedBars.map((d) => d.year);
+    console.log("Selected Years:", selectedYears);
 
     this.props.updateRange(selectedYears);
   };
