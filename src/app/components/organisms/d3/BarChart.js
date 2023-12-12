@@ -11,6 +11,7 @@ const height = 230;
 const margin = { top: 20, right: 5, bottom: 20, left: 50 };
 
 class BarChart extends Component {
+  //Class based component for finer grained control of D3
   constructor(props) {
     super(props);
     this.state = {
@@ -23,9 +24,11 @@ class BarChart extends Component {
   }
 
   static getDerivedStateFromProps(nextProps, prevState) {
+    // Data is in the form of a dictionary with the year as the key and the values as the value
     const { data } = nextProps;
     if (!data) return {};
 
+    //Convert object to array for D3
     const dataArray = [];
     Object.entries(data.World).forEach(([year, values]) => {
       dataArray.push({
@@ -45,6 +48,7 @@ class BarChart extends Component {
       });
     });
 
+    //Scales for axis and bars
     const yearExtent = d3.extent(dataArray, (d) => d.year);
     const valueExtent = d3.extent(dataArray, (d) => d.value);
 
@@ -64,6 +68,7 @@ class BarChart extends Component {
       .domain(["Sentiment", "Denial", "Aggressive"])
       .range(["#F87171", "orange", "#38BDF8CC"]);
 
+    //Create bars
     const bars = dataArray.map((d, i) => ({
       year: d.year.toString(),
       x: xScale(d.year) + (xScale.bandwidth() / 4) * i,
@@ -76,6 +81,7 @@ class BarChart extends Component {
     return { bars, xScale, yScale };
   }
 
+  //Used when updating the brush and parts of the graph
   componentDidMount() {
     this.brush = d3
       .brushX()
